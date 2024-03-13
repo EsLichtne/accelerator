@@ -46,6 +46,55 @@
         </button>
       </div>
     </section>
+    <section data-test="price" class="price">
+      <h2 class="price__title title title--third">Абонементы</h2>
+      <ol class="price__tabs tabs">
+        <li class="tabs__item">
+          <label class="tabs__tab">
+            <input type="radio" name="tab" id="tab-1">
+            1 месяц
+          </label>
+        </li>
+        <li class="tabs__item">
+          <label class="tabs__tab">
+            <input type="radio" name="tab" id="tab-2">
+            6 месяцев
+          </label>
+        </li>
+        <li class="tabs__item">
+          <label class="tabs__tab">
+            <input type="radio" name="tab" id="tab-3">
+            12 месяцев
+          </label>
+        </li>
+      </ol>
+      <ul class="price__list">
+        <li class="price__item">
+          <article class="price__card subscription-card subscription-card--with-coach">
+            <h3 class="card__title title title--fourth">С тренером</h3>
+            <p class="card__capture">12 занятий</p>
+            <p class="card__price">5000</p>
+            <a class="card__button button button--dark" href="#">Купить абонемент</a>
+          </article>
+        </li>
+        <li class="price__item">
+          <article class="price__card subscription-card subscription-card--daytime">
+            <h3 class="card__title title title--fourth">Дневной</h3>
+            <p class="card__capture">с 8:00 до 17:00</p>
+            <p class="card__price">1700</p>
+            <a class="card__button button button--dark" href="#">Купить абонемент</a>
+          </article>
+        </li>
+        <li class="price__item">
+          <article class="price__card subscription-card subscription-card--full-day">
+            <h3 class="card__title title title--fourth">Полный день</h3>
+            <p class="card__capture">с 8:00 до 22:00</p>
+            <p class="card__price">2700</p>
+            <a class="card__button button button--dark" href="#">Купить абонемент</a>
+          </article>
+        </li>
+      </ul>
+    </section>
   </main>
   <script type="module" src="js/main.js"></script>
 </body>
