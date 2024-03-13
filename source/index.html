@@ -16,7 +16,7 @@
   <main>
     <section data-test="hero" class="hero">
       <header class="hero__header header">
-        <img class="header__logo logo-image" src="#" width="130" height="26" alt="Логотип компании.">
+        <img class="header__logo logo-image" src="img/logo.svg" width="130" height="26" alt="Логотип компании.">
         <a class="header__phone" href="tel:+78005555555">8 800 555-55-55</a>
       </header>
       <div class="hero__content">
@@ -28,8 +28,16 @@
           <li class="hero__services-item">Кардио-зона</li>
         </ul>
         <a class="hero__button button button--light" href="#">Купить абонемент</a>
-        <img class="hero__image" src="#" width="500" height="524"
-          alt="Тренер фитнес-центра в футболке Супермена задумчиво смотрит вдаль.">
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x" width="500" height="524">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x" width="324" height="390">
+          <source type="image/jpeg" media="(min-width: 1366px)"
+            srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x" width="500" height="524">
+          <img class="hero__image" type="image/jpeg" src="img/hero-tablet.jpg" srcset="img/hero-tablet@2x.jpg 2x"
+            width="324" height="390" alt="Тренер фитнес-центра в футболке Супермена задумчиво смотрит вдаль.">
+        </picture>
       </div>
     </section>
     <section data-test="about" class="about">
@@ -39,11 +47,35 @@
         тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
         В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
         есть несколько оборудованных залов для различных видов групповых занятий.</p>
-      <img class="about__image" src="#" width="660" height="400"
-        alt="Просторный светлый тренажёрный зал с множеством различных тренажёров.">
+      <picture>
+        <source type="image/webp" media="(min-width: 1366px)"
+          srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x" width="660" height="400">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"
+          width="678" height="345">
+        <source type="image/webp" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x" width="320" height="280">
+        <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/gym-desktop.jpg 1x, img/gym-desktop@2x.jpg 2x"
+          width="660" height="400">
+        <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gym-tablet.jpg, img/gym-tablet@2x.jpg 2x"
+          width="678" height="345">
+        <img class="about__image" type="image/jpeg" src="img/gym-mobile.jpg" srcset="img/gym-mobile@2x.jpg 2x"
+          width="320" height="280" alt="Просторный светлый тренажёрный зал со множеством различных тренажёров.">
+      </picture>
       <div class="about__video video">
         <a class="video__link" href="https://youtu.be/9TZXsZItgdw">
-          <img class="video__image" src="#" width="360" height="230" alt="Наш тренажёрный зал.">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/video-gym-desktop.webp 1x, img/video-gym-desktop@2x.webp 2x" width="360" height="230">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-gym-tablet.webp 1x, img/video-gym-tablet@2x.webp 2x" width="270" height="170">
+            <source type="image/webp" srcset="img/video-gym-mobile.webp 1x, img/video-gym-mobile@2x.webp 2x" width="320"
+              height="170">
+            <source type="image/jpeg" media="(min-width: 1366px)"
+              srcset="img/video-gym-desktop.jpg 1x, img/video-gym-desktop@2x.jpg 2x" width="360" height="230">
+            <source type="image/jpeg" media="(min-width: 768px)"
+              srcset="img/video-gym-tablet.jpg, img/video-gym-tablet@2x.jpg 2x" width="270" height="170">
+            <img class="video__image" type="image/jpeg" src="img/video-gym-mobile.jpg"
+              srcset="img/video-gym-mobile@2x.jpg 2x" width="320" height="170" alt="Наш тренажёрный зал.">
+          </picture>
         </a>
         <button class="video__button">
           <span class="visually-hidden">Запустить видео.</span>
@@ -117,8 +149,20 @@
           <p class="games__description">Ежегодные соревнования по CrossFit</p>
           <a class="games__button button button--light" href="#">Заполнить заявку</a>
         </div>
-        <img class="games__image" src="#" width="660" height="500"
-          alt="Борец на ринге бьёт кулаком в пол и от его удара разлетаются искры.">
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="img/games-desktop.webp 1x, img/games-desktop@2x.webp 2x" width="660" height="500">
+          <source type="image/webp" media="(min-width: 758px)"
+            srcset="img/games-tablet.webp 1x, img/games-tablet@2x.webp 2x" width="378" height="348">
+          <source type="image/webp" srcset="img/games-mobile.webp 1x, img/games-mobile@2x.webp 2x" width="290"
+            height="290">
+          <source type="image/jpeg" media="(min-width: 1366px)"
+            srcset="img/games-desktop.jpg 1x, img/games-desktop@2x.jpg 2x" width="660" height="500">
+          <source type="image/jpeg" media="(min-width: 758px)"
+            srcset="img/games-tablet.jpg 1x, img/games-tablet@2x.jpg 2x" width="378" height="348">
+          <img class="games__image" src="img/games-mobile.jpg" srcset="img/games-mobile@2x.jpg 2x" width="290"
+            height="290" alt="Борец на ринге бьёт кулаком в пол и от его удара разлетаются искры.">
+        </picture>
       </article>
       <section data-test="juri" class="juri">
         <h2 class="juri__title title title--third">Жюри</h2>
@@ -127,7 +171,16 @@
             <li class="juri-slider__item">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Анна Павлова</h3>
-                <img class="juri-card__image" src="#" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/juri-1-desktop.webp 1x, img/juri-1-desktop@2x.webp 2x" width="260" height="300">
+                  <source type="image/webp" srcset="img/juri-1-mobile.webp 1x, img/juri-1-mobile@2x.webp 2x" width="227"
+                    height="280">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/juri-1-desktop.png 1x, img/juri-1-desktop@2x.png 2x" width="260" height="300">
+                  <img class="juri-card__image" src="img/juri-1-mobile.png" srcset="img/juri-1-mobile@2x.png 2x"
+                    width="227" height="280" alt="">
+                </picture>
                 <span class="juri-card__caption">CrossFit</span>
                 <ul class="juri-card__list">
                   <li class="juri-card__item">Certified Level 3 Trainer</li>
@@ -139,7 +192,16 @@
             <li class="juri-slider__item">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Алексей Лавров</h3>
-                <img class="juri-card__image" src="#" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/juri-2-desktop.webp 1x, img/juri-2-desktop@2x.webp 2x" width="260" height="300">
+                  <source type="image/webp" srcset="img/juri-2-mobile.webp 1x, img/juri-2-mobile@2x.webp 2x" width="227"
+                    height="280">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/juri-2-desktop.png 1x, img/juri-2-desktop@2x.png 2x" width="260" height="300">
+                  <img class="juri-card__image" src="img/juri-2-mobile.png" srcset="img/juri-2-mobile@2x.png 2x"
+                    width="227" height="280" alt="">
+                </picture>
                 <span class="juri-card__caption">CrossFit</span>
                 <ul class="juri-card__list">
                   <li class="juri-card__item">Certified Level 3 Trainer</li>
@@ -151,7 +213,16 @@
             <li class="juri-slider__item">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Александр Пашков</h3>
-                <img class="juri-card__image" src="#" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/juri-3-desktop.webp 1x, img/juri-3-desktop@2x.webp 2x" width="260" height="300">
+                  <source type="image/webp" srcset="img/juri-3-mobile.webp 1x, img/juri-3-mobile@2x.webp 2x" width="227"
+                    height="280">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/juri-3-desktop.png 1x, img/juri-3-desktop@2x.png 2x" width="260" height="300">
+                  <img class="juri-card__image" src="img/juri-3-mobile.png" srcset="img/juri-3-mobile@2x.png 2x"
+                    width="227" height="280" alt="">
+                </picture>
                 <span class="juri-card__caption">CrossFit</span>
                 <ul class="juri-card__list">
                   <li class="juri-card__item">Certified Level 3 Trainer</li>
@@ -163,7 +234,16 @@
             <li class="juri-slider__item">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Мария Кетова</h3>
-                <img class="juri-card__image" src="#" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/juri-4-desktop.webp 1x, img/juri-4-desktop@2x.webp 2x" width="260" height="300">
+                  <source type="image/webp" srcset="img/juri-4-mobile.webp 1x, img/juri-4-mobile@2x.webp 2x" width="227"
+                    height="280">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/juri-4-desktop.png 1x, img/juri-4-desktop@2x.png 2x" width="260" height="300">
+                  <img class="juri-card__image" src="img/juri-4-mobile.png" srcset="img/juri-4-mobile@2x.png 2x"
+                    width="227" height="280" alt="">
+                </picture>
                 <span class="juri-card__caption">CrossFit</span>
                 <ul class="juri-card__list">
                   <li class="juri-card__item">Certified Level 3 Trainer</li>
@@ -175,7 +255,16 @@
             <li class="juri-slider__item">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Анна Павлова</h3>
-                <img class="juri-card__image" src="#" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/juri-1-desktop.webp 1x, img/juri-1-desktop@2x.webp 2x" width="260" height="300">
+                  <source type="image/webp" srcset="img/juri-1-mobile.webp 1x, img/juri-1-mobile@2x.webp 2x" width="227"
+                    height="280">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/juri-1-desktop.png 1x, img/juri-1-desktop@2x.png 2x" width="260" height="300">
+                  <img class="juri-card__image" src="img/juri-1-mobile.png" srcset="img/juri-1-mobile@2x.png 2x"
+                    width="227" height="280" alt="">
+                </picture>
                 <span class="juri-card__caption">CrossFit</span>
                 <ul class="juri-card__list">
                   <li class="juri-card__item">Certified Level 3 Trainer</li>
@@ -187,7 +276,16 @@
             <li class="juri-slider__item">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Алексей Лавров</h3>
-                <img class="juri-card__image" src="#" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/juri-2-desktop.webp 1x, img/juri-2-desktop@2x.webp 2x" width="260" height="300">
+                  <source type="image/webp" srcset="img/juri-2-mobile.webp 1x, img/juri-2-mobile@2x.webp 2x" width="227"
+                    height="280">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/juri-2-desktop.png 1x, img/juri-2-desktop@2x.png 2x" width="260" height="300">
+                  <img class="juri-card__image" src="img/juri-2-mobile.png" srcset="img/juri-2-mobile@2x.png 2x"
+                    width="227" height="280" alt="">
+                </picture>
                 <span class="juri-card__caption">CrossFit</span>
                 <ul class="juri-card__list">
                   <li class="juri-card__item">Certified Level 3 Trainer</li>
@@ -199,7 +297,16 @@
             <li class="juri-slider__item">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Александр Пашков</h3>
-                <img class="juri-card__image" src="#" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/juri-3-desktop.webp 1x, img/juri-3-desktop@2x.webp 2x" width="260" height="300">
+                  <source type="image/webp" srcset="img/juri-3-mobile.webp 1x, img/juri-3-mobile@2x.webp 2x" width="227"
+                    height="280">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/juri-3-desktop.png 1x, img/juri-3-desktop@2x.png 2x" width="260" height="300">
+                  <img class="juri-card__image" src="img/juri-3-mobile.png" srcset="img/juri-3-mobile@2x.png 2x"
+                    width="227" height="280" alt="">
+                </picture>
                 <span class="juri-card__caption">CrossFit</span>
                 <ul class="juri-card__list">
                   <li class="juri-card__item">Certified Level 3 Trainer</li>
@@ -211,7 +318,16 @@
             <li class="juri-slider__item">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Мария Кетова</h3>
-                <img class="juri-card__image" src="#" alt="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/juri-4-desktop.webp 1x, img/juri-4-desktop@2x.webp 2x" width="260" height="300">
+                  <source type="image/webp" srcset="img/juri-4-mobile.webp 1x, img/juri-4-mobile@2x.webp 2x" width="227"
+                    height="280">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="img/juri-4-desktop.png 1x, img/juri-4-desktop@2x.png 2x" width="260" height="300">
+                  <img class="juri-card__image" src="img/juri-4-mobile.png" srcset="img/juri-4-mobile@2x.png 2x"
+                    width="227" height="280" alt="">
+                </picture>
                 <span class="juri-card__caption">CrossFit</span>
                 <ul class="juri-card__list">
                   <li class="juri-card__item">Certified Level 3 Trainer</li>
@@ -288,7 +404,20 @@
             <h3>Год
               <span>4999</span>
             </h3>
-            <img src="#" width="280" height="460" alt="Девушка в голубом спортивном костюме на фоне неба.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/girl-desktop.webp 1x, img/girl-desktop@2x.webp 2x" width="280" height="460">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/girl-tablet.webp 1x, img/girl-tablet@2x.webp 2x" width="400" height="462">
+              <source type="image/webp" srcset="img/girl-mobile.webp 1x, img/girl-mobile@2x.webp 2x" width="320"
+                height="360">
+              <source type="image/jpeg" media="(min-width: 1366px)"
+                srcset="img/girl-desktop.jpg 1x, img/girl-desktop@2x.jpg 2x" width="280" height="460">
+              <source type="image/jpeg" media="(min-width: 768px)"
+                srcset="img/girl-tablet.jpg 1x, img/girl-tablet@2x.jpg 2x" width="400" height="462">
+              <img class="offer__image" src="img/girl-mobile.jpg" srcset="img/girl-mobile@2x.jpg 2x" width="320"
+                height="360" alt="Девушка в голубом спортивном костюме на фоне неба.">
+            </picture>
             <p>Безлимитный абонемент в тренажёрный зал</p>
             <a class="offer__link link link--light" href="#">Подробнее</a>
           </article>
@@ -462,7 +591,15 @@
           <li class="reviews-slider__item">
             <article class="reviews-slider__slide">
               <h3>Анна Орлова</h3>
-              <img src="#" width="80" height="80" alt="">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/avatar-1-desktop.webp 1x, img/avatar-1-desktop@2x.webp 2x" width="80" height="80">
+                <source type="image/webp" srcset="img/avatar-1-mobile.webp 1x, img/avatar-1-mobile@2x.webp 2x"
+                  width="68" height="68">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="img/avatar-1-desktop.png 1x, img/avatar-1-desktop@2x.png 2x" width="80" height="80">
+                <img src="img/avatar-1-mobile.png" srcset="img/avatar-1-mobile@2x.png 2x" width="68" height="68" alt="">
+              </picture>
               <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
                 тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
             </article>
@@ -470,7 +607,15 @@
           <li class="reviews-slider__item">
             <article class="reviews-slider__slide">
               <h3>Анна Орлова</h3>
-              <img src="#" width="80" height="80" alt="">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/avatar-1-desktop.webp 1x, img/avatar-1-desktop@2x.webp 2x" width="80" height="80">
+                <source type="image/webp" srcset="img/avatar-1-mobile.webp 1x, img/avatar-1-mobile@2x.webp 2x"
+                  width="68" height="68">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="img/avatar-1-desktop.png 1x, img/avatar-1-desktop@2x.png 2x" width="80" height="80">
+                <img src="img/avatar-1-mobile.png" srcset="img/avatar-1-mobile@2x.png 2x" width="68" height="68" alt="">
+              </picture>
               <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
                 тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
             </article>
@@ -523,7 +668,7 @@
     </section>
   </main>
   <footer data-test="footer" class="footer">
-    <img class="footer__logo logo-image" src="#" width="130" height="26" alt="Логотип компании.">
+    <img class="footer__logo logo-image" src="img/logo.svg" width="130" height="26" alt="Логотип компании.">
     <nav class="footer__navigation navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
