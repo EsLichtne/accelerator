@@ -84,22 +84,22 @@
     </section>
     <section data-test="price" class="price">
       <h2 class="price__title title title--third">Абонементы</h2>
-      <ol class="price__tabs tabs">
-        <li class="tabs__item">
-          <label class="tabs__tab tab">
-            <input class="tab__input" type="radio" name="subscription-tab" id="1-month" checked>
+      <ol class="price__tabs price-tabs">
+        <li class="price-tabs__item">
+          <label class="price-tabs__tab">
+            <input class="price-tabs__input" type="radio" name="subscription-tab" id="1-month" checked>
             1 месяц
           </label>
         </li>
-        <li class="tabs__item">
-          <label class="tabs__tab tab">
-            <input class="tab__input" type="radio" name="subscription-tab" id="6-month">
+        <li class="price-tabs__item">
+          <label class="price-tabs__tab">
+            <input class="price-tabs__input" type="radio" name="subscription-tab" id="6-month">
             6 месяцев
           </label>
         </li>
-        <li class="tabs__item">
-          <label class="tabs__tab tab">
-            <input class="tab__input" type="radio" name="subscription-tab" id="12-month">
+        <li class="price-tabs__item">
+          <label class="price-tabs__tab">
+            <input class="price-tabs__input" type="radio" name="subscription-tab" id="12-month">
             12 месяцев
           </label>
         </li>
@@ -168,7 +168,7 @@
         <h2 class="juri__title title title--third">Жюри</h2>
         <div class="juri__slider juri-slider">
           <ul class="juri-slider__list">
-            <li class="juri-slider__item">
+            <li class="juri-slider__slide">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Анна Павлова</h3>
                 <picture>
@@ -189,7 +189,7 @@
                 </ul>
               </article>
             </li>
-            <li class="juri-slider__item">
+            <li class="juri-slider__slide">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Алексей Лавров</h3>
                 <picture>
@@ -210,7 +210,7 @@
                 </ul>
               </article>
             </li>
-            <li class="juri-slider__item">
+            <li class="juri-slider__slide">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Александр Пашков</h3>
                 <picture>
@@ -231,7 +231,7 @@
                 </ul>
               </article>
             </li>
-            <li class="juri-slider__item">
+            <li class="juri-slider__slide">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Мария Кетова</h3>
                 <picture>
@@ -252,7 +252,7 @@
                 </ul>
               </article>
             </li>
-            <li class="juri-slider__item">
+            <li class="juri-slider__slide">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Анна Павлова</h3>
                 <picture>
@@ -273,7 +273,7 @@
                 </ul>
               </article>
             </li>
-            <li class="juri-slider__item">
+            <li class="juri-slider__slide">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Алексей Лавров</h3>
                 <picture>
@@ -294,7 +294,7 @@
                 </ul>
               </article>
             </li>
-            <li class="juri-slider__item">
+            <li class="juri-slider__slide">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Александр Пашков</h3>
                 <picture>
@@ -315,7 +315,7 @@
                 </ul>
               </article>
             </li>
-            <li class="juri-slider__item">
+            <li class="juri-slider__slide">
               <article class="juri-slider__card juri-card">
                 <h3 class="juri-card__title">Мария Кетова</h3>
                 <picture>
@@ -337,10 +337,11 @@
               </article>
             </li>
           </ul>
-          <button class="juri-slider__button juri-slider__button--previous slider-button" type="button">
+          <button class="juri-slider__button juri-slider__button--previous slider-button slider-button--previous"
+            type="button">
             <span class="visually-hidden">Предыдущий слайд.</span>
           </button>
-          <button class="juri-slider__button juri-slider__button--next slider-button" type="button">
+          <button class="juri-slider__button juri-slider__button--next slider-button slider-button--next" type="button">
             <span class="visually-hidden">Следующий слайд.</span>
           </button>
         </div>
@@ -436,13 +437,13 @@
     </section>
     <section class="faq">
       <h2 class="faq__title title title--third">Вопросы и ответы</h2>
-      <ul class="faq__tabs">
-        <li class="faq__item">
-          <label class="faq__tab tab-button">
+      <ul class="faq__tabs faq-tabs">
+        <li class="faq-tabs__item">
+          <label class="faq-tabs__tab tab-button">
             <input class="tab-button__input" type="radio" name="faq-tab" id="center" checked>
             Центр
           </label>
-          <div class="faq__accordion accordion">
+          <div class="faq-tabs__content accordion">
             <ul class="accordion__list">
               <li class="accordion__item">
                 <h3>Как стать членом фитнес-центра?</h3>
@@ -472,12 +473,12 @@
             </ul>
           </div>
         </li>
-        <li class="faq__item">
-          <label class="faq__tab tab-button">
+        <li class="faq-tabs__item">
+          <label class="faq-tabs__tab tab-button">
             <input class="tab-button__input" type="radio" name="faq-tab" id="subscription">
             Абонемент
           </label>
-          <div class="faq__accordion accordion">
+          <div class="faq-tabs__content accordion">
             <ul class="accordion__list">
               <li class="accordion__item">
                 <h3>Занятия с тренером входят в абонемент?</h3>
@@ -507,12 +508,12 @@
             </ul>
           </div>
         </li>
-        <li class="faq__item">
-          <label class="faq__tab tab-button">
+        <li class="faq-tabs__item">
+          <label class="faq-tabs__tab tab-button">
             <input class="tab-button__input" type="radio" name="faq-tab" id="services">
             Услуги
           </label>
-          <div class="faq__accordion accordion">
+          <div class="faq-tabs__content accordion">
             <ul class="accordion__list">
               <li class="accordion__item">
                 <h3>Предлагает ли клуб услуги по консультированию по
@@ -539,12 +540,12 @@
             </ul>
           </div>
         </li>
-        <li class="faq__item">
-          <label class="faq__tab tab-button">
+        <li class="faq-tabs__item">
+          <label class="faq-tabs__tab tab-button">
             <input class="tab-button__input" type="radio" name="faq-tab" id="rules">
             Правила
           </label>
-          <div class="faq__accordion accordion">
+          <div class="faq-tabs__content accordion">
             <ul class="accordion__list">
               <li class="accordion__item">
                 <h3>Есть в фитнес-центре дресс-код?</h3>
@@ -588,8 +589,8 @@
       <h2 class="reviews__title title title--third">Отзывы</h2>
       <div class="reviews__slider reviews-slider">
         <ul class="reviews-slider__list">
-          <li class="reviews-slider__item">
-            <article class="reviews-slider__slide">
+          <li class="reviews-slider__slide">
+            <article class="reviews-slider__card">
               <h3>Анна Орлова</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
@@ -604,8 +605,8 @@
                 тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
             </article>
           </li>
-          <li class="reviews-slider__item">
-            <article class="reviews-slider__slide">
+          <li class="reviews-slider__slide">
+            <article class="reviews-slider__card">
               <h3>Анна Орлова</h3>
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
@@ -621,10 +622,12 @@
             </article>
           </li>
         </ul>
-        <button class="reviews-slider__button reviews-slider__button--previous slider-button" type="button">
+        <button class="reviews-slider__button reviews-slider__button--previous slider-button slider-button--previous"
+          type="button">
           <span class="visually-hidden">Предыдущий отзыв.</span>
         </button>
-        <button class="reviews-slider__button reviews-slider__button--next slider-button" type="button">
+        <button class="reviews-slider__button reviews-slider__button--next slider-button slider-button--next"
+          type="button">
           <span class="visually-hidden">Следующий отзыв.</span>
         </button>
       </div>
@@ -644,9 +647,7 @@
       <ul class="contacts__list">
         <li class="contacts__item">
           <h3 class="contacts__subtitle">Адрес:</h3>
-          <p class="contacts__text">
-          <address>г. Омск, ул. 60 лет Октября, 7</address>
-          </p>
+          <address class="contacts__text">г. Омск, ул. 60 лет Октября, 7</address>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__subtitle">График работы:</h3>
@@ -654,15 +655,11 @@
         </li>
         <li class="contacts__item">
           <h3 class="contacts__subtitle">Телефон:</h3>
-          <p class="contacts__text">
-            <a href="tel:+78005555555">8 800 555-55-55</a>
-          </p>
+          <a class="contacts__text contacts__link" href="tel:+78005555555">8 800 555-55-55</a>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__subtitle">Email:</h3>
-          <p class="contacts__text">
-            <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-          </p>
+          <a class="contacts__text contacts__link" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
         </li>
       </ul>
     </section>
