@@ -1,0 +1,77 @@
+@use "../global/variables.scss";
+
+.button {
+  display: grid;
+  place-content: center;
+  padding: 27px 56px;
+  font-family: variables.$font-primary;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline-width: 2px;
+  outline-style: solid;
+  cursor: pointer;
+
+  &--light {
+    color: variables.$text-secondary;
+    outline-color: variables.$text-secondary;
+
+    &:hover {
+      color: variables.$text-accent;
+      background-color: variables.$background-primary-light;
+    }
+
+    &:focus,
+    &:focus-visible {
+      color: variables.$text-accent;
+      background-color: rgba(255, 255, 255, 0.8);
+      outline-color: variables.$color-dark;
+    }
+
+    &:active {
+      color: variables.$text-primary;
+      background-color: variables.$background-primary-light;
+      outline-color: variables.$text-secondary;
+    }
+
+    &:disabled,
+    &.button--disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  &--dark {
+    color: variables.$text-primary;
+    outline-color: variables.$text-primary;
+
+    &:hover {
+      color: variables.$text-secondary;
+      background-image: variables.$color-accent-gradient;
+      outline-color: transparent;
+    }
+
+    &:focus,
+    &:focus-visible {
+      color: variables.$text-secondary;
+      background-image: variables.$color-accent-gradient-blur;
+      outline-color: variables.$color-dark;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.7);
+      background-image: variables.$color-accent-gradient;
+      outline-color: transparent;
+    }
+
+    &:disabled,
+    &.button--disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+}
