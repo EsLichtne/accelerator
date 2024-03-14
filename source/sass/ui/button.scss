@@ -15,6 +15,11 @@
   outline-width: 2px;
   outline-style: solid;
   cursor: pointer;
+  transition:
+    color 0.4s linear,
+    background-color 0.4s linear,
+    outline 0.4s linear,
+    opacity 0.4s linear;
 
   &--light {
     color: variables.$text-secondary;
