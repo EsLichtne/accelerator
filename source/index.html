@@ -442,17 +442,20 @@
     </section>
     <section class="faq">
       <h2 class="faq__title title title--third">Вопросы и ответы</h2>
-      <ul class="faq__tabs faq-tabs">
+      <ul class="faq__tabs faq-tabs" aria-label="Сортировка вопросов по категориям.">
         <li class="faq-tabs__item">
           <label class="faq-tabs__tab tab-button">
-            <input class="tab-button__input" type="radio" name="faq-tab" id="center" checked>
+            <input class="tab-button__input" type="radio" name="faq-tab" checked>
             Центр
           </label>
           <div class="faq-tabs__content accordion">
             <ul class="accordion__list">
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Как стать членом фитнес-центра?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Как стать членом фитнес-центра?
+                  </label>
                 </h3>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету
                   и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт
@@ -460,7 +463,10 @@
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Где можно посмотреть расписание?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Где можно посмотреть расписание?
+                  </label>
                 </h3>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету
                   и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт
@@ -468,8 +474,10 @@
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Есть кулеры в центре? Предоставляются
-                    полотенца?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Есть кулеры в центре? Предоставляются полотенца?
+                  </label>
                 </h3>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету
                   и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт
@@ -477,8 +485,10 @@
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Сколько тренеров работает в клубе и какова
-                    их квалификация?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Сколько тренеров работает в клубе и какова их квалификация?
+                  </label>
                 </h3>
                 <p>При первом посещении и покупке абонемента, необходимо заполнить анкету
                   и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт
@@ -489,14 +499,17 @@
         </li>
         <li class="faq-tabs__item">
           <label class="faq-tabs__tab tab-button">
-            <input class="tab-button__input" type="radio" name="faq-tab" id="subscription">
+            <input class="tab-button__input" type="radio" name="faq-tab">
             Абонемент
           </label>
           <div class="faq-tabs__content accordion">
             <ul class="accordion__list">
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Занятия с тренером входят в абонемент?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Занятия с тренером входят в абонемент?
+                  </label>
                 </h3>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером
                   отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
@@ -504,7 +517,10 @@
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Можно ли заморозить абонемент?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Можно ли заморозить абонемент?
+                  </label>
                 </h3>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером
                   отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
@@ -512,8 +528,10 @@
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Есть ли лимит по посещениям тренажерного зала и
-                    групповых занятий?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+                  </label>
                 </h3>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером
                   отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
@@ -521,8 +539,10 @@
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Что такое семейный доступ и доступ для
-                    друзей?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Что такое семейный доступ и доступ для друзей?
+                  </label>
                 </h3>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером
                   отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
@@ -533,38 +553,47 @@
         </li>
         <li class="faq-tabs__item">
           <label class="faq-tabs__tab tab-button">
-            <input class="tab-button__input" type="radio" name="faq-tab" id="services">
+            <input class="tab-button__input" type="radio" name="faq-tab">
             Услуги
           </label>
           <div class="faq-tabs__content accordion">
             <ul class="accordion__list">
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Предлагает ли клуб услуги по консультированию по
-                    вопросам питания?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Предлагает ли клуб услуги по консультированию по вопросам питания?
+                  </label>
                 </h3>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему
                   нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Проводятся ли в клубе какие-либо мероприятия или
-                    соревнования?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Проводятся ли в клубе какие-либо мероприятия или соревнования?
+                  </label>
                 </h3>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему
                   нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Можно ли приобрести в центре спортивное
-                    питание?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Можно ли приобрести в центре спортивное питание?
+                  </label>
                 </h3>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему
                   нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Есть ли в центре детская комната?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Есть ли в центре детская комната?
+                  </label>
                 </h3>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему
                   нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
@@ -574,14 +603,17 @@
         </li>
         <li class="faq-tabs__item">
           <label class="faq-tabs__tab tab-button">
-            <input class="tab-button__input" type="radio" name="faq-tab" id="rules">
+            <input class="tab-button__input" type="radio" name="faq-tab">
             Правила
           </label>
           <div class="faq-tabs__content accordion">
             <ul class="accordion__list">
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Есть в фитнес-центре дресс-код?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Есть в фитнес-центре дресс-код?
+                  </label>
                 </h3>
                 <p>Для тренировок необходимо иметь предназначенную для этого закрытую
                   спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки,
@@ -591,8 +623,10 @@
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Можно ли приводить с собой детей на
-                    тренировки?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Можно ли приводить с собой детей на тренировки?
+                  </label>
                 </h3>
                 <p>Для тренировок необходимо иметь предназначенную для этого закрытую
                   спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки,
@@ -602,8 +636,10 @@
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Какие дополнительные правила посещения
-                    центра?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Какие дополнительные правила посещения центра?
+                  </label>
                 </h3>
                 <p>Для тренировок необходимо иметь предназначенную для этого закрытую
                   спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки,
@@ -613,8 +649,10 @@
               </li>
               <li class="accordion__item">
                 <h3>
-                  <button type="button">Нужна ли медицинская справка для посещения залов и
-                    бассейна?</button>
+                  <label>
+                    <input type="checkbox" name="faq-accordion">
+                    Нужна ли медицинская справка для посещения залов и бассейна?
+                  </label>
                 </h3>
                 <p>Для тренировок необходимо иметь предназначенную для этого закрытую
                   спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки,
