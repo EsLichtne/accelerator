@@ -1,0 +1,22 @@
+@use "./variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$font-primary;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 300;
+  color: variables.$text-primary;
+  background-color: variables.$background-primary-light;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
