@@ -84,27 +84,27 @@
     </section>
     <section data-test="price" class="price" id="price">
       <h2 class="price__title title title--third">Абонементы</h2>
-      <ol class="price__tabs price-tabs" role="tablist">
+      <ol class="price__tabs price-tabs" aria-label="Сортировка абонементов по количеству месяцев.">
         <li class="price-tabs__item">
-          <label class="price-tabs__tab" role="tab" aria-selected="true">
-            <input class="price-tabs__input" type="radio" name="subscription-tab" id="1-month" checked>
+          <label class="price-tabs__tab">
+            <input class="price-tabs__input" type="radio" name="subscription-tab" checked>
             1 месяц
           </label>
         </li>
         <li class="price-tabs__item">
-          <label class="price-tabs__tab" role="tab">
-            <input class="price-tabs__input" type="radio" name="subscription-tab" id="6-month">
+          <label class="price-tabs__tab">
+            <input class="price-tabs__input" type="radio" name="subscription-tab">
             6 месяцев
           </label>
         </li>
         <li class="price-tabs__item">
-          <label class="price-tabs__tab" role="tab">
-            <input class="price-tabs__input" type="radio" name="subscription-tab" id="12-month">
+          <label class="price-tabs__tab">
+            <input class="price-tabs__input" type="radio" name="subscription-tab">
             12 месяцев
           </label>
         </li>
       </ol>
-      <ul class="price__list" role="tabpanel">
+      <ul class="price__list">
         <li class="price__item">
           <article class="price__card subscription-card subscription-card--with-coach">
             <h3 class="subscription-card__title title title--fourth">С тренером</h3>
