@@ -3,43 +3,105 @@
 .title {
   &--first {
     font-family: variables.$font-secondary;
-    font-size: 92px;
-    line-height: 110px;
     font-weight: 800;
-    letter-spacing: 4px;
+    font-size: 62px;
+    line-height: 62px;
+    letter-spacing: 1px;
     text-transform: uppercase;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 72px;
+      line-height: 85px;
+      letter-spacing: 2px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 92px;
+      line-height: 110px;
+      letter-spacing: 4px;
+    }
   }
 
   &--second {
     font-family: variables.$font-secondary;
-    font-size: 82px;
-    line-height: 96px;
+    font-size: 48px;
+    line-height: 54px;
     font-weight: 600;
     text-transform: uppercase;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 48px;
+      line-height: 54px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 82px;
+      line-height: 96px;
+    }
   }
 
   &--third {
     font-family: variables.$font-secondary;
-    font-size: 54px;
-    line-height: 54px;
+    font-size: 32px;
+    line-height: 32px;
     font-weight: 600;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 54px;
+      line-height: 54px;
+    }
   }
 
   &--fourth {
-    font-size: 26px;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 22px;
     font-weight: 700;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 26px;
+      line-height: 26px;
+    }
   }
 
   &--fifth {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 400;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   &--sixth {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 20px;
     font-weight: 400;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
 }
