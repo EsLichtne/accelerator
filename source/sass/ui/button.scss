@@ -3,7 +3,7 @@
 .button {
   display: grid;
   place-content: center;
-  padding: 27px 56px;
+  padding: 22px;
   font-family: variables.$font-primary;
   font-size: 12px;
   line-height: 12px;
@@ -20,6 +20,14 @@
     background-color 0.4s linear,
     outline 0.4s linear,
     opacity 0.4s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 27px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 27px;
+  }
 
   &--light {
     color: variables.$text-secondary;
