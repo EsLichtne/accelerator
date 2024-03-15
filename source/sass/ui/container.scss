@@ -1,6 +1,14 @@
 @use "../global/variables.scss";
 
 .container {
-  width: 1160px;
+  width: 290px;
   margin: 0 auto;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1160px;
+  }
 }
