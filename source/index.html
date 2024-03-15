@@ -21,7 +21,7 @@
           <a class="header__phone title title--fourth" href="tel:+78005555555">8 800 555-55-55</a>
         </div>
       </header>
-      <div class="hero__content">
+      <div class="hero__content container">
         <h1 class="hero__title title title--first">Фитнес центр</h1>
         <p class="hero__capture title title--third">Омск</p>
         <ul class="hero__services">
@@ -30,16 +30,18 @@
           <li class="hero__services-item text text--small">Кардио-зона</li>
         </ul>
         <a class="hero__button button button--light" href="#price">Купить абонемент</a>
-        <picture>
-          <source type="image/webp" media="(min-width: 1366px)"
-            srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x" width="500" height="524">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x" width="324" height="390">
-          <source type="image/jpeg" media="(min-width: 1366px)"
-            srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x" width="500" height="524">
-          <img class="hero__image" src="img/hero-tablet.jpg" srcset="img/hero-tablet@2x.jpg 2x" width="324" height="390"
-            alt="Тренер фитнес-центра в футболке Супермена задумчиво смотрит вдаль.">
-        </picture>
+        <div class="hero__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x" width="500" height="524">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x" width="324" height="390">
+            <source type="image/jpeg" media="(min-width: 1366px)"
+              srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x" width="500" height="524">
+            <img class="hero__image" src="img/hero-tablet.jpg" srcset="img/hero-tablet@2x.jpg 2x" width="324"
+              height="390" alt="Тренер фитнес-центра в футболке Супермена задумчиво смотрит вдаль.">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="about" data-test="about">
