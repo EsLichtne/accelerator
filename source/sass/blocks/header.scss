@@ -1,0 +1,17 @@
+@use "../global/variables.scss";
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  padding: 30px 0;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__phone {
+  color: variables.$text-secondary;
+  text-decoration: none;
+}
