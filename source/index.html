@@ -84,24 +84,15 @@
     </section>
     <section data-test="price" class="price" id="price">
       <h2 class="price__title title title--third">Абонементы</h2>
-      <ol class="price__tabs price-tabs" aria-label="Сортировка абонементов по количеству месяцев.">
+      <ol class="price__tabs price-tabs" role="tablist" aria-label="Сортировка абонементов по количеству месяцев.">
         <li class="price-tabs__item">
-          <label class="price-tabs__tab">
-            <input class="price-tabs__input" type="radio" name="subscription-tab" checked>
-            1 месяц
-          </label>
+          <button role="tab" type="button" aria-selected="true">1 месяц</button>
         </li>
         <li class="price-tabs__item">
-          <label class="price-tabs__tab">
-            <input class="price-tabs__input" type="radio" name="subscription-tab">
-            6 месяцев
-          </label>
+          <button role="tab" type="button">6 месяцев</button>
         </li>
         <li class="price-tabs__item">
-          <label class="price-tabs__tab">
-            <input class="price-tabs__input" type="radio" name="subscription-tab">
-            12 месяцев
-          </label>
+          <button role="tab" type="button">12 месяцев</button>
         </li>
       </ol>
       <ul class="price__list">
