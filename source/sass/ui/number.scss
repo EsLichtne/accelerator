@@ -4,17 +4,47 @@
   font-weight: 700;
 
   &--large {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 64px;
+    line-height: 64px;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 70px;
+      line-height: 70px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 70px;
+      line-height: 70px;
+    }
   }
 
   &--medium {
-    font-size: 60px;
-    line-height: 150%;
+    font-size: 48px;
+    line-height: 72px;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 60px;
+      line-height: 90px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 60px;
+      line-height: 150%;
+    }
   }
 
   &--small {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 24px;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 }
