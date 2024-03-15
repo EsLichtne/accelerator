@@ -42,12 +42,12 @@
       background-color: variables.$background-primary-light;
       outline-color: variables.$text-secondary;
     }
+  }
 
-    &:disabled,
-    &.button--disabled {
-      opacity: 0.5;
-      pointer-events: none;
-    }
+  .button--light:disabled,
+  .button--light.button--disabled {
+    opacity: 0.5;
+    pointer-events: none;
   }
 
   &--dark {
@@ -72,11 +72,11 @@
       background-image: variables.$color-accent-gradient;
       outline-color: transparent;
     }
-
-    &:disabled,
-    &.button--disabled {
-      opacity: 0.3;
-      pointer-events: none;
-    }
   }
+}
+
+.button--dark:disabled,
+.button--dark.button--disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }

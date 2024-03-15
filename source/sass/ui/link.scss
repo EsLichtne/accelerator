@@ -58,10 +58,6 @@
   &--light {
     color: variables.$text-secondary;
 
-    &::after {
-      background-color: variables.$text-secondary;
-    }
-
     &:focus,
     &:focus-visible {
       outline-color: variables.$text-secondary;
@@ -70,19 +66,10 @@
     &:active {
       color: variables.$text-secondary;
     }
-
-    &:disabled,
-    &.link--disabled {
-      opacity: 0.5;
-    }
   }
 
   &--dark {
     color: variables.$text-accent-dark;
-
-    &::after {
-      background-color: variables.$text-accent-dark;
-    }
 
     &:focus,
     &:focus-visible {
@@ -92,10 +79,23 @@
     &:active {
       color: variables.$text-accent-dark;
     }
-
-    &:disabled,
-    &.link--disabled {
-      opacity: 0.3;
-    }
   }
+}
+
+.link--light::after {
+  background-color: variables.$text-secondary;
+}
+
+.link--light:disabled,
+.link--light.link--disabled {
+  opacity: 0.5;
+}
+
+.link--dark::after {
+  background-color: variables.$text-accent-dark;
+}
+
+.link--dark:disabled,
+.link--dark.link--disabled {
+  opacity: 0.3;
 }
