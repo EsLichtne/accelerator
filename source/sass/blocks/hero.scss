@@ -1,0 +1,106 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.hero {
+  text-align: right;
+  color: variables.$text-secondary;
+  background-color: variables.$background-secondary-accent;
+  background-image: variables.$background-accent-gradient;
+}
+
+.hero__content {
+  padding: 48px 0 32px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    padding: 0;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: auto 500px;
+    column-gap: 56px;
+    padding: 30px 72px 120px;
+  }
+}
+
+.hero__content-wrapper {
+  display: grid;
+  grid-template-columns: auto 156px;
+  column-gap: 21px;
+  row-gap: 14px;
+  grid-auto-flow: dense;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: auto 185px;
+    grid-template-rows: repeat(3, min-content);
+    column-gap: 26px;
+    row-gap: 10px;
+    padding: 31px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: auto 270px;
+    column-gap: 0;
+    row-gap: 40px;
+    padding: 52px 0;
+  }
+}
+
+.hero__title {
+  grid-column: 2 / 3;
+  margin: 0;
+}
+
+.hero__capture {
+  order: -1;
+  grid-column: 2 / 3;
+  margin: 0;
+}
+
+.hero__services {
+  @include mixins.list-reset;
+  grid-column: 1 / 2;
+  grid-row: span 2;
+  align-self: end;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-row: span 3;
+    align-self: center;
+  }
+}
+
+.hero__button {
+  grid-column: 1 / -1;
+  margin-top: 34px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    margin-top: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
+}
+
+.hero__image-wrapper {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__image {
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+    width: 324px;
+    height: 390px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 500px;
+    height: 524px;
+  }
+}
