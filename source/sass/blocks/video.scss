@@ -1,0 +1,152 @@
+@use "../global/variables.scss";
+
+.video {
+  position: relative;
+}
+
+.video__link {
+  display: block;
+}
+
+.video__image {
+  display: block;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  background-color: variables.$color-accent;
+  background-image: variables.$color-accent-gradient;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s linear;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 72px;
+    height: 72px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:
+      opacity 0.3s linear,
+      background 0.3s linear,
+      outline 0.3s linear;
+  }
+
+  &::before {
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    outline: 2px solid $background-primary-accent;
+    border-radius: 50%;
+    opacity: 0.2;
+
+    @media (min-width: variables.$desktop-width) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after {
+    width: 12px;
+    height: 12px;
+    mask-image: url("/__spritemap#sprite-play-view");
+    background-color: variables.$color-light;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media (min-width: variables.$desktop-width) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &:hover {
+    background-color: variables.$color-light;
+    background-image: none;
+
+    &::before,
+    &::after {
+      opacity: 0.6;
+    }
+
+    &::before {
+      outline: 2px solid variables.$text-primary;
+    }
+
+    &::after {
+      background-color: variables.$text-primary;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: #c8c9cc;
+    background-image: none;
+
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+
+    &::before {
+      outline: 2px solid variables.$text-primary;
+    }
+
+    &::after {
+      background-color: variables.$text-primary;
+    }
+  }
+
+  &:active {
+    width: 42px;
+    height: 42px;
+    background-color: variables.$color-light;
+    background-image: none;
+
+    @media (min-width: variables.$desktop-width) {
+      width: 58px;
+      height: 58px;
+    }
+
+    &::before {
+      outline: 2px solid variables.$text-primary;
+    }
+
+    &::after {
+      background-color: variables.$text-primary;
+    }
+  }
+
+  &:disabled {
+    background-color: variables.$color-light;
+    background-image: none;
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      opacity: 0.4;
+    }
+
+    &::before {
+      outline: 2px solid variables.$text-primary;
+    }
+
+    &::after {
+      background-color: variables.$text-primary;
+    }
+  }
+}
