@@ -3,7 +3,7 @@
 .button {
   display: grid;
   place-content: center;
-  padding: 22px;
+  padding: 24px;
   font-family: variables.$font-primary;
   font-size: 12px;
   line-height: 12px;
@@ -22,7 +22,7 @@
     opacity 0.4s linear;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 27px;
+    padding: 22px;
   }
 
   @media (min-width: variables.$desktop-width) {
