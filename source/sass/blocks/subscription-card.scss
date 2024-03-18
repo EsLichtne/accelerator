@@ -1,0 +1,93 @@
+@use "../global/variables.scss";
+
+.subscription-card {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  padding: 43px 35px;
+  background-color: variables.$background-primary-light;
+  border: 7px solid transparent;
+
+  @media (min-width: variables.$tablet-width) {
+    justify-content: stretch;
+    gap: 22px;
+    padding: 58px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    justify-items: center;
+    gap: 18px;
+    padding: 58px 71px;
+  }
+}
+
+.subscription-card:has(.subscription-card__button:is(:hover, :focus, :focus-visible)) {
+  border-image: variables.$text-accent-gradient 7;
+}
+
+.subscription-card__title {
+  margin: 0;
+}
+
+.subscription-card__capture {
+  margin: 0;
+}
+
+.subscription-card__price {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 69px 17px 9px;
+  color: variables.$text-accent;
+  z-index: 3;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 14px;
+    padding: 60px 18px 0;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 33px;
+    background-image: url("/__spritemap#sprite-rubble-view");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 30px;
+      height: 42px;
+    }
+  }
+}
+
+.subscription-card__shadow {
+  position: absolute;
+  top: 0;
+  font-size: 80px;
+  line-height: 150px;
+  color: rgba(232, 232, 232, 0.5);
+  z-index: -1;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 100px;
+    line-height: 150px;
+  }
+}
+
+.subscription-card__button {
+  width: 195px;
+  max-width: 100%;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 195px;
+  }
+}

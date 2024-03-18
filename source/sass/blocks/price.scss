@@ -1,0 +1,77 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.price {
+  padding: 40px 0;
+  text-align: center;
+  background-color: variables.$background-secondary-light;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 60px 0;
+    background-image: url("../../img/barbell-discs.webp");
+    background-repeat: no-repeat;
+    background-size: 402px 422px;
+    background-position: right -78px bottom -34px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 100px 0;
+    background-position: right -167px bottom -45px;
+  }
+}
+
+.price__wrapper {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 35px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 20px;
+  }
+}
+
+.price__title {
+  margin: 0;
+}
+
+.price__tabs {
+  width: fit-content;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.price__list {
+  @include mixins.list-reset;
+  display: grid;
+  gap: 35px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.price__card {
+  width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 380px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 360px;
+  }
+}
