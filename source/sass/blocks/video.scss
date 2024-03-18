@@ -74,63 +74,6 @@
     }
   }
 
-  &:hover {
-    background-color: variables.$color-light;
-    background-image: none;
-
-    &::before,
-    &::after {
-      opacity: 0.6;
-    }
-
-    &::before {
-      outline: 2px solid variables.$text-primary;
-    }
-
-    &::after {
-      background-color: variables.$text-primary;
-    }
-  }
-
-  &:focus,
-  &:focus-visible {
-    background-color: #c8c9cc;
-    background-image: none;
-
-    &::before,
-    &::after {
-      opacity: 1;
-    }
-
-    &::before {
-      outline: 2px solid variables.$text-primary;
-    }
-
-    &::after {
-      background-color: variables.$text-primary;
-    }
-  }
-
-  &:active {
-    width: 42px;
-    height: 42px;
-    background-color: variables.$color-light;
-    background-image: none;
-
-    @media (min-width: variables.$desktop-width) {
-      width: 58px;
-      height: 58px;
-    }
-
-    &::before {
-      outline: 2px solid variables.$text-primary;
-    }
-
-    &::after {
-      background-color: variables.$text-primary;
-    }
-  }
-
   &:disabled {
     background-color: variables.$color-light;
     background-image: none;
@@ -148,5 +91,66 @@
     &::after {
       background-color: variables.$text-primary;
     }
+  }
+}
+
+.video__link:hover + .video__button,
+.video__button:hover {
+  background-color: variables.$color-light;
+  background-image: none;
+
+  &::before,
+  &::after {
+    opacity: 0.6;
+  }
+
+  &::before {
+    outline: 2px solid variables.$text-primary;
+  }
+
+  &::after {
+    background-color: variables.$text-primary;
+  }
+}
+
+.video__link:focus + .video__button,
+.video__link:focus-visible + .video__button,
+.video__button:focus,
+.video__button:focus-visible {
+  background-color: #c8c9cc;
+  background-image: none;
+
+  &::before,
+  &::after {
+    opacity: 1;
+  }
+
+  &::before {
+    outline: 2px solid variables.$text-primary;
+  }
+
+  &::after {
+    background-color: variables.$text-primary;
+  }
+}
+
+.video__link:active + .video__button,
+.video__button:active {
+  width: 42px;
+  height: 42px;
+  background-color: variables.$color-light;
+  background-image: none;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 58px;
+    height: 58px;
+  }
+
+  &::before {
+    outline: 2px solid variables.$text-primary;
+  }
+
+  &::after {
+    background-color: variables.$text-primary;
   }
 }
