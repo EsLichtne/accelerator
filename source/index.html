@@ -106,50 +106,52 @@
             <button class="inline-tabs__tab" role="tab" type="button" aria-selected="true">1 месяц</button>
           </li>
           <li class="inline-tabs__item">
-            <button class="inline-tabs__tab" role="tab" type="button">6 месяцев</button>
+            <button class="inline-tabs__tab" role="tab" type="button" aria-selected="false">6 месяцев</button>
           </li>
           <li class="inline-tabs__item">
-            <button class="inline-tabs__tab" role="tab" type="button">12 месяцев</button>
+            <button class="inline-tabs__tab" role="tab" type="button" aria-selected="false">12 месяцев</button>
           </li>
         </ol>
-        <ul class="price__list">
-          <li class="price__item">
-            <article class="price__card subscription-card subscription-card--with-coach">
-              <h3 class="subscription-card__title title title--fourth">С тренером</h3>
-              <p class="subscription-card__capture text text--medium">12 занятий</p>
-              <p class="subscription-card__price number number--medium">
-                <span class="subscription-card__shadow" aria-hidden="true">5000</span>
-                <span class="visually-hidden">Стоимость (рублей):</span>
-                5000
-              </p>
-              <a class="subscription-card__button button button--dark" href="#">Купить абонемент</a>
-            </article>
-          </li>
-          <li class="price__item">
-            <article class="price__card subscription-card subscription-card--daytime">
-              <h3 class="subscription-card__title title title--fourth">Дневной</h3>
-              <p class="subscription-card__capture text text--medium">с 8:00 до 17:00</p>
-              <p class="subscription-card__price number number--medium">
-                <span class="subscription-card__shadow" aria-hidden="true">1700</span>
-                <span class="visually-hidden">Стоимость (рублей):</span>
-                1700
-              </p>
-              <a class="subscription-card__button button button--dark" href="#">Купить абонемент</a>
-            </article>
-          </li>
-          <li class="price__item">
-            <article class="price__card subscription-card subscription-card--full-day">
-              <h3 class="subscription-card__title title title--fourth">Полный день</h3>
-              <p class="subscription-card__capture text text--medium">с 8:00 до 22:00</p>
-              <p class="subscription-card__price number number--medium">
-                <span class="subscription-card__shadow" aria-hidden="true">2700</span>
-                <span class="visually-hidden">Стоимость (рублей):</span>
-                2700
-              </p>
-              <a class="subscription-card__button button button--dark" href="#">Купить абонемент</a>
-            </article>
-          </li>
-        </ul>
+        <div role="tabpanel">
+          <ul class="price__list">
+            <li class="price__item">
+              <article class="price__card subscription-card subscription-card--with-coach">
+                <h3 class="subscription-card__title title title--fourth">С тренером</h3>
+                <p class="subscription-card__capture text text--medium">12 занятий</p>
+                <p class="subscription-card__price number number--medium">
+                  <span class="subscription-card__shadow" aria-hidden="true">5000</span>
+                  <span class="visually-hidden">Стоимость (рублей):</span>
+                  5000
+                </p>
+                <a class="subscription-card__button button button--dark" href="#">Купить абонемент</a>
+              </article>
+            </li>
+            <li class="price__item">
+              <article class="price__card subscription-card subscription-card--daytime">
+                <h3 class="subscription-card__title title title--fourth">Дневной</h3>
+                <p class="subscription-card__capture text text--medium">с 8:00 до 17:00</p>
+                <p class="subscription-card__price number number--medium">
+                  <span class="subscription-card__shadow" aria-hidden="true">1700</span>
+                  <span class="visually-hidden">Стоимость (рублей):</span>
+                  1700
+                </p>
+                <a class="subscription-card__button button button--dark" href="#">Купить абонемент</a>
+              </article>
+            </li>
+            <li class="price__item">
+              <article class="price__card subscription-card subscription-card--full-day">
+                <h3 class="subscription-card__title title title--fourth">Полный день</h3>
+                <p class="subscription-card__capture text text--medium">с 8:00 до 22:00</p>
+                <p class="subscription-card__price number number--medium">
+                  <span class="subscription-card__shadow" aria-hidden="true">2700</span>
+                  <span class="visually-hidden">Стоимость (рублей):</span>
+                  2700
+                </p>
+                <a class="subscription-card__button button button--dark" href="#">Купить абонемент</a>
+              </article>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="games">
