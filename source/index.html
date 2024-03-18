@@ -725,48 +725,51 @@
         </button>
       </div>
     </section>
-    <section class="form" data-test="form">
-      <h2 class="form__title title title--third">Бесплатное занятие</h2>
-      <form class="form__bid proposal" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="name">Укажите имя.</label>
-        <div class="proposal__field-wrapper field">
-          <div class="field__input-wrapper">
-            <input class="field__input" type="text" id="name" name="name" placeholder="Имя" pattern="\D+" required>
+    <div class="container" data-test="form">
+      <section class="form">
+        <h2 class="form__title title title--third">Бесплатное занятие</h2>
+        <form class="form__bid proposal" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="name">Укажите имя.</label>
+          <div class="proposal__field-wrapper field">
+            <div class="field__input-wrapper">
+              <input class="field__input" type="text" id="name" name="name" placeholder="Имя" pattern="\D+" required>
+            </div>
+            <p class="field__error">Текст ошибки</p>
           </div>
-          <p class="field__error">Текст ошибки</p>
-        </div>
-        <label class="visually-hidden" for="phone">Укажите телефон.</label>
-        <div class="proposal__field-wrapper field">
-          <div class="field__input-wrapper">
-            <input class="field__input" type="tel" id="phone" name="phone" placeholder="Телефон"
-              pattern="[^a-zA-Zа-яА-ЯёЁ]" required>
+          <label class="visually-hidden" for="phone">Укажите телефон.</label>
+          <div class="proposal__field-wrapper field">
+            <div class="field__input-wrapper">
+              <input class="field__input" type="tel" id="phone" name="phone" placeholder="Телефон"
+                pattern="[^a-zA-Zа-яА-ЯёЁ]" required>
+            </div>
+            <p class="field__error"></p>
           </div>
-          <p class="field__error"></p>
-        </div>
-        <button class="proposal__button button button--light" type="submit">Отправить</button>
-      </form>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__title title title--third">Контакты</h2>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <h3 class="contacts__subtitle title title--fifth">Адрес:</h3>
-          <address class="contacts__text text text--small">г. Омск, ул. 60 лет Октября, 7</address>
-        </li>
-        <li class="contacts__item">
-          <h3 class="contacts__subtitle title title--fifth">График работы:</h3>
-          <p class="contacts__text text text--small">Пн-Вс: с 8:00 до 22:00</p>
-        </li>
-        <li class="contacts__item">
-          <h3 class="contacts__subtitle title title--fifth">Телефон:</h3>
-          <a class="contacts__text text text--small contacts__link" href="tel:+78005555555">8 800 555-55-55</a>
-        </li>
-        <li class="contacts__item">
-          <h3 class="contacts__subtitle title title--fifth">Email:</h3>
-          <a class="contacts__text text text--small contacts__link" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-        </li>
-      </ul>
-    </section>
+          <button class="proposal__button button button--light" type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title title title--third">Контакты</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__subtitle title title--fifth">Адрес:</h3>
+            <address class="contacts__text text text--small">г. Омск, ул. 60 лет Октября, 7</address>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__subtitle title title--fifth">График работы:</h3>
+            <p class="contacts__text text text--small">Пн-Вс: с 8:00 до 22:00</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__subtitle title title--fifth">Телефон:</h3>
+            <a class="contacts__text text text--small contacts__link" href="tel:+78005555555">8 800 555-55-55</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__subtitle title title--fifth">Email:</h3>
+            <a class="contacts__text text text--small contacts__link"
+              href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
   <footer class="footer" data-test="footer">
     <img class="footer__logo logo-image" src="img/logo.svg" width="130" height="26" alt="Логотип компании.">
