@@ -1,0 +1,73 @@
+@use "../global/variables.scss";
+
+.timetable {
+  display: grid;
+  gap: 5px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 10px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 20px;
+  }
+}
+
+.timetable__wrapper {
+  display: grid;
+  gap: 5px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 4px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 12px;
+  }
+}
+
+.timetable__title {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: variables.$text-secondary;
+
+    @media (min-width: variables.$tablet-width) {
+      bottom: -2;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      bottom: -6px;
+    }
+  }
+}
+
+.timetable__description {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 5px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
