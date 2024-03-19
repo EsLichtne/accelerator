@@ -1,0 +1,86 @@
+@use "../global/variables.scss";
+
+.invite {
+  display: grid;
+  padding: 25px 15px;
+  color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 300px auto;
+    padding: 60px 45px 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 500px auto;
+    padding: 100px 103px;
+  }
+}
+
+.invite__content {
+  display: grid;
+  grid-template-columns: 117px auto;
+  gap: 16px;
+  padding: 40px;
+  background-color: variables.$background-primary-accent;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 168px auto;
+    row-gap: 30px;
+    padding: 60px 80px 98px;
+  }
+}
+
+.invite__title {
+  margin: 0;
+}
+
+.invite__timetable {
+  justify-self: end;
+  width: fit-content;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    justify-self: start;
+    width: 100%;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    justify-self: end;
+    width: fit-content;
+  }
+}
+
+.invite__description {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.invite__button {
+  grid-column: 1 / -1;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 27px;
+  }
+}
+
+.invite__image {
+  display: block;
+  width: 290px;
+  height: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 378px;
+    height: 348px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 660px;
+    height: 500px;
+  }
+}
