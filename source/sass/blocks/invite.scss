@@ -2,6 +2,8 @@
 
 .invite {
   display: grid;
+  grid-template-columns: 290px;
+  justify-content: center;
   padding: 25px 15px;
   color: variables.$text-secondary;
 
