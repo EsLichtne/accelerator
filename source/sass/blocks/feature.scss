@@ -1,0 +1,152 @@
+@use "../global/variables.scss";
+
+.feature {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: min-content 1fr;
+    justify-items: start;
+    grid-auto-flow: dense;
+    column-gap: 15px;
+    row-gap: 12px;
+    text-align: left;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    column-gap: 43px;
+    row-gap: 8px;
+  }
+}
+
+.feature h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: variables.$text-primary;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.feature p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: variables.$text-primary;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: 210px;
+  }
+}
+
+.feature p:has(span) {
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  text-transform: lowercase;
+  color: transparent;
+  background-image: linear-gradient(130deg, #d10a42, #0041ca 45%);
+  background-clip: text;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.feature p > span {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2e35ac;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.feature--special {
+  gap: 20px;
+  padding: 30px 75px 40px;
+  background-color: variables.$background-secondary-accent;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: auto;
+    justify-items: center;
+    gap: 25px;
+    padding: 35px;
+    text-align: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 30px;
+    padding: 58px 40px;
+  }
+}
+
+.feature--special h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 2;
+    gap: 25px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 10px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.feature--special h3 > span {
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.feature--special p {
+  color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 2;
+  }
+}
