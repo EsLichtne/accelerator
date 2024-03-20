@@ -30,6 +30,7 @@
 
 .offers__list {
   @include mixins.list-reset;
+
   display: grid;
   grid-auto-flow: dense;
   gap: 30px;

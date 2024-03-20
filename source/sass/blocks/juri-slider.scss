@@ -15,6 +15,7 @@
 
 .juri-slider__list {
   @include mixins.list-reset;
+
   display: flex;
   gap: 20px;
   overflow: hidden;
@@ -95,6 +96,4 @@
       pointer-events: none;
     }
   }
-
-  @media (min-width: variables.$desktop-width) {}
 }

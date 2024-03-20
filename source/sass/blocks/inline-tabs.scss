@@ -3,6 +3,7 @@
 
 .inline-tabs {
   @include mixins.list-reset;
+
   position: relative;
   display: flex;
   justify-content: space-around;
