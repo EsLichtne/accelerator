@@ -3,14 +3,46 @@
 .juri {
   padding: 40px 46px;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 30px 27px 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 100px 29px;
+    text-align: left;
+  }
+}
+
+.juri__container {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .juri__title {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 46px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 74px;
+  }
 }
 
 .juri__slider {
   width: 227px;
   margin: 0 auto;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 714px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1308px;
+  }
 }

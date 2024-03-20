@@ -1,11 +1,28 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
+.juri-slider {
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 21px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 18px;
+  }
+}
+
 .juri-slider__list {
   @include mixins.list-reset;
   display: flex;
   gap: 20px;
   overflow: hidden;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    gap: 40px;
+  }
 }
 
 .juri-slider__slide {
@@ -14,4 +31,70 @@
 
 .juri-slider__button {
   display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-row: 1 / -1;
+    align-self: center;
+    display: grid;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    padding-inline-start: 18px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:
+      background 0.3s linear,
+      border 0.3s linear,
+      opacity 0.3s linear;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 32px;
+      mask-image: url("/__spritemap#sprite-arrow-view");
+      background-color: variables.$color-dark-primary;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      transition: background 0.3s linear;
+    }
+
+    &--previous {
+      grid-column: 1 / 2;
+    }
+
+    &--next {
+      grid-column: 3 / 4;
+      justify-self: end;
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      border-color: variables.$color-dark-primary;
+    }
+
+    &:focus,
+    &:focus-visible {
+      background-color: #e8e8e8;
+      border-color: variables.$color-dark-primary;
+    }
+
+    &:active {
+      background-color: variables.$color-dark-primary;
+
+      &::before {
+        background-color: variables.$color-light;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {}
 }

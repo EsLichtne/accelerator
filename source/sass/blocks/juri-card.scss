@@ -29,6 +29,13 @@
   display: block;
   width: 227px;
   height: 280px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 260px;
+    height: 300px;
+  }
+
+  @media (min-width: variables.$desktop-width) {}
 }
 
 .juri-card__caption {
@@ -41,11 +48,17 @@
   grid-area: list;
   align-self: start;
   gap: 12px;
-  width: 160px;
+  max-width: 160px;
   margin: 0;
   padding: 0;
   padding-bottom: 50px;
   text-align: left;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: variables.$desktop-width) {}
 }
 
 .juri-card__item {
@@ -81,6 +94,12 @@
     height: 100%;
     background-color: rgba(16, 38, 84, 0.9);
   }
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 260px;
+  }
+
+  @media (min-width: variables.$desktop-width) {}
 }
 
 .juri-card:hover .juri-card__title,
@@ -88,6 +107,12 @@
 .juri-card:focus-visible .juri-card__title {
   padding-bottom: 0;
   padding-top: 56px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 61px;
+  }
+
+  @media (min-width: variables.$desktop-width) {}
 }
 
 .juri-card:hover .juri-card__caption,
