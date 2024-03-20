@@ -1,13 +1,10 @@
 @use "../global/variables.scss";
 @use "../global/mixins.scss";
 
-.juri-slider {
-  width: 227px;
-}
-
 .juri-slider__list {
   @include mixins.list-reset;
   display: flex;
+  gap: 20px;
   overflow: hidden;
 }
 
