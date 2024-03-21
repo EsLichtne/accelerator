@@ -1,0 +1,45 @@
+@use "../global/variables.scss";
+
+.faq {
+  padding: 70px 0;
+  text-align: center;
+  background-color: variables.$background-secondary-light;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 100px;
+    text-align: left;
+  }
+}
+
+.faq__wrapper {
+  display: grid;
+  gap: 35px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 45px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 260px auto;
+    column-gap: 40px;
+    row-gap: 50px;
+  }
+}
+
+.faq__title {
+  margin: 0;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.faq__tabs {
+  @media (min-width: variables.$desktop-width) {
+    align-self: start;
+  }
+}
