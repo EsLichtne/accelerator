@@ -1,0 +1,49 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.reviews-slider {
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-auto-flow: dense;
+    gap: 51px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 18px;
+  }
+}
+
+.reviews-slider__list {
+  @include mixins.list-reset;
+
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.reviews-slider__slide {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.reviews-slider__button {
+  display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    align-self: center;
+    display: grid;
+
+    &--previous {
+      grid-column: 1 / 2;
+    }
+
+    &--next {
+      grid-column: 3 / 4;
+    }
+  }
+}

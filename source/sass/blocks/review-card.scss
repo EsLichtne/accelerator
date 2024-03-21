@@ -1,0 +1,77 @@
+@use "../global/variables.scss";
+
+.review-card {
+  display: grid;
+  justify-items: center;
+  padding: 30px 25px;
+  color: variables.$text-secondary;
+  background-color: variables.$background-secondary-accent;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 80px 1fr;
+    justify-items: start;
+    column-gap: 40px;
+    row-gap: 20px;
+    padding: 40px 30px;
+    text-align: left;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    column-gap: 30px;
+    padding: 60px;
+  }
+}
+
+.review-card div:has(img) {
+  order: -1;
+  width: 68px;
+  height: 68px;
+  margin-bottom: 10px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
+}
+
+.review-card img {
+  display: block;
+  width: 68px;
+  height: 68px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.review-card h3 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    margin: 0;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.review-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
