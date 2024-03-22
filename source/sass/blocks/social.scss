@@ -1,0 +1,82 @@
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
+
+.social__list {
+  @include mixins.list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 15px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 10px;
+  }
+}
+
+.social__link {
+  display: grid;
+  place-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: variables.$background-primary-light;
+  border-radius: 50%;
+  transition: background 0.3s linear;
+
+  &--vk::after {
+    mask-image: url("/__spritemap#sprite-vk-view");
+  }
+
+  &--ok::after {
+    mask-image: url("/__spritemap#sprite-ok-view");
+  }
+
+  &--reddit::after {
+    mask-image: url("/__spritemap#sprite-reddit-view");
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-color: variables.$backgound-secondary-dark;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition: background 0.3s linear;
+  }
+
+  &:hover {
+    background-color: #74819c;
+
+    &::after {
+      background-color: variables.$background-primary-light;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: variables.$text-accent;
+
+    &::after {
+      background-color: variables.$background-primary-light;
+    }
+  }
+
+  &:active {
+    background-color: variables.$backgound-primary-dark;
+
+    &::after {
+      background-color: variables.$background-primary-light;
+    }
+  }
+
+  &--disabled {
+    background-color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+  }
+}
