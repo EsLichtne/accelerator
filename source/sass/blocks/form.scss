@@ -1,0 +1,40 @@
+@use "../global/variables.scss";
+
+.form {
+  padding: 70px 0;
+  color: variables.$text-secondary;
+  background-color: variables.$backgound-primary-dark;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    text-align: left;
+  }
+}
+
+.form__wrapper {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 440px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 477px;
+  }
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 27px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 27px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
