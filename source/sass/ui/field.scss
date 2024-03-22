@@ -1,60 +1,48 @@
 @use "../global/variables.scss";
 
-.field__input-wrapper {
-  padding: 4px 0 3px;
-  transition: outline 0.3s linear;
-}
-
-.field__input-wrapper:has(.field__input:focus),
-.field__input-wrapper:has(.field__input:focus-visible) {
-  outline: 1px solid variables.$form-primary;
-}
-
-.field__input-wrapper:has(.field__input:user-invalid),
-.field__input-wrapper:has(.field__input--error) {
-  outline: none;
-}
-
 .field__input {
   width: 100%;
-  padding: 0 4px 3px;
-  font-family: variables.$font-primary;
+  padding: 8px 4px 4px 0;
+  font-family: inherit;
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;
   color: variables.$text-secondary;
   background-color: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid transparent;
+  border-bottom: 1px solid #74819c;
   transition:
     color 0.3s linear,
     border 0.3s linear,
     outline 0.3s linear;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.4);
   }
 
   &:hover {
-    border-color: variables.$form-primary;
+    color: variables.$text-secondary;
+    border-bottom: 1px solid variables.$color-light;
   }
 
   &:focus,
   &:focus-visible {
-    border-color: transparent;
+    color: variables.$text-secondary;
+    border: 1px solid variables.$color-light;
+  }
+
+  &:user-invalid,
+  &--error {
+    color: variables.$text-secondary;
+    border: 1px solid transparent;
+    border-bottom: 1px solid variables.$form-error;
     outline: none;
   }
 
   &:disabled {
     color: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     pointer-events: none;
-  }
-
-  &:user-invalid,
-  &--error {
-    border-color: variables.$form-error;
   }
 }
 
