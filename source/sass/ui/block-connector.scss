@@ -1,0 +1,8 @@
+@use "../global/variables.scss";
+
+.block-connector {
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
