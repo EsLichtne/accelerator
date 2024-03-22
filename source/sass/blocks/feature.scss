@@ -2,6 +2,28 @@
 
 .feature {
   display: grid;
+}
+
+.feature:nth-child(9n+1),
+.feature:nth-child(9n+2),
+.feature:nth-child(9n+7) {
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(209, 10, 66, 0.2);
+    }
+  }
+}
+
+.feature__card {
+  display: grid;
   justify-items: center;
   gap: 12px;
 
@@ -20,7 +42,7 @@
   }
 }
 
-.feature h3 {
+.feature__card h3 {
   margin: 0;
   font-size: 18px;
   line-height: 20px;
@@ -39,7 +61,7 @@
   }
 }
 
-.feature p {
+.feature__card p {
   margin: 0;
   font-size: 14px;
   line-height: 22px;
@@ -57,7 +79,7 @@
   }
 }
 
-.feature p:has(span) {
+.feature__card p:has(span) {
   order: -1;
   display: flex;
   flex-direction: column;
@@ -78,7 +100,7 @@
   }
 }
 
-.feature p > span {
+.feature__card p > span {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -90,8 +112,10 @@
   }
 }
 
-.feature--special {
+.feature:nth-child(3n) .feature__card {
   gap: 20px;
+  width: calc(100% + 30px);
+  margin: 5px 0 5px -15px;
   padding: 30px 75px 40px;
   background-color: variables.$background-secondary-accent;
 
@@ -99,23 +123,56 @@
     grid-template-columns: auto;
     justify-items: center;
     gap: 25px;
+    width: 320px;
+    margin: 0;
     padding: 35px;
     text-align: center;
   }
 
   @media (min-width: variables.$desktop-width) {
     gap: 30px;
+    width: 360px;
     padding: 58px 40px;
   }
 }
 
-.feature--special h3 {
+.feature:nth-child(3n) h3 {
+  color: variables.$text-secondary;
+
+  &:empty {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: auto;
+  }
+}
+
+.feature:nth-child(3n) p:has(span) {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 2;
+    gap: 25px;
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 10px;
+  }
+}
+
+.feature:nth-child(3n) p > span {
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
+  text-transform: initial;
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet-width) {
@@ -132,18 +189,7 @@
   }
 }
 
-.feature--special h3 > span {
-  font-size: 64px;
-  line-height: 64px;
-  font-weight: 700;
-
-  @media (min-width: variables.$tablet-width) {
-    font-size: 70px;
-    line-height: 70px;
-  }
-}
-
-.feature--special p {
+.feature:nth-child(3n) p {
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet-width) {
