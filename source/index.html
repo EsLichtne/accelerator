@@ -797,25 +797,22 @@
     <div data-test="form">
       <section class="form">
         <div class="form__wrapper">
-        <h2 class="form__title title title--third">Бесплатное занятие</h2>
-        <form class="form__bid proposal" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="name">Укажите имя.</label>
-          <div class="proposal__field-wrapper field">
-            <div class="field__input-wrapper">
+          <h2 class="form__title title title--third">Бесплатное занятие</h2>
+          <form class="form__bid proposal" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="name">Укажите имя.</label>
+            <div class="proposal__field-wrapper field">
               <input class="field__input" type="text" id="name" name="name" placeholder="Имя" pattern="\D+" required>
+              <p class="field__error"></p>
             </div>
-            <p class="field__error">Текст ошибки</p>
-          </div>
-          <label class="visually-hidden" for="phone">Укажите телефон.</label>
-          <div class="proposal__field-wrapper field">
-            <div class="field__input-wrapper">
+            <label class="visually-hidden" for="phone">Укажите телефон.</label>
+            <div class="proposal__field-wrapper field">
               <input class="field__input" type="tel" id="phone" name="phone" placeholder="Телефон"
                 pattern="[^a-zA-Zа-яА-ЯёЁ]" required>
+              <p class="field__error"></p>
             </div>
-            <p class="field__error"></p>
-          </div>
-          <button class="proposal__button button button--light" type="submit">Отправить</button>
-        </form>
+            <button class="proposal__button button button--light" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="contacts__title title title--third">Контакты</h2>
