@@ -69,3 +69,11 @@
     }
   }
 }
+
+.offers__item:nth-child(6n) {
+  grid-column: 1 / 2;
+}
+
+.offers__item:nth-child(6n+4) {
+  grid-column: 2 / 3;
+}

@@ -47,6 +47,7 @@
 
 .footer__social {
   @media (min-width: variables.$tablet-width) {
+    max-width: 145px;
     margin-top: 5px;
   }
 }
