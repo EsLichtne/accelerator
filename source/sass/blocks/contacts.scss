@@ -45,6 +45,7 @@
 
   position: relative;
   display: grid;
+  grid-auto-flow: dense;
   gap: 28px;
 
   &::before {
@@ -70,6 +71,11 @@
   @media (min-width: variables.$desktop-width) {
     column-gap: 120px;
   }
+}
+
+.contacts__item:nth-child(4n-3),
+.contacts__item:nth-child(4n-2) {
+  grid-column: 1 / 2;
 }
 
 .contacts__subtitle {
