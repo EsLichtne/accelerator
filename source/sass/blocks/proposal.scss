@@ -1,0 +1,22 @@
+@use "../global/variables.scss";
+
+.proposal {
+  display: grid;
+  gap: 27px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 35px;
+  }
+}
+
+.proposal__button {
+  margin-top: 9px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 27px;
+  }
+}
