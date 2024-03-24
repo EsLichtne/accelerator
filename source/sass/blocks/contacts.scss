@@ -11,6 +11,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    display: grid;
+    justify-content: start;
     padding: 60px 0 71px;
     text-align: left;
   }
@@ -25,7 +27,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 477px;
+    width: 683px;
+    padding: 0 103px;
   }
 }
 

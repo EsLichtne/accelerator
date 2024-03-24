@@ -11,11 +11,12 @@
     background-image: url("../../img/barbell-discs.webp");
     background-repeat: no-repeat;
     background-size: 402px 422px;
-    background-position: right -78px bottom -34px;
+    background-position: right -78px bottom -35px;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding: 100px 0;
+    background-size: 470px 493px;
     background-position: right -167px bottom -45px;
   }
 }

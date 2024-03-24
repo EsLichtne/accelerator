@@ -29,10 +29,19 @@
 }
 
 .header__phone {
+  min-width: 149px;
   color: variables.$text-secondary;
   text-decoration: none;
   transition:
     color 0.3s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    min-width: 162px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 176px;
+  }
 
   &:hover {
     color: rgba(28, 51, 116, 0.5);

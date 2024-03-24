@@ -12,6 +12,7 @@
 
   @media (min-width: variables.$tablet-width) {
     column-gap: 8px;
+    margin: 0;
   }
 
   @media (min-width: variables.$desktop-width) {

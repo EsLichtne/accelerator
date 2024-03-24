@@ -23,7 +23,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: 0;
     width: 100%;
     height: 1px;
     background-color: rgba(120, 120, 120, 0.2);
@@ -36,7 +36,7 @@
 
 .inline-tabs__tab {
   padding: 0;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
   font-family: variables.$font-primary;
   font-size: 16px;
   line-height: 16px;
@@ -46,7 +46,7 @@
   border: none;
   text-decoration: underline;
   text-decoration-color: transparent;
-  text-underline-offset: 19px;
+  text-underline-offset: 20px;
   text-decoration-thickness: 1px;
   cursor: pointer;
   transition:
@@ -54,7 +54,7 @@
     opacity 0.3s linear;
 
   @media (min-width: variables.$tablet-width) {
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     font-size: 18px;
     line-height: 18px;
     text-underline-offset: 11px;

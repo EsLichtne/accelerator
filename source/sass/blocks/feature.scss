@@ -29,6 +29,8 @@
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    justify-content: space-between;
     justify-items: start;
     grid-auto-flow: dense;
     column-gap: 15px;
@@ -37,6 +39,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    grid-template-columns: min-content 210px;
     column-gap: 43px;
     row-gap: 8px;
   }
@@ -72,10 +75,6 @@
     grid-column: 2 / 3;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    max-width: 210px;
   }
 }
 
