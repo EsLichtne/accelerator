@@ -4,7 +4,6 @@
 .inline-tabs {
   @include mixins.list-reset;
 
-  position: relative;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -44,16 +43,20 @@
   color: rgba(16, 38, 84, 0.5);
   background-color: transparent;
   border: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 1px;
   cursor: pointer;
   transition:
     color 0.3s linear,
-    border 0.3s linear,
     opacity 0.3s linear;
 
   @media (min-width: variables.$tablet-width) {
     padding-bottom: 8px;
     font-size: 18px;
     line-height: 18px;
+    text-decoration-thickness: 2px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -63,39 +66,23 @@
 
   &[aria-selected="true"] {
     color: variables.$text-primary;
-    border-bottom: 1px solid variables.$color-accent;
-
-    @media (min-width: variables.$tablet-width) {
-      border-width: 2px;
-    }
+    text-decoration-color: variables.$color-accent;
   }
 
   &:hover {
     color: rgba(16, 38, 84, 0.7);
-    border-bottom: 1px solid #787878;
-
-    @media (min-width: variables.$tablet-width) {
-      border-width: 2px;
-    }
+    text-decoration-color: #787878;
   }
 
   &:focus,
   &:focus-visible {
     color: variables.$color-dark-primary;
-    border-bottom: 1px solid variables.$color-dark-primary;
-
-    @media (min-width: variables.$tablet-width) {
-      border-width: 2px;
-    }
+    text-decoration-color: variables.$color-dark-primary;
   }
 
   &:active {
     color: variables.$color-dark-primary;
-    border-bottom: 1px solid variables.$background-primary-accent;
-
-    @media (min-width: variables.$tablet-width) {
-      border-width: 2px;
-    }
+    text-decoration-color: variables.$background-primary-accent;
   }
 
   &:disabled {
