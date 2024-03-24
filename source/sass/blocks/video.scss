@@ -6,6 +6,10 @@
 
 .video__link {
   display: block;
+
+  &--disabled {
+    pointer-events: none;
+  }
 }
 
 .video__image {
@@ -23,43 +27,27 @@
   background-color: variables.$color-accent;
   background-image: variables.$color-accent-gradient;
   border: none;
+  outline: 2px solid rgba(237, 3, 53, 0.2);
+  outline-offset: 8px;
   border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s linear;
+  transition:
+    transform 0.3s linear,
+    background 0.3s linear,
+    outline 0.3s linear;
 
   @media (min-width: variables.$desktop-width) {
     width: 72px;
     height: 72px;
+    outline-offset: 12px;
   }
 
-  &::before,
   &::after {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition:
-      opacity 0.3s linear,
-      background 0.3s linear,
-      outline 0.3s linear;
-  }
-
-  &::before {
-    width: 72px;
-    height: 72px;
-    background-color: transparent;
-    outline: 2px solid $background-primary-accent;
-    border-radius: 50%;
-    opacity: 0.2;
-
-    @media (min-width: variables.$desktop-width) {
-      width: 100px;
-      height: 100px;
-    }
-  }
-
-  &::after {
     width: 12px;
     height: 12px;
     mask-image: url("/__spritemap#sprite-play-view");
@@ -67,29 +55,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    transition:
+      opacity 0.3s linear,
+      background 0.3s linear;
 
     @media (min-width: variables.$desktop-width) {
       width: 17px;
       height: 17px;
-    }
-  }
-
-  &:disabled {
-    background-color: variables.$color-light;
-    background-image: none;
-    pointer-events: none;
-
-    &::before,
-    &::after {
-      opacity: 0.4;
-    }
-
-    &::before {
-      outline: 2px solid variables.$text-primary;
-    }
-
-    &::after {
-      background-color: variables.$text-primary;
     }
   }
 }
@@ -98,18 +70,11 @@
 .video__button:hover {
   background-color: variables.$color-light;
   background-image: none;
-
-  &::before,
-  &::after {
-    opacity: 0.6;
-  }
-
-  &::before {
-    outline: 2px solid variables.$text-primary;
-  }
+  outline: 2px solid rgba(16, 38, 84, 0.6);
 
   &::after {
     background-color: variables.$text-primary;
+    opacity: 0.6;
   }
 }
 
@@ -119,14 +84,25 @@
 .video__button:focus-visible {
   background-color: #c8c9cc;
   background-image: none;
+  outline: 2px solid variables.$text-primary;
 
-  &::before,
   &::after {
+    background-color: variables.$text-primary;
     opacity: 1;
   }
+}
 
-  &::before {
-    outline: 2px solid variables.$text-primary;
+.video__link:active + .video__button,
+.video__button:active {
+  background-color: variables.$color-light;
+  background-image: none;
+  outline: 2px solid variables.$text-primary;
+  outline-offset: 16px;
+  transform: scale(0.8) translate(-63%, -63%);
+
+  @media (min-width: variables.$desktop-width) {
+    outline-offset: 24px;
+    transform: scale(0.8) translate(-63%, -63%);
   }
 
   &::after {
@@ -134,23 +110,15 @@
   }
 }
 
-.video__link:active + .video__button,
-.video__button:active {
-  width: 42px;
-  height: 42px;
+.video__link--disabled + .video__button,
+.video__button:disabled {
   background-color: variables.$color-light;
   background-image: none;
-
-  @media (min-width: variables.$desktop-width) {
-    width: 58px;
-    height: 58px;
-  }
-
-  &::before {
-    outline: 2px solid variables.$text-primary;
-  }
+  outline: 2px solid rgba(16, 38, 84, 0.4);
+  pointer-events: none;
 
   &::after {
     background-color: variables.$text-primary;
+    opacity: 0.4;
   }
 }
