@@ -50,6 +50,7 @@
   }
 
   &::after {
+    flex-shrink: 0;
     content: "";
     width: 24px;
     height: 33px;
@@ -82,6 +83,7 @@
 .subscription-card__button {
   width: 195px;
   max-width: 100%;
+  z-index: 3;
 
   @media (min-width: variables.$tablet-width) {
     width: 100%;

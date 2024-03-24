@@ -70,10 +70,8 @@
   }
 }
 
-.offers__item:nth-child(6n) {
-  grid-column: 1 / 2;
-}
-
-.offers__item:nth-child(6n+4) {
-  grid-column: 2 / 3;
+.offers__item--special:nth-child(2n) {
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 2 / 3;
+  }
 }

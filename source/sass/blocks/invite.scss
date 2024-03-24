@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 290px;
   justify-content: center;
+  align-items: center;
   padding: 25px 15px;
   color: variables.$text-secondary;
 
@@ -69,6 +70,13 @@
   @media (min-width: variables.$tablet-width) {
     padding: 27px;
   }
+}
+
+.invite__image-wrapper {
+  display: grid;
+  align-items: center;
+  height: 100%;
+  background-color: #010246;
 }
 
 .invite__image {

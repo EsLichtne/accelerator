@@ -50,6 +50,7 @@
 
 .offer__link {
   margin-top: -9px;
+  align-self: end;
 
   @media (min-width: variables.$tablet-width) {
     margin-left: -10px;
