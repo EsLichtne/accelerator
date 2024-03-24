@@ -22,7 +22,7 @@
 }
 
 .subscription-card:has(.subscription-card__button:is(:hover, :focus, :focus-visible)) {
-  border-image: variables.$text-accent-gradient 7;
+  border-image: linear-gradient(150deg, #d10a42, #00359f) 7;
 }
 
 .subscription-card__title {

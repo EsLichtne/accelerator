@@ -48,8 +48,8 @@
 
   &[aria-selected="true"] {
     color: variables.$text-secondary;
-    background-color: variables.$color-accent;
-    background-image: linear-gradient(130deg, #ed0233, #003eb7);
+    background-color: variables.$background-primary-accent;
+    background-image: linear-gradient(130deg, #ed0233 20%, #003eb7);
     box-shadow: none;
   }
 
@@ -71,7 +71,7 @@
   &:active {
     color: variables.$text-secondary;
     background-color: variables.$color-accent;
-    background-image: linear-gradient(130deg, #ed0233, #003eb7);
+    background-image: linear-gradient(130deg, #ed0233 20%, #003eb7);
     box-shadow: none;
   }
 
