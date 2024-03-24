@@ -5,18 +5,43 @@
   position: relative;
   display: grid;
   justify-items: center;
+  grid-auto-flow: dense;
+  grid-template-columns: 227px;
+  grid-template-rows: repeat(2, min-content) 1fr;
+  grid-template-areas:
+    "list"
+    "caption"
+    "title";
+
   gap: 10px;
   color: variables.$text-secondary;
+  background-color: #c1c7d2;
+
+  &::before {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 38, 84, 0.9);
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 260px;
+  }
 }
 
 .juri-card__title {
   grid-area: title;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  align-self: end;
   margin: 0;
+  align-self: end;
+  padding-top: 0;
   padding-bottom: 25px;
   z-index: 1;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 61px;
+  }
 }
 
 .juri-card__image-wrapper {
@@ -37,13 +62,15 @@
 }
 
 .juri-card__caption {
-  display: none;
+  opacity: 0;
   grid-area: caption;
+  z-index: 1;
 }
 
 .juri-card__list {
-  display: none;
+  opacity: 0;
   grid-area: list;
+  display: grid;
   align-self: start;
   gap: 12px;
   max-width: 160px;
@@ -55,6 +82,7 @@
   @media (min-width: variables.$tablet-width) {
     padding-bottom: 61px;
   }
+  z-index: 1;
 }
 
 .juri-card__item {
@@ -75,24 +103,13 @@
 .juri-card:hover,
 .juri-card:focus,
 .juri-card:focus-visible {
-  grid-auto-flow: dense;
-  grid-template-columns: 227px;
-  grid-template-rows: repeat(2, min-content) 1fr;
   grid-template-areas:
     "title"
     "caption"
     "list";
 
   &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(16, 38, 84, 0.9);
-  }
-
-  @media (min-width: variables.$tablet-width) {
-    grid-template-columns: 260px;
+    display: block;
   }
 }
 
@@ -101,22 +118,16 @@
 .juri-card:focus-visible .juri-card__title {
   padding-bottom: 0;
   padding-top: 56px;
-
-  @media (min-width: variables.$tablet-width) {
-    padding-top: 61px;
-  }
 }
 
 .juri-card:hover .juri-card__caption,
 .juri-card:focus .juri-card__caption,
 .juri-card:focus-visible .juri-card__caption {
-  display: block;
-  z-index: 1;
+  opacity: 1;
 }
 
 .juri-card:hover .juri-card__list,
 .juri-card:focus .juri-card__list,
 .juri-card:focus-visible .juri-card__list {
-  display: grid;
-  z-index: 1;
+  opacity: 1;
 }
