@@ -801,12 +801,13 @@
           <form class="form__bid proposal" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="name">Укажите имя.</label>
             <div class="proposal__field-wrapper field">
-              <input class="field__input" type="text" id="name" name="name" placeholder="Имя" pattern="\D+" required>
+              <input class="field__input" type="text" id="name" name="name" placeholder="Имя" inputmode="text"
+                pattern="\D+" required>
               <p class="field__error"></p>
             </div>
             <label class="visually-hidden" for="phone">Укажите телефон.</label>
             <div class="proposal__field-wrapper field">
-              <input class="field__input" type="tel" id="phone" name="phone" placeholder="Телефон"
+              <input class="field__input" type="tel" id="phone" name="phone" placeholder="Телефон" inputmode="tel"
                 pattern="[^a-zA-Zа-яА-ЯёЁ]" required>
               <p class="field__error"></p>
             </div>
