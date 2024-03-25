@@ -13,6 +13,18 @@
   }
 }
 
+.juri-slider__wrapper {
+  width: 227px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 560px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1160px;
+  }
+}
+
 .juri-slider__list {
   @include mixins.list-reset;
 
