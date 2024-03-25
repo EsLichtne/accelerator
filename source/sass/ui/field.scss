@@ -1,5 +1,9 @@
 @use "../global/variables.scss";
 
+.field {
+  position: relative;
+}
+
 .field__input {
   width: 100%;
   padding: 8px 4px 4px 0;
@@ -47,9 +51,11 @@
 }
 
 .field__error {
+  position: absolute;
   margin: 0;
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
+  text-wrap: nowrap;
   color: variables.$form-error;
 }
