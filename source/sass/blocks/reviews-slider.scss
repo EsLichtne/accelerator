@@ -14,20 +14,26 @@
   }
 }
 
-.reviews-slider__list {
-  @include mixins.list-reset;
-
-  display: flex;
-  overflow: hidden;
-  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+.reviews-slider__wrapper {
+  width: 240px;
 
   @media (min-width: variables.$tablet-width) {
+    width: 500px;
     grid-column: 2 / 3;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 560px;
   }
 }
 
+.reviews-slider__list {
+  @include mixins.list-reset;
+
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+}
+
 .reviews-slider__slide {
-  flex-shrink: 0;
   max-width: 100%;
 }
 
