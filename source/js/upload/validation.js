@@ -21,7 +21,7 @@ const setSuccess = (element) => {
 };
 
 const checkNameValid = (name) => {
-  const pattern = /[a-zа-яё]+$/;
+  const pattern = /^[a-zа-яё][a-zа-яё]*$/i;
   return pattern.test(String(name).toLowerCase());
 };
 
