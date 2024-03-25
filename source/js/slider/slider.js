@@ -27,3 +27,16 @@ new Swiper('#juri-slider', {
     }
   }
 });
+
+new Swiper('#reviews-slider', {
+  modules: [Navigation],
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: 40,
+  speed: 700,
+
+  navigation: {
+    nextEl: '#reviews-slider-button-next',
+    prevEl: '#reviews-slider-button-prev',
+  },
+});
