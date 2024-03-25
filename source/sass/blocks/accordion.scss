@@ -133,11 +133,13 @@
 }
 
 .accordion__item h3:has([aria-expanded="true"]) + .accordion__content {
-  display: block;
+  grid-template-rows: 1fr;
 }
 
 .accordion__content {
-  display: none;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .accordion__content p {
@@ -146,6 +148,7 @@
   line-height: 20px;
   font-weight: 300;
   color: variables.$text-primary;
+  overflow: hidden;
 
   @media (min-width: variables.$tablet-width) {
     max-width: 560px;
