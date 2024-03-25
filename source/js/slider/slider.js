@@ -1,14 +1,14 @@
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
 
-new Swiper('.swiper', {
+new Swiper('#juri-slider', {
   modules: [Navigation],
   loop: true,
   speed: 500,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '#juri-slider-button-next',
+    prevEl: '#juri-slider-button-prev',
   },
 
   breakpoints: {
