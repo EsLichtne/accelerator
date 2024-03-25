@@ -1,7 +1,8 @@
 @use "../global/variables.scss";
 
-.page-body {
+.page__body {
   display: grid;
   grid-template-rows: 1fr auto;
+  min-width: 320px;
   min-height: 100vh;
 }
