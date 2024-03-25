@@ -14,6 +14,7 @@ new Swiper('#juri-slider', {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 20,
       initialSlide: 2,
     },
     768: {
