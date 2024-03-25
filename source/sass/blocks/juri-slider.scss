@@ -28,18 +28,12 @@
 .juri-slider__list {
   @include mixins.list-reset;
 
-  display: flex;
-  gap: 20px;
-  overflow: hidden;
-
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
-    gap: 40px;
   }
 }
 
 .juri-slider__slide {
-  flex-shrink: 0;
   display: grid;
 }
 
