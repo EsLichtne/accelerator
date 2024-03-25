@@ -743,56 +743,81 @@
       <div class="reviews__container">
         <h2 class="reviews__title title title--third">Отзывы</h2>
         <div class="reviews__slider reviews-slider">
-          <ul class="reviews-slider__list">
-            <li class="reviews-slider__slide">
-              <article class="reviews-slider__card review-card">
-                <h3>Анна Орлова</h3>
-                <div>
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/avatar-1-desktop.webp 1x, img/avatar-1-desktop@2x.webp 2x" width="80" height="80">
-                    <source type="image/webp" srcset="img/avatar-1-mobile.webp 1x, img/avatar-1-mobile@2x.webp 2x"
-                      width="68" height="68">
-                    <source type="image/png" media="(min-width: 768px)"
-                      srcset="img/avatar-1-desktop.png 1x, img/avatar-1-desktop@2x.png 2x" width="80" height="80">
-                    <img src="img/avatar-1-mobile.png" srcset="img/avatar-1-mobile@2x.png 2x" width="68" height="68"
-                      alt="">
-                  </picture>
-                </div>
-                <p>«Хожу в Supergym уже больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто,
-                  тренажёры обновляют, персонал дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее время
-                  нет&nbsp;очередей»
-                </p>
-              </article>
-            </li>
-            <li class="reviews-slider__slide">
-              <article class="reviews-slider__card review-card">
-                <h3>Анна Орлова</h3>
-                <div>
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/avatar-1-desktop.webp 1x, img/avatar-1-desktop@2x.webp 2x" width="80" height="80">
-                    <source type="image/webp" srcset="img/avatar-1-mobile.webp 1x, img/avatar-1-mobile@2x.webp 2x"
-                      width="68" height="68">
-                    <source type="image/png" media="(min-width: 768px)"
-                      srcset="img/avatar-1-desktop.png 1x, img/avatar-1-desktop@2x.png 2x" width="80" height="80">
-                    <img src="img/avatar-1-mobile.png" srcset="img/avatar-1-mobile@2x.png 2x" width="68" height="68"
-                      alt="">
-                  </picture>
-                </div>
-                <p>«Хожу в Supergym уже больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто,
-                  тренажёры обновляют, персонал дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее время
-                  нет&nbsp;очередей»
-                </p>
-              </article>
-            </li>
-          </ul>
-          <button class="reviews-slider__button reviews-slider__button--previous slider-button slider-button--previous"
-            type="button">
+          <div class="reviews-slider__wrapper swiper" id="reviews-slider">
+            <ul class="reviews-slider__list swiper-wrapper">
+              <li class="reviews-slider__slide swiper-slide">
+                <article class="reviews-slider__card review-card">
+                  <h3>Анна Орлова</h3>
+                  <div>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/avatar-1-desktop.webp 1x, img/avatar-1-desktop@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" srcset="img/avatar-1-mobile.webp 1x, img/avatar-1-mobile@2x.webp 2x"
+                        width="68" height="68">
+                      <source type="image/png" media="(min-width: 768px)"
+                        srcset="img/avatar-1-desktop.png 1x, img/avatar-1-desktop@2x.png 2x" width="80" height="80">
+                      <img src="img/avatar-1-mobile.png" srcset="img/avatar-1-mobile@2x.png 2x" width="68" height="68"
+                        alt="">
+                    </picture>
+                  </div>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто,
+                    тренажёры обновляют, персонал дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее время
+                    нет&nbsp;очередей»
+                  </p>
+                </article>
+              </li>
+              <li class="reviews-slider__slide swiper-slide">
+                <article class="reviews-slider__card review-card">
+                  <h3>Анна Орлова</h3>
+                  <div>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/avatar-1-desktop.webp 1x, img/avatar-1-desktop@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" srcset="img/avatar-1-mobile.webp 1x, img/avatar-1-mobile@2x.webp 2x"
+                        width="68" height="68">
+                      <source type="image/png" media="(min-width: 768px)"
+                        srcset="img/avatar-1-desktop.png 1x, img/avatar-1-desktop@2x.png 2x" width="80" height="80">
+                      <img src="img/avatar-1-mobile.png" srcset="img/avatar-1-mobile@2x.png 2x" width="68" height="68"
+                        alt="">
+                    </picture>
+                  </div>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто,
+                    тренажёры обновляют, персонал дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее время
+                    нет&nbsp;очередей»
+                  </p>
+                </article>
+              </li>
+              <li class="reviews-slider__slide swiper-slide">
+                <article class="reviews-slider__card review-card">
+                  <h3>Анна Орлова</h3>
+                  <div>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/avatar-1-desktop.webp 1x, img/avatar-1-desktop@2x.webp 2x" width="80" height="80">
+                      <source type="image/webp" srcset="img/avatar-1-mobile.webp 1x, img/avatar-1-mobile@2x.webp 2x"
+                        width="68" height="68">
+                      <source type="image/png" media="(min-width: 768px)"
+                        srcset="img/avatar-1-desktop.png 1x, img/avatar-1-desktop@2x.png 2x" width="80" height="80">
+                      <img src="img/avatar-1-mobile.png" srcset="img/avatar-1-mobile@2x.png 2x" width="68" height="68"
+                        alt="">
+                    </picture>
+                  </div>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто,
+                    тренажёры обновляют, персонал дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее время
+                    нет&nbsp;очередей»
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="reviews-slider__button reviews-slider__button--previous slider-button slider-button--previous swiper-button-prev"
+            type="button" id="reviews-slider-button-prev">
             <span class="visually-hidden">Предыдущий отзыв.</span>
           </button>
-          <button class="reviews-slider__button reviews-slider__button--next slider-button slider-button--next"
-            type="button">
+          <button
+            class="reviews-slider__button reviews-slider__button--next slider-button slider-button--next swiper-button-next"
+            type="button" id="reviews-slider-button-next">
             <span class="visually-hidden">Следующий отзыв.</span>
           </button>
         </div>
