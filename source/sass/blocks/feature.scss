@@ -143,7 +143,8 @@
   }
 }
 
-.feature:nth-child(3n) p:has(span) {
+.feature:nth-child(3n) p:has(span),
+.feature:nth-child(3n) h3:has(span) {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -163,7 +164,8 @@
   }
 }
 
-.feature:nth-child(3n) p > span {
+.feature:nth-child(3n) p > span,
+.feature:nth-child(3n) h3 > span {
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
