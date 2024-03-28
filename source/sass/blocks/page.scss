@@ -1,5 +1,9 @@
 @use "../global/variables.scss";
 
+.page {
+  scroll-behavior: smooth;
+}
+
 .page__body {
   display: grid;
   grid-template-rows: 1fr auto;
