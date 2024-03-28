@@ -1,9 +1,19 @@
-import { renderTabs } from './tabs';
+import { renderTabs } from '../tabs/tabs';
 
-const tabsContent = document.querySelectorAll('.accordion');
+const tabsContainer = document.querySelector('.block-tabs');
+const tabs = tabsContainer.querySelectorAll('.block-tabs__button');
+const accordions = document.querySelectorAll('.accordion');
 const accordionButtons = document.querySelectorAll('.accordion button');
 
-renderTabs(tabsContent, 'accordion--show');
+tabs[0].setAttribute('aria-selected', true);
+
+renderTabs(tabsContainer, tabs);
+
+document.addEventListener('block-tabs', (event) => {
+  accordions.forEach((content) => {
+    content.classList.toggle('accordion--show', content.id === event.detail);
+  });
+});
 
 accordionButtons.forEach((button) => {
   button.addEventListener('click', () => {
