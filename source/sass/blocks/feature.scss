@@ -138,10 +138,6 @@
 .feature:nth-child(3n) h3 {
   color: variables.$text-secondary;
 
-  &:empty {
-    display: none;
-  }
-
   @media (min-width: variables.$tablet-width) {
     grid-column: auto;
   }
