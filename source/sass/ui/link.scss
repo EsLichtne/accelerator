@@ -11,7 +11,6 @@
   line-height: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  text-decoration: none;
   background-color: transparent;
   border: none;
   text-decoration: underline;
@@ -42,48 +41,42 @@
   &--disabled {
     pointer-events: none;
   }
-
-  &--light {
-    color: variables.$text-secondary;
-
-    &:focus,
-    &:focus-visible {
-      outline-color: variables.$text-secondary;
-    }
-
-    &:active {
-      color: variables.$text-secondary;
-    }
-  }
-
-  &--dark {
-    color: variables.$text-accent-dark;
-
-    &:focus,
-    &:focus-visible {
-      outline-color: variables.$text-accent-dark;
-    }
-
-    &:active {
-      color: variables.$text-accent-dark;
-    }
-  }
 }
 
 .link--light {
   text-decoration-color: variables.$text-secondary;
-}
+  color: variables.$text-secondary;
 
-.link--light:disabled,
-.link--light.link--disabled {
-  opacity: 0.5;
+  &:focus,
+  &:focus-visible {
+    outline-color: variables.$text-secondary;
+  }
+
+  &:active {
+    color: variables.$text-secondary;
+  }
+
+  &:disabled,
+  &.link--disabled {
+    opacity: 0.5;
+  }
 }
 
 .link--dark {
   text-decoration-color: variables.$text-accent-dark;
-}
+  color: variables.$text-accent-dark;
 
-.link--dark:disabled,
-.link--dark.link--disabled {
-  opacity: 0.3;
+  &:focus,
+  &:focus-visible {
+    outline-color: variables.$text-accent-dark;
+  }
+
+  &:active {
+    color: variables.$text-accent-dark;
+  }
+
+  &:disabled,
+  &.link--disabled {
+    opacity: 0.3;
+  }
 }
