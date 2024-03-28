@@ -1,5 +1,5 @@
-import './slider/slider.js';
-import './video/video.js';
-import './upload/validation.js';
-import './accordion/accordion.js';
-import './abonements/abonements.js';
+import './slider/slider';
+import './video/video';
+import './upload/validation';
+import './accordion/accordion';
+import './abonements/abonements';

@@ -1,4 +1,4 @@
-import { renderTabs } from '../tabs/tabs.js';
+import { renderTabs } from '../tabs/tabs';
 
 const tabsContainer = document.querySelector('.inline-tabs');
 const tabs = tabsContainer.querySelectorAll('.inline-tabs__tab');
