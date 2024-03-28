@@ -32,8 +32,7 @@
   min-width: 149px;
   color: variables.$text-secondary;
   text-decoration: none;
-  transition:
-    color 0.3s linear;
+  transition: color 0.3s linear;
 
   @media (min-width: variables.$tablet-width) {
     min-width: 162px;
