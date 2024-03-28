@@ -43,3 +43,15 @@
     align-self: start;
   }
 }
+
+.faq__content {
+  @media (scripting: none) {
+    display: grid;
+  }
+}
+
+.faq__accordion:not(:first-child) {
+  @media (scripting: none) {
+    margin-top: -1px;
+  }
+}

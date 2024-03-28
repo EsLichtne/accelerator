@@ -8,6 +8,10 @@
   &--show {
     display: block;
   }
+
+  @media (scripting: none) {
+    display: block;
+  }
 }
 
 .accordion__list {
@@ -94,6 +98,10 @@
       width: 40px;
       height: 40px;
       background-size: 20px 20px;
+    }
+
+    @media (scripting: none) {
+      display: none;
     }
   }
 

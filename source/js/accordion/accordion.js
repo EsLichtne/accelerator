@@ -5,7 +5,12 @@ const tabs = tabsContainer.querySelectorAll('.block-tabs__button');
 const accordions = document.querySelectorAll('.accordion');
 const accordionButtons = document.querySelectorAll('.accordion button');
 
+accordionButtons.forEach((button) => {
+  button.setAttribute('aria-expanded', false);
+});
+
 tabs[0].setAttribute('aria-selected', true);
+accordionButtons[0].setAttribute('aria-expanded', true);
 
 renderTabs(tabsContainer, tabs);
 
