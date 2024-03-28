@@ -39,6 +39,11 @@
   }
 }
 
+.accordion__item:not(:has([aria-expanded="true"])) {
+  gap: 0;
+  transition: gap 0.4s linear;
+}
+
 .accordion__item h3 {
   margin: 0;
 }
