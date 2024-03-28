@@ -24,14 +24,30 @@
   @media (min-width: variables.$desktop-width) {
     width: 1160px;
   }
+
+  @media (scripting: none) {
+    overflow: scroll;
+  }
 }
 
 .juri-slider__list {
   @include mixins.list-reset;
+
+  @media (scripting: none) {
+    gap: 20px;
+
+    @media (min-width: variables.$tablet-width) {
+      gap: 40px;
+    }
+  }
 }
 
 .juri-slider__slide {
   display: grid;
+
+  @media (scripting: none) {
+    width: auto;
+  }
 }
 
 .juri-slider__button {
@@ -50,5 +66,9 @@
       grid-column: 3 / 4;
       justify-self: end;
     }
+  }
+
+  @media (scripting: none) {
+    display: none;
   }
 }

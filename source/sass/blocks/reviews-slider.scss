@@ -25,12 +25,24 @@
   @media (min-width: variables.$desktop-width) {
     width: 560px;
   }
+
+  @media (scripting: none) {
+    overflow: scroll;
+  }
 }
 
 .reviews-slider__list {
   @include mixins.list-reset;
 
   box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+
+  @media (scripting: none) {
+    gap: 20px;
+
+    @media (min-width: variables.$tablet-width) {
+      gap: 40px;
+    }
+  }
 }
 
 .reviews-slider__slide {
@@ -51,5 +63,9 @@
     &--next {
       grid-column: 3 / 4;
     }
+  }
+
+  @media (scripting: none) {
+    display: none;
   }
 }
