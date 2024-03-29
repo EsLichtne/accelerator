@@ -8,15 +8,15 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 45px;
+  gap: min(4.5rem, 67px);
   line-height: 0;
 
   @media (min-width: variables.$tablet-width) {
-    gap: 43px;
+    gap: min(4.3rem, 57px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 50px;
+    gap: min(5rem, 70px);
   }
 
   &::after {
@@ -38,8 +38,8 @@
   padding: 0;
   padding-bottom: 18px;
   font-family: variables.$font-primary;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: min(1.6rem, 24px);
+  line-height: min(1.6rem, 24px);
   font-weight: 400;
   color: rgba(16, 38, 84, 0.5);
   background-color: transparent;
@@ -55,15 +55,16 @@
 
   @media (min-width: variables.$tablet-width) {
     padding-bottom: 10px;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: min(1.8rem, 24px);
+    line-height: min(1.8rem, 24px);
     text-underline-offset: 11px;
     text-decoration-thickness: 2px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    font-size: 20px;
-    line-height: 20px;
+    padding-bottom: 10px;
+    font-size: min(2rem, 28px);
+    line-height: min(2rem, 28px);
   }
 
   &[aria-selected="true"] {

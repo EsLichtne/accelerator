@@ -6,14 +6,16 @@
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: min(1rem, 15px);
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: repeat(4, 1fr);
+    gap: min(1rem, 13px);
   }
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: auto;
+    gap: min(1rem, 14px);
   }
 }
 
@@ -24,10 +26,10 @@
 .block-tabs__button {
   display: grid;
   place-content: center;
-  padding: 15px;
+  padding: min(1.5rem, 22px);
   font-family: inherit;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: min(1.6rem, 24px);
+  line-height: min(1.6rem, 24px);
   font-weight: 400;
   color: variables.$text-primary;
   background-color: transparent;
@@ -41,9 +43,15 @@
     background 0.3s linear;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 18px;
-    font-size: 18px;
-    line-height: 18px;
+    padding: min(1.8rem, 24px);
+    font-size: min(1.8rem, 24px);
+    line-height: min(1.8rem, 24px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: min(1.8rem, 25px);
+    font-size: min(1.8rem, 25px);
+    line-height: min(1.8rem, 25px);
   }
 
   &[aria-selected="true"] {

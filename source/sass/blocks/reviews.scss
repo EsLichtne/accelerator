@@ -1,16 +1,16 @@
 @use "../global/variables.scss";
 
 .reviews {
-  padding: 40px;
+  padding: min(4rem, 60px) 0;
   text-align: center;
   background-color: variables.$background-primary-light;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 60px 27px;
+    padding: min(6rem, 80px) 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 100px 329px;
+    padding: min(10rem, 140px) 0;
   }
 }
 
@@ -21,28 +21,30 @@
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: min(4rem, 60px);
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 35px;
-    font-size: 54px;
-    line-height: 54px;
+    margin-bottom: min(3.5rem, 47px);
+    font-size: min(5.4rem, 72px);
+    line-height: min(5.4rem, 72px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: min(7.5rem, 105px);
+    font-size: min(5.4rem, 76px);
+    line-height: min(5.4rem, 76px);
   }
 }
 
 .reviews__slider {
-  width: 240px;
+  width: min(24rem, 360px);
   margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
-    width: 714px;
+    width: min(71.4rem, 952px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 708px;
+    width: min(70.8rem, 995px);
   }
 }

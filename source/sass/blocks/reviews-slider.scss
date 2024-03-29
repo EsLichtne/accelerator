@@ -6,24 +6,24 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-auto-flow: dense;
-    gap: 51px;
+    gap: min(5.1rem, 68px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 18px;
+    gap: min(1.8rem, 25px);
   }
 }
 
 .reviews-slider__wrapper {
-  width: 240px;
+  width: min(24rem, 360px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 500px;
+    width: min(50rem, 667px);
     grid-column: 2 / 3;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 560px;
+    width: min(56rem, 787px);
   }
 
   @media (scripting: none) {
@@ -37,10 +37,14 @@
   box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 
   @media (scripting: none) {
-    gap: 20px;
+    gap: min(2rem, 30px);
 
     @media (min-width: variables.$tablet-width) {
-      gap: 40px;
+      gap: min(4rem, 53px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      gap: min(4rem, 56px);
     }
   }
 }

@@ -15,6 +15,7 @@
 
 .video__image {
   display: block;
+  width: 100%;
 }
 
 .video__media {
@@ -28,14 +29,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 52px;
-  height: 52px;
+  width: min(5.2rem, 78px);
+  height: min(5.2rem, 78px);
   padding: 0;
   background-color: variables.$color-accent;
   background-image: variables.$color-accent-gradient;
   border: none;
   outline: 2px solid rgba(237, 3, 53, 0.2);
-  outline-offset: 8px;
+  outline-offset: min(0.8rem, 12px);
   border-radius: 50%;
   cursor: pointer;
   transition:
@@ -43,10 +44,16 @@
     background 0.3s linear,
     outline 0.3s linear;
 
+  @media (min-width: variables.$tablet-width) {
+    width: min(5.2rem, 69px);
+    height: min(5.2rem, 69px);
+    outline-offset: min(0.8rem, 11px);
+  }
+
   @media (min-width: variables.$desktop-width) {
-    width: 72px;
-    height: 72px;
-    outline-offset: 12px;
+    width: min(7.2rem, 101px);
+    height: min(7.2rem, 101px);
+    outline-offset: min(1.2rem, 17px);
   }
 
   &::after {
@@ -55,8 +62,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 12px;
-    height: 12px;
+    width: min(1.2rem, 18px);
+    height: min(1.2rem, 18px);
     mask-image: url("/__spritemap#sprite-play-view");
     background-color: variables.$color-light;
     mask-repeat: no-repeat;
@@ -66,9 +73,14 @@
       opacity 0.3s linear,
       background 0.3s linear;
 
+    @media (min-width: variables.$tablet-width) {
+      width: min(1.2rem, 16px);
+      height: min(1.2rem, 16px);
+    }
+
     @media (min-width: variables.$desktop-width) {
-      width: 17px;
-      height: 17px;
+      width: min(1.7rem, 24px);
+      height: min(1.7rem, 24px);
     }
   }
 }
@@ -104,11 +116,15 @@
   background-color: variables.$color-light;
   background-image: none;
   outline: 2px solid variables.$text-primary;
-  outline-offset: 16px;
+  outline-offset: min(1.6rem, 24px);
   transform: scale(0.8) translate(-63%, -63%);
 
+  @media (min-width: variables.$tablet-width) {
+    outline-offset: min(1.6rem, 21px);
+  }
+
   @media (min-width: variables.$desktop-width) {
-    outline-offset: 24px;
+    outline-offset: min(2.4rem, 34px);
     transform: scale(0.8) translate(-63%, -63%);
   }
 

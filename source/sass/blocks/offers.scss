@@ -2,29 +2,29 @@
 @use "../global/mixins.scss";
 
 .offers {
-  padding: 40px 0;
+  padding: min(4rem, 60px) 0;
   text-align: center;
   background-color: variables.$background-primary-light;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 60px 0;
+    padding: min(6rem, 80px) 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 100px 0;
+    padding: min(10rem, 140px) 0;
   }
 }
 
 .offers__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: min(4rem, 60px);
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: min(3.5rem, 47px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: min(7rem, 98px);
   }
 }
 
@@ -33,44 +33,44 @@
 
   display: grid;
   grid-auto-flow: dense;
-  gap: 30px;
+  gap: min(3rem, 45px);
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
-    row-gap: 35px;
+    column-gap: min(3rem, 40px);
+    row-gap: min(3.5rem, 47px);
   }
 
   @media (min-width: variables.$desktop-width) {
     grid-template-rows: 1fr min-content;
     align-items: end;
-    column-gap: 40px;
-    row-gap: 30px;
+    column-gap: min(4rem, 56px);
+    row-gap: min(3rem, 42px);
   }
 }
 
 .offers__item {
   display: grid;
+}
 
-  &--special {
-    width: calc(100% + 30px);
-    margin-left: -15px;
-    margin-bottom: 10px;
+.offers__item:has(.offers__card--special) {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  margin-bottom: min(1rem, 15px);
 
-    @media (min-width: variables.$tablet-width) {
-      grid-column: 1 / -1;
-      width: auto;
-      margin: 0;
-    }
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / -1;
+    width: auto;
+    margin: 0;
+  }
 
-    @media (min-width: variables.$desktop-width) {
-      grid-column: 1 / 2;
-      grid-row: span 2;
-    }
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: span 2;
   }
 }
 
-.offers__item--special:nth-child(2n) {
+.offers__item:has(.offers__card--special):nth-child(2n) {
   @media (min-width: variables.$desktop-width) {
     grid-column: 2 / 3;
   }

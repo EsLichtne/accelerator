@@ -4,104 +4,104 @@
   &--first {
     font-family: variables.$font-secondary;
     font-weight: 800;
-    font-size: 62px;
-    line-height: 62px;
+    font-size: min(6.2rem, 93px);
+    line-height: min(6.2rem, 93px);
     letter-spacing: 1px;
     text-transform: uppercase;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 72px;
-      line-height: 85px;
+      font-size: min(7.2rem, 96px);
+      line-height: min(8.5rem, 113px);
       letter-spacing: 2px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 92px;
-      line-height: 110px;
+      font-size: min(9.2rem, 129px);
+      line-height: min(11rem, 155px);
       letter-spacing: 4px;
     }
   }
 
   &--second {
     font-family: variables.$font-secondary;
-    font-size: 48px;
-    line-height: 54px;
+    font-size: min(4.8rem, 72px);
+    line-height: min(5.4rem, 81px);
     font-weight: 600;
     text-transform: uppercase;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 48px;
-      line-height: 54px;
+      font-size: min(4.8rem, 64px);
+      line-height: min(5.4rem, 72px);
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 82px;
-      line-height: 96px;
+      font-size: min(8.2rem, 115px);
+      line-height: min(9.6rem, 135px);
     }
   }
 
   &--third {
     font-family: variables.$font-secondary;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: min(3.2rem, 48px);
+    line-height: min(3.2rem, 48px);
     font-weight: 600;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 42px;
-      line-height: 42px;
+      font-size: min(4.2rem, 56px);
+      line-height: min(4.2rem, 56px);
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 54px;
-      line-height: 54px;
+      font-size: min(5.4rem, 76px);
+      line-height: min(5.4rem, 76px);
     }
   }
 
   &--fourth {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: min(2.2rem, 33px);
+    line-height: min(2.2rem, 33px);
     font-weight: 700;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 24px;
-      line-height: 24px;
+      font-size: min(2.4rem, 32px);
+      line-height: min(2.4rem, 32px);
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 26px;
-      line-height: 26px;
+      font-size: min(2.6rem, 36px);
+      line-height: min(2.6rem, 36px);
     }
   }
 
   &--fifth {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: min(2rem, 30px);
+    line-height: min(2rem, 30px);
     font-weight: 400;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 22px;
-      line-height: 22px;
+      font-size: min(2.2rem, 29px);
+      line-height: min(2.2rem, 29px);
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 24px;
-      line-height: 24px;
+      font-size: min(2.4rem, 34px);
+      line-height: min(2.4rem, 34px);
     }
   }
 
   &--sixth {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: min(1.8rem, 27px);
+    line-height: min(2rem, 30px);
     font-weight: 400;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
+      font-size: min(2rem, 27px);
+      line-height: min(2rem, 27px);
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 22px;
-      line-height: 22px;
+      font-size: min(2.2rem, 31px);
+      line-height: min(2.2rem, 31px);
     }
   }
 }

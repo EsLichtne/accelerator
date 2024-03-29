@@ -1,22 +1,48 @@
 @use "../global/variables.scss";
 
 .proposal {
-  display: grid;
-  gap: 27px;
+  padding: min(7rem, 105px) 0;
+  color: variables.$text-secondary;
+  background-color: variables.$backgound-primary-dark;
 
   @media (min-width: variables.$tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
-    row-gap: 35px;
+    padding: min(6rem, 80px) 0;
+    text-align: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    padding: min(6rem, 84px) 0;
+    text-align: left;
   }
 }
 
-.proposal__button {
-  margin-top: 9px;
+.proposal__wrapper {
+  width: min(29rem, 435px);
+  margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
-    grid-column: 1 / -1;
-    margin: 0;
-    padding: 27px;
+    width: min(44rem, 587px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(47.7rem, 670px);
+  }
+}
+
+.proposal__title {
+  margin: 0;
+  margin-bottom: min(2.7rem, 40px);
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: min(2.7rem, 36px);
+    font-size: min(5.4rem, 72px);
+    line-height: min(5.4rem, 72px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: min(2.7rem, 38px);
+    font-size: min(5.4rem, 76px);
+    line-height: min(5.4rem, 76px);
   }
 }

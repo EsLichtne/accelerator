@@ -2,10 +2,10 @@
 
 .slider-button {
   align-items: center;
-  width: 56px;
-  height: 56px;
+  width: min(5.6rem, 84px);
+  height: min(5.6rem, 84px);
   padding: 0;
-  padding-inline-start: 18px;
+  padding-inline-start: min(1.8rem, 27px);
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 50%;
@@ -15,16 +15,38 @@
     border 0.3s linear,
     opacity 0.3s linear;
 
+  @media (min-width: variables.$tablet-width) {
+    width: min(5.6rem, 75px);
+    height: min(5.6rem, 75px);
+    padding-inline-start: min(1.8rem, 24px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(5.6rem, 78px);
+    height: min(5.6rem, 78px);
+    padding-inline-start: min(1.8rem, 25px);
+  }
+
   &::before {
     content: "";
-    width: 16px;
-    height: 32px;
+    width: min(1.6rem, 24px);
+    height: min(3.2rem, 48px);
     mask-image: url("/__spritemap#sprite-arrow-view");
     background-color: variables.$color-dark-primary;
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
     transition: background 0.3s linear;
+
+    @media (min-width: variables.$tablet-width) {
+      width: min(1.6rem, 21px);
+      height: min(3.2rem, 43px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(1.6rem, 22px);
+      height: min(3.2rem, 45px);
+    }
   }
 
   &--next {

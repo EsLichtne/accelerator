@@ -2,36 +2,36 @@
 @use "../global/mixins.scss";
 
 .price {
-  padding: 40px 0;
+  padding: min(4rem, 60px) 0;
   text-align: center;
   background-color: variables.$background-secondary-light;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 60px 0;
+    padding: min(6rem, 80px) 0;
     background-image: url("../../img/barbell-discs.webp");
     background-repeat: no-repeat;
-    background-size: 402px 422px;
-    background-position: right -78px bottom -35px;
+    background-size: min(40.2rem, 536px) min(42.2rem, 563px);
+    background-position: right -7.8rem bottom -3.5rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 100px 0;
-    background-size: 470px 493px;
-    background-position: right -167px bottom -45px;
+    padding: min(10rem, 140px) 0;
+    background-size: min(47rem, 661px) min(49.3rem, 693px);
+    background-position: right -16.7rem bottom -4.5rem;
   }
 }
 
 .price__wrapper {
   display: grid;
-  gap: 30px;
+  gap: min(3rem, 45px);
   justify-items: center;
 
   @media (min-width: variables.$tablet-width) {
-    gap: 35px;
+    gap: min(3.5rem, 47px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 20px;
+    gap: min(2rem, 28px);
   }
 }
 
@@ -43,11 +43,11 @@
   width: fit-content;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 10px;
+    margin-bottom: min(1rem, 13px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: min(2rem, 28px);
   }
 }
 
@@ -55,10 +55,10 @@
   @include mixins.list-reset;
 
   display: grid;
-  gap: 35px;
+  gap: min(3.5rem, 52px);
 
   @media (min-width: variables.$tablet-width) {
-    gap: 40px;
+    gap: min(4rem, 53px);
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -71,13 +71,13 @@
 }
 
 .price__card {
-  width: 290px;
+  width: min(29rem, 435px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 380px;
+    width: min(38rem, 507px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 360px;
+    width: min(36rem, 506px);
   }
 }

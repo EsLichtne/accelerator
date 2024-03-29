@@ -3,10 +3,10 @@
 .button {
   display: grid;
   place-content: center;
-  padding: 24px;
+  padding: min(2.4rem, 36px);
   font-family: variables.$font-primary;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: min(1.2rem, 18px);
+  line-height: min(1.2rem, 18px);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -20,11 +20,15 @@
     opacity 0.4s linear;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 22px;
+    padding: min(2.2rem, 29px);
+    font-size: min(1.2rem, 16px);
+    line-height: min(1.2rem, 16px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 27px;
+    padding: min(2.7rem, 38px);
+    font-size: min(1.2rem, 17px);
+    line-height: min(1.2rem, 17px);
   }
 
   &--light {
@@ -51,9 +55,17 @@
   }
 
   &--dark {
-    padding: 27px;
+    padding: min(2.7rem, 40px);
     color: variables.$text-primary;
     box-shadow: inset 0 0 0 2px variables.$text-primary;
+
+    @media (min-width: variables.$tablet-width) {
+      padding: min(2.7rem, 36px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      padding: min(2.7rem, 38px);
+    }
 
     &:hover {
       color: variables.$text-secondary;

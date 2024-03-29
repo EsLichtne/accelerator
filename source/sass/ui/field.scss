@@ -6,10 +6,10 @@
 
 .field__input {
   width: 100%;
-  padding: 8px 4px 4px 0;
+  padding: min(0.8rem, 12px) min(0.4rem, 6px) min(0.4rem, 6px) 0;
   font-family: inherit;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: min(1.4rem, 21px);
+  line-height: min(2.2rem, 33px);
   font-weight: 300;
   color: variables.$text-secondary;
   background-color: transparent;
@@ -19,6 +19,18 @@
     color 0.3s linear,
     border 0.3s linear,
     outline 0.3s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: min(0.8rem, 11px) min(0.4rem, 5px) min(0.4rem, 5px) 0;
+    font-size: min(1.4rem, 19px);
+    line-height: min(2.2rem, 29px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: min(0.8rem, 11px) min(0.4rem, 6px) min(0.4rem, 6px) 0;
+    font-size: min(1.4rem, 20px);
+    line-height: min(2.2rem, 31px);
+  }
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.4);
@@ -53,10 +65,22 @@
 .field__error {
   position: absolute;
   margin: 0;
-  margin-top: 2px;
-  font-size: 14px;
-  line-height: 22px;
+  margin-top: min(0.2rem, 3px);
+  font-size: min(1.4rem, 21px);
+  line-height: min(2.2rem, 33px);
   font-weight: 400;
   text-wrap: nowrap;
   color: variables.$form-error;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: min(0.2rem, 3px);
+    font-size: min(1.4rem, 19px);
+    line-height: min(2.2rem, 29px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: min(0.2rem, 3px);
+    font-size: min(1.4rem, 20px);
+    line-height: min(2.2rem, 31px);
+  }
 }

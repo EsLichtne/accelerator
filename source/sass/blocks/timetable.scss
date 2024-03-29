@@ -3,40 +3,45 @@
 .timetable {
   display: grid;
   grid-template-rows: min-content;
-  gap: 5px;
+  gap: min(0.5rem, 7px);
 
   @media (min-width: variables.$tablet-width) {
-    gap: 10px;
+    gap: min(1rem, 13px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 20px;
+    gap: min(2rem, 28px);
   }
 }
 
 .timetable__wrapper {
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  gap: 5px;
+  gap: min(0.5rem, 7px);
 
   @media (min-width: variables.$tablet-width) {
-    gap: 4px;
+    gap: min(0.4rem, 5px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 12px;
+    gap: min(1.2rem, 17px);
   }
 }
 
 .timetable__title {
   position: relative;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: min(1.6rem, 24px);
+  line-height: min(2rem, 30px);
   font-weight: 300;
 
   @media (min-width: variables.$tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: min(1.8rem, 24px);
+    line-height: min(2.4rem, 32px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.8rem, 25px);
+    line-height: min(2.4rem, 34px);
   }
 
   &::after {
@@ -61,17 +66,24 @@
 .timetable__description {
   display: flex;
   align-items: center;
-  gap: 3px;
-  max-width: 56px;
+  gap: min(0.3rem, 4px);
+  max-width: min(5.6rem, 84px);
   margin: 0;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: min(1.2rem, 18px);
+  line-height: min(1.2rem, 18px);
   font-weight: 400;
 
   @media (min-width: variables.$tablet-width) {
-    gap: 5px;
-    max-width: 65px;
-    font-size: 14px;
-    line-height: 22px;
+    gap: min(0.5rem, 7px);
+    max-width: min(6.5rem, 87px);
+    font-size: min(1.4rem, 19px);
+    line-height: min(2.2rem, 29px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(0.5rem, 7px);
+    max-width: min(6.5rem, 91px);
+    font-size: min(1.4rem, 20px);
+    line-height: min(2.2rem, 31px);
   }
 }

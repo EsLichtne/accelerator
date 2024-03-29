@@ -1,40 +1,46 @@
 @use "../global/variables.scss";
 
 .footer {
-  padding: 40px 0;
+  padding: min(4rem, 60px) 0;
   background-color: variables.$backgound-secondary-dark;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 40px 0 41px;
+    padding: min(4rem, 53px) 0 min(4.1rem, 55px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 35px 0 37px;
+    padding: min(3.5rem, 49px) 0 min(3.7rem, 52px);
   }
 }
 
 .footer__wrapper {
   display: grid;
-  gap: 24px;
+  gap: min(2.4rem, 36px);
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: auto 1fr auto;
+    gap: min(2.4rem, 32px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(2.4rem, 34px);
   }
 }
 
 .footer__logo {
-  width: 100px;
-  height: 20px;
+  width: min(10rem, 150px);
+  height: min(2rem, 30px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 110px;
-    height: 22px;
-    margin-top: 5px;
+    width: min(11rem, 147px);
+    height: min(2.2rem, 29px);
+    margin-top: min(0.5rem, 7px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 130px;
-    height: 26px;
+    width: min(13rem, 183px);
+    height: min(2.6rem, 36px);
+    margin-top: min(0.5rem, 7px);
   }
 }
 
@@ -46,7 +52,12 @@
 
 .footer__social {
   @media (min-width: variables.$tablet-width) {
-    max-width: 145px;
-    margin-top: 5px;
+    max-width: min(14.5rem, 193px);
+    margin-top: min(0.5rem, 7px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: min(14.5rem, 204px);
+    margin-top: min(0.5rem, 7px);
   }
 }

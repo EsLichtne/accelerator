@@ -3,94 +3,107 @@
 .offer {
   display: grid;
   justify-items: center;
-  gap: 20px;
-  padding: 20px;
-  padding-bottom: 15px;
+  gap: min(2rem, 30px);
+  padding: min(2rem, 30px);
+  padding-bottom: min(1.5rem, 22px);
   border: 7px solid transparent;
   border-image: variables.$text-accent-gradient 7;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-rows: auto 1fr auto;
     justify-items: start;
-    gap: 10px;
+    gap: min(1rem, 13px);
+    padding: min(2rem, 27px);
+    padding-bottom: min(1.5rem, 20px);
     text-align: left;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(1rem, 14px);
+    padding: min(2rem, 28px);
+    padding-bottom: min(1.5rem, 21px);
   }
 }
 
 .offer h3 {
   margin: 0;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: min(2.2rem, 33px);
+  line-height: min(2.2rem, 33px);
   font-weight: 700;
   color: variables.$text-accent-dark;
 
   @media (min-width: variables.$tablet-width) {
-    font-size: 26px;
-    line-height: 26px;
+    font-size: min(2.6rem, 35px);
+    line-height: min(2.6rem, 35px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(2.6rem, 36px);
+    line-height: min(2.6rem, 36px);
   }
 }
 
 .offer p {
   margin: 0;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: min(1.4rem, 21px);
+  line-height: min(2.2rem, 33px);
   font-weight: 300;
   color: variables.$text-accent-dark;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 24px;
+    margin-bottom: min(2rem, 27px);
+    font-size: min(1.6rem, 21px);
+    line-height: min(2.4rem, 32px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: min(3rem, 42px);
+    font-size: min(1.6rem, 22px);
+    line-height: min(2.4rem, 34px);
   }
 }
 
 .offer__link {
-  margin-top: -9px;
+  margin-top: max(-0.9rem, -13px);
   align-self: end;
 
   @media (min-width: variables.$tablet-width) {
-    margin-left: -10px;
+    margin-left: max(-1rem, -12px);
   }
-}
 
-.offer--special {
-  gap: 0;
-  padding: 0;
-  background-color: variables.$background-primary-accent;
-  border: none;
-
-  @media (min-width: variables.$tablet-width) {
-    grid-template-columns: 278px auto;
-    grid-template-rows: auto;
+  @media (min-width: variables.$desktop-width) {
+    margin-left: max(-1rem, -13px);
   }
 }
 
 .offer__content-wrapper {
   display: grid;
-  gap: 28px;
+  gap: min(2.8rem, 42px);
   justify-items: center;
-  padding: 30px;
-  padding-bottom: 25px;
+  padding: min(3rem, 45px);
+  padding-bottom: min(2.5rem, 37px);
 
   @media (min-width: variables.$tablet-width) {
     grid-template-rows: auto 1fr auto;
     justify-items: start;
-    gap: 40px;
-    padding: 40px 25px;
-    padding-bottom: 35px;
+    gap: min(4rem, 53px);
+    padding: min(4rem, 53px) min(2.5rem, 33px);
+    padding-bottom: min(3.5rem, 47px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 40px 45px;
-    padding-bottom: 35px;
+    gap: min(4rem, 56px);
+    padding: min(4rem, 56px) min(4.5rem, 63px);
+    padding-bottom: min(3.5rem, 49px);
   }
 }
 
 .offer__image-wrapper {
+  display: grid;
+  justify-content: start;
+  width: 100%;
+  background-image: linear-gradient(180deg, #4069da 0%, #4879e3 24.77%, #4e84e5 39.73%, #5593e6 49.96%, #5ea3e9 64.73%, #74b1eb 74.77%, #a0c7f0 89.73%, #b2d1f2 100%);
+
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
   }
@@ -102,56 +115,88 @@
 
 .offer__image {
   display: block;
-  width: 320px;
-  height: 360px;
+  width: min(32rem, 480px);
+  height: min(36rem, 540px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 400px;
-    height: 462px;
+    width: min(40rem, 533px);
+    height: min(46.2rem, 616px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 280px;
-    height: 460px;
+    width: min(28rem, 393px);
+    height: min(46rem, 646px);
+  }
+}
+
+.offer--special {
+  gap: 0;
+  padding: 0;
+  background-color: variables.$background-primary-accent;
+  border: none;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: min(27.8rem, 371px) auto;
+    grid-template-rows: auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: min(28rem, 393px) auto;
   }
 }
 
 .offer--special h3 {
   display: flex;
   flex-direction: column;
-  gap: 9px;
-  font-size: 22px;
-  line-height: 22px;
+  gap: min(0.9rem, 13px);
+  font-size: min(2.2rem, 33px);
+  line-height: min(2.2rem, 33px);
   font-weight: 700;
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet-width) {
-    gap: 20px;
-    font-size: 24px;
-    line-height: 24px;
+    gap: min(2rem, 27px);
+    font-size: min(2.4rem, 32px);
+    line-height: min(2.4rem, 32px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(2rem, 28px);
+    font-size: min(2.6rem, 36px);
+    line-height: min(2.6rem, 36px);
   }
 }
 
 .offer--special h3 > span {
-  font-size: 64px;
-  line-height: 64px;
+  font-size: min(6.4rem, 105px);
+  line-height: min(6.4rem, 105px);
   font-weight: 700;
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet-width) {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: min(7rem, 93px);
+    line-height: min(7rem, 93px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(7rem, 98px);
+    line-height: min(7rem, 98px);
   }
 }
 
 .offer--special p {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: min(1.6rem, 24px);
+  line-height: min(2rem, 30px);
   font-weight: 300;
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: min(1.8rem, 24px);
+    line-height: min(2.4rem, 32px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.8rem, 25px);
+    line-height: min(2.4rem, 34px);
   }
 }

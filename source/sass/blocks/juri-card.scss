@@ -6,8 +6,8 @@
   display: grid;
   justify-items: center;
   grid-auto-flow: dense;
-  grid-template-columns: 227px;
-  grid-template-rows: 51px repeat(2, min-content) 1fr 15px;
+  grid-template-columns: 100%;
+  grid-template-rows: min(5.1rem, 76px) repeat(2, min-content) 1fr min(1.5rem, 22.5px);
   grid-template-areas:
     "."
     "list"
@@ -15,9 +15,17 @@
     "title"
     ".";
 
-  gap: 10px;
+  gap: min(1rem);
   color: variables.$text-secondary;
   background-color: #c1c7d2;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-rows: min(5.1rem, 68px) repeat(2, min-content) 1fr min(1.5rem, 20px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-rows: min(5.1rem, 72px) repeat(2, min-content) 1fr min(1.5rem, 21px);
+  }
 
   &::before {
     opacity: 0;
@@ -28,45 +36,56 @@
     background-color: rgba(16, 38, 84, 0.9);
     transition: opacity 0.3s linear;
   }
-
-  @media (min-width: variables.$tablet-width) {
-    grid-template-columns: 260px;
-  }
 }
 
 .juri-card__title {
   grid-area: title;
   margin: 0;
   align-self: end;
-  padding: 0 25px;
-  font-size: 22px;
-  line-height: 22px;
+  padding: 0 min(2.5rem, 37px);
+  font-size: min(2.2rem, 33px);
+  line-height: min(2.2rem, 33px);
   z-index: 1;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 min(2.5rem, 33px);
+    font-size: min(2.2rem, 29px);
+    line-height: min(2.2rem, 29px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 min(2.5rem, 35px);
+    font-size: min(2.2rem, 31px);
+    line-height: min(2.2rem, 31px);
+  }
 }
 
 .juri-card__image-wrapper {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   align-self: center;
+  width: 100%;
 }
 
 .juri-card__image {
   display: block;
-  width: 227px;
-  height: 280px;
-
-  @media (min-width: variables.$tablet-width) {
-    width: 260px;
-    height: 300px;
-  }
+  width: 100%;
 }
 
 .juri-card__caption {
   opacity: 0;
   grid-area: caption;
-  padding: 0 30px;
+  padding: 0 min(3rem, 45px);
   transition: opacity 0.3s linear;
   z-index: 1;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 min(3rem, 40px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 min(3rem, 42px);
+  }
 }
 
 .juri-card__list {
@@ -74,27 +93,55 @@
   grid-area: list;
   display: grid;
   align-self: start;
-  gap: 12px;
-  max-width: 160px;
+  gap: min(1.2rem, 18px);
+  max-width: min(16rem, 240px);
   margin: 0;
   padding: 0;
   text-align: left;
   transition: opacity 0.3s linear;
   z-index: 1;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: min(1.2rem, 16px);
+    max-width: min(16rem, 213px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(1.2rem, 17px);
+    max-width: min(16rem, 225px);
+  }
 }
 
 .juri-card__item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: min(1rem, 15px);
+
+  @media (min-width: variables.$tablet-width) {
+    gap: min(1rem, 13px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(1rem, 13px);
+  }
 
   &::before {
     content: "";
     flex-shrink: 0;
-    width: 6px;
-    height: 6px;
+    width: min(0.6rem, 9px);
+    height: min(0.6rem, 9px);
     background-color: variables.$text-secondary;
     border-radius: 50%;
+
+    @media (min-width: variables.$tablet-width) {
+      width: min(0.6rem, 8px);
+      height: min(0.6rem, 8px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(0.6rem, 8px);
+      height: min(0.6rem, 8px);
+    }
   }
 }
 

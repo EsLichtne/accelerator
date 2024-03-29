@@ -14,7 +14,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -40px;
+      bottom: max(-4rem, -56px);
       width: 100%;
       height: 2px;
       background-color: rgba(209, 10, 66, 0.2);
@@ -25,7 +25,7 @@
 .feature__card {
   display: grid;
   justify-items: center;
-  gap: 12px;
+  gap: min(1.2rem, 18px);
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: min-content 1fr;
@@ -33,48 +33,56 @@
     justify-content: space-between;
     justify-items: start;
     grid-auto-flow: dense;
-    column-gap: 15px;
-    row-gap: 12px;
+    column-gap: min(1.5rem, 20px);
+    row-gap: min(1.2rem, 16px);
     text-align: left;
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: min-content 210px;
-    column-gap: 43px;
-    row-gap: 8px;
+    grid-template-columns: min-content min(21rem, 295px);
+    column-gap: min(4.3rem, 60px);
+    row-gap: min(0.8rem, 11px);
   }
 }
 
 .feature__card h3 {
   margin: 0;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: min(1.8rem, 27px);
+  line-height: min(2rem, 30px);
   font-weight: 400;
   color: variables.$text-primary;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: min(2rem, 27px);
+    line-height: min(2rem, 27px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: min(2.2rem, 31px);
+    line-height: min(2.2rem, 31px);
   }
 }
 
 .feature__card p {
+  max-width: min(23rem, 345px);
   margin: 0;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: min(1.4rem, 21px);
+  line-height: min(2.2rem, 33px);
   font-weight: 300;
   color: variables.$text-primary;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
-    font-size: 16px;
-    line-height: 24px;
+    max-width: none;
+    font-size: min(1.6rem, 21px);
+    line-height: min(2.4rem, 32px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 2 / 3;
+    font-size: min(1.6rem, 22px);
+    line-height: min(2.4rem, 34px);
   }
 }
 
@@ -83,8 +91,8 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
-  font-size: 64px;
-  line-height: 64px;
+  font-size: min(6.4rem, 96px);
+  line-height: min(6.4rem, 96px);
   font-weight: 700;
   text-transform: lowercase;
   color: transparent;
@@ -94,44 +102,53 @@
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 2;
     grid-row: span 2;
-    font-size: 70px;
-    line-height: 70px;
+    font-size: min(7rem, 93px);
+    line-height: min(7rem, 93px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(7rem, 98px);
+    line-height: min(7rem, 98px);
   }
 }
 
 .feature__card p > span {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: min(1.4rem, 21px);
+  line-height: min(2rem, 30px);
   font-weight: 400;
   color: #2e35ac;
 
   @media (min-width: variables.$tablet-width) {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: min(1.4rem, 19px);
+    line-height: min(2.2rem, 29px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.4rem, 20px);
+    line-height: min(2.2rem, 31px);
   }
 }
 
 .feature:nth-child(3n) .feature__card {
-  gap: 20px;
-  width: calc(100% + 30px);
-  margin: 5px 0 5px -15px;
-  padding: 30px 75px 40px;
+  gap: min(2rem, 30px);
+  margin: min(0.5rem, 7px) 0;
+  padding: min(3rem, 45px) min(7.5rem, 112px) min(4rem, 60px);
   background-color: variables.$background-secondary-accent;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: auto;
     justify-items: center;
-    gap: 25px;
-    width: 320px;
+    gap: min(2.5rem, 33px);
+    width: min(32rem, 427px);
     margin: 0;
-    padding: 35px;
+    padding: min(3.5rem, 47px);
     text-align: center;
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 30px;
-    width: 360px;
-    padding: 58px 40px;
+    gap: min(3rem, 42px);
+    width: min(36rem, 506px);
+    padding: min(5.8rem, 81px) min(4rem, 56px);
   }
 }
 
@@ -147,42 +164,44 @@
 .feature:nth-child(3n) h3:has(span) {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  font-size: 64px;
-  line-height: 64px;
+  gap: min(0.5rem, 7px);
+  font-size: min(6.4rem, 96px);
+  line-height: min(6.4rem, 96px);
   font-weight: 700;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 2;
-    gap: 25px;
-    font-size: 70px;
-    line-height: 70px;
+    gap: min(2.5rem, 33px);
+    font-size: min(7rem, 93px);
+    line-height: min(7rem, 93px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 10px;
+    gap: min(1rem, 14px);
+    font-size: min(7rem, 98px);
+    line-height: min(7rem, 98px);
   }
 }
 
 .feature:nth-child(3n) p > span,
 .feature:nth-child(3n) h3 > span {
-  font-size: 22px;
-  line-height: 22px;
+  font-size: min(2.2rem, 33px);
+  line-height: min(2.2rem, 33px);
   font-weight: 700;
   text-transform: initial;
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 2;
-    gap: 25px;
-    font-size: 24px;
-    line-height: 24px;
+    gap: min(2.5rem, 33px);
+    font-size: min(2.4rem, 32px);
+    line-height: min(2.4rem, 32px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 10px;
-    font-size: 26px;
-    line-height: 26px;
+    gap: min(1rem, 13px);
+    font-size: min(2.6rem, 36px);
+    line-height: min(2.6rem, 36px);
   }
 }
 

@@ -6,27 +6,36 @@
 
   display: flex;
   flex-wrap: wrap;
-  column-gap: 15px;
-  row-gap: 8px;
-  margin-left: -10px;
+  column-gap: min(1.5rem, 22px);
+  row-gap: min(0.8rem, 12px);
+  margin-left: max(-1rem, -15px);
 
   @media (min-width: variables.$tablet-width) {
-    column-gap: 8px;
+    gap: min(0.8rem, 11px);
     margin: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    column-gap: 62px;
+    column-gap: min(6.2rem, 87px);
+    row-gap: min(0.8rem, 11px);
   }
 }
 
 .navigation__link {
   display: block;
-  padding: 5px 10px;
+  padding: min(0.5rem, 7px) min(1rem, 15px);
   text-decoration: none;
   color: variables.$text-secondary;
   border: 1px solid transparent;
   transition: border 0.3s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: min(0.5rem, 7px) min(1rem, 13px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: min(0.5rem, 7px) min(1rem, 14px);
+  }
 
   &:hover {
     text-decoration: underline;

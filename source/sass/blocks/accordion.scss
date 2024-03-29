@@ -20,26 +20,26 @@
 
 .accordion__item {
   display: grid;
-  gap: 20px;
-  padding: 20px 0;
+  gap: min(2rem, 30px);
+  padding: min(2rem, 30px) 0;
   border-top: 1px solid #74819c;
 
   &:last-child {
     border-bottom: 1px solid #74819c;
 
     @media (min-width: variables.$desktop-width) {
-      padding-bottom: 21px;
+      padding-bottom: min(2.1rem, 29px);
     }
   }
 
   @media (min-width: variables.$tablet-width) {
-    gap: 10px;
-    padding: 25px 0;
+    gap: min(1rem, 13px);
+    padding: min(2.5rem, 33px) 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 23px;
-    padding: 23px 0 22px;
+    gap: min(2.3rem, 32px);
+    padding: min(2.3rem, 32px) 0 min(2.2rem, 31px);
   }
 }
 
@@ -54,13 +54,13 @@
 
 .accordion__item h3 > button {
   display: grid;
-  grid-template-columns: 238px 1fr;
+  grid-template-columns: min(23.8rem, 357px) 1fr;
   align-items: center;
   width: 100%;
   padding: 0;
   font-family: inherit;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: min(2rem, 30px);
+  line-height: min(2rem, 30px);
   font-weight: 400;
   text-align: left;
   border: none;
@@ -68,36 +68,42 @@
   cursor: pointer;
 
   @media (min-width: variables.$tablet-width) {
-    grid-template-columns: 500px auto;
-    font-size: 22px;
-    line-height: 22px;
+    grid-template-columns: min(50rem, 667px) auto;
+    font-size: min(2.2rem, 29px);
+    line-height: min(2.2rem, 29px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: 660px auto;
-    font-size: 24px;
-    line-height: 24px;
+    grid-template-columns: min(66rem, 928px) auto;
+    font-size: min(2.4rem, 34px);
+    line-height: min(2.4rem, 34px);
   }
 
   &::after {
     content: "";
     justify-self: end;
-    width: 30px;
-    height: 30px;
+    width: min(3rem, 45px);
+    height: min(3rem, 45px);
     border: 1px solid variables.$color-dark-secondary;
     border-radius: 50%;
     background-image: url("/__spritemap#sprite-plus-dark-view");
     background-repeat: no-repeat;
-    background-size: 14px 14px;
+    background-size: min(1.4rem, 21px) min(1.4rem, 21px);
     background-position: center;
     transition:
       background 0.3s linear,
       opacity 0.3s linear;
 
     @media (min-width: variables.$tablet-width) {
-      width: 40px;
-      height: 40px;
-      background-size: 20px 20px;
+      width: min(4rem, 53);
+      height: min(4rem, 53);
+      background-size: min(2rem, 27px) min(2rem, 27px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(4rem, 56px);
+      height: min(4rem, 56px);
+      background-size: min(2rem, 28px) min(2rem, 28px);
     }
 
     @media (scripting: none) {
@@ -154,19 +160,21 @@
 
 .accordion__content p {
   margin: 0;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: min(1.6rem, 24px);
+  line-height: min(2rem, 30px);
   font-weight: 300;
   color: variables.$text-primary;
   overflow: hidden;
 
   @media (min-width: variables.$tablet-width) {
-    max-width: 560px;
-    font-size: 18px;
-    line-height: 24px;
+    max-width: min(56rem, 747px);
+    font-size: min(1.8rem, 24px);
+    line-height: min(2.4rem, 32px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: 660px;
+    max-width: min(66rem, 928px);
+    font-size: min(1.8rem, 25px);
+    line-height: min(2.4rem, 34px);
   }
 }

@@ -3,75 +3,85 @@
 .review-card {
   display: grid;
   justify-items: center;
-  padding: 30px 25px;
+  padding: min(3rem, 45px) min(2.5rem, 37px);
   color: variables.$text-secondary;
   background-color: variables.$background-secondary-accent;
 
   @media (min-width: variables.$tablet-width) {
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: min(8rem, 107px) 1fr;
     justify-items: start;
-    column-gap: 40px;
-    row-gap: 20px;
-    padding: 40px 30px;
+    column-gap: min(4rem, 53px);
+    row-gap: min(2rem, 27px);
+    padding: min(4rem, 53px) min(3rem, 40px);
     text-align: left;
   }
 
   @media (min-width: variables.$desktop-width) {
-    column-gap: 30px;
-    padding: 60px;
-  }
-}
-
-.review-card div:has(img) {
-  order: -1;
-  width: 68px;
-  height: 68px;
-  margin-bottom: 10px;
-
-  @media (min-width: variables.$tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: span 2;
-    width: 80px;
-    height: 80px;
-    margin: 0;
-  }
-}
-
-.review-card img {
-  display: block;
-  width: 68px;
-  height: 68px;
-
-  @media (min-width: variables.$tablet-width) {
-    width: 80px;
-    height: 80px;
+    column-gap: min(3rem, 42px);
+    row-gap: min(2rem, 28px);
+    padding: min(6rem, 84px);
   }
 }
 
 .review-card h3 {
   margin: 0;
-  margin-bottom: 16px;
-  font-size: 18px;
-  line-height: 20px;
+  margin-bottom: min(1.6rem, 24px);
+  font-size: min(1.8rem, 27px);
+  line-height: min(2rem, 30px);
   font-weight: 400;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
     margin: 0;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: min(2.2rem, 29px);
+    line-height: min(2.2rem, 29px);
   }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(2.2rem, 31px);
+    line-height: min(2.2rem, 31px);
+  }
+}
+
+.review-card div:has(img) {
+  order: -1;
+  width: min(6.8rem, 102px);
+  height: min(6.8rem, 102px);
+  margin-bottom: min(1rem);
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+    width: min(8rem, 107px);
+    height: min(8rem, 107px);
+    margin: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(8rem, 112px);
+    height: min(8rem, 112px);
+  }
+}
+
+.review-card img {
+  display: block;
+  width: 100%;
 }
 
 .review-card p {
   margin: 0;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: min(1.4rem, 21px);
+  line-height: min(2.2rem, 33px);
   font-weight: 300;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: min(1.6rem, 21px);
+    line-height: min(2.4rem, 32px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.6rem, 22px);
+    line-height: min(2.4rem, 34px);
   }
 }

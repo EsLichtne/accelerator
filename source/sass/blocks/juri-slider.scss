@@ -5,24 +5,24 @@
   @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    gap: 21px;
+    gap: min(2.1rem, 28px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 18px;
+    gap: min(1.8rem, 25px);
   }
 }
 
 .juri-slider__wrapper {
-  width: 227px;
+  width: min(22.7rem, 340px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 560px;
+    width: min(56rem, 747px);
     grid-column: 2 / 3;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1160px;
+    width: min(116rem, 1630px);
   }
 
   @media (scripting: none) {
@@ -34,10 +34,14 @@
   @include mixins.list-reset;
 
   @media (scripting: none) {
-    gap: 20px;
+    gap: min(2rem, 30px);
 
     @media (min-width: variables.$tablet-width) {
-      gap: 40px;
+      gap: min(4rem, 53px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      gap: min(4rem, 56px);
     }
   }
 }

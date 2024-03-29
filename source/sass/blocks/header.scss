@@ -3,43 +3,50 @@
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 16px 0;
+  gap: min(1rem);
+  padding: min(1.6rem, 24px) 0;
 
   @media (min-width: variables.$tablet-width) {
-    gap: 20px 40px;
-    padding: 30px 0;
+    column-gap: min(4rem, 53px);
+    row-gap: min(2rem, 27px);
+    padding: min(3rem, 40px) 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    column-gap: min(4rem, 56px);
+    row-gap: min(2rem, 28px);
+    padding: min(3rem, 42px) 0;
   }
 }
 
 .header__logo {
-  width: 100px;
-  height: 20px;
+  width: min(10rem, 150px);
+  height: min(2rem, 30px);
   margin-right: auto;
 
   @media (min-width: variables.$tablet-width) {
-    width: 110px;
-    height: 22px;
+    width: min(11rem, 147px);
+    height: min(2.2rem, 29px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 130px;
-    height: 26px;
+    width: min(13rem, 183px);
+    height: min(2.6rem, 36px);
   }
 }
 
 .header__phone {
-  min-width: 149px;
+  min-width: min(14.9rem, 223px);
   color: variables.$text-secondary;
   text-decoration: none;
   transition: color 0.3s linear;
 
   @media (min-width: variables.$tablet-width) {
-    min-width: 162px;
+    min-width: min(16.2rem, 216px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    min-width: 176px;
+    min-width: min(17.6rem, 247px);
   }
 
   &:hover {

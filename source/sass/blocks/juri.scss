@@ -1,15 +1,15 @@
 @use "../global/variables.scss";
 
 .juri {
-  padding: 40px 46px;
+  padding: min(4rem, 60px) min(4.6rem, 69px);
   text-align: center;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 30px 27px 60px;
+    padding: min(3rem, 40px) 0 min(6rem, 80px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 100px 29px;
+    padding: min(10rem, 140px) 0;
     text-align: left;
   }
 }
@@ -21,28 +21,31 @@
 
 .juri__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: min(2rem, 30px);
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 46px;
-    font-size: 54px;
-    line-height: 54px;
+    margin-bottom: min(4.6rem, 61px);
+    font-size: min(5.4rem, 72px);
+    line-height: min(5.4rem, 72px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding-left: 74px;
+    margin-bottom: min(4.6rem, 65px);
+    padding-left: min(7.4rem, 104px);
+    font-size: min(5.4rem, 76px);
+    line-height: min(5.4rem, 76px);
   }
 }
 
 .juri__slider {
-  width: 227px;
+  width: min(22.7rem, 340px);
   margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
-    width: 714px;
+    width: min(71.4rem, 952px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1308px;
+    width: min(131rem, 1841px);
   }
 }

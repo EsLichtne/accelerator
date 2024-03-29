@@ -1,32 +1,32 @@
 @use "../global/variables.scss";
 
 .faq {
-  padding: 70px 0;
+  padding: min(7rem, 105px) 0;
   text-align: center;
   background-color: variables.$background-secondary-light;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 60px 0;
+    padding: min(6rem, 80px) 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 100px;
+    padding: min(10rem, 140px) 0;
     text-align: left;
   }
 }
 
 .faq__wrapper {
   display: grid;
-  gap: 35px;
+  gap: min(3.5rem, 52px);
 
   @media (min-width: variables.$tablet-width) {
-    gap: 45px;
+    gap: min(4.5rem, 60px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: 260px auto;
-    column-gap: 40px;
-    row-gap: 50px;
+    grid-template-columns: min(26rem, 365px) auto;
+    column-gap: min(4rem, 56px);
+    row-gap: min(5rem, 70px);
   }
 }
 

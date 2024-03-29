@@ -3,22 +3,22 @@
 .subscription-card {
   display: grid;
   justify-items: center;
-  gap: 18px;
-  padding: 43px 35px;
+  gap: min(1.8rem, 27px);
+  padding: min(4.3rem, 64px) min(3.5rem, 52px);
   background-color: variables.$background-primary-light;
   border: 7px solid transparent;
 
   @media (min-width: variables.$tablet-width) {
     justify-content: stretch;
-    gap: 22px;
-    padding: 58px;
+    gap: min(2.2rem, 29px);
+    padding: min(5.8rem, 77px);
   }
 
   @media (min-width: variables.$desktop-width) {
     justify-content: center;
     justify-items: center;
-    gap: 18px;
-    padding: 58px 71px;
+    gap: min(1.8rem, 25px);
+    padding: min(5.8rem, 81px) min(7.1rem, 100px);
   }
 }
 
@@ -39,31 +39,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: min(1rem, 15px);
   min-width: max-content;
   margin: 0;
-  padding: 69px 0 9px;
+  padding: min(6.9rem, 103px) 0 min(0.9rem, 13px);
   color: variables.$text-accent;
   z-index: 3;
 
   @media (min-width: variables.$tablet-width) {
-    gap: 14px;
-    padding: 60px 0 0;
+    gap: min(1.4rem, 19px);
+    padding: min(6rem, 80px) 0 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(1.4rem, 20px);
+    padding: min(6rem, 84px) 0 0;
   }
 
   &::after {
     flex-shrink: 0;
     content: "";
-    width: 24px;
-    height: 33px;
+    width: min(2.4rem, 36px);
+    height: min(3.3rem, 49px);
     background-image: url("/__spritemap#sprite-rubble-view");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 
     @media (min-width: variables.$tablet-width) {
-      width: 30px;
-      height: 42px;
+      width: min(3rem, 40px);
+      height: min(4.2rem, 56px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(3rem, 42px);
+      height: min(4.2rem, 59px);
     }
   }
 }
@@ -71,20 +81,25 @@
 .subscription-card__shadow {
   position: absolute;
   top: 0;
-  font-size: 80px;
-  line-height: 150px;
+  font-size: min(8rem, 120px);
+  line-height: min(15rem, 225px);
   text-wrap: nowrap;
   color: rgba(232, 232, 232, 0.5);
   z-index: -1;
 
   @media (min-width: variables.$tablet-width) {
-    font-size: 100px;
-    line-height: 150px;
+    font-size: min(10rem, 133px);
+    line-height: min(15rem, 200px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(10rem, 140px);
+    line-height: min(15rem, 211px);
   }
 }
 
 .subscription-card__button {
-  width: 195px;
+  width: min(19.5rem, 292px);
   max-width: 100%;
   z-index: 3;
 
@@ -93,6 +108,6 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 195px;
+    width: min(19.5rem, 274px);
   }
 }

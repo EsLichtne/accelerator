@@ -2,40 +2,41 @@
 
 .invite {
   display: grid;
-  grid-template-columns: 290px;
+  grid-template-columns: min(29rem, 435px);
   justify-content: center;
   align-items: center;
-  padding: 25px 15px;
+  padding: min(2.5rem, 37px) min(1.5rem, 22px);
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet-width) {
-    grid-template-columns: 300px auto;
-    padding: 60px 45px 30px;
+    grid-template-columns: min(30rem, 400px) auto;
+    padding: min(6rem, 80px) min(4.5rem, 60px) min(3rem, 40px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: 500px auto;
-    padding: 100px 103px;
+    grid-template-columns: min(50rem, 703px) auto;
+    padding: min(10rem, 140px) min(10.3rem, 145px);
   }
 }
 
 .invite__content {
   display: grid;
-  grid-template-columns: 117px auto;
-  gap: 16px;
-  padding: 40px;
+  grid-template-columns: min(11.7rem, 175px) auto;
+  gap: min(1.6rem, 24px);
+  padding: min(4rem, 60px);
   background-color: variables.$background-primary-accent;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-    row-gap: 10px;
+    column-gap: min(2rem, 27px);
+    row-gap: min(1rem, 13px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: 168px auto;
-    row-gap: 30px;
-    padding: 60px 80px 98px;
+    grid-template-columns: min(16.8rem, 236px) auto;
+    column-gap: min(2rem, 28px);
+    row-gap: min(3rem, 42px);
+    padding: min(6rem, 84px) min(8rem, 112px) min(9.8rem, 138px);
   }
 }
 
@@ -55,7 +56,7 @@
 
   @media (min-width: variables.$desktop-width) {
     justify-self: end;
-    width: 95px;
+    width: min(9.5rem, 133px);
   }
 }
 
@@ -68,7 +69,11 @@
   grid-column: 1 / -1;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 27px;
+    padding: min(2.7rem, 36px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: min(2.7rem, 38px);
   }
 }
 
@@ -81,16 +86,16 @@
 
 .invite__image {
   display: block;
-  width: 290px;
-  height: 290px;
+  width: min(29rem, 435px);
+  height: min(29rem, 435px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 378px;
-    height: 348px;
+    width: min(37.8rem, 504px);
+    height: min(34.8rem, 464px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 660px;
-    height: 500px;
+    width: min(66rem, 928px);
+    height: min(50rem, 703px);
   }
 }

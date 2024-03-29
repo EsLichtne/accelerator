@@ -9,43 +9,43 @@
 }
 
 .hero__content {
-  padding: 48px 0 32px;
+  padding: min(4.8rem, 72px) 0 min(3.2rem, 48px);
 
   @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
+    column-gap: min(3rem, 40px);
     padding: 0;
-    padding-bottom: 100px;
+    padding-bottom: min(10rem, 133px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: auto 500px;
-    column-gap: 56px;
-    padding: 30px 72px 120px;
+    grid-template-columns: auto min(50rem, 703px);
+    column-gap: min(5.6rem, 79px);
+    padding: min(3rem, 42px) min(7.2rem, 101px) min(12rem, 169px);
   }
 }
 
 .hero__content-wrapper {
   display: grid;
-  grid-template-columns: auto 156px;
-  column-gap: 21px;
-  row-gap: 14px;
+  grid-template-columns: auto min(15.6rem, 234px);
+  column-gap: min(2.1rem, 31px);
+  row-gap: min(1.4rem, 21px);
   grid-auto-flow: dense;
 
   @media (min-width: variables.$tablet-width) {
-    grid-template-columns: auto 185px;
+    grid-template-columns: auto min(18.5rem, 247px);
     grid-template-rows: repeat(3, min-content);
-    column-gap: 26px;
-    row-gap: 10px;
-    padding: 31px 0;
+    column-gap: min(2.6rem, 35px);
+    row-gap: min(1rem, 13px);
+    padding: min(3.1rem, 41px) 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: auto 270px;
+    grid-template-columns: auto min(27rem, 379px);
     column-gap: 0;
-    row-gap: 40px;
-    padding: 52px 0;
+    row-gap: min(4rem, 56px);
+    padding: min(5.2rem, 73px) 0;
   }
 }
 
@@ -75,11 +75,11 @@
 
 .hero__button {
   grid-column: 1 / -1;
-  margin-top: 34px;
+  margin-top: min(3.4rem, 51px);
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
-    margin-top: 40px;
+    margin-top: min(4rem, 53px);
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -88,7 +88,7 @@
 }
 
 .hero__image-wrapper {
-  @media (width <= 767px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -96,12 +96,12 @@
 .hero__image {
   @media (min-width: variables.$tablet-width) {
     display: block;
-    width: 324px;
-    height: 390px;
+    width: min(32.4rem, 432px);
+    height: min(39rem, 520px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 500px;
-    height: 524px;
+    width: min(50rem, 703px);
+    height: min(52.4rem, 736px);
   }
 }

@@ -3,48 +3,48 @@
 .number {
   font-weight: 700;
 
-  &--large {
-    font-size: 64px;
-    line-height: 64px;
+  &--small {
+    font-size: min(2.4rem, 36px);
+    line-height: min(2.4rem, 36px);
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 70px;
-      line-height: 70px;
+      font-size: min(2.4rem, 32px);
+      line-height: min(2.4rem, 32px);
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 70px;
-      line-height: 70px;
+      font-size: min(4rem, 56px);
+      line-height: min(4rem, 56px);
     }
   }
 
   &--medium {
-    font-size: 48px;
-    line-height: 72px;
+    font-size: min(4.8rem, 72px);
+    line-height: min(7.2rem, 108px);
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 60px;
-      line-height: 90px;
+      font-size: min(6rem, 80px);
+      line-height: min(9rem, 120px);
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 60px;
-      line-height: 150%;
+      font-size: min(6rem, 84px);
+      line-height: min(9rem, 126px);
     }
   }
 
-  &--small {
-    font-size: 24px;
-    line-height: 24px;
+  &--large {
+    font-size: min(6.4rem, 96px);
+    line-height: min(6.4rem, 96px);
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 24px;
-      line-height: 24px;
+      font-size: min(7rem, 93px);
+      line-height: min(7rem, 93px);
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 40px;
-      line-height: 40px;
+      font-size: min(7rem, 98px);
+      line-height: min(7rem, 98px);
     }
   }
 }

@@ -8,11 +8,21 @@
 
 body {
   font-family: variables.$font-primary;
-  font-size: 16px;
-  line-height: 150%;
+  font-size: min(1.6rem, 24px);
+  line-height: min(2.4rem, 36px);
   font-weight: 300;
   color: variables.$text-primary;
   background-color: variables.$background-primary-light;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: min(1.6rem, 21px);
+    line-height: min(2.4rem, 32px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.6rem, 22px);
+    line-height: min(2.4rem, 34px);
+  }
 }
 
 img {

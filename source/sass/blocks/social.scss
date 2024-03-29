@@ -6,25 +6,35 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: min(2rem, 30px);
 
   @media (min-width: variables.$tablet-width) {
-    gap: 15px;
+    gap: min(1.5rem, 20px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 10px;
+    gap: min(1rem, 14px);
   }
 }
 
 .social__link {
   display: grid;
   place-content: center;
-  width: 25px;
-  height: 25px;
+  width: min(2.5rem, 37px);
+  height: min(2.5rem, 37px);
   background-color: variables.$background-primary-light;
   border-radius: 50%;
   transition: background 0.3s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    width: min(2.5rem, 33px);
+    height: min(2.5rem, 33px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(2.5rem, 35px);
+    height: min(2.5rem, 35px);
+  }
 
   &--vk::after {
     mask-image: url("/__spritemap#sprite-vk-view");
@@ -41,13 +51,23 @@
   &::after {
     content: "";
     display: block;
-    width: 17px;
-    height: 17px;
+    width: min(1.7rem, 25px);
+    height: min(1.7rem, 25px);
     background-color: variables.$backgound-secondary-dark;
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
     transition: background 0.3s linear;
+
+    @media (min-width: variables.$tablet-width) {
+      width: min(1.7rem, 23px);
+      height: min(1.7rem, 23px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(1.7rem, 24px);
+      height: min(1.7rem, 24px);
+    }
   }
 
   &:hover {

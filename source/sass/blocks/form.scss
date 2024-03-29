@@ -1,43 +1,31 @@
 @use "../global/variables.scss";
 
 .form {
-  padding: 70px 0;
-  color: variables.$text-secondary;
-  background-color: variables.$backgound-primary-dark;
+  display: grid;
+  gap: min(2.7rem, 40px);
 
   @media (min-width: variables.$tablet-width) {
-    padding: 60px 0;
-    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: min(3rem, 40px);
+    row-gap: min(3.5rem, 47px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    display: grid;
-    justify-content: end;
-    text-align: left;
+    column-gap: min(3rem, 42px);
+    row-gap: min(3.5rem, 49px);
   }
 }
 
-.form__wrapper {
-  width: 290px;
-  margin: 0 auto;
+.form__button {
+  margin-top: min(0.9rem, 13px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 440px;
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: min(2.7rem, 36px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 683px;
-    padding: 0 103px;
-  }
-}
-
-.form__title {
-  margin: 0;
-  margin-bottom: 27px;
-
-  @media (min-width: variables.$tablet-width) {
-    margin-bottom: 27px;
-    font-size: 54px;
-    line-height: 54px;
+    padding: min(2.7rem, 38px);
   }
 }
