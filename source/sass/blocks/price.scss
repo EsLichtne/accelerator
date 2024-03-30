@@ -17,7 +17,7 @@
   @media (min-width: variables.$desktop-width) {
     padding: min(10rem, 140px) 0;
     background-size: min(47rem, 661px) min(49.3rem, 693px);
-    background-position: right -16.7rem bottom -4.5rem;
+    background-position: right max(-16.7rem, -235px) bottom -4.5rem;
   }
 }
 
