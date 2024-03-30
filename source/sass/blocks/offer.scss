@@ -120,13 +120,8 @@
   height: min(36rem, 540px);
 
   @media (min-width: variables.$tablet-width) {
-    width: min(40rem, 533px);
-    height: min(46.2rem, 616px);
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    width: min(28rem, 393px);
-    height: min(46rem, 646px);
+    width: 100%;
+    height: 100%;
   }
 }
 
