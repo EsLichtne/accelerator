@@ -13,4 +13,9 @@ const throttle = (callback, delayBetweenFrames = 1000) => {
   };
 };
 
-export { throttle };
+const setButtonDisabled = (button, flag) => {
+  button.disabled = flag;
+  button.textContent = flag ? 'Отправляем...' : 'Отправить';
+};
+
+export { throttle, setButtonDisabled };
