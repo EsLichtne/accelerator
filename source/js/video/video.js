@@ -8,7 +8,7 @@ const createIframe = () => {
   iframe.classList.add('video__media');
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
-  iframe.setAttribute('src', `${link.href}?autoplay=1`);
+  iframe.setAttribute('src', `${link.dataset.href}?autoplay=1`);
 
   return iframe;
 };
