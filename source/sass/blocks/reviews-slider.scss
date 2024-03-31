@@ -16,6 +16,7 @@
 
 .reviews-slider__wrapper {
   width: min(24rem, 360px);
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 
   @media (min-width: variables.$tablet-width) {
     width: min(50rem, 667px);
@@ -33,8 +34,6 @@
 
 .reviews-slider__list {
   @include mixins.list-reset;
-
-  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 
   @media (scripting: none) {
     gap: min(2rem, 30px);
