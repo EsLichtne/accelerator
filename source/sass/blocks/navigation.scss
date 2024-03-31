@@ -6,7 +6,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  column-gap: min(1.5rem, 22px);
+  column-gap: min(1.3rem, 19px);
   row-gap: min(0.8rem, 12px);
   margin-left: max(-1rem, -15px);
 
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    column-gap: min(6.2rem, 87px);
+    column-gap: min(6rem, 84px);
     row-gap: min(0.8rem, 11px);
   }
 }

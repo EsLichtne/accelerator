@@ -3,6 +3,7 @@
 
 .contacts {
   padding: min(4rem, 60px) 0;
+  padding-top: min(3.7rem, 55px);
   background-color: variables.$background-primary-light;
 
   @media (min-width: variables.$tablet-width) {
@@ -12,8 +13,9 @@
 
   @media (min-width: variables.$desktop-width) {
     display: grid;
-    padding: min(6rem, 84px) 0 min(7.1rem, 100px);
+    padding: min(6rem, 84px) 0 min(7rem, 98px);
     text-align: left;
+    border-top: 1px solid #74819c;
   }
 }
 
@@ -33,7 +35,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: min(3.4rem, 51px);
+  margin-bottom: min(3.7rem, 55px);
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: min(3.6rem, 48px);
