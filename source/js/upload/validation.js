@@ -1,6 +1,7 @@
 import { throttle } from '../utilities';
 
 const form = document.querySelector('.proposal');
+const fields = form.querySelectorAll('.field__input');
 const userName = form.querySelector('#name');
 const userPhone = form.querySelector('#phone');
 
@@ -9,7 +10,7 @@ const setError = (element, message) => {
   const error = elementParent.querySelector('.field__error');
 
   error.textContent = message;
-  element.classList.add('.field__input--error');
+  element.classList.add('field__input--error');
 };
 
 const setSuccess = (element) => {
@@ -17,7 +18,7 @@ const setSuccess = (element) => {
   const error = elementParent.querySelector('.field__error');
 
   error.textContent = '';
-  elementParent.classList.remove('.field__input--error');
+  element.classList.remove('field__input--error');
 };
 
 const checkNameValid = (name) => {
@@ -30,54 +31,44 @@ const checkPhoneValid = (phone) => {
   return pattern.test(String(phone));
 };
 
-const checkValidity = () => {
-  const userNameValue = userName.value.trim();
-  const userPhoneValue = userPhone.value.trim();
-
-  if (userNameValue === '') {
-    setError(userName, 'Поле обязательно к заполнению');
-  } else if (!checkNameValid(userNameValue)) {
-    setError(userName, 'Имя должно состоять из букв');
-  } else {
-    setSuccess(userName);
+const checkFieldsValidity = (field) => {
+  if (field === userName) {
+    const fieldValue = field.value.trim();
+    if (fieldValue === '') {
+      setError(userName, 'Поле обязательно к заполнению');
+    } else if (!checkNameValid(fieldValue)) {
+      setError(userName, 'Имя должно состоять из букв');
+    } else {
+      setSuccess(userName);
+    }
   }
 
-  if (userPhoneValue === '') {
-    setError(userPhone, 'Поле обязательно к заполнению');
-  } else if (!checkPhoneValid(userPhoneValue)) {
-    setError(userPhone, 'Введите номер в правильном формате');
-  } else {
-    setSuccess(userPhone);
+  if (field === userPhone) {
+    const fieldValue = field.value.trim();
+    if (fieldValue === '') {
+      setError(userPhone, 'Поле обязательно к заполнению');
+    } else if (!checkPhoneValid(fieldValue)) {
+      setError(userPhone, 'Введите номер в правильном формате');
+    } else {
+      setSuccess(userPhone);
+    }
   }
-};
-
-const onFormSubmit = (event) => {
-  event.preventDefault();
-  checkValidity();
 };
 
 userName.addEventListener('input', throttle((event) => {
-  const userNameValue = event.target.value.trim();
-
-  if (userNameValue === '') {
-    setError(userName, 'Поле обязательно к заполнению');
-  } else if (!checkNameValid(userNameValue)) {
-    setError(userName, 'Имя должно состоять из букв');
-  } else {
-    setSuccess(userName);
-  }
+  checkFieldsValidity(event.target);
 }, 1500));
 
 userPhone.addEventListener('input', throttle((event) => {
-  const userPhoneValue = event.target.value.trim();
-
-  if (userPhoneValue === '') {
-    setError(userPhone, 'Поле обязательно к заполнению');
-  } else if (!checkPhoneValid(userPhoneValue)) {
-    setError(userPhone, 'Введите номер в правильном формате');
-  } else {
-    setSuccess(userPhone);
-  }
+  checkFieldsValidity(event.target);
 }, 1500));
 
-form.addEventListener('submit', onFormSubmit);
+const checkValidity = () => {
+  fields.forEach((field) => {
+    checkFieldsValidity(field);
+  });
+
+  return Array.from(fields).every((field) => !field.classList.contains('field__input--error'));
+};
+
+export { checkValidity };
