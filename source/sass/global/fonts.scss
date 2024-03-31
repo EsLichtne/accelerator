@@ -6,6 +6,7 @@
     url("../../fonts/roboto-condensed/roboto-condensed-regular.woff2") format("woff2"),
     url("../../fonts/roboto-condensed/roboto-condensed-regular.woff") format("woff");
   font-display: swap;
+  unicode-range: U+400-4FF, U+500-52F, 0000–007F, 0080–00FF;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
     url("../../fonts/roboto-condensed/roboto-condensed-bold.woff2") format("woff2"),
     url("../../fonts/roboto-condensed/roboto-condensed-bold.woff") format("woff");
   font-display: swap;
+  unicode-range: U+400-4FF, U+500-52F, 0000–007F, 0080–00FF;
 }
 
 @font-face {
@@ -26,6 +28,7 @@
     url("../../fonts/roboto-condensed/roboto-condensed-light.woff2") format("woff2"),
     url("../../fonts/roboto-condensed/roboto-condensed-light.woff") format("woff");
   font-display: swap;
+  unicode-range: U+400-4FF, U+500-52F, 0000–007F, 0080–00FF;
 }
 
 @font-face {
@@ -36,6 +39,7 @@
     url("../../fonts/alumni-sans/alumni-sans-semibold.woff2") format("woff2"),
     url("../../fonts/alumni-sans/alumni-sans-semibold.woff") format("woff");
   font-display: swap;
+  unicode-range: U+400-4FF, U+500-52F, 0000–007F, 0080–00FF;
 }
 
 @font-face {
@@ -46,4 +50,5 @@
     url("../../fonts/alumni-sans/alumni-sans-extrabold.woff2") format("woff2"),
     url("../../fonts/alumni-sans/alumni-sans-extrabold.woff") format("woff");
   font-display: swap;
+  unicode-range: U+400-4FF, U+500-52F, 0000–007F, 0080–00FF;
 }
