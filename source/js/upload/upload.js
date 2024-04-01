@@ -13,6 +13,7 @@ form.addEventListener('submit', (event) => {
 
     setTimeout(() => {
       form.submit();
+      setButtonDisabled(button, false);
       form.reset();
     }, 1500);
   }
