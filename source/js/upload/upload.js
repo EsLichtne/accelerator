@@ -4,7 +4,6 @@ import { checkValidity } from './validation';
 const form = document.querySelector('.form');
 const button = form.querySelector('.form__button');
 
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -15,6 +14,6 @@ form.addEventListener('submit', (event) => {
       form.submit();
       setButtonDisabled(button, false);
       form.reset();
-    }, 1500);
+    }, 1000);
   }
 });
