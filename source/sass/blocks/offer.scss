@@ -99,18 +99,18 @@
 }
 
 .offer__image-wrapper {
-  display: grid;
-  justify-content: start;
   width: 100%;
   background-image: linear-gradient(180deg, #4069da 0%, #4879e3 24.77%, #4e84e5 39.73%, #5593e6 49.96%, #5ea3e9 64.73%, #74b1eb 74.77%, #a0c7f0 89.73%, #b2d1f2 100%);
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
+    display: grid;
+    align-items: end;
+    background-image: linear-gradient(90deg, #538ee6 0%, #4d82e5 25.33%, #4370dd 49.79%, #3f66d8 75.19%, #4067d9 100%);
   }
 
   @media (min-width: variables.$desktop-width) {
-    justify-self: end;
-    background-image: linear-gradient(180deg, #3f66d8 0%, #4573e0 24.77%, #4c81e4 39.73%, #528ce6 49.96%, #5ea1e8 64.73%, #6daeea 74.77%, #97c3ef 89.73%, #b0d1f2 100%);
+    background-image: linear-gradient(90deg, #5086e4 0%, #4d80e6 24.61%, #4572df 49.93%, #426adc 75.26%, #3e67d9 100%);
   }
 }
 
