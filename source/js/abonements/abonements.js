@@ -32,7 +32,7 @@ document.addEventListener('inline-tabs', (event) => {
       `
       <span class="subscription-card__shadow" aria-hidden="true">${prices[event.detail]?.[index]}</span>
       <span class="visually-hidden">Стоимость (рублей):</span>
-      ${prices[event.detail]?.[index]}
+      <span class="subscription-card__number">${prices[event.detail]?.[index]}</span>
       `;
   });
 });
