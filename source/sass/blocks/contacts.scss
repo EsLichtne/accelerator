@@ -110,12 +110,12 @@
   display: block;
   margin: 0;
   font-style: normal;
-  text-decoration: none;
-  color: variables.$text-primary;
 }
 
 .contacts__link {
   position: relative;
+  text-decoration: none;
+  color: variables.$text-primary;
   transition: color 0.3s linear;
 
   &:hover {
