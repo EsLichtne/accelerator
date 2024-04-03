@@ -26,6 +26,7 @@
   display: grid;
   justify-items: center;
   gap: min(1.2rem, 18px);
+  padding: 0 min(3rem, 45px);
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: min-content 1fr;
@@ -35,6 +36,7 @@
     grid-auto-flow: dense;
     column-gap: min(1.5rem, 20px);
     row-gap: min(1.2rem, 16px);
+    padding: 0;
     text-align: left;
   }
 
@@ -65,7 +67,6 @@
 }
 
 .feature__card p {
-  max-width: min(23rem, 345px);
   margin: 0;
   font-size: min(1.4rem, 21px);
   line-height: min(2.2rem, 33px);
@@ -74,7 +75,6 @@
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
-    max-width: none;
     font-size: min(1.6rem, 21px);
     line-height: min(2.4rem, 32px);
   }
@@ -86,6 +86,7 @@
   }
 }
 
+.feature__card h3:has(span),
 .feature__card p:has(span) {
   order: -1;
   display: flex;
@@ -112,6 +113,7 @@
   }
 }
 
+.feature__card h3 > span,
 .feature__card p > span {
   font-size: min(1.4rem, 21px);
   line-height: min(2rem, 30px);
@@ -132,7 +134,7 @@
 .feature:nth-child(3n) .feature__card {
   gap: min(2rem, 30px);
   margin: min(0.5rem, 7px) 0;
-  padding: min(3rem, 45px) min(7.5rem, 112px) min(4rem, 60px);
+  padding: min(3rem, 45px) min(5.5rem, 82px) min(4rem, 60px);
   background-color: variables.$background-secondary-accent;
 
   @media (min-width: variables.$tablet-width) {
@@ -206,6 +208,7 @@
 }
 
 .feature:nth-child(3n) p {
+  text-wrap: balance;
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet-width) {
