@@ -34,8 +34,8 @@ new Swiper('#reviews-slider', {
   modules: [Navigation],
   loop: false,
   slidesPerView: 1,
-  spaceBetween: 40,
-  speed: 700,
+  speed: 800,
+  cssMode: true,
 
   navigation: {
     nextEl: '#reviews-slider-button-next',
