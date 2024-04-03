@@ -4,21 +4,21 @@
   display: grid;
   justify-items: center;
   gap: min(1.8rem, 27px);
-  padding: min(4.3rem, 64px) min(3.5rem, 52px);
+  padding: min(4.3rem, 64px) min(1.2rem, 18px);
   background-color: variables.$background-primary-light;
   border: 7px solid transparent;
 
   @media (min-width: variables.$tablet-width) {
     justify-content: stretch;
     gap: min(2.2rem, 29px);
-    padding: min(5.8rem, 77px);
+    padding: min(5.8rem, 77px) 2.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
     justify-content: center;
     justify-items: center;
     gap: min(1.8rem, 25px);
-    padding: min(5.8rem, 81px) min(7.1rem, 100px);
+    padding: min(5.8rem, 81px) min(1.8rem, 25px);
   }
 }
 
@@ -35,25 +35,52 @@
 }
 
 .subscription-card__price {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: min(1rem, 15px);
-  min-width: max-content;
+  display: grid;
+  justify-items: center;
   margin: 0;
-  padding: min(6.9rem, 103px) 0 min(0.9rem, 13px);
-  color: variables.$text-accent;
-  z-index: 3;
+}
+
+.subscription-card__shadow {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  max-width: min(25rem, 375px);
+  line-height: min(15rem, 225px);
+  font-size: min(8rem, 120px);
+  word-wrap: break-word;
+  align-content: center;
+  color: rgba(232, 232, 232, 0.5);
 
   @media (min-width: variables.$tablet-width) {
-    gap: min(1.4rem, 19px);
-    padding: min(6rem, 80px) 0 0;
+    max-width: 31rem;
+    line-height: min(15rem, 200px);
+    font-size: min(10rem, 133px);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: min(31rem, 436px);
+    line-height: min(15rem, 211px);
+    font-size: min(10rem, 140px);
+  }
+}
+
+.subscription-card__number {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  align-self: end;
+  display: flex;
+  align-items: center;
+  gap: min(1rem, 15px);
+  padding: min(0.9rem, 13px) 0;
+  color: variables.$text-accent;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 1.4rem;
+    padding: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
     gap: min(1.4rem, 20px);
-    padding: min(6rem, 84px) 0 0;
   }
 
   &::after {
@@ -78,33 +105,13 @@
   }
 }
 
-.subscription-card__shadow {
-  position: absolute;
-  top: 0;
-  font-size: min(8rem, 120px);
-  line-height: min(15rem, 225px);
-  text-wrap: nowrap;
-  color: rgba(232, 232, 232, 0.5);
-  z-index: -1;
-
-  @media (min-width: variables.$tablet-width) {
-    font-size: min(10rem, 133px);
-    line-height: min(15rem, 200px);
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    font-size: min(10rem, 140px);
-    line-height: min(15rem, 211px);
-  }
-}
-
 .subscription-card__button {
   width: min(19.5rem, 292px);
   max-width: 100%;
   z-index: 3;
 
   @media (min-width: variables.$tablet-width) {
-    width: 100%;
+    width: 25rem;
   }
 
   @media (min-width: variables.$desktop-width) {
