@@ -1,10 +1,12 @@
 import Swiper from 'swiper';
-import {Navigation} from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 new Swiper('#juri-slider', {
   modules: [Navigation],
   loop: true,
   speed: 500,
+  containerModifierClass: 'swiper-juri-',
+  watchSlidesProgress: true,
 
   navigation: {
     nextEl: '#juri-slider-button-next',
