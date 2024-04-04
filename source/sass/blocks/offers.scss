@@ -42,7 +42,6 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-rows: 1fr min-content;
     align-items: end;
     column-gap: min(4rem, 56px);
     row-gap: min(3rem, 42px);
@@ -67,6 +66,12 @@
   @media (min-width: variables.$desktop-width) {
     grid-column: 1 / 2;
     grid-row: span 2;
+  }
+}
+
+.offers__item:nth-child(3n+2) {
+  @media (min-width: variables.$desktop-width) {
+    margin-top: min(8.2rem, 115px);
   }
 }
 
