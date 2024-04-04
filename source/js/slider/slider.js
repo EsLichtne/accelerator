@@ -35,7 +35,7 @@ new Swiper('#reviews-slider', {
   loop: false,
   slidesPerView: 1,
   speed: 800,
-  cssMode: true,
+  touchReleaseOnEdges: true,
 
   navigation: {
     nextEl: '#reviews-slider-button-next',
