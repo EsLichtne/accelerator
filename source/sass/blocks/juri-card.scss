@@ -19,7 +19,7 @@
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet-width) {
-    grid-template-rows: min(5.1rem, 68px) repeat(2, min-content) 1fr min(1.5rem, 20px);
+    grid-template-rows: min(5.1rem, 68px) repeat(2, min-content) 1fr min(1.4rem, 20px);
   }
 
   @media (min-width: variables.$desktop-width) {

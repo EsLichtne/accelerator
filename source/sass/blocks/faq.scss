@@ -26,7 +26,7 @@
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: min(26rem, 365px) auto;
     column-gap: min(4rem, 56px);
-    row-gap: min(5rem, 70px);
+    row-gap: min(4.9rem, 69px);
   }
 }
 
@@ -41,6 +41,7 @@
 .faq__tabs {
   @media (min-width: variables.$desktop-width) {
     align-self: start;
+    padding-top: 1px;
   }
 }
 
