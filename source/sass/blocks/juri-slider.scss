@@ -50,7 +50,15 @@
   display: grid;
 
   @media (scripting: none) {
-    width: auto;
+    width: min(22.7rem, 340px);
+
+    @media (min-width: variables.$tablet-width) {
+      width: 26rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(26rem, 365px);
+    }
   }
 }
 
