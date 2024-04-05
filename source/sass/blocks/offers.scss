@@ -42,6 +42,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    grid-template-rows: 1fr auto;
     align-items: end;
     column-gap: min(4rem, 56px);
     row-gap: min(3rem, 42px);
