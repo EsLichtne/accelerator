@@ -25,7 +25,7 @@
 
 .review-card h3 {
   margin: 0;
-  margin-bottom: min(1.6rem, 24px);
+  margin-bottom: min(1.7rem, 24px);
   font-size: min(1.8rem, 27px);
   line-height: min(2rem, 30px);
   font-weight: 400;
@@ -70,12 +70,14 @@
 
 .review-card p {
   margin: 0;
+  margin-bottom: -1px;
   font-size: min(1.4rem, 21px);
   line-height: min(2.2rem, 33px);
   font-weight: 300;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 2 / 3;
+    margin: 0;
     font-size: min(1.6rem, 21px);
     line-height: min(2.4rem, 32px);
   }

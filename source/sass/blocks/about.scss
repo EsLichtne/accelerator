@@ -43,7 +43,7 @@
 
 .about__capture {
   margin: 0;
-  margin-bottom: min(3.6rem, 54px);
+  margin-bottom: min(3.7rem, 54px);
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 2;
@@ -56,7 +56,7 @@
 }
 
 .about__description {
-  margin: min(3.6rem, 54px) 0;
+  margin: min(3.6rem, 54px) 0 min(3.5rem, 54px);
 
   @media (min-width: variables.$tablet-width) {
     justify-self: center;
