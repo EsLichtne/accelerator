@@ -19,6 +19,7 @@
   @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-rows: repeat(3, min-content) min(34.5rem, 460px) min(8.5rem, 113px);
+    justify-content: center;
   }
 
   @media (min-width: variables.$desktop-width) {
