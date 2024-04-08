@@ -20,10 +20,11 @@
 }
 
 .juri__title {
-  margin: 0;
-  margin-bottom: min(2rem, 30px);
+  margin: 1px 0 min(1.9rem, 30px) -1px;
+  margin-bottom: min(1.9rem, 30px);
 
   @media (min-width: variables.$tablet-width) {
+    margin: 0;
     margin-bottom: min(4.6rem, 61px);
     font-size: min(5.4rem, 72px);
     line-height: min(5.4rem, 72px);

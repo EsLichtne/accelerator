@@ -28,6 +28,11 @@
 
 .subscription-card__title {
   margin: 0;
+  margin-top: 1px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+  }
 }
 
 .subscription-card__capture {
@@ -71,7 +76,7 @@
   display: flex;
   align-items: center;
   gap: min(1rem, 15px);
-  padding: min(0.9rem, 13px) 0;
+  padding: min(0.9rem, 13px) 0 min(1.1rem, 13px);
   color: variables.$text-accent;
 
   @media (min-width: variables.$tablet-width) {
@@ -108,10 +113,12 @@
 .subscription-card__button {
   width: min(19.5rem, 292px);
   max-width: 100%;
+  margin-top: -1px;
   z-index: 3;
 
   @media (min-width: variables.$tablet-width) {
     width: 25rem;
+    margin: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
