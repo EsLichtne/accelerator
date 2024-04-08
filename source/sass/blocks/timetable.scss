@@ -64,6 +64,10 @@
 }
 
 .timetable__description {
+  margin: 0;
+}
+
+.timetable__time {
   display: flex;
   align-items: center;
   gap: min(0.3rem, 4px);
