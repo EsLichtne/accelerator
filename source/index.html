@@ -514,7 +514,19 @@
     </div>
   </section>
   <!-- FORM -->
-  <section class="form" data-test="form"></section>
+  <section class="proposal" data-test="form">
+    <h2 class="visually-hidden">Заявка на консультацию.</h2>
+    <p class="proposal__title title title--third">Остались вопросы?</p>
+    <p class="proposal__description text text--third">Заполните форму и наш оператор свяжется с вами для консультации.
+    </p>
+    <form action="https://echo.htmlacademy.ru" class="proposal__form form" method="post">
+      <label class="visually-hidden" for="phone">Телефон.</label>
+      <input class="form__input" type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[\+\d]+" required>
+      <label class="visually-hidden" for="">Email.</label>
+      <input class="form__input" type="email" id="Email" name="email" placeholder="Email" required>
+      <button class="form__button button button--primary" type="submit">Отправить</button>
+    </form>
+  </section>
   <!-- FOOTER -->
   <footer class="footer" data-test="footer">
   </footer>
