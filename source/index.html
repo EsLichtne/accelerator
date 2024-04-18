@@ -531,8 +531,8 @@
           height="400">
         <source type="image/png" media="(min-width: 1440px)"
           srcset="img/about-desktop.jpg 1x, img/about-desktop@2x.jpg 2x" width="660" height="498">
-        <source type="image/png" media="(min-width: 768px)"
-          srcset="img/about-tablet.jpg 1x, img/about-tablet@2x.jpg 2x" width="450" height="350">
+        <source type="image/png" media="(min-width: 768px)" srcset="img/about-tablet.jpg 1x, img/about-tablet@2x.jpg 2x"
+          width="450" height="350">
         <img class="about__image" src="img/about-mobile.jpg" srcset="img/about-mobile@2x.jpg 2x" width="320"
           height="400"
           alt="Группа туристов идёт по горе в окружении белых облаков, внизу видно озеро бирюзового цвета.">
@@ -556,7 +556,20 @@
           <article class="reviews-slider__slide reviews-card">
             <h3 class="reviews-card__title caption caption--first">Фролов Александр</h3>
             <div class="reviews-card__image-wrapper">
-              <img class="reviews-card__image" width="250" height="169" src="#" alt="">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/review-1-desktop.webp 1x, img/review-1-desktop@2x.webp 2x" width="258" height="253">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/review-1-tablet.webp 1x, img/review-1-tablet@2x.webp 2x" width="186" height="237">
+                <source type="image/webp" srcset="img/review-1-mobile.webp 1x, img/review-1-mobile@2x.webp 2x"
+                  width="250" height="169">
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="img/review-1-desktop.jpg 1x, img/review-1-desktop@2x.jpg 2x" width="258" height="253">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="img/review-1-tablet.jpg 1x, img/review-1-tablet@2x.jpg 2x" width="186" height="237">
+                <img class="reviews-card__image" src="img/review-1-mobile.jpg" srcset="img/review-1-mobile@2x.jpg 2x"
+                  width="250" height="169" alt="">
+              </picture>
             </div>
             <p class="reviews-card__description text text--third">Осенью ходили в поход на Алтай с друзьями. Впечатления
               потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о местах,
@@ -570,7 +583,20 @@
           <article class="reviews-slider__slide reviews-card">
             <h3 class="reviews-card__title caption caption--first">Иван Соловьёв</h3>
             <div class="reviews-card__image-wrapper">
-              <img class="reviews-card__image" width="250" height="169" src="#" alt="">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/review-2-desktop.webp 1x, img/review-2-desktop@2x.webp 2x" width="258" height="253">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/review-2-tablet.webp 1x, img/review-2-tablet@2x.webp 2x" width="186" height="237">
+                <source type="image/webp" srcset="img/review-2-mobile.webp 1x, img/review-2-mobile@2x.webp 2x"
+                  width="250" height="169">
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="img/review-2-desktop.jpg 1x, img/review-2-desktop@2x.jpg 2x" width="258" height="253">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="img/review-2-tablet.jpg 1x, img/review-2-tablet@2x.jpg 2x" width="186" height="237">
+                <img class="reviews-card__image" src="img/review-2-mobile.jpg" srcset="img/review-2-mobile@2x.jpg 2x"
+                  width="250" height="169" alt="">
+              </picture>
             </div>
             <p class="reviews-card__description text text--third">Хороший полноценный поход с разнообразными локациями.
               В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков
@@ -585,7 +611,20 @@
           <article class="reviews-slider__slide reviews-card">
             <h3 class="reviews-card__title caption caption--first">Евгения Баженова</h3>
             <div class="reviews-card__image-wrapper">
-              <img class="reviews-card__image" width="250" height="169" src="#" alt="">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/review-3-desktop.webp 1x, img/review-3-desktop@2x.webp 2x" width="258" height="253">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/review-3-tablet.webp 1x, img/review-3-tablet@2x.webp 2x" width="186" height="237">
+                <source type="image/webp" srcset="img/review-3-mobile.webp 1x, img/review-3-mobile@2x.webp 2x"
+                  width="250" height="169">
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="img/review-3-desktop.jpg 1x, img/review-3-desktop@2x.jpg 2x" width="258" height="253">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="img/review-3-tablet.jpg 1x, img/review-3-tablet@2x.jpg 2x" width="186" height="237">
+                <img class="reviews-card__image" src="img/review-3-mobile.jpg" srcset="img/review-3-mobile@2x.jpg 2x"
+                  width="250" height="169" alt="">
+              </picture>
             </div>
             <p class="reviews-card__description text text--third">Ранее не ходила на такие длинные дистанции. В первый
               день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца.
@@ -598,7 +637,20 @@
           <article class="reviews-slider__slide reviews-card">
             <h3 class="reviews-card__title caption caption--first">Елена Пирогова</h3>
             <div class="reviews-card__image-wrapper">
-              <img class="reviews-card__image" width="250" height="169" src="#" alt="">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/review-4-desktop.webp 1x, img/review-4-desktop@2x.webp 2x" width="258" height="253">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/review-4-tablet.webp 1x, img/review-4-tablet@2x.webp 2x" width="186" height="237">
+                <source type="image/webp" srcset="img/review-4-mobile.webp 1x, img/review-4-mobile@2x.webp 2x"
+                  width="250" height="169">
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="img/review-4-desktop.jpg 1x, img/review-4-desktop@2x.jpg 2x" width="258" height="253">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="img/review-4-tablet.jpg 1x, img/review-4-tablet@2x.jpg 2x" width="186" height="237">
+                <img class="reviews-card__image" src="img/review-4-mobile.jpg" srcset="img/review-4-mobile@2x.jpg 2x"
+                  width="250" height="169" alt="">
+              </picture>
             </div>
             <p class="reviews-card__description text text--third">Это был опыт, изменивший мою жизнь! Думала,
               не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия,
