@@ -522,8 +522,21 @@
   <section class="about" data-test="about">
     <h2 class="about__title title title--third">О нас</h2>
     <div class="about__image-wrapper">
-      <img class="about__image" width="320" height="400" src="#"
-        alt="Группа туристов идёт по горе в окружении белых облаков, внизу видно озеро бирюзового цвета.">
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)"
+          srcset="img/about-desktop.webp 1x, img/about-desktop@2x.webp 2x" width="660" height="498">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/about-tablet.webp 1x, img/about-tablet@2x.webp 2x" width="450" height="350">
+        <source type="image/webp" srcset="img/about-mobile.webp 1x, img/about-mobile@2x.webp 2x" width="320"
+          height="400">
+        <source type="image/png" media="(min-width: 1440px)"
+          srcset="img/about-desktop.jpg 1x, img/about-desktop@2x.jpg 2x" width="660" height="498">
+        <source type="image/png" media="(min-width: 768px)"
+          srcset="img/about-tablet.jpg 1x, img/about-tablet@2x.jpg 2x" width="450" height="350">
+        <img class="about__image" src="img/about-mobile.jpg" srcset="img/about-mobile@2x.jpg 2x" width="320"
+          height="400"
+          alt="Группа туристов идёт по горе в окружении белых облаков, внизу видно озеро бирюзового цвета.">
+      </picture>
     </div>
     <h3 class="about__subtitle title title--fifth">История компании</h3>
     <p class="about__description text text--second">В далёком 2000 году мы начали заниматься туризмом — походы, поездки,
