@@ -1,0 +1,68 @@
+@use "../global/variables";
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: variables.$font-primary;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s linear;
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 16px;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition: background-color 0.3s linear;
+  }
+
+  &--primary {
+    color: variables.$text-primary-dark;
+
+    &::after {
+      background-color: variables.$text-primary-dark;
+    }
+
+    &:hover {
+      color: variables.$color-hover;
+
+      &::after {
+        background-color: variables.$color-hover;
+      }
+    }
+
+    &:focus {
+      color: variables.$color-accent;
+
+      &::after {
+        background-color: variables.$color-accent;
+      }
+    }
+
+    &:active {
+      color: variables.$color-active;
+
+      &::after {
+        background-color: variables.$color-active;
+      }
+    }
+
+    &:disabled,
+    &.link--disabled {
+      color: variables.$color-disabled;
+      cursor: not-allowed;
+
+      &::after {
+        background-color: variables.$color-disabled;
+      }
+    }
+  }
+}
