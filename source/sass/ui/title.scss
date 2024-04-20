@@ -1,0 +1,44 @@
+@use "../global/variables";
+
+.title {
+  font-family: variables.$font-primary;
+  line-height: 100%;
+  color: variables.$text-primary-dark;
+
+  &--first {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  &--second {
+    font-size: 26px;
+    font-weight: 800;
+  }
+
+  &--third {
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  &--fourth {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &--fifth {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &--sixth {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &--seventh {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+}
