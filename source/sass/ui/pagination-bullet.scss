@@ -1,0 +1,33 @@
+@use "../global/variables";
+
+.pagination-bullet {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid variables.$color-primary-light;
+  border-radius: 50%;
+  cursor: pointer;
+  transition:
+    background-color 0.3s linear,
+    outline 0.3s linear;
+
+  &--selected {
+    background-color: variables.$color-primary-light;
+  }
+
+  &:hover {
+    background-color: variables.$background-secondary-light;
+  }
+
+  &:focus {
+    background-color: transparent;
+    outline: 1px solid variables.$background-opacity;
+    outline-offset: 1px;
+  }
+
+  &:active {
+    background-color: variables.$background-opacity;
+    outline: none;
+  }
+}
