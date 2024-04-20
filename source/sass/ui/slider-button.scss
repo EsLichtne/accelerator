@@ -1,0 +1,67 @@
+@use "../global/variables";
+
+.slider-button {
+  display: grid;
+  place-content: center;
+  width: 37px;
+  height: 35px;
+  background-color: variables.$color-accent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color 0.3s linear,
+    border-color 0.3s linear;
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 9px;
+    background-color: variables.$text-primary-light;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition: background-color 0.3s linear;
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: transparent;
+    border-color: variables.$color-active;
+
+    &::before {
+      background-color: variables.$color-active;
+    }
+  }
+
+  &:focus {
+    background-color: transparent;
+    border-color: transparent;
+
+    &::before {
+      background-color: variables.$color-active;
+    }
+  }
+
+  &:active {
+    background-color: variables.$color-active;
+    border-color: transparent;
+
+    &::before {
+      background-color: variables.$text-primary-light;
+    }
+  }
+
+  &:disabled {
+    background-color: variables.$color-disabled;
+    border-color: transparent;
+    cursor: not-allowed;
+
+    &::before {
+      background-color: variables.$text-primary-light;
+    }
+  }
+}
