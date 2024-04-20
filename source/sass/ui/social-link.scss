@@ -1,0 +1,70 @@
+@use "../global/variables";
+
+.social-link {
+  display: grid;
+  place-content: center;
+  width: 32px;
+  height: 30px;
+  border: 1px solid variables.$text-primary-opacity;
+  transition:
+    border-color 0.3s linear,
+    background-color 0.3s linear;
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 30px;
+    background-color: variables.$text-primary-dark;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition: background-color 0.3s linear;
+  }
+
+  &--vk::before {
+    mask-image: url("/__spritemap#sprite-vk-view");
+  }
+
+  &--ok::before {
+    mask-image: url("/__spritemap#sprite-ok-view");
+  }
+
+  &--reddit::before {
+    mask-image: url("/__spritemap#sprite-reddit-view");
+  }
+
+  &:hover {
+    border-color: variables.$text-primary-dark;
+
+    &::before {
+      background-color: variables.$text-primary-dark;
+    }
+  }
+
+  &:focus {
+    border-color: transparent;
+
+    &::before {
+      background-color: variables.$text-primary-dark;
+    }
+  }
+
+  &:active {
+    background-color: variables.$color-accent;
+    border-color: transparent;
+
+    &::before {
+      background-color: variables.$text-primary-light;
+    }
+  }
+
+  &.social-link--disabled {
+    background-color: transparent;
+    border-color: variables.$text-primary-opacity;
+    cursor: not-allowed;
+
+    &::before {
+      background-color: variables.$text-primary-opacity;
+    }
+  }
+}
