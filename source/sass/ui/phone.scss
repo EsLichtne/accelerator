@@ -1,0 +1,51 @@
+@use "../global/variables";
+
+.phone {
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    color 0.3s linear,
+    opacity 0.3s linear;
+
+  &--light {
+    color: variables.$text-primary-light;
+
+    &:hover {
+      color: variables.$text-primary-light;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      color: variables.$text-primary-dark;
+    }
+
+    &:active {
+      color: variables.$color-active;
+    }
+  }
+
+  &--dark {
+    color: variables.$text-primary-dark;
+
+    &:hover {
+      color: variables.$color-hover;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      color: variables.$color-accent;
+    }
+
+    &:active {
+      color: variables.$color-active;
+    }
+  }
+
+  &.phone--disabled {
+    color: variables.$color-disabled;
+    opacity: 1;
+    cursor: not-allowed;
+  }
+}
