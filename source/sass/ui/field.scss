@@ -1,0 +1,38 @@
+@use "../global/variables";
+
+.field {
+  padding: 19px 29px;
+  font-family: variables.$font-primary;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+  color: variables.$text-primary-dark;
+  border: 1px solid variables.$form-primary;
+
+  &::placeholder {
+    color: variables.$form-placeholder;
+  }
+
+  &:hover {
+    border-color: variables.$form-accent;
+  }
+
+  &:focus {
+    border-color: variables.$form-focus;
+  }
+
+  &:disabled {
+    color: variables.$form-disabled-text;
+    border-color: variables.$form-disabled;
+    cursor: not-allowed;
+  }
+
+  &:user-invalid {
+    border-color: variables.$form-invalid;
+  }
+
+  &:user-valid {
+    color: variables.$form-valid;
+    border-color: variables.$form-accent;
+  }
+}
