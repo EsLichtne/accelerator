@@ -8,6 +8,9 @@
   font-weight: 400;
   color: variables.$text-primary-dark;
   border: 1px solid variables.$form-primary;
+  transition:
+    color 0.3s linear,
+    border-color 0.3s linear;
 
   &::placeholder {
     color: variables.$form-placeholder;

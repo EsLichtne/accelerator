@@ -7,6 +7,9 @@
   font-weight: 400;
   text-decoration: none;
   border: 1px solid transparent;
+  transition:
+    border-color 0.3s linear,
+    color 0.3s linear;
 
   &--light {
     color: variables.$text-primary-light;
