@@ -1,0 +1,21 @@
+@use "../global/variables";
+
+.text {
+  font-weight: 400;
+  color: variables.$text-primary-dark;
+
+  &--first {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &--second {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &--third {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
