@@ -1,0 +1,54 @@
+@use "../global/variables";
+
+.menu-link {
+  padding: 2px 4px;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+  text-decoration: none;
+  border: 1px solid transparent;
+
+  &--light {
+    color: variables.$text-primary-light;
+
+    &:hover {
+      border-bottom-color: variables.$text-primary-light;
+    }
+
+    &:focus {
+      border-color: variables.$text-primary-light;
+    }
+
+    &:active {
+      color: variables.$color-active;
+      border-color: transparent;
+    }
+  }
+
+  &--dark {
+    color: variables.$text-primary-dark;
+
+    &:hover {
+      border-bottom-color: variables.$text-primary-dark;
+    }
+
+    &:focus {
+      border-color: variables.$text-primary-dark;
+    }
+
+    &:active {
+      color: variables.$color-accent;
+      border-color: transparent;
+    }
+  }
+
+  &.menu-link--disabled {
+    color: variables.$color-disabled;
+    border-color: transparent;
+    cursor: not-allowed;
+  }
+}
+
+body {
+  font-family: variables.$font-primary;
+}
