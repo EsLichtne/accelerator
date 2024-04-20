@@ -1,0 +1,19 @@
+@use "../global/variables";
+
+.caption {
+  font-size: 12px;
+  line-height: 100%;
+  color: variables.$text-primary-dark;
+
+  &--first {
+    font-weight: 700;
+  }
+
+  &--second {
+    font-weight: 500;
+  }
+
+  &--third {
+    font-weight: 300;
+  }
+}
