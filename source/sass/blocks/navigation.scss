@@ -5,6 +5,25 @@
   @include mixins.list-reset;
   display: flex;
   flex-direction: column;
-  gap: 22px;
-  padding: 16px 0 35px;
+  gap: 16px;
+  padding: 27px 0 32px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 20px;
+    padding: 47px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+  }
+}
+
+.navigation__item {
+  display: grid;
+}
+
+.navigation__link {
+  width: fit-content;
 }

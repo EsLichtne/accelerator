@@ -9,6 +9,14 @@
     color 0.3s linear,
     opacity 0.3s linear;
 
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 18px;
+  }
+
   &--light {
     color: variables.$text-primary-light;
 

@@ -1,14 +1,31 @@
 @use "../global/variables";
 
 .header {
-  padding: 15px;
+  padding: 15px 0;
   background-color: variables.$background-accent;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 20px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 32px;
+  }
 }
 
 .header__wrapper {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 14px;
+  grid-auto-flow: dense;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: auto 1fr auto;
+  }
 }
 
 .header__button {
@@ -31,6 +48,10 @@
     mask-size: contain;
     mask-position: center;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
 }
 
 .header--with-menu .header__button::before {
@@ -40,18 +61,40 @@
 .header__logo {
   width: 142px;
   height: 42px;
+
+  @media (min-width: variables.$tablet-width) {
+    justify-self: center;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 205px;
+    height: 62px;
+    padding: 10px 31px 10px 32px;
+  }
 }
 
 .header__phone {
   grid-column: 1 / -1;
   justify-self: end;
+  margin-top: 14px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 3 / 4;
+    margin: 0;
+  }
 }
 
 .header__navigation-wrapper {
-  grid-row: 3 / 4;
+  grid-column: 1 / -1;
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s linear;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 2 / 3;
+    justify-self: center;
+    grid-template-rows: auto;
+  }
 }
 
 .header--with-menu .header__navigation-wrapper {
