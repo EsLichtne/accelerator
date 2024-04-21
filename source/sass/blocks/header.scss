@@ -1,0 +1,64 @@
+@use "../global/variables";
+
+.header {
+  padding: 15px;
+  background-color: variables.$background-accent;
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+}
+
+.header__button {
+  // menu, cross
+  display: grid;
+  place-content: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-color: variables.$text-primary-light;
+    mask-image: url("/__spritemap#sprite-menu-view");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+  }
+}
+
+.header--with-menu .header__button::before {
+  mask-image: url("/__spritemap#sprite-cross-view");
+}
+
+.header__logo {
+  width: 142px;
+  height: 42px;
+}
+
+.header__phone {
+  grid-column: 1 / -1;
+  justify-self: end;
+}
+
+.header__navigation-wrapper {
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s linear;
+}
+
+.header--with-menu .header__navigation-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.header__navigation {
+  overflow: hidden;
+}
