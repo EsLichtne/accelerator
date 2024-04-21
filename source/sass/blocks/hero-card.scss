@@ -5,11 +5,32 @@
   display: grid;
   justify-items: center;
   align-content: center;
+  grid-auto-flow: dense;
   min-height: 568px;
   padding: 40px 15px 56px;
   text-align: center;
   color: variables.$text-primary-light;
   background-color: variables.$background-contrast;
+
+  @media (min-width: variables.$tablet-width) {
+    min-height: 1034px;
+    padding: 40px 45px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    justify-items: start;
+    align-content: start;
+    min-height: 800px;
+    padding: 200px 120px 80px;
+    text-align: left;
+  }
+}
+
+.hero-card:has(.hero-card__photo-wrapper) {
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: auto 16px auto;
+    grid-template-rows: repeat(2, min-content) 1fr min-content;
+  }
 }
 
 .hero-card h3 {
@@ -19,7 +40,80 @@
   font-size: 26px;
   line-height: 100%;
   font-weight: 800;
-  letter-spacing: 0.01em;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: -15px;
+    font-size: 56px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 77px;
+  }
+}
+
+.hero-card:has(.hero-card__photo-wrapper) h3 {
+  @media (min-width: variables.$tablet-width) {
+    margin-top: -60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin-top: 0;
+  }
+}
+
+.hero-card__info {
+  @media (width <= 1439px) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    order: 2;
+    z-index: 1;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+  }
+}
+
+.hero-card:has(.hero-card__photo-wrapper) .hero-card__info {
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.hero-card__definition {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 13px 19px;
+    font-size: 12px;
+    line-height: 16px;
+    border: 1px solid variables.$color-opacity;
+
+    &::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background-color: variables.$text-primary-light;
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      mask-position: center;
+    }
+
+    &--duration::before {
+      mask-image: url("/__spritemap#sprite-moon-view");
+    }
+
+    &--difficulty::before {
+      mask-image: url("/__spritemap#sprite-level-view");
+    }
+  }
 }
 
 .hero-card__image-wrapper {
@@ -36,9 +130,103 @@
   margin-bottom: 60px;
   font-size: 15px;
   line-height: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 500px;
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: 460px;
+    margin-top: -2px;
+  }
+}
+
+.hero-card:has(.hero-card__photo-wrapper) p {
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.hero-card__photos {
+  @media (width <= 767px) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    z-index: 1;
+    order: 1;
+    display: grid;
+    grid-template-columns: auto 60px auto;
+    grid-template-rows: 53px 298px 14px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 2 / 4;
+    grid-row: 1 / -1;
+    grid-template-columns: auto 175px auto;
+    grid-template-rows: 93px 314px 52px;
+    margin-top: -13px;
+  }
+}
+
+.hero-card__photo-wrapper {
+  @media (min-width: variables.$tablet-width) {
+    grid-row: 1 / -1;
+
+    &:nth-child(1) {
+      width: 266px;
+      height: 351px;
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+
+    &:nth-child(2) {
+      width: 236px;
+      height: 312px;
+      grid-column: 2 / 4;
+      grid-row: 2 / 4;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    &:nth-child(1) {
+      width: 308px;
+      height: 407px;
+    }
+
+    &:nth-child(2) {
+      width: 277px;
+      height: 366px;
+    }
+  }
+}
+
+.hero-card__photo {
+  display: block;
+  width: 100%;
 }
 
 .hero-card__button {
   z-index: 1;
   width: 180px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 2px;
+    margin-bottom: 134px;
+    padding: 20px 19px 18px;
+  }
+}
+
+.hero-card:has(.hero-card__photo-wrapper) .hero-card__button {
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    align-self: start;
+  }
 }

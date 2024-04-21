@@ -13,17 +13,27 @@
   overflow: scroll;
 }
 
-.hero-slider__item {
-  flex-shrink: 0;
-}
-
 .hero-slider__slide {
-  max-width: 320px;
+  width: 320px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1440px;
+  }
 }
 
 .hero-slider__pagination {
   position: absolute;
   bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 50%;
+  transform: translateX(50%);
+
+  @media (min-width: variables.$desktop-width) {
+    right: 120px;
+    bottom: 92px;
+    transform: none;
+  }
 }
