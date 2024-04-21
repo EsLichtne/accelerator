@@ -3,6 +3,7 @@
 
 .navigation__list {
   @include mixins.list-reset;
+
   display: flex;
   flex-direction: column;
   gap: 16px;
