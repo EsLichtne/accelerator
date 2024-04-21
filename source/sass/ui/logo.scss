@@ -1,0 +1,9 @@
+@use "../global/variables";
+
+.logo--light .logo__image {
+  color: variables.$text-primary-light;
+}
+
+.logo--dark .logo__image {
+  color: variables.$text-primary-dark;
+}
