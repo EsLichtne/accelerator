@@ -2,10 +2,25 @@
 
 .page__body {
   position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
 }
 
 .page__header {
   position: absolute;
   z-index: 2;
   width: 100%;
+}
+
+.page__content {
+  padding-top: 100px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 82px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 126px;
+  }
 }
