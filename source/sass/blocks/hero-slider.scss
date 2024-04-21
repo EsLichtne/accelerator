@@ -1,0 +1,29 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slider__list {
+  @include mixins.list-reset;
+
+  display: flex;
+  overflow: scroll;
+}
+
+.hero-slider__item {
+  flex-shrink: 0;
+}
+
+.hero-slider__slide {
+  max-width: 320px;
+}
+
+.hero-slider__pagination {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}

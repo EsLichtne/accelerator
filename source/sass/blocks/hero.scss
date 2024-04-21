@@ -1,0 +1,5 @@
+@use "../global/variables";
+
+.hero {
+  background-color: variables.$background-primary-light;
+}

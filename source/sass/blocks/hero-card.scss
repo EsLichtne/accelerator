@@ -1,0 +1,44 @@
+@use "../global/variables";
+
+.hero-card {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  min-height: 568px;
+  padding: 40px 15px 56px;
+  text-align: center;
+  color: variables.$text-primary-light;
+  background-color: variables.$background-contrast;
+}
+
+.hero-card h3 {
+  z-index: 1;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 26px;
+  line-height: 100%;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.hero-card__image-wrapper {
+  position: absolute;
+}
+
+.hero-card__image {
+  display: block;
+}
+
+.hero-card p {
+  z-index: 1;
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.hero-card__button {
+  z-index: 1;
+  width: 180px;
+}
