@@ -3,3 +3,15 @@
 .hero {
   background-color: variables.$background-primary-light;
 }
+
+.hero__slider {
+  width: 320px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1440px;
+  }
+}
