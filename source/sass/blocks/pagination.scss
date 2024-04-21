@@ -1,0 +1,9 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.pagination__list {
+  @include mixins.list-reset;
+
+  display: flex;
+  gap: 20px;
+}
