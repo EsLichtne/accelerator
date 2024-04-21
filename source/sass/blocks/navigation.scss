@@ -1,0 +1,10 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.navigation__list {
+  @include mixins.list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 16px 0 35px;
+}
