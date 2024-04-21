@@ -57,14 +57,14 @@
       background-color: variables.$text-primary-light;
     }
   }
+}
 
-  &.social-link--disabled {
-    background-color: transparent;
-    border-color: variables.$text-primary-opacity;
-    cursor: not-allowed;
+.social-link.social-link--disabled {
+  background-color: transparent;
+  border-color: variables.$text-primary-opacity;
+  cursor: not-allowed;
 
-    &::before {
-      background-color: variables.$text-primary-opacity;
-    }
+  &::before {
+    background-color: variables.$text-primary-opacity;
   }
 }

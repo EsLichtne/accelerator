@@ -53,10 +53,10 @@
       border-color: transparent;
     }
   }
+}
 
-  &.menu-link--disabled {
-    color: variables.$color-disabled;
-    border-color: transparent;
-    cursor: not-allowed;
-  }
+.menu-link.menu-link--disabled {
+  color: variables.$color-disabled;
+  border-color: transparent;
+  cursor: not-allowed;
 }

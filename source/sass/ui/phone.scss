@@ -50,10 +50,10 @@
       color: variables.$color-active;
     }
   }
+}
 
-  &.phone--disabled {
-    color: variables.$color-disabled;
-    opacity: 1;
-    cursor: not-allowed;
-  }
+.phone.phone--disabled {
+  color: variables.$color-disabled;
+  opacity: 1;
+  cursor: not-allowed;
 }

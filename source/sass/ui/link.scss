@@ -23,46 +23,48 @@
     mask-position: center;
     transition: background-color 0.3s linear;
   }
+}
 
-  &--primary {
-    color: variables.$text-primary-dark;
+.link--primary {
+  color: variables.$text-primary-dark;
+
+  &::after {
+    background-color: variables.$text-primary-dark;
+  }
+
+  &:hover {
+    color: variables.$color-hover;
 
     &::after {
-      background-color: variables.$text-primary-dark;
+      background-color: variables.$color-hover;
     }
+  }
 
-    &:hover {
-      color: variables.$color-hover;
+  &:focus {
+    color: variables.$color-accent;
 
-      &::after {
-        background-color: variables.$color-hover;
-      }
+    &::after {
+      background-color: variables.$color-accent;
     }
+  }
 
-    &:focus {
-      color: variables.$color-accent;
+  &:active {
+    color: variables.$color-active;
 
-      &::after {
-        background-color: variables.$color-accent;
-      }
+    &::after {
+      background-color: variables.$color-active;
     }
+  }
 
-    &:active {
-      color: variables.$color-active;
+  &:disabled,
+  &.link--disabled {
+    color: variables.$color-disabled;
+    cursor: not-allowed;
+  }
+}
 
-      &::after {
-        background-color: variables.$color-active;
-      }
-    }
-
-    &:disabled,
-    &.link--disabled {
-      color: variables.$color-disabled;
-      cursor: not-allowed;
-
-      &::after {
-        background-color: variables.$color-disabled;
-      }
-    }
+.link.link--disabled {
+  &::after {
+    background-color: variables.$color-disabled;
   }
 }
