@@ -1,0 +1,57 @@
+@use "../global/variables";
+
+.tours {
+  padding: 20px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 40px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.tours__wrapper {
+  display: grid;
+  gap: 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 1fr auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 53px;
+  }
+}
+
+.tours__title {
+  margin: 0;
+}
+
+.tours__slider {
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.tours__link {
+  justify-self: center;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.tours__navigation {
+  @media (width <=767px) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+    align-self: end;
+  }
+}
