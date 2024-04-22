@@ -1,6 +1,12 @@
 @use "../global/variables";
 
-.slider-button {
+.slider-navigation {
+  display: flex;
+  gap: 4px;
+  margin: 0;
+}
+
+.slider-navigation__button {
   display: grid;
   place-content: center;
   width: 37px;
