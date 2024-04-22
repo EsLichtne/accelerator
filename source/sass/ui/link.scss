@@ -3,9 +3,10 @@
 .link {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  padding: 10px;
   font-family: variables.$font-primary;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 100%;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -16,7 +17,7 @@
   &::after {
     content: "";
     width: 10px;
-    height: 16px;
+    height: 14px;
     mask-image: url("/__spritemap#sprite-tick-view");
     mask-repeat: no-repeat;
     mask-size: contain;
