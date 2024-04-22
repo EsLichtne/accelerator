@@ -1,5 +1,9 @@
 @use "../global/variables";
 
+.page {
+  scroll-behavior: smooth;
+}
+
 .page__body {
   position: relative;
   display: grid;
