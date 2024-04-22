@@ -1,0 +1,27 @@
+@use "../global/variables";
+
+.background-wrapper {
+  background-color: variables.$background-primary-light;
+  background-image:
+    image-set(url("../../img/backgrounds/clouds-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/backgrounds/clouds-mobile.webp") type("image/webp") 1x,
+      url("../../img/backgrounds/clouds-mobile@2x.png") type("image/png") 2x,
+      url("../../img/backgrounds/clouds-mobile.png") type("image/png") 1x);
+  background-repeat: no-repeat;
+  background-size: 346px 595px;
+  background-position: 179px 10px;
+
+  @media (min-width: variables.$tablet-width) {
+    background-image:
+      image-set(url("../../img/backgrounds/clouds-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/backgrounds/clouds-desktop.webp") type("image/webp") 1x,
+        url("../../img/backgrounds/clouds-desktop@2x.png") type("image/png") 2x,
+        url("../../img/backgrounds/clouds-desktop.png") type("image/png") 1x);
+    background-size: 602px 1630px;
+    background-position: 343px -92px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-position: 838px -126px;
+  }
+}
