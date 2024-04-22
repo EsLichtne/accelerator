@@ -1,0 +1,21 @@
+@use "../global/variables";
+
+.training {
+  padding: 20px 0;
+}
+
+.training__wrapper {
+  display: grid;
+  gap: 25px;
+}
+
+.training__title {
+  margin: 0;
+}
+
+.training h2 + p {
+  margin: 0;
+  margin-top: -7px;
+  font-size: 14px;
+  line-height: 20px;
+}

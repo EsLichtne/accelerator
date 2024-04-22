@@ -1,0 +1,28 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.instructors-slider {
+  overflow: scroll;
+}
+
+.instructors-slider__list {
+  @include mixins.list-reset;
+
+  display: flex;
+}
+
+.instructors-slider__item {
+  display: grid;
+}
+
+.instructors-slider__slide {
+  width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 213px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 285px;
+  }
+}
