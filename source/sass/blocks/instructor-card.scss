@@ -1,0 +1,46 @@
+@use "../global/variables";
+
+.instructor-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+  padding: 14px;
+  border: 1px solid variables.$color-border;
+}
+
+.instructor-card h4 {
+  max-width: 120px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.instructor-card__image-wrapper {
+  order: -1;
+  grid-column: 1 / -1;
+  width: 260px;
+  height: 200px;
+}
+
+.instructor-card__image {
+  display: block;
+}
+
+.instructor-card p {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.instructor-card__social {
+  width: 24px;
+  height: 24px;
+
+  &::before {
+    width: 24px;
+    height: 24px;
+  }
+}

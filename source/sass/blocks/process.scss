@@ -1,0 +1,78 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.process {}
+
+.process__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.process__list {
+  @include mixins.list-reset;
+
+  position: relative;
+  display: grid;
+  column-gap: 15px;
+  row-gap: 25px;
+  padding-left: 29px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 7px;
+    width: 2px;
+    height: calc(100% - 36px);
+    background-color: variables.$color-accent;
+  }
+}
+
+.process__item {
+  position: relative;
+  display: flex;
+  gap: 9px;
+  align-items: start;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    background-color: variables.$text-primary-dark;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 11px;
+    width: 14px;
+    height: 14px;
+    background-color: variables.$color-accent;
+    border-radius: 50%;
+  }
+}
+
+.process__item--sport::before {
+  mask-image: url("/__spritemap#sprite-map-view");
+}
+
+.process__item--equipment::before {
+  mask-image: url("/__spritemap#sprite-boots-view");
+}
+
+.process__item--ecology::before {
+  mask-image: url("/__spritemap#sprite-trees-view");
+}
+
+.process__item--mountains::before {
+  mask-image: url("/__spritemap#sprite-mountains-view");
+}
+
+.process__description {
+  margin: 0;
+}
