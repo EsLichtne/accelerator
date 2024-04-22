@@ -42,3 +42,22 @@
     font-weight: 700;
   }
 }
+
+.title--shadow {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+  &::before {
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 26px;
+    line-height: 100%;
+    font-weight: 800;
+    text-align: inherit;
+    opacity: 0.03;
+  }
+}
