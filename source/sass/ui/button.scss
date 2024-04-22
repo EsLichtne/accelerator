@@ -23,14 +23,18 @@
 
     &:hover {
       color: variables.$color-active;
-      background-color: transparent;
+      background-color: variables.$background-primary-light;
       border-color: variables.$color-active;
     }
 
     &:focus {
       color: variables.$color-active;
-      background-color: transparent;
+      background-color: variables.$background-primary-light;
       border-color: transparent;
+    }
+
+    &:focus-visible {
+      outline-offset: 5px;
     }
 
     &:active {
