@@ -35,7 +35,7 @@
   }
 
   &:hover {
-    background-color: transparent;
+    background-color: variables.$color-primary-light;
     border-color: variables.$color-active;
 
     &::before {
@@ -44,7 +44,7 @@
   }
 
   &:focus {
-    background-color: transparent;
+    background-color: variables.$color-primary-light;
     border-color: transparent;
 
     &::before {
