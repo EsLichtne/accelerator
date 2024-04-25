@@ -1,0 +1,122 @@
+@use "../global/variables";
+
+.about {
+  padding: 20px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 40px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.about__wrapper {
+  display: grid;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 405px auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 540px auto;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 57px;
+    padding: 0;
+    padding-top: 45px;
+  }
+}
+
+.about__image-wrapper {
+  order: -1;
+  width: calc(100% + 30px);
+  height: 400px;
+  margin: -6px 0 6px -15px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: span 3;
+    width: 450px;
+    height: 350px;
+    margin: 0;
+    margin-left: -45px;
+    padding-top: 134px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-row: span 5;
+    width: 660px;
+    height: 498px;
+    margin-left: -120px;
+    padding: 0;
+  }
+}
+
+.about__image {
+  display: block;
+}
+
+.about__text-wrapper {
+  @media (min-width: variables.$tablet-width) {
+    max-width: 270px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: 585px;
+  }
+}
+
+.about__text-wrapper:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.about__text-wrapper br {
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.about h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+}
+
+.about p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
