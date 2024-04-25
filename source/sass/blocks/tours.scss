@@ -30,8 +30,15 @@
 }
 
 .tours__slider {
+  width: 290px;
+
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / -1;
+    width: 678px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
   }
 }
 
@@ -44,7 +51,7 @@
 }
 
 .tours__navigation {
-  @media (width <= 767px) {
+  @media (width <=767px) {
     display: none;
   }
 
