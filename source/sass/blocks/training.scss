@@ -2,11 +2,31 @@
 
 .training {
   padding: 20px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 40px 0;
+    background-image:
+      image-set(url("../../img/backgrounds/clouds-small-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/backgrounds/clouds-small-desktop.webp") type("image/webp") 1x,
+        url("../../img/backgrounds/clouds-small-desktop@2x.png") type("image/png") 2x,
+        url("../../img/backgrounds/clouds-small-desktop.png") type("image/png") 1x);
+    background-repeat: no-repeat;
+    background-size: 840px 280px;
+    background-position: 303px 612px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-position: 807px 613px;
+  }
 }
 
 .training__wrapper {
   display: grid;
   gap: 25px;
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 56px;
+  }
 }
 
 .training__title {
@@ -18,4 +38,17 @@
   margin-top: -7px;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: -1px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: 820px;
+    margin-top: -19px;
+    margin-bottom: 0;
+  }
 }

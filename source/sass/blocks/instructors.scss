@@ -3,14 +3,51 @@
 .instructors {
   display: grid;
   gap: 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 20px;
+  }
 }
 
 .instructors__title {
   margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 3px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
+  }
+}
+
+.instructors__slider {
+  width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / -1;
+    width: 678px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+  }
 }
 
 .instructors__navigation {
-  @media (width <= 767px) {
+  @media (width <=767px) {
     display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+    align-self: end;
   }
 }

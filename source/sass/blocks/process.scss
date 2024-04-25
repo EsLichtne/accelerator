@@ -4,6 +4,16 @@
 .process__title {
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 102px;
+    padding-top: 2px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 23px;
+    padding: 0;
+  }
 }
 
 .process__list {
@@ -18,11 +28,42 @@
   &::before {
     content: "";
     position: absolute;
-    top: 18px;
-    left: 7px;
     width: 2px;
     height: calc(100% - 36px);
     background-color: variables.$color-accent;
+  }
+
+  @media (width <=767px) {
+    &::before {
+      top: 18px;
+      left: 7px;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) and (width <=1439px) {
+    grid-template-columns: 231px 272px;
+    column-gap: 175px;
+    row-gap: 104px;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(3, 1fr) 440px;
+    gap: 0;
+    padding: 0;
+    padding-top: 7px;
+    padding-bottom: 3px;
+
+    &::before {
+      width: calc(100% - 34px);
+      height: 2px;
+      right: 0;
+      bottom: -6px;
+    }
   }
 }
 
@@ -47,11 +88,38 @@
     content: "";
     position: absolute;
     left: -28px;
-    top: 11px;
     width: 14px;
     height: 14px;
     background-color: variables.$color-accent;
     border-radius: 50%;
+  }
+
+  @media (width <=767px) {
+    &::after {
+      top: 11px;
+    }
+  }
+
+  @media (min-width: variables.$tablet-width) and (width <=1439px) {
+    gap: 10px;
+
+    &:nth-child(3n + 1) {
+      grid-row: 1 / 2;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 10px;
+    padding-left: 10px;
+
+    &::after {
+      bottom: -15px;
+      left: 20px;
+    }
   }
 }
 
@@ -72,5 +140,21 @@
 }
 
 .process__description {
+  max-width: 198px;
   margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 196px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.process__description br {
+  @media (max-width: 1439px) {
+    display: none;
+  }
 }

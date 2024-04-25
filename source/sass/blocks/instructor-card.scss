@@ -3,8 +3,10 @@
 .instructor-card {
   display: grid;
   grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(2, auto) 1fr;
   gap: 15px;
   padding: 14px;
+  background-color: variables.$background-primary-light;
   border: 1px solid variables.$color-border;
 }
 
@@ -22,6 +24,16 @@
   grid-column: 1 / -1;
   width: 260px;
   height: 200px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 182px;
+    height: 200px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 255px;
+    height: 200px;
+  }
 }
 
 .instructor-card__image {
@@ -33,6 +45,14 @@
   margin: 0;
   font-size: 12px;
   line-height: 16px;
+}
+
+.instructor-card p > br {
+  display: none;
+
+  @media (min-width: variables.$tablet-width) and (width <= 1439px) {
+    display: inline;
+  }
 }
 
 .instructor-card__social {
