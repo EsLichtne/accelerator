@@ -1,0 +1,67 @@
+@use "../global/variables";
+
+.reviews {
+  padding: 20px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 40px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 100px 0 77px;
+  }
+}
+
+.reviews__wrapper {
+  display: grid;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 1fr auto;
+    gap: 25px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 28px;
+  }
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0;
+    padding-top: 45px;
+  }
+}
+
+.reviews__slider {
+  width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 723px;
+    margin-right: -45px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1320px;
+    margin-right: -120px;
+  }
+}
+
+.reviews__navigation {
+  @media (width <=767px) {
+    display: none;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+    align-self: end;
+  }
+}

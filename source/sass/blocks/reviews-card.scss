@@ -1,0 +1,71 @@
+@use "../global/variables";
+
+.reviews-card {
+  display: grid;
+  grid-template-rows: auto 1fr repeat(2, auto);
+  padding: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr repeat(2, auto);
+    column-gap: 30px;
+    padding: 20px;
+    padding-right: 30px;
+  }
+}
+
+.reviews-card__author {
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 8px;
+  }
+}
+
+.reviews-card__image-wrapper {
+  order: -2;
+  width: 250px;
+  height: 169px;
+  margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-row: span 3;
+    width: 186px;
+    height: 237px;
+    margin: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 258px;
+    height: 253px;
+  }
+}
+
+.reviews-card__image {
+  display: block;
+}
+
+.reviews-card p {
+  order: -1;
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 2px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
