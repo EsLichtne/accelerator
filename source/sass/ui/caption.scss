@@ -7,6 +7,10 @@
 
   &--first {
     font-weight: 700;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 13px;
+    }
   }
 
   &--second {
