@@ -33,14 +33,14 @@
     background-color: variables.$color-accent;
   }
 
-  @media (width <=767px) {
+  @media (width <= 767px) {
     &::before {
       top: 18px;
       left: 7px;
     }
   }
 
-  @media (min-width: variables.$tablet-width) and (width <=1439px) {
+  @media (min-width: variables.$tablet-width) and (width <= 1439px) {
     grid-template-columns: 231px 272px;
     column-gap: 175px;
     row-gap: 104px;
@@ -94,13 +94,13 @@
     border-radius: 50%;
   }
 
-  @media (width <=767px) {
+  @media (width <= 767px) {
     &::after {
       top: 11px;
     }
   }
 
-  @media (min-width: variables.$tablet-width) and (width <=1439px) {
+  @media (min-width: variables.$tablet-width) and (width <= 1439px) {
     gap: 10px;
 
     &:nth-child(3n + 1) {
@@ -154,7 +154,7 @@
 }
 
 .process__description br {
-  @media (max-width: 1439px) {
+  @media (width <= 1439px) {
     display: none;
   }
 }
