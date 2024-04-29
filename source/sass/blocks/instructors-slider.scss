@@ -5,15 +5,22 @@
   overflow: hidden;
 }
 
+.instructors-slider__wrapper {
+  width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+  }
+}
+
 .instructors-slider__list {
   @include mixins.list-reset;
 
   display: flex;
-  overflow: scroll;
-
-  @media (min-width: variables.$tablet-width) {
-    gap: 20px;
-  }
 }
 
 .instructors-slider__item {
