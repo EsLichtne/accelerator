@@ -797,57 +797,62 @@
     <section class="advantages" data-test="adv">
       <h2 class="advantages__title title title--third title--shadow" data-content="Преимущества">Преимущества</h2>
       <div class="advantages__slider advantages-slider">
-        <ul class="advantages-slider__list">
-          <li class="advantages-slider__item">
-            <article class="advantages-slider__slide advantages-card">
-              <h3 class="advantages-card__title title title--sixth">Безопасность</h3>
-              <p class="advantages-card__description text text--third">Уделяем внимание безопасности клиентов, внедряя
-                строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств
-                и даём гарантию полной безопасности во время всего тура.</p>
-            </article>
-          </li>
-          <li class="advantages-slider__item">
-            <article class="advantages-slider__slide advantages-card">
-              <h3 class="advantages-card__title title title--sixth">Экспертиза и знания</h3>
-              <p class="advantages-card__description text text--third">Наша команда опытных гидов имеет обширные знания
-                о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся
-                в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
-            </article>
-          </li>
-          <li class="advantages-slider__item">
-            <article class="advantages-slider__slide advantages-card">
-              <h3 class="advantages-card__title title title--sixth">Оборудование и снаряжение</h3>
-              <p class="advantages-card__description text text--third">Мы предоставляем клиентам все необходимое
-                оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с
-                собой
-                снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
-            </article>
-          </li>
-          <li class="advantages-slider__item">
-            <article class="advantages-slider__slide advantages-card">
-              <h3 class="advantages-card__title title title--sixth">Индивидуальные маршруты</h3>
-              <p class="advantages-card__description text text--third">Предлагаем широкий выбор туров, отвечающих
-                различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным
-                потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
-            </article>
-          </li>
-          <li class="advantages-slider__item">
-            <article class="advantages-slider__slide advantages-card">
-              <h3 class="advantages-card__title title title--sixth">Бережное отношение к природе</h3>
-              <p class="advantages-card__description text text--third">Уделяем первостепенное внимание охране окружающей
-                среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания
-                следует
-                принципу «Не оставлять следов».</p>
-            </article>
-          </li>
-        </ul>
+        <div class="advantages-slider__wrapper swiper" id="advantages-slider">
+          <ul class="advantages-slider__list swiper-wrapper">
+            <li class="advantages-slider__item swiper-slide">
+              <article class="advantages-slider__slide advantages-card">
+                <h3 class="advantages-card__title title title--sixth">Безопасность</h3>
+                <p class="advantages-card__description text text--third">Уделяем внимание безопасности клиентов, внедряя
+                  строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных
+                  обстоятельств
+                  и даём гарантию полной безопасности во время всего тура.</p>
+              </article>
+            </li>
+            <li class="advantages-slider__item swiper-slide">
+              <article class="advantages-slider__slide advantages-card">
+                <h3 class="advantages-card__title title title--sixth">Экспертиза и знания</h3>
+                <p class="advantages-card__description text text--third">Наша команда опытных гидов имеет обширные
+                  знания
+                  о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся
+                  в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+              </article>
+            </li>
+            <li class="advantages-slider__item swiper-slide">
+              <article class="advantages-slider__slide advantages-card">
+                <h3 class="advantages-card__title title title--sixth">Оборудование и снаряжение</h3>
+                <p class="advantages-card__description text text--third">Мы предоставляем клиентам все необходимое
+                  оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с
+                  собой
+                  снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+              </article>
+            </li>
+            <li class="advantages-slider__item swiper-slide">
+              <article class="advantages-slider__slide advantages-card">
+                <h3 class="advantages-card__title title title--sixth">Индивидуальные маршруты</h3>
+                <p class="advantages-card__description text text--third">Предлагаем широкий выбор туров, отвечающих
+                  различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным
+                  потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
+              </article>
+            </li>
+            <li class="advantages-slider__item swiper-slide">
+              <article class="advantages-slider__slide advantages-card">
+                <h3 class="advantages-card__title title title--sixth">Бережное отношение к природе</h3>
+                <p class="advantages-card__description text text--third">Уделяем первостепенное внимание охране
+                  окружающей
+                  среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания
+                  следует
+                  принципу «Не оставлять следов».</p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </div>
       <p class="advantages__navigation slider-navigation">
-        <button class="slider-navigation__button slider-navigation__button--previous" type="button">
-          <span class="visually-hidden">Предыдущий слайд.</span>
+        <button class="slider-navigation__button slider-navigation__button--previous" id="advantages-slider-button-prev"
+          type="button">
         </button>
-        <button class="slider-navigation__button slider-navigation__button--next" type="button">
-          <span class="visually-hidden">Следующий слайд.</span>
+        <button class="slider-navigation__button slider-navigation__button--next" id="advantages-slider-button-next"
+          type="button">
         </button>
       </p>
     </section>
