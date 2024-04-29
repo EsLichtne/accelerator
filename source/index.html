@@ -198,212 +198,216 @@
         <div class="tours__wrapper container">
           <h2 class="tours__title title title--third title--shadow" data-content="Ближайшие туры">Ближайшие туры</h2>
           <div class="tours__slider tours-slider">
-            <ul class="tours-slider__list">
-              <li class="tours-slider__item">
-                <article class="tours-slider__slide tours-card">
-                  <h3 class="tours-card__title title title--fourth">Путешествие вокруг&nbsp;Эльбруса</h3>
-                  <div class="tours-card__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="img/tours-1-desktop.webp 1x, img/tours-1-desktop@2x.webp 2x" width="380" height="416">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/tours-1-tablet.webp 1x, img/tours-1-tablet@2x.webp 2x" width="330" height="416">
-                      <source type="image/webp" srcset="img/tours-1-mobile.webp 1x, img/tours-1-mobile@2x.webp 2x"
-                        width="290" height="416">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="img/tours-1-desktop.jpg 1x, img/tours-1-desktop@2x.jpg 2x" width="380" height="416">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="img/tours-1-tablet.jpg 1x, img/tours-1-tablet@2x.jpg 2x" width="330" height="416">
-                      <img class="tours-card__image" src="img/tours-1-mobile.jpg" srcset="img/tours-1-mobile@2x.jpg 2x"
-                        width="290" height="416" alt="">
-                    </picture>
-                  </div>
-                  <dl class="tours-card__header">
-                    <dt class="visually-hidden">Локация.</dt>
-                    <dd class="tours-card__location">Кавказ</dd>
-                    <dt class="visually-hidden">Продолжительность.</dt>
-                    <dd class="tours-card__duration-wrapper">
-                      <span class="tours-card__duration tours-card__duration--days">4&nbsp;дня</span>
-                      <span class="tours-card__duration tours-card__duration--nights">3&nbsp;ночи</span>
-                    </dd>
-                  </dl>
-                  <dl class="tours-card__footer">
-                    <div class="tours-card__difficulty">
-                      <dt class="tours-card__capture">Сложность:</dt>
-                      <dd class="tours-card__stars tours-card__stars--four">
-                        <span class="visually-hidden">Четыре из пяти.</span>
+            <div class="tours-slider__wrapper swiper" id="tours-slider">
+              <ul class="tours-slider__list swiper-wrapper">
+                <li class="tours-slider__item swiper-slide">
+                  <article class="tours-slider__slide tours-card">
+                    <h3 class="tours-card__title title title--fourth">Путешествие вокруг&nbsp;Эльбруса</h3>
+                    <div class="tours-card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="img/tours-1-desktop.webp 1x, img/tours-1-desktop@2x.webp 2x" width="380" height="416">
+                        <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/tours-1-tablet.webp 1x, img/tours-1-tablet@2x.webp 2x" width="330" height="416">
+                        <source type="image/webp" srcset="img/tours-1-mobile.webp 1x, img/tours-1-mobile@2x.webp 2x"
+                          width="290" height="416">
+                        <source type="image/jpeg" media="(min-width: 1440px)"
+                          srcset="img/tours-1-desktop.jpg 1x, img/tours-1-desktop@2x.jpg 2x" width="380" height="416">
+                        <source type="image/jpeg" media="(min-width: 768px)"
+                          srcset="img/tours-1-tablet.jpg 1x, img/tours-1-tablet@2x.jpg 2x" width="330" height="416">
+                        <img class="tours-card__image" src="img/tours-1-mobile.jpg"
+                          srcset="img/tours-1-mobile@2x.jpg 2x" width="290" height="416" alt="">
+                      </picture>
+                    </div>
+                    <dl class="tours-card__header">
+                      <dt class="visually-hidden">Локация.</dt>
+                      <dd class="tours-card__location">Кавказ</dd>
+                      <dt class="visually-hidden">Продолжительность.</dt>
+                      <dd class="tours-card__duration-wrapper">
+                        <span class="tours-card__duration tours-card__duration--days">4&nbsp;дня</span>
+                        <span class="tours-card__duration tours-card__duration--nights">3&nbsp;ночи</span>
                       </dd>
+                    </dl>
+                    <dl class="tours-card__footer">
+                      <div class="tours-card__difficulty">
+                        <dt class="tours-card__capture">Сложность:</dt>
+                        <dd class="tours-card__stars tours-card__stars--four">
+                          <span class="visually-hidden">Четыре из пяти.</span>
+                        </dd>
+                      </div>
+                      <div class="tours-card__date">
+                        <dt class="tours-card__capture">Даты&nbsp;набора:</dt>
+                        <dd class="tours-card__description">
+                          <time class="tours-card__time" datetime="06-12">12.06</time>&ndash;<time
+                            class="tours-card__time" datetime="06-19">19.06</time>
+                        </dd>
+                      </div>
+                      <div class="tours-card__group">
+                        <dt class="tours-card__capture">Группа:</dt>
+                        <dd class="tours-card__description">до&nbsp;15&nbsp;чел.</dd>
+                      </div>
+                    </dl>
+                  </article>
+                </li>
+                <li class="tours-slider__item swiper-slide">
+                  <article class="tours-slider__slide tours-card">
+                    <h3 class="tours-card__title title title--fourth">Путь&nbsp;к&nbsp;подножию Белухи</h3>
+                    <div class="tours-card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="img/tours-2-desktop.webp 1x, img/tours-2-desktop@2x.webp 2x" width="380" height="416">
+                        <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/tours-2-tablet.webp 1x, img/tours-2-tablet@2x.webp 2x" width="330" height="416">
+                        <source type="image/webp" srcset="img/tours-2-mobile.webp 1x, img/tours-2-mobile@2x.webp 2x"
+                          width="290" height="416">
+                        <source type="image/jpeg" media="(min-width: 1440px)"
+                          srcset="img/tours-2-desktop.jpg 1x, img/tours-2-desktop@2x.jpg 2x" width="380" height="416">
+                        <source type="image/jpeg" media="(min-width: 768px)"
+                          srcset="img/tours-2-tablet.jpg 1x, img/tours-2-tablet@2x.jpg 2x" width="330" height="416">
+                        <img class="tours-card__image" src="img/tours-2-mobile.jpg"
+                          srcset="img/tours-2-mobile@2x.jpg 2x" width="290" height="416" alt="">
+                      </picture>
                     </div>
-                    <div class="tours-card__date">
-                      <dt class="tours-card__capture">Даты&nbsp;набора:</dt>
-                      <dd class="tours-card__description">
-                        <time class="tours-card__time" datetime="06-12">12.06</time>&ndash;<time
-                          class="tours-card__time" datetime="06-19">19.06</time>
+                    <dl class="tours-card__header">
+                      <dt class="visually-hidden">Локация.</dt>
+                      <dd class="tours-card__location">Алтай</dd>
+                      <dt class="visually-hidden">Продолжительность.</dt>
+                      <dd class="tours-card__duration-wrapper">
+                        <span class="tours-card__duration tours-card__duration--days">14&nbsp;дней</span>
+                        <span class="tours-card__duration tours-card__duration--nights">13&nbsp;ночей</span>
                       </dd>
+                    </dl>
+                    <dl class="tours-card__footer">
+                      <div class="tours-card__difficulty">
+                        <dt class="tours-card__capture">Сложность:</dt>
+                        <dd class="tours-card__stars tours-card__stars--four">
+                          <span class="visually-hidden">Четыре из пяти.</span>
+                        </dd>
+                      </div>
+                      <div class="tours-card__date">
+                        <dt class="tours-card__capture">Даты&nbsp;набора:</dt>
+                        <dd class="tours-card__description">
+                          <time class="tours-card__time" datetime="06-14">14.06</time>&ndash;<time
+                            class="tours-card__time" datetime="06-23">23.06</time>
+                        </dd>
+                      </div>
+                      <div class="tours-card__group">
+                        <dt class="tours-card__capture">Группа:</dt>
+                        <dd class="tours-card__description">до&nbsp;25&nbsp;чел.</dd>
+                      </div>
+                    </dl>
+                  </article>
+                </li>
+                <li class="tours-slider__item swiper-slide">
+                  <article class="tours-slider__slide tours-card">
+                    <h3 class="tours-card__title title title--fourth">Через&nbsp;Фишт к&nbsp;Чёрному&nbsp;морю
+                      и&nbsp;обратно
+                    </h3>
+                    <div class="tours-card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="img/tours-3-desktop.webp 1x, img/tours-3-desktop@2x.webp 2x" width="380" height="416">
+                        <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/tours-3-tablet.webp 1x, img/tours-3-tablet@2x.webp 2x" width="330" height="416">
+                        <source type="image/webp" srcset="img/tours-3-mobile.webp 1x, img/tours-3-mobile@2x.webp 2x"
+                          width="290" height="416">
+                        <source type="image/jpeg" media="(min-width: 1440px)"
+                          srcset="img/tours-3-desktop.jpg 1x, img/tours-3-desktop@2x.jpg 2x" width="380" height="416">
+                        <source type="image/jpeg" media="(min-width: 768px)"
+                          srcset="img/tours-3-tablet.jpg 1x, img/tours-3-tablet@2x.jpg 2x" width="330" height="416">
+                        <img class="tours-card__image" src="img/tours-3-mobile.jpg"
+                          srcset="img/tours-3-mobile@2x.jpg 2x" width="290" height="416" alt="">
+                      </picture>
                     </div>
-                    <div class="tours-card__group">
-                      <dt class="tours-card__capture">Группа:</dt>
-                      <dd class="tours-card__description">до&nbsp;15&nbsp;чел.</dd>
-                    </div>
-                  </dl>
-                </article>
-              </li>
-              <li class="tours-slider__item">
-                <article class="tours-slider__slide tours-card">
-                  <h3 class="tours-card__title title title--fourth">Путь&nbsp;к&nbsp;подножию Белухи</h3>
-                  <div class="tours-card__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="img/tours-2-desktop.webp 1x, img/tours-2-desktop@2x.webp 2x" width="380" height="416">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/tours-2-tablet.webp 1x, img/tours-2-tablet@2x.webp 2x" width="330" height="416">
-                      <source type="image/webp" srcset="img/tours-2-mobile.webp 1x, img/tours-2-mobile@2x.webp 2x"
-                        width="290" height="416">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="img/tours-2-desktop.jpg 1x, img/tours-2-desktop@2x.jpg 2x" width="380" height="416">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="img/tours-2-tablet.jpg 1x, img/tours-2-tablet@2x.jpg 2x" width="330" height="416">
-                      <img class="tours-card__image" src="img/tours-2-mobile.jpg" srcset="img/tours-2-mobile@2x.jpg 2x"
-                        width="290" height="416" alt="">
-                    </picture>
-                  </div>
-                  <dl class="tours-card__header">
-                    <dt class="visually-hidden">Локация.</dt>
-                    <dd class="tours-card__location">Алтай</dd>
-                    <dt class="visually-hidden">Продолжительность.</dt>
-                    <dd class="tours-card__duration-wrapper">
-                      <span class="tours-card__duration tours-card__duration--days">14&nbsp;дней</span>
-                      <span class="tours-card__duration tours-card__duration--nights">13&nbsp;ночей</span>
-                    </dd>
-                  </dl>
-                  <dl class="tours-card__footer">
-                    <div class="tours-card__difficulty">
-                      <dt class="tours-card__capture">Сложность:</dt>
-                      <dd class="tours-card__stars tours-card__stars--four">
-                        <span class="visually-hidden">Четыре из пяти.</span>
+                    <dl class="tours-card__header">
+                      <dt class="visually-hidden">Локация.</dt>
+                      <dd class="tours-card__location">Адыгея</dd>
+                      <dt class="visually-hidden">Продолжительность.</dt>
+                      <dd class="tours-card__duration-wrapper">
+                        <span class="tours-card__duration tours-card__duration--days">7&nbsp;дней</span>
+                        <span class="tours-card__duration tours-card__duration--nights">6&nbsp;ночей</span>
                       </dd>
+                    </dl>
+                    <dl class="tours-card__footer">
+                      <div class="tours-card__difficulty">
+                        <dt class="tours-card__capture">Сложность:</dt>
+                        <dd class="tours-card__stars tours-card__stars--four">
+                          <span class="visually-hidden">Четыре из пяти.</span>
+                        </dd>
+                      </div>
+                      <div class="tours-card__date">
+                        <dt class="tours-card__capture">Даты&nbsp;набора:</dt>
+                        <dd class="tours-card__description">
+                          <time class="tours-card__time" datetime="07-15">15.07</time>&ndash;<time
+                            class="tours-card__time" datetime="07-19">19.07</time>
+                        </dd>
+                      </div>
+                      <div class="tours-card__group">
+                        <dt class="tours-card__capture">Группа:</dt>
+                        <dd class="tours-card__description">до&nbsp;22&nbsp;чел.</dd>
+                      </div>
+                    </dl>
+                  </article>
+                </li>
+                <li class="tours-slider__item swiper-slide">
+                  <article class="tours-slider__slide tours-card">
+                    <h3 class="tours-card__title title title--fourth">Восхождение Манарага</h3>
+                    <div class="tours-card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)"
+                          srcset="img/tours-4-desktop.webp 1x, img/tours-4-desktop@2x.webp 2x" width="380" height="416">
+                        <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/tours-4-tablet.webp 1x, img/tours-4-tablet@2x.webp 2x" width="330" height="416">
+                        <source type="image/webp" srcset="img/tours-4-mobile.webp 1x, img/tours-4-mobile@2x.webp 2x"
+                          width="290" height="416">
+                        <source type="image/jpeg" media="(min-width: 1440px)"
+                          srcset="img/tours-4-desktop.jpg 1x, img/tours-4-desktop@2x.jpg 2x" width="380" height="416">
+                        <source type="image/jpeg" media="(min-width: 768px)"
+                          srcset="img/tours-4-tablet.jpg 1x, img/tours-4-tablet@2x.jpg 2x" width="330" height="416">
+                        <img class="tours-card__image" src="img/tours-4-mobile.jpg"
+                          srcset="img/tours-4-mobile@2x.jpg 2x" width="290" height="416" alt="">
+                      </picture>
                     </div>
-                    <div class="tours-card__date">
-                      <dt class="tours-card__capture">Даты&nbsp;набора:</dt>
-                      <dd class="tours-card__description">
-                        <time class="tours-card__time" datetime="06-14">14.06</time>&ndash;<time
-                          class="tours-card__time" datetime="06-23">23.06</time>
+                    <dl class="tours-card__header">
+                      <dt class="visually-hidden">Локация.</dt>
+                      <dd class="tours-card__location">Урал</dd>
+                      <dt class="visually-hidden">Продолжительность.</dt>
+                      <dd class="tours-card__duration-wrapper">
+                        <span class="tours-card__duration tours-card__duration--days">9&nbsp;дней</span>
+                        <span class="tours-card__duration tours-card__duration--nights">10&nbsp;ночей</span>
                       </dd>
-                    </div>
-                    <div class="tours-card__group">
-                      <dt class="tours-card__capture">Группа:</dt>
-                      <dd class="tours-card__description">до&nbsp;25&nbsp;чел.</dd>
-                    </div>
-                  </dl>
-                </article>
-              </li>
-              <li class="tours-slider__item">
-                <article class="tours-slider__slide tours-card">
-                  <h3 class="tours-card__title title title--fourth">Через&nbsp;Фишт к&nbsp;Чёрному&nbsp;морю
-                    и&nbsp;обратно
-                  </h3>
-                  <div class="tours-card__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="img/tours-3-desktop.webp 1x, img/tours-3-desktop@2x.webp 2x" width="380" height="416">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/tours-3-tablet.webp 1x, img/tours-3-tablet@2x.webp 2x" width="330" height="416">
-                      <source type="image/webp" srcset="img/tours-3-mobile.webp 1x, img/tours-3-mobile@2x.webp 2x"
-                        width="290" height="416">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="img/tours-3-desktop.jpg 1x, img/tours-3-desktop@2x.jpg 2x" width="380" height="416">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="img/tours-3-tablet.jpg 1x, img/tours-3-tablet@2x.jpg 2x" width="330" height="416">
-                      <img class="tours-card__image" src="img/tours-3-mobile.jpg" srcset="img/tours-3-mobile@2x.jpg 2x"
-                        width="290" height="416" alt="">
-                    </picture>
-                  </div>
-                  <dl class="tours-card__header">
-                    <dt class="visually-hidden">Локация.</dt>
-                    <dd class="tours-card__location">Адыгея</dd>
-                    <dt class="visually-hidden">Продолжительность.</dt>
-                    <dd class="tours-card__duration-wrapper">
-                      <span class="tours-card__duration tours-card__duration--days">7&nbsp;дней</span>
-                      <span class="tours-card__duration tours-card__duration--nights">6&nbsp;ночей</span>
-                    </dd>
-                  </dl>
-                  <dl class="tours-card__footer">
-                    <div class="tours-card__difficulty">
-                      <dt class="tours-card__capture">Сложность:</dt>
-                      <dd class="tours-card__stars tours-card__stars--four">
-                        <span class="visually-hidden">Четыре из пяти.</span>
-                      </dd>
-                    </div>
-                    <div class="tours-card__date">
-                      <dt class="tours-card__capture">Даты&nbsp;набора:</dt>
-                      <dd class="tours-card__description">
-                        <time class="tours-card__time" datetime="07-15">15.07</time>&ndash;<time
-                          class="tours-card__time" datetime="07-19">19.07</time>
-                      </dd>
-                    </div>
-                    <div class="tours-card__group">
-                      <dt class="tours-card__capture">Группа:</dt>
-                      <dd class="tours-card__description">до&nbsp;22&nbsp;чел.</dd>
-                    </div>
-                  </dl>
-                </article>
-              </li>
-              <li class="tours-slider__item">
-                <article class="tours-slider__slide tours-card">
-                  <h3 class="tours-card__title title title--fourth">Восхождение Манарага</h3>
-                  <div class="tours-card__image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="img/tours-4-desktop.webp 1x, img/tours-4-desktop@2x.webp 2x" width="380" height="416">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/tours-4-tablet.webp 1x, img/tours-4-tablet@2x.webp 2x" width="330" height="416">
-                      <source type="image/webp" srcset="img/tours-4-mobile.webp 1x, img/tours-4-mobile@2x.webp 2x"
-                        width="290" height="416">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="img/tours-4-desktop.jpg 1x, img/tours-4-desktop@2x.jpg 2x" width="380" height="416">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="img/tours-4-tablet.jpg 1x, img/tours-4-tablet@2x.jpg 2x" width="330" height="416">
-                      <img class="tours-card__image" src="img/tours-4-mobile.jpg" srcset="img/tours-4-mobile@2x.jpg 2x"
-                        width="290" height="416" alt="">
-                    </picture>
-                  </div>
-                  <dl class="tours-card__header">
-                    <dt class="visually-hidden">Локация.</dt>
-                    <dd class="tours-card__location">Урал</dd>
-                    <dt class="visually-hidden">Продолжительность.</dt>
-                    <dd class="tours-card__duration-wrapper">
-                      <span class="tours-card__duration tours-card__duration--days">9&nbsp;дней</span>
-                      <span class="tours-card__duration tours-card__duration--nights">10&nbsp;ночей</span>
-                    </dd>
-                  </dl>
-                  <dl class="tours-card__footer">
-                    <div class="tours-card__difficulty">
-                      <dt class="tours-card__capture">Сложность:</dt>
-                      <dd class="tours-card__stars tours-card__stars--five">
-                        <span class="visually-hidden">Пять из пяти.</span>
-                      </dd>
-                    </div>
-                    <div class="tours-card__date">
-                      <dt class="tours-card__capture">Даты&nbsp;набора:</dt>
-                      <dd class="tours-card__description">
-                        <time class="tours-card__time" datetime="07-12">12.07</time>&ndash;<time
-                          class="tours-card__time" datetime="07-19">19.07</time>
-                      </dd>
-                    </div>
-                    <div class="tours-card__group">
-                      <dt class="tours-card__capture">Группа:</dt>
-                      <dd class="tours-card__description">до&nbsp;7&nbsp;чел.</dd>
-                    </div>
-                  </dl>
-                </article>
-              </li>
-            </ul>
+                    </dl>
+                    <dl class="tours-card__footer">
+                      <div class="tours-card__difficulty">
+                        <dt class="tours-card__capture">Сложность:</dt>
+                        <dd class="tours-card__stars tours-card__stars--five">
+                          <span class="visually-hidden">Пять из пяти.</span>
+                        </dd>
+                      </div>
+                      <div class="tours-card__date">
+                        <dt class="tours-card__capture">Даты&nbsp;набора:</dt>
+                        <dd class="tours-card__description">
+                          <time class="tours-card__time" datetime="07-12">12.07</time>&ndash;<time
+                            class="tours-card__time" datetime="07-19">19.07</time>
+                        </dd>
+                      </div>
+                      <div class="tours-card__group">
+                        <dt class="tours-card__capture">Группа:</dt>
+                        <dd class="tours-card__description">до&nbsp;7&nbsp;чел.</dd>
+                      </div>
+                    </dl>
+                  </article>
+                </li>
+              </ul>
+            </div>
           </div>
           <p class="tours__navigation slider-navigation">
-            <button class="slider-navigation__button slider-navigation__button--previous" type="button">
+            <button class="slider-navigation__button slider-navigation__button--previous" id="tours-slider-button-prev"
+              type="button">
               <span class="visually-hidden">Предыдущий слайд.</span>
             </button>
-            <button class="slider-navigation__button slider-navigation__button--next" type="button">
+            <button class="slider-navigation__button slider-navigation__button--next" id="tours-slider-button-next"
+              type="button">
               <span class="visually-hidden">Следующий слайд.</span>
             </button>
           </p>
