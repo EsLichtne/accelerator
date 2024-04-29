@@ -1,0 +1,59 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.advantages-slider {
+  overflow: hidden;
+}
+
+.advantages-slider__wrapper {
+  width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1440px;
+  }
+}
+
+.advantages-slider__list {
+  @include mixins.list-reset;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 0;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+}
+
+.advantages-slider__list .advantages-slider__item {
+  width: fit-content;
+}
+
+.advantages-slider__item {
+  display: grid;
+}
+
+.advantages-slider__slide {
+  width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 324px;
+    min-height: 340px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 380px;
+    min-height: 329px;
+  }
+}

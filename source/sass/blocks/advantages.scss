@@ -1,0 +1,50 @@
+@use "../global/variables";
+
+.advantages {
+  padding: 20px 0;
+  text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 40px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
+}
+
+.advantages__slider {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1440px;
+    margin-bottom: 50px;
+  }
+}
+
+.advantages__navigation {
+  @media (width <= 1439px) {
+    display: none;
+  }
+
+  justify-content: center;
+}

@@ -1,0 +1,86 @@
+@use "../global/variables";
+
+.advantages-card {
+  padding: 19px 9px;
+  border: 1px solid variables.$color-border;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 29px 19px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 39px 19px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+    border: 1px solid variables.$color-accent;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: 54px;
+      height: 54px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &--safety::before {
+    background-image: url("/__spritemap#sprite-safety-view");
+  }
+
+  &--expertise::before {
+    background-image: url("/__spritemap#sprite-crown-view");
+  }
+
+  &--equipment::before {
+    background-image: url("/__spritemap#sprite-boots-view");
+  }
+
+  &--routes::before {
+    background-image: url("/__spritemap#sprite-path-view");
+  }
+
+  &--nature::before {
+    background-image: url("/__spritemap#sprite-leaf-view");
+  }
+}
+
+.advantages-card h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 600;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.advantages-card p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
