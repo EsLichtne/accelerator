@@ -14,9 +14,11 @@ new Swiper('#reviews-slider', {
     },
     768: {
       spaceBetween: 30,
+      slidesOffsetAfter: 60,
     },
     1440: {
       spaceBetween: 120,
+      slidesOffsetAfter: 120,
     }
   },
 
