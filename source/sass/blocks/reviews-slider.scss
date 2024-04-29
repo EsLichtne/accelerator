@@ -2,18 +2,20 @@
 @use "../global/mixins";
 
 .reviews-slider {
-  overflow: hidden;
+  @media (min-width: variables.$desktop-width) {
+    padding: 10px;
+  }
 }
 
 .reviews-slider__wrapper {
-  width: 290px;
+  width: 320px;
 
   @media (min-width: variables.$tablet-width) {
-    width: 723px;
+    width: 748px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1320px;
+    width: 1335px;
   }
 }
 
@@ -21,10 +23,11 @@
   @include mixins.list-reset;
 
   display: flex;
-}
+  padding: 25px 15px;
 
-.reviews-slider__item {
-  box-shadow: 0 0 20px 0 variables.$color-shadow; //TODO: разобраться с тенью
+  @media (min-width: variables.$tablet-width) {
+    padding: 25px;
+  }
 }
 
 .reviews-slider__list > .reviews-slider__item {
@@ -33,12 +36,15 @@
 
 .reviews-slider__slide {
   width: 290px;
+  height: 484px;
 
   @media (min-width: variables.$tablet-width) {
     width: 565px;
+    height: 277px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 700px;
+    height: 293px;
   }
 }

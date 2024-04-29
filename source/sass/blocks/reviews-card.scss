@@ -4,6 +4,7 @@
   display: grid;
   grid-template-rows: auto 1fr repeat(2, auto);
   padding: 20px;
+  box-shadow: 0 0 20px 0 variables.$color-shadow;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: auto 1fr;
@@ -58,14 +59,28 @@
   margin-bottom: 15px;
   font-size: 12px;
   line-height: 18px;
+  overflow: scroll;
 
   @media (min-width: variables.$tablet-width) {
+    gap: 8px;
     margin-bottom: 25px;
+    padding-top: 4px;
   }
 
   @media (min-width: variables.$desktop-width) {
     margin-bottom: 2px;
+    padding: 0;
     font-size: 14px;
     line-height: 22px;
+  }
+}
+
+.reviews-card__caption {
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 10px;
   }
 }
