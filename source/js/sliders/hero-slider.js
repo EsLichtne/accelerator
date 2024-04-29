@@ -1,12 +1,17 @@
 import Swiper from 'swiper';
-import { Pagination, A11y } from 'swiper/modules';
+import { Pagination, A11y, EffectFade } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 
 new Swiper('#hero-slider', {
-  modules: [Pagination, A11y],
+  modules: [Pagination, A11y, EffectFade],
   loop: true,
-  speed: 500,
+  speed: 700,
   slidesPerView: 1,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
 
   pagination: {
     el: '.pagination__wrapper',
