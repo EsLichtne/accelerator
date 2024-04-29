@@ -6,11 +6,22 @@
   overflow: hidden;
 }
 
+.hero-slider__wrapper {
+  width: 320px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1440px;
+  }
+}
+
 .hero-slider__list {
   @include mixins.list-reset;
 
   display: flex;
-  overflow: scroll;
 }
 
 .hero-slider__slide {
@@ -30,6 +41,7 @@
   bottom: 40px;
   right: 50%;
   transform: translateX(50%);
+  z-index: 2;
 
   @media (min-width: variables.$desktop-width) {
     right: 120px;

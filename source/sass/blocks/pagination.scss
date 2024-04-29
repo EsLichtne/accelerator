@@ -1,7 +1,7 @@
 @use "../global/variables";
 @use "../global/mixins";
 
-.pagination__list {
+.pagination__wrapper {
   @include mixins.list-reset;
 
   display: flex;
