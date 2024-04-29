@@ -5,23 +5,30 @@
   overflow: hidden;
 }
 
+.reviews-slider__wrapper {
+  width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 723px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1320px;
+  }
+}
+
 .reviews-slider__list {
   @include mixins.list-reset;
 
   display: flex;
-  overflow: scroll;
-
-  @media (min-width: variables.$tablet-width) {
-    gap: 30px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    gap: 120px;
-  }
 }
 
 .reviews-slider__item {
   box-shadow: 0 0 20px 0 variables.$color-shadow; //TODO: разобраться с тенью
+}
+
+.reviews-slider__list > .reviews-slider__item {
+  width: fit-content;
 }
 
 .reviews-slider__slide {
