@@ -9,7 +9,7 @@ new Swiper('#tours-slider', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 18,
     },
     768: {
       slidesPerView: 2,
