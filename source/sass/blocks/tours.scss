@@ -27,6 +27,11 @@
 
 .tours__title {
   margin: 0;
+
+  @media (width <= 767px) {
+    padding-top: 19px;
+    padding-bottom: 14px;
+  }
 }
 
 .tours__slider {
