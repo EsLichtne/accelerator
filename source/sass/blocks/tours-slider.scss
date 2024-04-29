@@ -5,19 +5,22 @@
   overflow: hidden;
 }
 
+.tours-slider__wrapper {
+  width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+  }
+}
+
 .tours-slider__list {
   @include mixins.list-reset;
 
   display: flex;
-  overflow: scroll;
-
-  @media (min-width: variables.$tablet-width) {
-    gap: 18px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    gap: 30px;
-  }
 }
 
 .tours-slider__slide {
