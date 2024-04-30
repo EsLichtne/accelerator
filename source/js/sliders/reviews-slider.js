@@ -9,8 +9,8 @@ new Swiper('#reviews-slider', {
 
   breakpoints: {
     320: {
-      slidesPerView: 1,
       spaceBetween: 20,
+      slidesOffsetAfter: 0,
     },
     768: {
       spaceBetween: 30,
