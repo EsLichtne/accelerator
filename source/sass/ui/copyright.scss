@@ -1,0 +1,23 @@
+@use "../global/variables";
+
+.copyright__link {
+  display: block;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 300;
+  text-decoration: none;
+  color: variables.$text-primary-dark;
+  transition: color 0.3s linear;
+
+  &:hover {
+    color: variables.$color-hover;
+  }
+
+  &:focus {
+    color: variables.$color-accent;
+  }
+
+  &:active {
+    color: variables.$color-active;
+  }
+}
