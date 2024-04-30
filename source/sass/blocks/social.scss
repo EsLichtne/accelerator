@@ -1,0 +1,15 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.social__list {
+  @include mixins.list-reset;
+
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 0 15px;
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 15px;
+  }
+}
