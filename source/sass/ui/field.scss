@@ -1,7 +1,7 @@
 @use "../global/variables";
 
 .field {
-  padding: 19px 29px;
+  padding: 16px 14px;
   font-family: variables.$font-primary;
   font-size: 16px;
   line-height: 100%;
@@ -11,6 +11,10 @@
   transition:
     color 0.3s linear,
     border-color 0.3s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 19px 29px;
+  }
 
   &::placeholder {
     color: variables.$form-placeholder;
