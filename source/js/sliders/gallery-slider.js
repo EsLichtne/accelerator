@@ -12,9 +12,6 @@ const initSlider = () => {
       loop: true,
       speed: 500,
       spaceBetween: 5,
-      observer: true,
-      observeParents: true,
-      init: true,
 
       breakpoints: {
         320: {

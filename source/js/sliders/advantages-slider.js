@@ -16,8 +16,6 @@ const initSlider = () => {
       initialSlide: 3,
       centeredSlides: true,
       slidesPerGroup: 2,
-      observer: true,
-      observeParents: true,
 
       navigation: {
         nextEl: '#advantages-slider-button-next',
