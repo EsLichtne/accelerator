@@ -10,6 +10,10 @@
     border-color 0.3s linear,
     background-color 0.3s linear;
 
+  @media (min-width: variables.$desktop-width) {
+    width: 30px;
+  }
+
   &::before {
     content: "";
     width: 32px;
@@ -19,6 +23,10 @@
     mask-size: contain;
     mask-position: center;
     transition: background-color 0.3s linear;
+
+    @media (min-width: variables.$desktop-width) {
+      width: 30px;
+    }
   }
 
   &--vk::before {
