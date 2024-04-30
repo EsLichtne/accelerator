@@ -1,0 +1,70 @@
+@use "../global/variables";
+
+.footer {
+  background-color: variables.$background-primary-light;
+}
+
+.footer__wrapper {
+  display: grid;
+  row-gap: 23px;
+  justify-items: center;
+  padding: 22px 0 20px;
+  border-top: 1px solid variables.$color-border-transparent;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: auto 1fr;
+    row-gap: 34px;
+    padding: 33px 45px 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 200px 1fr 200px;
+    row-gap: 22px;
+    padding: 31px 120px 32px;
+  }
+}
+
+.footer__logo {
+  width: 142px;
+  height: 42px;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 200px;
+    height: 60px;
+    padding: 9px 29px;
+  }
+}
+
+.footer__navigation {
+  margin-top: -3px;
+  margin-bottom: -3px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer__phone {
+  @media (width < variables.$desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    align-self: center;
+    justify-self: end;
+  }
+}
+
+.footer__social {
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
