@@ -28,8 +28,8 @@ $background-opacity: rgba(255, 255, 255, 0.5);
 $background-contrast: #2d383f;
 
 /* OVERLAY-COLORS */
-$gradient-light: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, transparent 100%);
-$gradient-dark: linear-gradient(transparent, rgba(0, 0, 0, 0.6) 60%, #000000 100%);
+$gradient-light: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.19) 100%);
+$gradient-dark: linear-gradient(180deg, rgba(0, 0, 0, 0) 39.5%, rgba(0, 0, 0, 0.6) 78%);
 $overlay-dark: rgba(46, 56, 63, 0.6);
 $overlay-background: rgba(0, 0, 0, 0.2);
 
