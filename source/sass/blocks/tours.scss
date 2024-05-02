@@ -32,6 +32,12 @@
     padding-top: 19px;
     padding-bottom: 14px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 23px;
+    padding-bottom: 0;
+    margin-bottom: -3px;
+  }
 }
 
 .tours__slider {
