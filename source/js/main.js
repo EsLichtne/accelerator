@@ -12,12 +12,12 @@ import {
 
 const DESKTOP_WIDTH = 1440;
 
-initHeroSlider();
-initToursSlider();
-initInstructorsSlider();
-initReviewsSlider();
-
 document.addEventListener('DOMContentLoaded', () => {
+  initHeroSlider();
+  initToursSlider();
+  initInstructorsSlider();
+  initReviewsSlider();
+
   if (window.innerWidth >= DESKTOP_WIDTH) {
     initAdvantagesSlider();
   } else {
