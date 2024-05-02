@@ -45,7 +45,7 @@
 }
 
 .footer__phone {
-  @media (width < variables.$desktop-width) {
+  @media (width <= 1339px) {
     display: none;
   }
 
