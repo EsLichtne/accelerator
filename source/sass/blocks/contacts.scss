@@ -18,6 +18,7 @@
 .contacts__wrapper {
   @media (min-width: variables.$desktop-width) {
     grid-column: 1 / 2;
+    justify-content: center;
   }
 }
 
