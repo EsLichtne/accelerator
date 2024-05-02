@@ -26,8 +26,13 @@
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-image: variables.$gradient-light;
+    background-image: variables.$gradient-dark;
   }
+}
+
+.tours-card--with-overlay::after {
+  background-color: variables.$overlay-background;
+  background-image: none;
 }
 
 .tours-card__title {
@@ -44,7 +49,6 @@
 
   @media (min-width: variables.$desktop-width) {
     max-width: 240px;
-    margin: 0;
   }
 }
 
