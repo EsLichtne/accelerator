@@ -1,7 +1,36 @@
 import './navigation/navigation';
-import './sliders/hero-slider';
-import './sliders/tours-slider';
-import './sliders/instructors-slider';
-import './sliders/reviews-slider';
-import './sliders/advantages-slider';
-import './sliders/gallery-slider';
+import {
+  initHeroSlider,
+  initToursSlider,
+  initInstructorsSlider,
+  initReviewsSlider,
+  initAdvantagesSlider,
+  destroyAdvantagesSlider,
+  initGallerySlider,
+  destroyGallerySlider
+} from './sliders/sliders';
+
+const DESKTOP_WIDTH = 1440;
+
+initHeroSlider();
+initToursSlider();
+initInstructorsSlider();
+initReviewsSlider();
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.innerWidth >= DESKTOP_WIDTH) {
+    initAdvantagesSlider();
+  } else {
+    initGallerySlider();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= DESKTOP_WIDTH) {
+    initAdvantagesSlider();
+    destroyGallerySlider();
+  } else {
+    initGallerySlider();
+    destroyAdvantagesSlider();
+  }
+});
