@@ -2,6 +2,7 @@
 
 .advantages-card {
   padding: 19px 9px;
+  background-color: variables.$background-primary-light;
   border: 1px solid variables.$color-border;
 
   @media (min-width: variables.$tablet-width) {
