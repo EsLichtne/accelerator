@@ -12,6 +12,10 @@
   min-height: 100vh;
 }
 
+.page__body:has(.page__header--with-menu) {
+  overflow: hidden;
+}
+
 .page__header {
   position: absolute;
   z-index: 2;
