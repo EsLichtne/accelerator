@@ -9,6 +9,7 @@ import {
   initGallerySlider,
   destroyGallerySlider
 } from './sliders/sliders';
+import { advantagesCards } from './mocks/advantages-cards';
 
 const DESKTOP_WIDTH = 1440;
 
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initReviewsSlider();
 
   if (window.innerWidth >= DESKTOP_WIDTH) {
-    initAdvantagesSlider();
+    initAdvantagesSlider(advantagesCards);
   } else {
     initGallerySlider();
   }
@@ -27,10 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('resize', () => {
   if (window.innerWidth >= DESKTOP_WIDTH) {
-    initAdvantagesSlider();
+    initAdvantagesSlider(advantagesCards);
     destroyGallerySlider();
   } else {
     initGallerySlider();
-    destroyAdvantagesSlider();
+    destroyAdvantagesSlider(advantagesCards);
   }
 });

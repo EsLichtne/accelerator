@@ -1,5 +1,11 @@
 import Swiper from 'swiper';
-import { Pagination, Navigation, A11y, EffectFade } from 'swiper/modules';
+import {
+  Pagination,
+  Navigation,
+  A11y,
+  EffectFade,
+  Manipulation
+} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
@@ -154,17 +160,18 @@ const initReviewsSlider = () => {
   });
 };
 
-const initAdvantagesSlider = () => {
+const initAdvantagesSlider = (cards) => {
   if (!advantagesSlider) {
     advantagesSlider = new Swiper('#advantages-slider', {
-      modules: [Navigation, A11y],
+      modules: [Navigation, A11y, Manipulation],
       loop: true,
       speed: 500,
       slidesPerView: 'auto',
       spaceBetween: 30,
-      initialSlide: 3,
+      initialSlide: 4,
       centeredSlides: true,
       slidesPerGroup: 2,
+      loopAddBlankSlides: false,
 
       navigation: {
         nextEl: '#advantages-slider-button-next',
@@ -180,12 +187,20 @@ const initAdvantagesSlider = () => {
         prevSlideMessage: 'Предыдущий слайд.',
         nextSlideMessage: 'Следующий слайд.',
       },
+
+      on: {
+        beforeInit: (slider) => {
+          slider.appendSlide(cards);
+        },
+      },
     });
   }
 };
 
-const destroyAdvantagesSlider = () => {
+const destroyAdvantagesSlider = (cards) => {
   if (advantagesSlider) {
+    advantagesSlider.removeAllSlides();
+    advantagesSlider.appendSlide(cards);
     advantagesSlider.destroy();
     advantagesSlider = null;
   }
