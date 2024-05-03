@@ -17,6 +17,12 @@ const initHeroSlider = () => {
       crossFade: true,
     },
 
+    breakpoints: {
+      1440: {
+        allowTouchMove: false,
+      }
+    },
+
     pagination: {
       el: '.pagination__wrapper',
       bulletElement: 'button',
