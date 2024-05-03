@@ -12,6 +12,7 @@ const initHeroSlider = () => {
     loop: true,
     speed: 700,
     slidesPerView: 1,
+    slideActiveClass: 'hero-slider__item--current',
     effect: 'fade',
     fadeEffect: {
       crossFade: true,
