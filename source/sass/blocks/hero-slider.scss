@@ -24,6 +24,18 @@
   display: flex;
 }
 
+.hero-slider__list .hero-slider__item.hero-slider__item--current {
+  pointer-events: all;
+}
+
+.hero-slider__link {
+  visibility: hidden;
+}
+
+.hero-slider__item--current .hero-slider__link {
+  visibility: visible;
+}
+
 .hero-slider__slide {
   width: 320px;
 
