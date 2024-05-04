@@ -6,17 +6,17 @@
 
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 27px 0 32px;
+  gap: min(1.6rem, 24px);
+  padding: min(2.7rem, 40px) 0 min(3.2rem, 48px);
 
   @media (min-width: variables.$tablet-width) {
-    gap: 20px;
-    padding: 47px 0;
+    gap: 2rem;
+    padding: 4.7rem 0;
   }
 
   @media (min-width: variables.$desktop-width) {
     flex-direction: row;
-    gap: 20px;
+    gap: min(2rem, 27px);
     padding: 0;
   }
 }

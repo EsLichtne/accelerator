@@ -1,5 +1,10 @@
 @use "../global/variables";
 
+.logo__image {
+  width: 100%;
+  height: 100%;
+}
+
 .logo--light .logo__image {
   color: variables.$text-primary-light;
 }

@@ -1,7 +1,7 @@
 @use "../global/variables";
 
 .phone {
-  font-size: 14px;
+  font-size: min(1.4rem, 21px);
   line-height: 100%;
   font-weight: 600;
   text-decoration: none;
@@ -10,11 +10,11 @@
     opacity 0.3s linear;
 
   @media (min-width: variables.$tablet-width) {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    font-size: 18px;
+    font-size: min(1.8rem, 24px);
   }
 
   &--light {
