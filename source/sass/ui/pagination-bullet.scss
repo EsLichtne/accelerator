@@ -2,8 +2,8 @@
 
 .pagination-bullet {
   padding: 0;
-  width: 16px;
-  height: 16px;
+  width: min(1.6rem, 24px);
+  height: min(1.6rem, 24px);
   background-color: transparent;
   border: 1px solid variables.$color-primary-light;
   border-radius: 50%;
@@ -13,8 +13,13 @@
     outline 0.3s linear;
 
   @media (min-width: variables.$tablet-width) {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(2rem, 27px);
+    height: min(2rem, 27px);
   }
 
   &--selected {

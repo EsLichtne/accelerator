@@ -5,14 +5,14 @@
 }
 
 .hero__slider {
-  width: 320px;
+  width: min(32rem);
   margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
-    width: 768px;
+    width: 76.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1440px;
+    width: min(144rem, 1980px);
   }
 }

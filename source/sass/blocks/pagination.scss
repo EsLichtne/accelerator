@@ -5,5 +5,13 @@
   @include mixins.list-reset;
 
   display: flex;
-  gap: 20px;
+  gap: min(2rem, 30px);
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 2rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(2rem, 27px);
+  }
 }

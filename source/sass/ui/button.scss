@@ -3,9 +3,9 @@
 .button {
   display: grid;
   place-content: center;
-  padding: 19px;
+  padding: min(1.9rem, 28px);
   font-family: variables.$font-primary;
-  font-size: 16px;
+  font-size: min(1.6rem, 24px);
   line-height: 100%;
   font-weight: 500;
   text-decoration: none;
@@ -16,6 +16,16 @@
     color 0.3s linear,
     background-color 0.3s linear,
     border-color 0.3s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 1.9rem;
+    font-size: 1.6rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: min(1.9rem, 26px);
+    font-size: min(1.6rem, 22px);
+  }
 
   &--primary {
     color: variables.$text-primary-light;
