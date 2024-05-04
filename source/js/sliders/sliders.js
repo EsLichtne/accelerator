@@ -164,7 +164,6 @@ const initAdvantagesSlider = (cards) => {
   if (!advantagesSlider) {
     advantagesSlider = new Swiper('#advantages-slider', {
       modules: [Navigation, A11y, Manipulation],
-      loop: true,
       speed: 500,
       slidesPerView: 'auto',
       spaceBetween: 30,
@@ -191,6 +190,7 @@ const initAdvantagesSlider = (cards) => {
       on: {
         beforeInit: (slider) => {
           slider.appendSlide(cards);
+          slider.params.loop = true;
         },
       },
     });
@@ -199,6 +199,7 @@ const initAdvantagesSlider = (cards) => {
 
 const destroyAdvantagesSlider = (cards) => {
   if (advantagesSlider) {
+    advantagesSlider.params.loop = false;
     advantagesSlider.removeAllSlides();
     advantagesSlider.appendSlide(cards);
     advantagesSlider.destroy();
