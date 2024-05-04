@@ -1013,13 +1013,18 @@
       <p>Остались вопросы?</p>
       <p>Заполните форму и наш оператор свяжется с&nbsp;вами&nbsp;для&nbsp;консультации.</p>
       <form class="proposal__form form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="phone">Телефон.</label>
-        <input class="form__input field" type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[\+\d]+"
-          required>
-        <label class="visually-hidden" for="email">Email.</label>
-        <input class="form__input field" type="email" id="email" name="email" placeholder="Email"
-          pattern="^[\w]+@[a-z]{2,10}\.([a-z]{2,10}|xn--p1ai)$" required>
-        <button class="form__button button button--primary" type="submit">Отправить</button>
+        <div class="form__field-wrapper field">
+          <input class="form__input field__input" type="tel" id="phone" name="phone" pattern="[\+\d]+" required>
+          <label class="field__label" for="phone">Телефон</label>
+        </div>
+        <div class="form__field-wrapper field">
+          <input class="form__input field__input" type="email" id="email" name="email"
+            pattern="^[\w]+@[a-z]{2,10}\.([a-z]{2,10}|xn--p1ai)$" required>
+          <label class="field__label" for="email">Email</label>
+        </div>
+        <button class="form__button button button--primary" type="submit">
+          Отправить
+        </button>
       </form>
     </section>
   </main>
