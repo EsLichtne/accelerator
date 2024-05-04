@@ -10,6 +10,7 @@ import {
   destroyGallerySlider
 } from './sliders/sliders';
 import { advantagesCards } from './mocks/advantages-cards';
+import './upload/upload';
 
 const DESKTOP_WIDTH = 1440;
 
