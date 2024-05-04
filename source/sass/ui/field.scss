@@ -1,12 +1,16 @@
 @use "../global/variables";
 
 .field {
+  position: relative;
+}
+
+.field__input {
   padding: 16px 14px;
   font-family: variables.$font-primary;
   font-size: 16px;
   line-height: 100%;
   font-weight: 400;
-  color: variables.$text-primary-dark;
+  background-color: variables.$form-background-light;
   border: 1px solid variables.$form-primary;
   transition:
     color 0.3s linear,
@@ -17,7 +21,11 @@
   }
 
   &::placeholder {
-    color: variables.$form-placeholder;
+    color: variables.$form-accent;
+  }
+
+  &:placeholder-shown {
+    border-color: variables.$color-accent;
   }
 
   &:hover {
@@ -29,7 +37,6 @@
   }
 
   &:disabled {
-    color: variables.$form-disabled-text;
     border-color: variables.$form-disabled;
     cursor: not-allowed;
   }
@@ -37,9 +44,41 @@
   &:user-invalid {
     border-color: variables.$form-invalid;
   }
+}
 
-  &:user-valid {
-    color: variables.$form-valid;
-    border-color: variables.$form-accent;
+.field__label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 16px;
+  line-height: 100%;
+  color: variables.$text-primary-dark;
+  opacity: 0.5;
+  cursor: text;
+  transition:
+    color 0.3s linear,
+    opacity 0.3s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    left: 30px;
   }
+}
+
+.field__input:focus + .field__label,
+.field__input:placeholder-shown + .field__label,
+.field__input:user-valid + .field__label,
+.field__input:user-invalid + .field__label {
+  opacity: 0;
+}
+
+.field__input[data-empty]:user-invalid + .field__label {
+  opacity: 0.5;
+}
+
+.field__input:disabled + .field__label {
+  color: variables.$form-disabled;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
