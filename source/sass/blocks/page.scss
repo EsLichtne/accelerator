@@ -2,6 +2,15 @@
 
 .page {
   scroll-behavior: smooth;
+  font-size: calc(100vw / 320 * 10);
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: calc(100vw / 1366 * 10);
+  }
 }
 
 .page__body {
