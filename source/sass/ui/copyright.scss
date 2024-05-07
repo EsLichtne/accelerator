@@ -2,12 +2,20 @@
 
 .copyright__link {
   display: block;
-  font-size: 12px;
+  font-size: min(1.2rem, 18px);
   line-height: 100%;
   font-weight: 300;
   text-decoration: none;
   color: variables.$text-primary-dark;
   transition: color 0.3s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.2rem, 16px);
+  }
 
   &:hover {
     color: variables.$color-hover;
