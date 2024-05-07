@@ -5,9 +5,9 @@
 }
 
 .field__input {
-  padding: 16px 14px;
+  padding: min(1.6rem, 24px) min(1.4rem, 21px);
   font-family: variables.$font-primary;
-  font-size: 16px;
+  font-size: min(1.6rem, 24px);
   line-height: 100%;
   font-weight: 400;
   background-color: variables.$form-background-light;
@@ -17,7 +17,13 @@
     border-color 0.3s linear;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 19px 29px;
+    padding: 1.9rem 2.9rem;
+    font-size: 1.6rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: min(1.9rem, 26px) min(2.9rem, 40px);
+    font-size: min(1.6rem, 22px);
   }
 
   &::placeholder {
@@ -52,7 +58,7 @@
   left: 15px;
   transform: translateY(-50%);
   z-index: 1;
-  font-size: 16px;
+  font-size: min(1.6rem, 24px);
   line-height: 100%;
   color: variables.$text-primary-dark;
   opacity: 0.5;
@@ -63,6 +69,11 @@
 
   @media (min-width: variables.$tablet-width) {
     left: 30px;
+    font-size: 1.6rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.6rem, 22px);
   }
 }
 
