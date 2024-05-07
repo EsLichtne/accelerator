@@ -6,38 +6,43 @@
 
 .footer__wrapper {
   display: grid;
-  row-gap: 23px;
+  row-gap: min(2.3rem, 34px);
   justify-items: center;
-  padding: 22px 0 20px;
+  padding: min(2.2rem, 33px) 0 min(2rem, 30px);
   border-top: 1px solid variables.$color-border-transparent;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: auto 1fr;
-    row-gap: 34px;
-    padding: 33px 45px 20px;
+    row-gap: 3.4rem;
+    padding: 3.3rem 4.5rem 2rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: 200px 1fr 200px;
-    row-gap: 22px;
-    padding: 31px 120px 32px;
+    grid-template-columns: min(20rem, 275px) 1fr min(20rem, 275px);
+    row-gap: min(2.2rem, 30px);
+    padding: min(3.1rem, 42px) min(12rem, 165px) min(3.2rem, 44px);
   }
 }
 
 .footer__logo {
-  width: 142px;
-  height: 42px;
+  width: min(14.2rem, 213px);
+  height: min(4.2rem, 63px);
+
+  @media (min-width: variables.$tablet-width) {
+    width: 14.2rem;
+    height: 4.2rem;
+  }
 
   @media (min-width: variables.$desktop-width) {
-    width: 200px;
-    height: 60px;
-    padding: 9px 29px;
+    width: min(20rem, 275px);
+    height: min(6rem, 82px);
+    padding: min(0.9rem, 12px) min(2.9rem, 40px);
   }
 }
 
 .footer__navigation {
-  margin-top: -3px;
-  margin-bottom: -3px;
+  margin-top: max(-0.3rem, -4px);
+  margin-bottom: max(-0.3rem, -4px);
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
@@ -45,7 +50,7 @@
 }
 
 .footer__phone {
-  @media (width <= 1339px) {
+  @media (width <= 1023px) {
     display: none;
   }
 
