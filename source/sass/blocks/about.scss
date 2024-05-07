@@ -1,14 +1,14 @@
 @use "../global/variables";
 
 .about {
-  padding: 20px 0;
+  padding: min(2rem, 30px) 0;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 40px 0;
+    padding: 4rem 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 100px 0;
+    padding: min(10rem, 137px) 0;
   }
 }
 
@@ -16,40 +16,40 @@
   display: grid;
 
   @media (min-width: variables.$tablet-width) {
-    grid-template-columns: 405px auto;
+    grid-template-columns: 40.5rem auto;
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: 540px auto;
+    grid-template-columns: min(54rem, 742px) auto;
   }
 }
 
 .about__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: min(2.5rem, 37px);
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 3.6rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 57px;
+    margin-bottom: min(5.7rem, 78px);
     padding: 0;
-    padding-top: 45px;
+    padding-top: min(4.5rem, 62px);
   }
 }
 
 .about__image-wrapper {
   order: -1;
   width: calc(100% + 30px);
-  height: 400px;
+  height: min(40rem, 600px);
   margin: -6px 0 6px -15px;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 2;
     grid-row: span 3;
-    width: 450px;
-    height: 350px;
+    width: 45rem;
+    height: 35rem;
     margin: 0;
     margin-left: -45px;
     padding-top: 134px;
@@ -57,8 +57,8 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-row: span 5;
-    width: 660px;
-    height: 498px;
+    width: min(66rem, 906px);
+    height: min(49.8rem, 684px);
     margin-left: -120px;
     padding: 0;
   }
@@ -66,57 +66,68 @@
 
 .about__image {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .about__text-wrapper {
   @media (min-width: variables.$tablet-width) {
-    max-width: 270px;
+    max-width: 27rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: 585px;
+    max-width: min(58.5rem, 803px);
   }
 }
 
 .about__text-wrapper:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: min(2.5rem, 37px);
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: min(2.5rem, 34px);
+  }
 }
 
 .about__text-wrapper br {
-  @media (width <= 1439px) {
+  @media (width <=1439px) {
     display: none;
   }
 }
 
 .about h3 {
   margin: 0;
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: min(1.5rem, 22px);
+  font-size: min(1.6rem, 24px);
   line-height: 100%;
   font-weight: 700;
 
   @media (min-width: variables.$tablet-width) {
-    font-size: 18px;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 20px;
-    font-size: 21px;
+    margin-bottom: min(2rem, 27px);
+    font-size: min(2.1rem, 29px);
   }
 }
 
 .about p {
   margin: 0;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: min(1.4rem, 21px);
+  line-height: min(2rem, 30px);
 
   @media (min-width: variables.$tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: min(1.4rem, 19px);
+    line-height: min(2.2rem, 30px);
   }
 }
