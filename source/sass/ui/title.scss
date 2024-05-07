@@ -6,107 +6,107 @@
   color: variables.$text-primary-dark;
 
   &--first {
-    font-size: 30px;
+    font-size: min(3rem, 45px);
     font-weight: 800;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 56px;
+      font-size: 5.6rem;
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 77px;
+      font-size: min(7.7rem, 106px);
     }
   }
 
   &--second {
-    font-size: 26px;
+    font-size: min(2.6rem, 39px);
     font-weight: 800;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 40px;
+      font-size: 4rem;
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 55px;
+      font-size: min(5.5rem, 76px);
     }
   }
 
   &--third {
-    font-size: 22px;
+    font-size: min(2.2rem, 33px);
     font-weight: 800;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 25px;
+      font-size: 2.5rem;
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 35px;
+      font-size: min(3.5rem, 48px);
     }
   }
 
   &--fourth {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: min(2rem, 30px);
+    line-height: min(2.4rem, 36px);
     font-weight: 700;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 24px;
-      line-height: 28px;
+      font-size: min(2.4rem, 33px);
+      line-height: min(2.8rem, 38px);
     }
   }
 
   &--fifth {
-    font-size: 16px;
+    font-size: min(1.6rem, 24px);
     font-weight: 700;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 21px;
+      font-size: min(2.1rem, 29px);
     }
   }
 
   &--sixth {
-    font-size: 14px;
+    font-size: min(1.4rem, 21px);
     font-weight: 600;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 18px;
+      font-size: min(1.8rem, 25px);
     }
   }
 
   &--seventh {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: min(1.4rem, 21px);
+    line-height: min(1.6rem, 24px);
     font-weight: 700;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: min(1.4rem, 19px);
+      line-height: min(1.6rem, 22px);
     }
   }
 }
 
 .title--shadow {
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 17px;
+  padding-top: min(1.6rem, 24px);
+  padding-bottom: min(1.7rem, 25px);
 
   &::before {
     content: attr(aria-label);
@@ -114,7 +114,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    font-size: 26px;
+    font-size: min(2.6rem, 39px);
     line-height: 100%;
     font-weight: 800;
     text-align: inherit;
@@ -122,20 +122,20 @@
   }
 
   @media (min-width: variables.$tablet-width) {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 
     &::before {
-      font-size: 40px;
+      font-size: 4rem;
     }
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding-top: 19px;
-    padding-bottom: 1px;
+    padding-top: min(1.9rem, 26px);
+    padding-bottom: min(0.1rem, 2px);
 
     &::before {
-      font-size: 55px;
+      font-size: min(5.5rem, 75px);
     }
   }
 }
