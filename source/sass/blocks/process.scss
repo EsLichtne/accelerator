@@ -3,15 +3,15 @@
 
 .process__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: min(2.5rem, 37px);
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 102px;
-    padding-top: 2px;
+    margin-bottom: 10.2rem;
+    padding-top: 0.2rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: min(2.3rem, 31px);
     padding: 0;
   }
 }
@@ -21,9 +21,25 @@
 
   position: relative;
   display: grid;
-  column-gap: 15px;
-  row-gap: 25px;
-  padding-left: 29px;
+  column-gap: min(1.5rem, 22px);
+  row-gap: min(2.5rem, 37px);
+  padding-left: min(2.9rem, 43px);
+  padding-left: min(2.9rem);
+
+  @media (min-width: variables.$tablet-width) and (width <=1023px) {
+    grid-template-columns: 23.1rem 27.2rem;
+    column-gap: 17.5rem;
+    row-gap: 10.4rem;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(3, 1fr) min(44rem, 604px);
+    gap: 0;
+    padding: 0;
+    padding-top: min(0.7rem, 10px);
+    padding-bottom: min(0.3rem, 4px);
+  }
 
   &::before {
     content: "";
@@ -31,38 +47,21 @@
     width: 2px;
     height: calc(100% - 36px);
     background-color: variables.$color-accent;
-  }
 
-  @media (width <= 767px) {
-    &::before {
+    @media (width <=639px) {
       top: 18px;
-      left: 7px;
+      left: min(0.7rem, 10px);
     }
-  }
 
-  @media (min-width: variables.$tablet-width) and (width <= 1439px) {
-    grid-template-columns: 231px 272px;
-    column-gap: 175px;
-    row-gap: 104px;
-    padding: 0;
-
-    &::before {
+    @media (min-width: variables.$tablet-width) and (width <=1023px) {
       display: none;
     }
-  }
 
-  @media (min-width: variables.$desktop-width) {
-    grid-template-columns: repeat(3, 1fr) 440px;
-    gap: 0;
-    padding: 0;
-    padding-top: 7px;
-    padding-bottom: 3px;
-
-    &::before {
+    @media (min-width: variables.$desktop-width) {
       width: calc(100% - 34px);
       height: 2px;
       right: 0;
-      bottom: -6px;
+      bottom: max(-0.6rem, -8px);
     }
   }
 }
@@ -70,55 +69,66 @@
 .process__item {
   position: relative;
   display: flex;
-  gap: 9px;
+  gap: min(0.9rem, 13px);
   align-items: start;
+
+  @media (min-width: variables.$tablet-width) and (width <=1023px) {
+    gap: 1rem;
+
+    &:nth-child(3n + 1) {
+      grid-row: 1 / 2;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(1rem, 14px);
+    padding-left: min(1rem, 14px);
+  }
 
   &::before {
     content: "";
     flex-shrink: 0;
-    width: 25px;
-    height: 25px;
+    width: min(2.5rem, 37px);
+    height: min(2.5rem, 37px);
     background-color: variables.$text-primary-dark;
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(2.5rem, 34px);
+      height: min(2.5rem, 34px);
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
-    left: -28px;
-    width: 14px;
-    height: 14px;
+    left: max(-2.8rem);
+    width: min(1.4rem, 21px);
+    height: min(1.4rem, 21px);
     background-color: variables.$color-accent;
     border-radius: 50%;
-  }
 
-  @media (width <= 767px) {
-    &::after {
-      top: 11px;
-    }
-  }
-
-  @media (min-width: variables.$tablet-width) and (width <= 1439px) {
-    gap: 10px;
-
-    &:nth-child(3n + 1) {
-      grid-row: 1 / 2;
+    @media (width <= 639px) {
+      top: 50%;
+      transform: translateY(-50%);
     }
 
-    &::after {
+    @media (min-width: variables.$tablet-width) and (width <=1023px) {
       display: none;
     }
-  }
 
-  @media (min-width: variables.$desktop-width) {
-    gap: 10px;
-    padding-left: 10px;
-
-    &::after {
-      bottom: -15px;
-      left: 20px;
+    @media (min-width: variables.$desktop-width) {
+      bottom: max(-1.5rem, -20px);
+      left: min(2rem, 27px);
+      width: min(1.4rem, 19px);
+      height: min(1.4rem, 19px);
     }
   }
 }
@@ -140,21 +150,22 @@
 }
 
 .process__description {
-  max-width: 198px;
+  max-width: min(19.8rem, 297px);
   margin: 0;
 
   @media (min-width: variables.$tablet-width) {
-    max-width: 196px;
+    max-width: 19.6rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    font-size: 16px;
-    line-height: 24px;
+    max-width: min(19.6rem, 269px);
+    font-size: min(1.6rem, 22px);
+    line-height: min(2.4rem, 33px);
   }
 }
 
 .process__description br {
-  @media (width <= 1439px) {
+  @media (width <= 1023px) {
     display: none;
   }
 }

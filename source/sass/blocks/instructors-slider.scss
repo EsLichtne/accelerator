@@ -6,14 +6,14 @@
 }
 
 .instructors-slider__wrapper {
-  width: 290px;
+  width: min(29rem, 435px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 678px;
+    width: 67.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1200px;
+    width: min(120rem, 1648px);
   }
 }
 

@@ -4,63 +4,117 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: repeat(2, auto) 1fr;
-  gap: 15px;
-  padding: 14px;
+  gap: min(1.5rem, 22px);
+  padding: min(1.4rem, 21px);
   background-color: variables.$background-primary-light;
   border: 1px solid variables.$color-border;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 1.5rem;
+    padding: 1.4rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(1.5rem, 21px);
+    padding: min(1.4rem, 19px);
+  }
 }
 
 .instructor-card h4 {
-  max-width: 120px;
+  max-width: min(12rem, 180px);
   margin: 0;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: min(1.4rem, 21px);
+  line-height: min(1.6rem, 24px);
   font-weight: 700;
   word-break: break-word;
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 12rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: min(12rem, 165px);
+    font-size: min(1.4rem, 19px);
+    line-height: min(1.6rem, 22px);
+  }
 }
 
 .instructor-card__image-wrapper {
   order: -1;
   grid-column: 1 / -1;
-  width: 260px;
-  height: 200px;
+  width: min(26rem, 390px);
+  height: min(20rem, 300px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 182px;
-    height: 200px;
+    width: 18.2rem;
+    height: 20rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 255px;
-    height: 200px;
+    width: min(25.5rem, 350px);
+    height: min(20rem, 275px);
   }
 }
 
 .instructor-card__image {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .instructor-card p {
   grid-column: 1 / -1;
   margin: 0;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: min(1.2rem, 18px);
+  line-height: min(1.6rem, 24px);
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.2rem, 16px);
+    line-height: min(1.6rem, 22px);
+  }
 }
 
 .instructor-card p > br {
   display: none;
 
-  @media (min-width: variables.$tablet-width) and (width <= 1439px) {
+  @media (min-width: variables.$tablet-width) and (width <=1439px) {
     display: inline;
   }
 }
 
 .instructor-card__social {
-  width: 24px;
-  height: 24px;
+  width: min(2.4rem, 36px);
+  height: min(2.4rem, 36px);
+
+  @media (min-width: variables.$tablet-width) {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(2.4rem, 33px);
+    height: min(2.4rem, 33px);
+  }
 
   &::before {
-    width: 24px;
-    height: 24px;
+    width: min(2.4rem, 36px);
+    height: min(2.4rem, 36px);
+
+    @media (min-width: variables.$tablet-width) {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(2.4rem, 33px);
+      height: min(2.4rem, 33px);
+    }
   }
 }

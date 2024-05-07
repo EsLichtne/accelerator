@@ -2,15 +2,15 @@
 
 .instructors {
   display: grid;
-  gap: 25px;
+  gap: min(2.5rem, 37px);
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: 1fr auto;
-    gap: 30px;
+    gap: 3rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 20px;
+    gap: min(2rem, 27px);
   }
 }
 
@@ -18,7 +18,7 @@
   margin: 0;
 
   @media (min-width: variables.$tablet-width) {
-    padding-top: 3px;
+    padding-top: 0.3rem;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -27,15 +27,10 @@
 }
 
 .instructors__slider {
-  width: 290px;
+  width: 100%;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / -1;
-    width: 678px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    width: 1200px;
   }
 }
 
