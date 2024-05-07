@@ -2,15 +2,23 @@
 
 .slider-navigation {
   display: flex;
-  gap: 4px;
+  gap: min(0.4rem, 6px);
   margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 0.4rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(0.4rem, 5px);
+  }
 }
 
 .slider-navigation__button {
   display: grid;
   place-content: center;
-  width: 37px;
-  height: 35px;
+  width: min(3.7rem, 55px);
+  height: min(3.5rem, 52px);
   background-color: variables.$color-accent;
   border: 1px solid transparent;
   cursor: pointer;
@@ -18,16 +26,36 @@
     background-color 0.3s linear,
     border-color 0.3s linear;
 
+  @media (min-width: variables.$tablet-width) {
+    width: 3.7rem;
+    height: 3.5rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(3.7rem, 51px);
+    height: min(3.5rem, 48px);
+  }
+
   &::before {
     content: "";
-    width: 15px;
-    height: 9px;
+    width: min(1.5rem, 22px);
+    height: min(0.9rem, 13px);
     background-color: variables.$text-primary-light;
     mask-image: url("/__spritemap#sprite-arrow-view");
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
     transition: background-color 0.3s linear;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 1.5rem;
+      height: 0.9rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(1.5rem, 51px);
+      height: min(0.9rem, 48px);
+    }
   }
 
   &--next {
