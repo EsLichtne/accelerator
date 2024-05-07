@@ -4,20 +4,40 @@
   position: relative;
   display: grid;
   align-content: end;
-  gap: 15px;
-  min-height: 416px;
-  padding: 30px 20px;
+  gap: min(1.5rem, 22px);
+  min-height: min(41.6rem, 624px);
+  padding: min(3rem, 45px) min(2rem, 30px);
   color: variables.$text-primary-light;
   background-color: variables.$background-contrast;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 1.5rem;
+    min-height: 41.6rem;
+    padding: 3rem 2rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(1.5rem, 21px);
+    min-height: min(41.6rem, 571px);
+    padding: min(3rem, 41px) min(2rem, 27px);
+  }
 
   &::before {
     content: "";
     z-index: 2;
     grid-row: 3 / 4;
-    width: 80px;
+    width: min(8rem, 120px);
     height: 1px;
     background-color: variables.$text-primary-light;
     opacity: 0.2;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 8rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(8rem, 110px);
+    }
   }
 
   &::after {
@@ -38,26 +58,34 @@
 .tours-card__title {
   z-index: 2;
   margin: 0;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: min(2.4rem, 36px);
+  line-height: min(2.8rem, 42px);
   color: inherit;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: -1px;
-    margin-top: 1px;
+    margin-bottom: -0.1rem;
+    margin-top: 0.1rem;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: 240px;
+    max-width: min(24rem, 330px);
+    font-size: min(2.4rem, 33px);
+    line-height: min(2.8rem, 38px);
   }
 }
 
 .tours-card__image-wrapper {
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .tours-card__image {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .tours-card__header {
@@ -65,13 +93,20 @@
   order: -1;
   display: flex;
   align-items: center;
-  column-gap: 5px;
-  row-gap: 12px;
+  column-gap: min(0.5rem, 7px);
+  row-gap: min(1.2rem, 18px);
   flex-wrap: wrap;
   margin: 0;
 
   @media (min-width: variables.$tablet-width) {
     justify-content: space-between;
+    column-gap: 0.5rem;
+    row-gap: 1.2rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    column-gap: min(0.5rem, 7px);
+    row-gap: min(1.2rem, 16px);
   }
 }
 
@@ -79,23 +114,45 @@
   z-index: 2;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: min(0.6rem, 9px);
   margin: 0;
-  padding: 6px 12px;
-  font-size: 12px;
+  padding: min(0.6rem, 9px) min(1.2rem, 18px);
+  font-size: min(1.2rem, 18px);
   line-height: 100%;
   font-weight: 500;
   background-color: variables.$background-accent;
 
+  @media (min-width: variables.$tablet-width) {
+    gap: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(0.6rem, 8px);
+    padding: min(0.6rem, 8px) min(1.2rem, 16px);
+    font-size: min(1.2rem, 16px);
+  }
+
   &::before {
     content: "";
-    width: 16px;
-    height: 16px;
+    width: min(1.6rem, 24px);
+    height: min(1.6rem, 24px);
     background-color: variables.$text-primary-light;
     mask-image: url("/__spritemap#sprite-pin-filled-view");
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(1.6rem, 22px);
+      height: min(1.6rem, 22px);
+    }
   }
 }
 
@@ -109,20 +166,40 @@
 .tours-card__duration {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: min(1.2rem, 18px);
   margin: 0;
-  font-size: 12px;
+  font-size: min(1.2rem, 18px);
   line-height: 100%;
   font-weight: 500;
 
+  @media (min-width: variables.$tablet-width) {
+    gap: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: min(1.2rem, 16px);
+    font-size: min(1.2rem, 16px);
+  }
+
   &::before {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: min(2rem, 30px);
+    height: min(2rem, 30px);
     background-color: variables.$text-primary-light;
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(2rem, 27px);
+      height: min(2rem, 27px);
+    }
   }
 
   &--days::before {
@@ -142,79 +219,181 @@
 }
 
 .tours-card__capture {
-  font-size: 12px;
+  font-size: min(1.2rem, 18px);
   line-height: 100%;
   font-weight: 300;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.2rem, 16px);
+  }
 }
 
 .tours-card__stars {
   display: flex;
-  width: 84px;
-  min-height: 16px;
+  width: min(8.4rem, 126px);
+  min-height: min(1.6rem, 24px);
   margin: 0;
-  margin-top: 4px;
+  margin-top: min(0.4rem, 6px);
+
+  @media (min-width: variables.$tablet-width) {
+    width: 8.4rem;
+    min-height: 1.6rem;
+    margin-top: 0.4rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(8.4rem, 115px);
+    min-height: min(1.6rem, 22px);
+    margin-top: min(0.4rem, 5px);
+  }
 
   &::before,
   &::after {
     content: "";
-    height: 16px;
+    height: min(1.6rem, 24px);
     background-repeat: space;
-    background-size: 16px 16px;
+    background-size: min(1.6rem, 24px) min(1.6rem, 24px);
+
+    @media (min-width: variables.$tablet-width) {
+      height: 1.6rem;
+      background-size: 1.6rem 1.6rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      height: min(1.6rem, 22px);
+      background-size: min(1.6rem, 22px) min(1.6rem, 22px);
+    }
   }
 }
 
 .tours-card__stars--one {
   &::before {
-    width: 16px;
+    width: min(1.6rem, 24px);
     background-image: url("/__spritemap#sprite-star-filled-view");
+
+    @media (min-width: variables.$tablet-width) {
+      width: 1.6rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(1.6rem, 22px);
+    }
   }
 
   &::after {
-    width: 67px;
+    width: min(6.7rem, 100px);
     background-image: url("/__spritemap#sprite-star-stroke-view");
+
+    @media (min-width: variables.$tablet-width) {
+      width: 6.7rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(6.7rem, 92px);
+    }
   }
 }
 
 .tours-card__stars--two {
   &::before {
-    width: 33px;
+    width: min(3.3rem, 49px);
     background-image: url("/__spritemap#sprite-star-filled-view");
+
+    @media (min-width: variables.$tablet-width) {
+      width: 3.3rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(3.3rem, 45px);
+    }
   }
 
   &::after {
-    width: 50px;
+    width: min(5rem, 75px);
     background-image: url("/__spritemap#sprite-star-stroke-view");
+
+    @media (min-width: variables.$tablet-width) {
+      width: 5rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(5rem, 69px);
+    }
   }
 }
 
 .tours-card__stars--three {
   &::before {
-    width: 50px;
+    width: min(5rem, 75px);
     background-image: url("/__spritemap#sprite-star-filled-view");
+
+    @media (min-width: variables.$tablet-width) {
+      width: 5rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(5rem, 69px);
+    }
   }
 
   &::after {
-    width: 33px;
+    width: min(3.3rem, 49px);
     background-image: url("/__spritemap#sprite-star-stroke-view");
+
+    @media (min-width: variables.$tablet-width) {
+      width: 3.3rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(3.3rem, 45px);
+    }
   }
 }
 
 .tours-card__stars--four {
   &::before {
-    width: 67px;
+    width: min(6.7rem, 100px);
     background-image: url("/__spritemap#sprite-star-filled-view");
+
+    @media (min-width: variables.$tablet-width) {
+      width: 6.7rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(6.7rem, 92px);
+    }
   }
 
   &::after {
-    width: 16px;
+    width: min(1.6rem, 24px);
     background-image: url("/__spritemap#sprite-star-stroke-view");
+
+    @media (min-width: variables.$tablet-width) {
+      width: 1.6rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(1.6rem, 22px);
+    }
   }
 }
 
 .tours-card__stars--five {
   &::before {
-    width: 84px;
+    width: min(8.4rem, 126px);
     background-image: url("/__spritemap#sprite-star-filled-view");
+
+    @media (min-width: variables.$tablet-width) {
+      width: 8.4rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: min(8.4rem, 115px);
+    }
   }
 
   &::after {
@@ -224,8 +403,18 @@
 
 .tours-card__description {
   margin: 0;
-  margin-top: 7px;
-  font-size: 13px;
+  margin-top: min(0.7rem, 10px);
+  font-size: min(1.3rem, 19px);
   line-height: 100%;
   font-weight: 700;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 0.7rem;
+    font-size: 1.3rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: min(0.7rem, 10px);
+    font-size: min(1.3rem, 18px);
+  }
 }
