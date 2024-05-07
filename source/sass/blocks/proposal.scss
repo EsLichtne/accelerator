@@ -1,85 +1,85 @@
 @use "../global/variables";
 
 .proposal {
-  padding: 174px 0;
+  padding: min(17.4rem, 261px) 0;
   text-align: center;
   color: variables.$text-primary-light;
   background-color: variables.$background-contrast;
   background-image:
     linear-gradient(variables.$overlay-background 0%, variables.$overlay-background 100%),
     image-set(url("../../img/backgrounds/snowy-forest-mobile@2x.webp") type("image/webp") 2x,
-    url("../../img/backgrounds/snowy-forest-mobile.webp") type("image/webp") 1x,
-    url("../../img/backgrounds/snowy-forest-mobile@2x.jpg") type("image/jpeg") 2x,
-    url("../../img/backgrounds/snowy-forest-mobile.jpg") type("image/jpeg") 1x);
+      url("../../img/backgrounds/snowy-forest-mobile.webp") type("image/webp") 1x,
+      url("../../img/backgrounds/snowy-forest-mobile@2x.jpg") type("image/jpeg") 2x,
+      url("../../img/backgrounds/snowy-forest-mobile.jpg") type("image/jpeg") 1x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 180px 0;
+    padding: 18rem 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 293px 0 292px;
+    padding: min(29.3rem, 402px) 0 min(29.2rem, 401px);
     background-image:
       linear-gradient(variables.$overlay-background 0%, variables.$overlay-background 100%),
       image-set(url("../../img/backgrounds/snowy-forest-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/backgrounds/snowy-forest-desktop.webp") type("image/webp") 1x,
-      url("../../img/backgrounds/snowy-forest-desktop@2x.jpg") type("image/jpeg") 2x,
-      url("../../img/backgrounds/snowy-forest-desktop.jpg") type("image/jpeg") 1x);
+        url("../../img/backgrounds/snowy-forest-desktop.webp") type("image/webp") 1x,
+        url("../../img/backgrounds/snowy-forest-desktop@2x.jpg") type("image/jpeg") 2x,
+        url("../../img/backgrounds/snowy-forest-desktop.jpg") type("image/jpeg") 1x);
   }
 }
 
 .proposal h2 + p {
   margin: 0;
-  margin-bottom: 20px;
-  font-size: 22px;
+  margin-bottom: min(2rem, 30px);
+  font-size: min(2.2rem, 33px);
   line-height: 100%;
   font-weight: 800;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 25px;
-    padding: 4px 5px 3px 0;
-    font-size: 25px;
+    margin-bottom: 2.5rem;
+    padding: 0.4rem 0.5rem 0.3rem 0;
+    font-size: 2.5rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 17px;
+    margin-bottom: min(1.7rem, 23px);
     padding: 0;
-    padding-top: 3px;
-    font-size: 35px;
+    padding-top: min(0.3rem, 4px);
+    font-size: min(3.5rem, 48px);
   }
 }
 
 .proposal p + p {
-  max-width: 220px;
+  max-width: min(22rem, 330px);
   margin: 0 auto;
-  margin-bottom: 20px;
-  font-size: 12px;
-  line-height: 18px;
+  margin-bottom: min(2rem, 30px);
+  font-size: min(1.2rem, 18px);
+  line-height: min(1.8rem, 27px);
 
   @media (min-width: variables.$tablet-width) {
-    max-width: 300px;
-    margin-bottom: 25px;
-    font-size: 16px;
-    line-height: 24px;
+    max-width: 30rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: 630px;
-    margin-bottom: 40px;
+    max-width: min(63rem, 865px);
+    margin-bottom: min(4rem, 55px);
   }
 }
 
 .proposal__form {
-  width: 258px;
+  width: min(25.8rem, 387px);
   margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
-    width: 360px;
+    width: 36rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 960px;
+    width: min(96rem, 1318px);
   }
 }

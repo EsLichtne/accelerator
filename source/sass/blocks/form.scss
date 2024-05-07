@@ -2,34 +2,43 @@
 
 .form {
   display: grid;
-  gap: 8px;
+  gap: min(0.8rem, 12px);
 
   @media (min-width: variables.$tablet-width) {
-    gap: 11px;
+    gap: 1.1rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: repeat(2, 360px) auto;
-    gap: 30px;
+    grid-template-columns: repeat(2, min(36rem, 494px)) auto;
+    gap: min(3rem, 41px);
   }
 }
 
 .form__input {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 14px;
+  padding-top: min(1.5rem, 22px);
+  padding-bottom: min(1.4rem, 21px);
 
   @media (min-width: variables.$tablet-width) {
-    padding: 18px 29px 17px;
+    padding: 1.8rem 2.9rem 1.7rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: min(1.8rem, 25px) min(2.9rem, 40px) min(1.7rem, 23px);
   }
 }
 
 .form__button {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: min(2rem, 30px);
+  padding-bottom: min(2rem, 30px);
 
   @media (min-width: variables.$tablet-width) {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: min(1.9rem, 26px);
+    padding-bottom: min(1.9rem, 26px);
   }
 }
