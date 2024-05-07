@@ -3,19 +3,19 @@
 
 .reviews-slider {
   @media (min-width: variables.$desktop-width) {
-    padding: 10px;
+    padding: min(1rem, 14px);
   }
 }
 
 .reviews-slider__wrapper {
-  width: 320px;
+  width: min(32rem, 480px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 748px;
+    width: 74.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1335px;
+    width: min(133.5rem, 1833px);
   }
 }
 
@@ -23,10 +23,14 @@
   @include mixins.list-reset;
 
   display: flex;
-  padding: 25px 15px;
+  padding: min(2.5rem, 37px) min(1.5rem, 22px);
 
   @media (min-width: variables.$tablet-width) {
-    padding: 25px;
+    padding: 2.5rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: min(2.5rem, 34px);
   }
 }
 
@@ -35,16 +39,16 @@
 }
 
 .reviews-slider__slide {
-  width: 290px;
-  height: 484px;
+  width: min(29rem, 435px);
+  height: min(48.4rem, 726px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 565px;
-    height: 277px;
+    width: 56.5rem;
+    height: 27.7rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 700px;
-    height: 293px;
+    width: min(70rem, 961px);
+    height: min(29.3rem, 402);
   }
 }

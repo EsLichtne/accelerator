@@ -3,85 +3,95 @@
 .reviews-card {
   display: grid;
   grid-template-rows: auto 1fr repeat(2, auto);
-  padding: 20px;
+  padding: min(2rem, 30px);
   background-color: variables.$background-primary-light;
   box-shadow: 0 0 20px 0 variables.$color-shadow;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr repeat(2, auto);
-    column-gap: 30px;
-    padding: 20px;
-    padding-right: 30px;
+    column-gap: 3rem;
+    padding: 2rem;
+    padding-right: 3rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    column-gap: min(3rem, 41px);
+    padding: min(2rem, 27px);
+    padding-right: min(3rem, 41px);
   }
 }
 
 .reviews-card__author {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: min(0.8rem, 12px);
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 6px;
+    margin-bottom: 0.6rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 8px;
+    margin-bottom: min(0.8rem, 11px);
   }
 }
 
 .reviews-card__image-wrapper {
   order: -2;
-  width: 250px;
-  height: 169px;
-  margin-bottom: 20px;
+  width: min(25rem, 375px);
+  height: min(16.9rem, 253px);
+  margin-bottom: min(2rem, 30px);
 
   @media (min-width: variables.$tablet-width) {
     grid-row: span 3;
-    width: 186px;
-    height: 237px;
+    width: 18.6rem;
+    height: 23.7rem;
     margin: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 258px;
-    height: 253px;
+    width: min(25.8rem, 354px);
+    height: min(25.3rem, 347px);
   }
 }
 
 .reviews-card__image {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .reviews-card p {
   order: -1;
   display: grid;
-  gap: 10px;
+  gap: min(1rem, 15px);
   margin: 0;
-  margin-bottom: 15px;
-  font-size: 12px;
-  line-height: 18px;
+  margin-bottom: min(1.5rem, 22px);
+  font-size: min(1.2rem, 18px);
+  line-height: min(1.8rem, 27px);
   overflow: scroll;
 
   @media (min-width: variables.$tablet-width) {
-    gap: 8px;
-    margin-bottom: 25px;
-    padding-top: 4px;
+    gap: 0.8rem;
+    margin-bottom: 2.5rem;
+    padding-top: 0.4rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 2px;
+    margin-bottom: min(0.2rem, 3px);
     padding: 0;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: min(1.4rem, 19px);
+    line-height: min(2.2rem, 30px);
   }
 }
 
 .reviews-card__caption {
   @media (min-width: variables.$tablet-width) {
-    padding-bottom: 4px;
+    padding-bottom: 0.4rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding-bottom: 10px;
+    padding-bottom: min(1rem, 14px);
   }
 }
