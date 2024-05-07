@@ -84,7 +84,7 @@
 .instructor-card p > br {
   display: none;
 
-  @media (min-width: variables.$tablet-width) and (width <=1439px) {
+  @media (min-width: variables.$tablet-width) and (width <= 1023px) {
     display: inline;
   }
 }
