@@ -5,11 +5,17 @@
   @include mixins.list-reset;
 
   display: flex;
-  gap: 16px;
+  gap: min(1.6rem, 24px);
   flex-wrap: wrap;
-  padding: 0 15px;
+  padding: 0 min(1.5rem, 22px);
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 1.6rem;
+    padding: 0 1.5rem;
+  }
 
   @media (min-width: variables.$desktop-width) {
-    gap: 15px;
+    gap: min(1.5rem, 20px);
+    padding: 0 min(1.5rem, 20px);
   }
 }
