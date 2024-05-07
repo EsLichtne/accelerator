@@ -25,7 +25,7 @@ const initHeroSlider = () => {
     },
 
     breakpoints: {
-      1440: {
+      1024: {
         allowTouchMove: false,
       }
     },
@@ -59,11 +59,11 @@ const initToursSlider = () => {
         slidesPerView: 1,
         spaceBetween: 18,
       },
-      768: {
+      640: {
         slidesPerView: 2,
         spaceBetween: 18,
       },
-      1440: {
+      1024: {
         slidesPerView: 3,
         spaceBetween: 30,
       }
@@ -97,10 +97,10 @@ const initInstructorsSlider = () => {
         slidesPerView: 1,
         initialSlide: 2,
       },
-      768: {
+      640: {
         slidesPerView: 3,
       },
-      1440: {
+      1024: {
         slidesPerView: 4,
       }
     },
@@ -133,11 +133,11 @@ const initReviewsSlider = () => {
         spaceBetween: 20,
         slidesOffsetAfter: 0,
       },
-      768: {
+      640: {
         spaceBetween: 30,
         slidesOffsetAfter: 60,
       },
-      1440: {
+      1024: {
         spaceBetween: 120,
         slidesOffsetAfter: 120,
       }
@@ -219,7 +219,7 @@ const initGallerySlider = () => {
         320: {
           slidesPerView: 2,
         },
-        768: {
+        640: {
           slidesPerView: 3,
         },
       },
