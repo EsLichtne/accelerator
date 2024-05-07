@@ -1,15 +1,27 @@
 @use "../global/variables";
 
 .caption {
-  font-size: 12px;
+  font-size: min(1.2rem, 18px);
   line-height: 100%;
   color: variables.$text-primary-dark;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(1.2rem, 16px);
+  }
 
   &--first {
     font-weight: 700;
 
     @media (min-width: variables.$tablet-width) {
-      font-size: 13px;
+      font-size: 1.3rem;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: min(1.3rem, 18px);
     }
   }
 
