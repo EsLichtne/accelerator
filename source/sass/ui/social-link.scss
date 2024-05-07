@@ -3,29 +3,41 @@
 .social-link {
   display: grid;
   place-content: center;
-  width: 32px;
-  height: 30px;
+  width: min(3.2rem, 48px);
+  height: min(3rem, 45px);
   border: 1px solid variables.$text-primary-opacity;
   transition:
     border-color 0.3s linear,
     background-color 0.3s linear;
 
+  @media (min-width: variables.$tablet-width) {
+    width: 3.2rem;
+    height: 3rem;
+  }
+
   @media (min-width: variables.$desktop-width) {
-    width: 30px;
+    width: min(3rem, 41px);
+    height: min(3rem, 41px);
   }
 
   &::before {
     content: "";
-    width: 32px;
-    height: 30px;
+    width: min(3.2rem, 48px);
+    height: min(3rem, 45px);
     background-color: variables.$text-primary-dark;
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
     transition: background-color 0.3s linear;
 
+    @media (min-width: variables.$tablet-width) {
+      width: 3.2rem;
+      height: 3rem;
+    }
+
     @media (min-width: variables.$desktop-width) {
-      width: 30px;
+      width: min(3rem, 41px);
+      height: min(3rem, 41px);
     }
   }
 
