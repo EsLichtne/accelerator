@@ -12,7 +12,7 @@ import {
 import { advantagesCards } from './mocks/advantages-cards';
 import './upload/upload';
 
-const DESKTOP_WIDTH = 1440;
+const DESKTOP_WIDTH = 1024;
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeroSlider();
