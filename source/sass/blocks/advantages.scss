@@ -1,50 +1,53 @@
 @use "../global/variables";
 
 .advantages {
-  padding: 20px 0;
+  padding: min(2rem, 30px) 0;
   text-align: center;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 40px 0;
+    padding: 4rem 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 100px 0;
+    padding: min(10rem, 137px) 0;
   }
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: min(2rem, 30px);
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding-top: 35px;
+    margin-bottom: min(5rem, 69px);
+    padding-top: min(3.5rem, 48px);
     padding-bottom: 0;
   }
 }
 
 .advantages__slider {
-  width: 290px;
+  width: min(29rem, 435px);
   margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
-    width: 678px;
+    width: 67.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1440px;
-    margin-bottom: 50px;
+    width: min(144rem, 1977px);
+    margin-bottom: min(5rem, 69px);
   }
 }
 
 .advantages__navigation {
-  @media (width <= 1023px) {
+  @media (width <=1023px) {
     display: none;
   }
 
-  justify-content: center;
+  @media (min-width: variables.$desktop-width) {
+    justify-content: center;
+  }
 }
