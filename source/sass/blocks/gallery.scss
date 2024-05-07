@@ -1,14 +1,14 @@
 @use "../global/variables";
 
 .gallery {
-  padding: 20px 0 3px;
+  padding: min(2rem, 30px) 0 min(0.3rem, 4px);
 
   @media (min-width: variables.$tablet-width) {
-    padding: 40px 0 3px;
+    padding: 4rem 0 0.3rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 100px 0 3px;
+    padding: min(10rem, 137px) 0 min(0.3rem, 4px);
   }
 }
 
@@ -25,64 +25,64 @@
 
 .gallery__title {
   margin: 0;
-  margin-bottom: 10px;
-  padding-top: 17px;
-  padding-bottom: 16px;
+  margin-bottom: min(1rem, 15px);
+  padding-top: min(1.7rem, 25px);
+  padding-bottom: min(1.6rem, 24px);
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / -1;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 26px;
-    padding-top: 19px;
-    padding-bottom: 1px;
+    margin-bottom: min(2.6rem, 36px);
+    padding-top: min(1.9rem, 26px);
+    padding-bottom: min(0.1rem, 2px);
   }
 }
 
 .gallery p {
   margin: 0;
-  margin-bottom: 31px;
-  font-size: 12px;
-  line-height: 18px;
+  margin-bottom: min(3.1rem, 46px);
+  font-size: min(1.2rem, 18px);
+  line-height: min(1.8rem, 27px);
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 2;
-    max-width: 420px;
+    max-width: 42rem;
     margin: 0;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
   }
 
   @media (min-width: variables.$desktop-width) {
     grid-column: 1 / -1;
-    max-width: 610px;
-    margin-bottom: 46px;
-    font-size: 16px;
-    line-height: 24px;
+    max-width: min(61rem, 838px);
+    margin-bottom: min(4.6rem, 63px);
+    font-size: min(1.6rem, 22px);
+    line-height: min(2.4rem, 33px);
   }
 }
 
 .gallery__slider {
-  width: 320px;
+  width: min(32rem, 480px);
   margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
-    width: 768px;
-    margin-top: 21px;
+    width: 76.8rem;
+    margin-top: 2.1rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1440px;
+    width: min(144rem, 1977px);
     margin-top: 0;
   }
 }
 
 .gallery .gallery__navigation {
-  @media (width < 768px) or (width >= 1440px) {
+  @media (width < 768px) or (width >=1440px) {
     display: none;
   }
 

@@ -6,14 +6,14 @@
 }
 
 .gallery-slider__wrapper {
-  width: 320px;
+  width: min(32rem, 480px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 768px;
+    width: 76.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1440px;
+    width: min(144rem, 1977px);
   }
 }
 
@@ -22,7 +22,7 @@
 
   @media (min-width: variables.$desktop-width) {
     display: flex;
-    gap: 5px;
+    gap: min(0.5rem, 7px);
     flex-wrap: wrap;
   }
 }
