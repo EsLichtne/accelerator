@@ -32,13 +32,6 @@
 }
 
 .page__content {
-  padding-top: min(10rem, 150px);
-
-  @media (min-width: variables.$tablet-width) {
-    padding-top: 8.2rem;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    padding-top: min(12.6rem, 173px);
-  }
+  --top: 100px;
+  padding-top: var(--top);
 }

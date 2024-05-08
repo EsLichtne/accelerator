@@ -1,4 +1,5 @@
 import './navigation/navigation';
+import { setContentIndent } from './navigation/navigation';
 import {
   initHeroSlider,
   initToursSlider,
@@ -28,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('resize', () => {
+  setContentIndent();
+
   if (window.innerWidth >= DESKTOP_WIDTH) {
     initAdvantagesSlider(advantagesCards);
     destroyGallerySlider();
