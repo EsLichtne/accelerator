@@ -49,11 +49,12 @@
 
 .reviews__slider {
   width: min(32rem, 480px);
-  margin: -25px 0;
+  margin: -25px 0 -25px -15px;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / -1;
     width: 76.8rem;
+    margin: -25px 0;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -62,7 +63,7 @@
 }
 
 .reviews__navigation {
-  @media (width <= 639px) {
+  @media (width <=639px) {
     display: none;
   }
 
