@@ -11,11 +11,11 @@
   width: min(32rem, 480px);
 
   @media (min-width: variables.$tablet-width) {
-    width: 74.8rem;
+    width: 76.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(133.5rem, 1833px);
+    width: min(142rem, 1952px);
   }
 }
 

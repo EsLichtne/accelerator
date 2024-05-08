@@ -135,11 +135,13 @@ const initReviewsSlider = () => {
       },
       640: {
         spaceBetween: 30,
-        slidesOffsetAfter: 60,
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 70,
       },
       1024: {
         spaceBetween: 120,
-        slidesOffsetAfter: 120,
+        slidesOffsetBefore: 85,
+        slidesOffsetAfter: 155,
       }
     },
 
