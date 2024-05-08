@@ -94,6 +94,8 @@ const initInstructorsSlider = () => {
     speed: 500,
     slidesPerView: 'auto',
     spaceBetween: 20,
+    watchSlidesProgress: true,
+    slideVisibleClass: 'instructors-slider__item--visible',
 
     breakpoints: {
       320: {

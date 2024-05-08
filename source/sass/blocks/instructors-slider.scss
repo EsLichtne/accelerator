@@ -28,10 +28,15 @@
   display: grid;
   width: min(29rem, 435px);
   height: auto;
+  visibility: hidden;
 
   @media (min-width: variables.$tablet-width) {}
 
   @media (min-width: variables.$desktop-width) {
     width: min(28.5rem, 392px);
   }
+}
+
+.instructors-slider__item.instructors-slider__item--visible {
+  visibility: visible;
 }
