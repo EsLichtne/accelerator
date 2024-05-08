@@ -8,8 +8,8 @@
     url("../../img/backgrounds/clouds-1@2x.png") type("image/png") 2x,
     url("../../img/backgrounds/clouds-1.png") type("image/png") 1x);
   background-repeat: no-repeat;
-  background-size: 1176px 786px;
-  background-position: 179px 678px;
+  background-size: 117.6rem 78.6rem;
+  background-position: 17.9rem 67.8rem;
 
   @media (min-width: variables.$tablet-width) {
     background-image:
@@ -30,11 +30,11 @@
       url("../../img/backgrounds/clouds-2@2x.png") type("image/png") 2x,
       url("../../img/backgrounds/clouds-2.png") type("image/png") 1x);
 
-    background-size: 840px 280px, 2046px 1630px, 1200px 401px, 788px 263px;
-    background-position: 303px 2365px, 343px 1024px, -451px 4248px, 213px 4747px;
+    background-size: 84.0rem 28.0rem, 204.6rem 163.0rem, 120.0rem 40.1rem, 78.8rem 26.3rem;
+    background-position: 30.3rem 236.5rem, 34.3rem 102.4rem, -45.1rem 424.8rem, 21.3rem 474.7rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-position: 807px 2352px, 838px 800px, -312px 3643px, 991px 3827px;
+    background-position: 80.7rem 235.2rem, 83.8rem 80.0rem, -31.2rem 364.3rem, 99.1rem 382.7rem;
   }
 }

@@ -68,7 +68,7 @@
   margin-bottom: min(1.5rem, 22px);
   font-size: min(1.2rem, 18px);
   line-height: min(1.8rem, 27px);
-  overflow: scroll;
+  overflow-y: scroll;
 
   @media (min-width: variables.$tablet-width) {
     gap: 0.8rem;

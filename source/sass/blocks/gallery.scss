@@ -67,7 +67,7 @@
 }
 
 .gallery__slider {
-  width: min(32rem, 480px);
+  width: 32rem;
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;
@@ -75,13 +75,13 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(144rem, 1977px);
-    margin-top: 0;
+    width: min(144rem, 1980px);
+    margin: 0 auto;
   }
 }
 
 .gallery .gallery__navigation {
-  @media (width < 768px) or (width >=1440px) {
+  @media (width < 768px) or (width >= 1023px) {
     display: none;
   }
 

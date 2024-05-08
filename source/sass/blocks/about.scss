@@ -42,7 +42,7 @@
 .about__image-wrapper {
   order: -1;
   width: calc(100% + 30px);
-  height: min(40rem, 600px);
+  height: 40rem;
   margin: -6px 0 6px -15px;
 
   @media (min-width: variables.$tablet-width) {
@@ -52,13 +52,14 @@
     height: 35rem;
     margin: 0;
     margin-left: -45px;
-    padding-top: 134px;
+    margin-top: 134px;
   }
 
   @media (min-width: variables.$desktop-width) {
     grid-row: span 5;
     width: min(66rem, 906px);
     height: min(49.8rem, 684px);
+    margin: 0;
     margin-left: -120px;
     padding: 0;
   }

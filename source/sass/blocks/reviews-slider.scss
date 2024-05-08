@@ -8,7 +8,7 @@
 }
 
 .reviews-slider__wrapper {
-  width: min(32rem, 480px);
+  width: 32rem;
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;
@@ -23,14 +23,10 @@
   @include mixins.list-reset;
 
   display: flex;
-  padding: min(2.5rem, 37px) min(1.5rem, 22px);
+  padding: 25px 15px;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 2.5rem;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    padding: min(2.5rem, 34px);
+    padding: 25px;
   }
 }
 

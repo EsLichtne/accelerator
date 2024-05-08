@@ -6,7 +6,7 @@
 }
 
 .instructors-slider__wrapper {
-  width: min(29rem, 435px);
+  width: 29rem;
   max-width: 100%;
 
   @media (min-width: variables.$tablet-width) {
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(120rem, 1648px);
+    width: 100%;
   }
 }
 
@@ -24,6 +24,14 @@
   display: flex;
 }
 
-.instructors-slider__item {
+.instructors-slider__list .instructors-slider__item {
   display: grid;
+  width: min(29rem, 435px);
+  height: auto;
+
+  @media (min-width: variables.$tablet-width) {}
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(28.5rem, 392px);
+  }
 }
