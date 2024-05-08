@@ -18,8 +18,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(2rem, 27px);
-    height: min(2rem, 27px);
+    width: min(2rem, 20px);
+    height: min(2rem, 20px);
   }
 
   &--selected {

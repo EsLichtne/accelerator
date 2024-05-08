@@ -1,17 +1,18 @@
 @use "../global/variables";
 
 .hero {
-  background-color: variables.$background-accent;
+  background-color: variables.$background-primary-light;
 }
 
 .hero__slider {
-  width: min(32rem);
+  width: 32rem;
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(144rem, 1980px);
+    width: min(144rem, 1440px);
+    margin: 0 auto;
   }
 }

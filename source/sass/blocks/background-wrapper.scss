@@ -30,11 +30,11 @@
       url("../../img/backgrounds/clouds-2@2x.png") type("image/png") 2x,
       url("../../img/backgrounds/clouds-2.png") type("image/png") 1x);
 
-    background-size: 84.0rem 28.0rem, 204.6rem 163.0rem, 120.0rem 40.1rem, 78.8rem 26.3rem;
+    background-size: min(84rem, 840px) min(28rem, 280px), min(204.6rem, 2046px) min(163rem, 1630px), min(120rem, 1200px) min(40.1rem, 401px), min(78.8rem, 788px) min(26.3rem, 263px);
     background-position: 30.3rem 236.5rem, 34.3rem 102.4rem, -45.1rem 424.8rem, 21.3rem 474.7rem;
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-position: 80.7rem 235.2rem, 83.8rem 80.0rem, -31.2rem 364.3rem, 99.1rem 382.7rem;
+    background-position: min(80.7rem, 807px) min(235.2rem, 2352px), min(83.8rem), min(80rem, 800px), max(-31.2rem, -312px) min(364.3rem, 3643px), min(99.1rem, 991px) min(382.7rem, 3827px);
   }
 }

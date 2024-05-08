@@ -25,7 +25,6 @@
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: auto 1fr;
     row-gap: 3.4rem;
-    padding: 3.3rem 4.5rem 2rem;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -44,9 +43,9 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(20rem, 275px);
-    height: min(6rem, 82px);
-    padding: min(0.9rem, 12px) min(2.9rem, 40px);
+    width: min(20rem, 200px);
+    height: min(6rem, 60px);
+    padding: min(0.9rem, 9px) min(2.9rem, 29px);
   }
 }
 

@@ -16,7 +16,7 @@
 
   @media (min-width: variables.$desktop-width) {
     flex-direction: row;
-    gap: min(2rem, 27px);
+    gap: min(2rem, 20px);
     padding: 0;
   }
 }

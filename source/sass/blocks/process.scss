@@ -11,7 +11,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: min(2.3rem, 31px);
+    margin-bottom: min(2.3rem, 23px);
     padding: 0;
   }
 }
@@ -34,11 +34,11 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: repeat(3, 1fr) min(44rem, 604px);
+    grid-template-columns: repeat(3, 1fr) min(44rem, 440px);
     gap: 0;
     padding: 0;
-    padding-top: min(0.7rem, 10px);
-    padding-bottom: min(0.3rem, 4px);
+    padding-top: min(0.7rem, 7px);
+    padding-bottom: min(0.3rem, 3px);
   }
 
   &::before {
@@ -61,7 +61,7 @@
       width: calc(100% - 34px);
       height: 2px;
       right: 0;
-      bottom: max(-0.6rem, -8px);
+      bottom: max(-0.6rem, -6px);
     }
   }
 }
@@ -81,8 +81,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: min(1rem, 14px);
-    padding-left: min(1rem, 14px);
+    gap: min(1rem, 10px);
+    padding-left: min(1rem, 10px);
   }
 
   &::before {
@@ -101,8 +101,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      width: min(2.5rem, 34px);
-      height: min(2.5rem, 34px);
+      width: min(2.5rem, 25px);
+      height: min(2.5rem, 25px);
     }
   }
 
@@ -115,7 +115,7 @@
     background-color: variables.$color-accent;
     border-radius: 50%;
 
-    @media (width <= 639px) {
+    @media (width <=639px) {
       top: 50%;
       transform: translateY(-50%);
     }
@@ -125,10 +125,10 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      bottom: max(-1.5rem, -20px);
-      left: min(2rem, 27px);
-      width: min(1.4rem, 19px);
-      height: min(1.4rem, 19px);
+      bottom: max(-1.5rem, -15px);
+      left: min(2rem, 20px);
+      width: min(1.4rem, 14px);
+      height: min(1.4rem, 14px);
     }
   }
 }
@@ -158,9 +158,9 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: min(19.6rem, 269px);
-    font-size: min(1.6rem, 22px);
-    line-height: min(2.4rem, 33px);
+    max-width: min(19.6rem, 196px);
+    font-size: min(1.6rem, 16px);
+    line-height: min(2.4rem, 24px);
   }
 }
 

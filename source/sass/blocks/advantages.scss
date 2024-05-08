@@ -9,7 +9,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: min(10rem, 137px) 0;
+    padding: min(10rem, 100px) 0;
   }
 }
 
@@ -22,8 +22,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: min(5rem, 69px);
-    padding-top: min(3.5rem, 48px);
+    margin-bottom: min(5rem, 50px);
+    padding-top: min(3.5rem, 35px);
     padding-bottom: 0;
   }
 }
@@ -37,8 +37,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(144rem, 1977px);
-    margin-bottom: min(5rem, 69px);
+    width: min(144rem, 1440px);
+    margin-bottom: min(5rem, 50px);
   }
 }
 

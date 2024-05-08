@@ -3,7 +3,7 @@
 
 .reviews-slider {
   @media (min-width: variables.$desktop-width) {
-    padding: min(1rem, 14px);
+    padding: min(1rem, 10px);
   }
 }
 
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(142rem, 1952px);
+    width: min(142rem, 1420px);
   }
 }
 
@@ -44,7 +44,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(70rem, 961px);
-    height: min(29.3rem, 402);
+    width: min(70rem, 700px);
+    height: min(29.3rem, 293px);
   }
 }

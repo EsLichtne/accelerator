@@ -10,7 +10,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: min(0.4rem, 5px);
+    gap: min(0.4rem, 4px);
   }
 }
 
@@ -32,8 +32,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(3.7rem, 51px);
-    height: min(3.5rem, 48px);
+    width: min(3.7rem, 37px);
+    height: min(3.5rem, 35px);
   }
 
   &::before {
@@ -53,8 +53,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      width: min(1.5rem, 51px);
-      height: min(0.9rem, 48px);
+      width: min(1.5rem, 15px);
+      height: min(0.9rem, 9px);
     }
   }
 

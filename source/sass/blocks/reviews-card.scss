@@ -16,9 +16,9 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    column-gap: min(3rem, 41px);
-    padding: min(2rem, 27px);
-    padding-right: min(3rem, 41px);
+    column-gap: min(3rem, 30px);
+    padding: min(2rem, 20px);
+    padding-right: min(3rem, 30px);
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: min(0.8rem, 11px);
+    margin-bottom: min(0.8rem, 8px);
   }
 }
 
@@ -49,8 +49,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(25.8rem, 354px);
-    height: min(25.3rem, 347px);
+    width: min(25.8rem, 258px);
+    height: min(25.3rem, 253px);
   }
 }
 
@@ -79,10 +79,10 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: min(0.2rem, 3px);
+    margin-bottom: min(0.2rem, 2px);
     padding: 0;
-    font-size: min(1.4rem, 19px);
-    line-height: min(2.2rem, 30px);
+    font-size: min(1.4rem, 14px);
+    line-height: min(2.2rem, 22px);
   }
 }
 
@@ -92,6 +92,6 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding-bottom: min(1rem, 14px);
+    padding-bottom: min(1rem, 10px);
   }
 }

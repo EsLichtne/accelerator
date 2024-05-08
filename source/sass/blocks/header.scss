@@ -9,7 +9,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: min(3.2rem, 44px) 0;
+    padding: min(3.2rem, 32px) 0;
   }
 }
 
@@ -79,9 +79,9 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(20.5rem, 282px);
-    height: min(6.2rem, 85px);
-    padding: min(1rem, 14px) min(3.1rem, 43px) min(1rem, 14px) min(3.2rem, 44px);
+    width: min(20.5rem, 205px);
+    height: min(6.2rem, 62px);
+    padding: min(1rem, 10px) min(3.1rem, 31px) min(1rem, 10px) min(3.2rem, 32px);
   }
 }
 

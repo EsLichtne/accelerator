@@ -13,7 +13,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(144rem, 1980px);
+    width: min(144rem, 1440px);
   }
 }
 
@@ -22,7 +22,7 @@
 
   @media (min-width: variables.$desktop-width) {
     display: flex;
-    gap: min(0.5rem, 7px);
+    gap: min(0.5rem, 5px);
     flex-wrap: wrap;
   }
 }
@@ -46,8 +46,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(28.4rem, 390px);
-    height: min(46.3rem, 637px);
+    width: min(28.4rem, 284px);
+    height: min(46.3rem, 463px);
   }
 }
 
@@ -61,8 +61,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(28.4rem, 390px);
-    height: min(23.3rem, 320px);
+    width: min(28.4rem, 284px);
+    height: min(23.3rem, 233px);
   }
 }
 
@@ -76,8 +76,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(28.4rem, 390px);
-    height: min(22.3rem, 307px);
+    width: min(28.4rem, 284px);
+    height: min(22.3rem, 223px);
   }
 }
 

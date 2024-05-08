@@ -10,7 +10,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    font-size: min(1.2rem, 16px);
+    font-size: min(1.2rem, 12px);
   }
 
   &--first {
@@ -21,7 +21,7 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: min(1.3rem, 18px);
+      font-size: min(1.3rem, 13px);
     }
   }
 

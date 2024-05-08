@@ -20,8 +20,8 @@
   @media (min-width: variables.$desktop-width) {
     justify-items: start;
     align-content: start;
-    min-height: min(80rem, 1100px);
-    padding: min(20rem, 275px) min(12rem, 165px) min(8rem, 110px);
+    min-height: min(80rem, 800px);
+    padding: min(20rem, 200px) min(12rem, 120px) min(8rem, 80px);
     text-align: left;
   }
 
@@ -37,7 +37,7 @@
 
 .hero-card:has(.hero-card__photo-wrapper) {
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: auto min(1.6rem, 22px) auto;
+    grid-template-columns: auto min(1.6rem, 16px) auto;
     grid-template-rows: repeat(2, min-content) 1fr min-content;
   }
 }
@@ -57,8 +57,8 @@
 
   @media (min-width: variables.$desktop-width) {
     margin-top: 0;
-    margin-bottom: min(2.5rem, 34px);
-    font-size: min(7.7rem, 106px);
+    margin-bottom: min(2.5rem, 25px);
+    font-size: min(7.7rem, 77px);
   }
 }
 
@@ -78,7 +78,7 @@
     z-index: 2;
     order: 2;
     display: flex;
-    gap: min(1rem, 14px);
+    gap: min(1rem, 10px);
     margin: 0;
   }
 }
@@ -93,17 +93,17 @@
   @media (min-width: variables.$desktop-width) {
     display: flex;
     align-items: center;
-    gap: min(0.8rem, 11px);
+    gap: min(0.8rem, 8px);
     margin: 0;
-    padding: min(1.3rem, 18px) min(1.9rem, 26px);
-    font-size: min(1.2rem, 16px);
-    line-height: min(1.6rem, 22px);
+    padding: min(1.3rem, 13px) min(1.9rem, 19px);
+    font-size: min(1.2rem, 12px);
+    line-height: min(1.6rem, 16px);
     border: 1px solid variables.$color-opacity;
 
     &::before {
       content: "";
-      width: min(1.2rem, 16px);
-      height: min(1.2rem, 16px);
+      width: min(1.2rem, 12px);
+      height: min(1.2rem, 12px);
       background-color: variables.$text-primary-light;
       mask-repeat: no-repeat;
       mask-size: contain;
@@ -148,11 +148,11 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: min(46rem, 632px);
-    margin-top: max(-0.2rem, -3px);
-    margin-bottom: min(3.5rem, 48px);
-    font-size: min(1.7rem, 23px);
-    line-height: min(2.4rem, 33px);
+    max-width: min(46rem, 460px);
+    margin-top: max(-0.2rem, -2px);
+    margin-bottom: min(3.5rem, 35px);
+    font-size: min(1.7rem, 17px);
+    line-height: min(2.4rem, 24px);
   }
 }
 
@@ -178,9 +178,9 @@
   @media (min-width: variables.$desktop-width) {
     grid-column: 2 / 4;
     grid-row: 1 / -1;
-    grid-template-columns: auto min(17.5rem, 241px) auto;
-    grid-template-rows: min(9.3rem, 128px) min(31.4rem, 432px) min(5.2rem, 71px);
-    margin-top: max(-1.3rem);
+    grid-template-columns: auto min(17.5rem, 175px) auto;
+    grid-template-rows: min(9.3rem, 93px) min(31.4rem, 314px) min(5.2rem, 52px);
+    margin-top: max(-1.3rem, -13px);
   }
 }
 
@@ -205,13 +205,13 @@
 
   @media (min-width: variables.$desktop-width) {
     &:nth-child(1) {
-      width: min(30.8rem, 423px);
-      height: min(40.7rem, 560px);
+      width: min(30.8rem, 308px);
+      height: min(40.7rem, 407px);
     }
 
     &:nth-child(2) {
-      width: min(27.7rem, 381px);
-      height: min(36.6rem, 503px);
+      width: min(27.7rem, 277px);
+      height: min(36.6rem, 366px);
     }
   }
 }
@@ -230,10 +230,10 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(18rem, 247px);
-    margin-top: min(.2rem);
-    margin-bottom: min(13.4rem, 184px);
-    padding: min(2rem, 27px) min(1.9rem, 26px) min(1.8rem, 25px);
+    width: min(18rem, 180px);
+    margin-top: min(0.2rem, 2px);
+    margin-bottom: min(13.4rem, 134px);
+    padding: min(2rem, 20px) min(1.9rem, 19px) min(1.8rem, 18px);
   }
 }
 
@@ -245,6 +245,6 @@
   @media (min-width: variables.$desktop-width) {
     grid-column: 1 / 2;
     align-self: start;
-    margin-bottom: min(4.5rem, 62px);
+    margin-bottom: min(4.5rem, 45px);
   }
 }

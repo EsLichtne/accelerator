@@ -21,9 +21,9 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    gap: min(1rem, 14px);
-    padding: min(1rem, 14px);
-    font-size: min(1.6rem, 22px);
+    gap: min(1rem, 10px);
+    padding: min(1rem, 10px);
+    font-size: min(1.6rem, 16px);
   }
 
   &::after {
@@ -42,8 +42,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      width: min(1rem, 14px);
-      height: min(1.4rem, 19px);
+      width: min(1rem, 10px);
+      height: min(1.4rem, 14px);
     }
   }
 }

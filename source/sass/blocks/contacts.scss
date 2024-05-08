@@ -10,8 +10,9 @@
 
   @media (min-width: variables.$desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2, min(60rem, 824px));
-    padding: min(10rem, 137px) min(12rem, 165px) min(9.5rem, 130px);
+    grid-template-columns: repeat(2, min(60rem, 600px));
+    justify-content: center;
+    padding: min(10rem, 100px) min(12rem, 120px) min(9.5rem, 95px);
   }
 }
 
@@ -33,9 +34,9 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: min(2.1rem, 29px);
-    padding-top: min(2.3rem, 32px);
-    padding-bottom: min(0.1rem, 2px);
+    margin-bottom: min(2.1rem, 21px);
+    padding-top: min(2.3rem, 23px);
+    padding-bottom: min(0.1rem, 1px);
   }
 }
 
@@ -53,10 +54,10 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: min(50rem, 687px);
-    margin-bottom: min(5rem, 69px);
-    font-size: min(1.6rem, 22px);
-    line-height: min(2.4rem, 33px);
+    max-width: min(50rem, 500px);
+    margin-bottom: min(5rem, 50px);
+    font-size: min(1.6rem, 16px);
+    line-height: min(2.4rem, 24px);
   }
 }
 
@@ -77,8 +78,8 @@
 
   @media (min-width: variables.$desktop-width) {
     flex-direction: column;
-    column-gap: min(4rem, 55px);
-    row-gap: min(3.5rem, 48px);
+    column-gap: min(4rem, 40px);
+    row-gap: min(3.5rem, 35px);
     margin: 0;
   }
 }
@@ -97,9 +98,9 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    grid-template-columns: min(2.4rem, 33px) 1fr;
-    column-gap: min(3rem, 41px);
-    row-gap: min(0.8rem, 11px);
+    grid-template-columns: min(2.4rem, 24px) 1fr;
+    column-gap: min(3rem, 30px);
+    row-gap: min(0.8rem, 8px);
   }
 
   &::before {
@@ -119,8 +120,8 @@
 
     @media (min-width: variables.$desktop-width) {
       align-self: center;
-      width: min(2.6rem, 36px);
-      height: min(2.6rem, 36px);
+      width: min(2.6rem, 26px);
+      height: min(2.6rem, 26px);
     }
   }
 
@@ -150,7 +151,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: min(29.5rem, 405px);
+    max-width: min(29.5rem, 295px);
   }
 }
 

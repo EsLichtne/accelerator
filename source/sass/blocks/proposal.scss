@@ -20,7 +20,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: min(29.3rem, 402px) 0 min(29.2rem, 401px);
+    padding: min(29.3rem, 293px) 0 min(29.2rem, 292px);
     background-image:
       linear-gradient(variables.$overlay-background 0%, variables.$overlay-background 100%),
       image-set(url("../../img/backgrounds/snowy-forest-desktop@2x.webp") type("image/webp") 2x,
@@ -44,10 +44,10 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: min(1.7rem, 23px);
+    margin-bottom: min(1.7rem, 17px);
     padding: 0;
-    padding-top: min(0.3rem, 4px);
-    font-size: min(3.5rem, 48px);
+    padding-top: min(0.3rem, 3px);
+    font-size: min(3.5rem, 35px);
   }
 }
 
@@ -66,8 +66,10 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: min(63rem, 865px);
-    margin-bottom: min(4rem, 55px);
+    max-width: min(63rem, 630px);
+    margin-bottom: min(4rem, 40px);
+    font-size: min(1.6rem, 16px);
+    line-height: min(2.4rem, 24px);
   }
 }
 
@@ -80,6 +82,6 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(96rem, 1318px);
+    width: min(96rem, 960px);
   }
 }

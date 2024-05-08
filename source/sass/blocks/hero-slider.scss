@@ -14,7 +14,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(144rem, 1980px);
+    width: min(144rem, 1440px);
   }
 }
 
@@ -44,7 +44,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(144rem, 1980px);
+    width: min(144rem, 1440px);
   }
 }
 
@@ -60,8 +60,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    right: min(12rem, 165px);
-    bottom: min(9.2rem, 126px);
+    right: min(12rem, 120px);
+    bottom: min(9.2rem, 92px);
     transform: none;
   }
 }

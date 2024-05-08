@@ -14,8 +14,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: min(1.7rem, 23px);
-      line-height: min(2.4rem, 33px);
+      font-size: min(1.7rem, 17px);
+      line-height: min(2.4rem, 24px);
     }
   }
 
@@ -29,8 +29,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: min(1.6rem, 22px);
-      line-height: min(2.4rem, 33px);
+      font-size: min(1.6rem, 16px);
+      line-height: min(2.4rem, 24px);
     }
   }
 
@@ -44,8 +44,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      font-size: min(1.4rem, 19px);
-      line-height: min(2.2rem, 30px);
+      font-size: min(1.4rem, 14px);
+      line-height: min(2.2rem, 22px);
     }
   }
 }

@@ -8,7 +8,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: min(10rem, 137px) 0 min(7.7rem, 106px);
+    padding: min(10rem, 100px) 0 min(7.7rem, 77px);
   }
 }
 
@@ -24,7 +24,9 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: 120px 1fr auto 120px;
-    row-gap: min(2.8rem, 38px);
+    row-gap: min(2.8rem, 28px);
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -43,7 +45,7 @@
 
   @media (min-width: variables.$desktop-width) {
     padding: 0;
-    padding-top: min(4.5rem, 62px);
+    padding-top: min(4.5rem, 45px);
   }
 }
 
@@ -58,7 +60,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(144rem, 1980);
+    width: min(144rem, 1440px);
   }
 }
 

@@ -16,7 +16,7 @@
 
   @media (min-width: variables.$desktop-width) {
     gap: min(1.5rem, 21px);
-    padding: min(1.4rem, 19px);
+    padding: min(1.4rem, 14px);
   }
 }
 
@@ -35,9 +35,9 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    max-width: min(12rem, 165px);
-    font-size: min(1.4rem, 19px);
-    line-height: min(1.6rem, 22px);
+    max-width: min(12rem, 120px);
+    font-size: min(1.4rem, 14px);
+    line-height: min(1.6rem, 16px);
   }
 }
 
@@ -54,8 +54,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(25.5rem, 350px);
-    height: min(20rem, 275px);
+    width: min(25.5rem, 255px);
+    height: min(20rem, 200px);
   }
 }
 
@@ -77,8 +77,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    font-size: min(1.2rem, 16px);
-    line-height: min(1.6rem, 22px);
+    font-size: min(1.2rem, 12px);
+    line-height: min(1.6rem, 16px);
   }
 }
 
@@ -100,8 +100,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(2.4rem, 33px);
-    height: min(2.4rem, 33px);
+    width: min(2.4rem, 24px);
+    height: min(2.4rem, 24px);
   }
 
   &::before {
@@ -114,8 +114,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      width: min(2.4rem, 33px);
-      height: min(2.4rem, 33px);
+      width: min(2.4rem, 24px);
+      height: min(2.4rem, 24px);
     }
   }
 }
