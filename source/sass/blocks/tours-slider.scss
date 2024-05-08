@@ -7,6 +7,7 @@
 
 .tours-slider__wrapper {
   width: min(29rem, 435px);
+  max-width: 100%;
 
   @media (min-width: variables.$tablet-width) {
     width: 67.8rem;

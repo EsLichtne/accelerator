@@ -6,7 +6,6 @@
 
 .hero__slider {
   width: min(32rem);
-  margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;
