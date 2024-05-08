@@ -64,8 +64,10 @@ const initToursSlider = () => {
         spaceBetween: 18,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 30,
+        loopAddBlankSlides: false,
+        allowTouchMove: false,
       }
     },
 
@@ -90,18 +92,18 @@ const initInstructorsSlider = () => {
   new Swiper('#instructors-slider', {
     modules: [Navigation, A11y],
     speed: 500,
+    slidesPerView: 'auto',
     spaceBetween: 20,
 
     breakpoints: {
       320: {
-        slidesPerView: 1,
         initialSlide: 2,
       },
       640: {
         slidesPerView: 3,
       },
       1024: {
-        slidesPerView: 4,
+        allowTouchMove: false,
       }
     },
 
@@ -127,11 +129,12 @@ const initReviewsSlider = () => {
     modules: [Navigation, A11y],
     speed: 500,
     slidesPerView: 'auto',
+    loopAddBlankSlides: false,
 
     breakpoints: {
       320: {
         spaceBetween: 20,
-        slidesOffsetAfter: 0,
+        slidesOffsetAfter: 30,
       },
       640: {
         spaceBetween: 30,
@@ -140,8 +143,9 @@ const initReviewsSlider = () => {
       },
       1024: {
         spaceBetween: 120,
-        slidesOffsetBefore: 85,
+        slidesOffsetBefore: 95,
         slidesOffsetAfter: 155,
+        allowTouchMove: false,
       }
     },
 
@@ -169,10 +173,11 @@ const initAdvantagesSlider = (cards) => {
       speed: 500,
       slidesPerView: 'auto',
       spaceBetween: 30,
-      initialSlide: 4,
+      initialSlide: 3,
       centeredSlides: true,
       slidesPerGroup: 2,
       loopAddBlankSlides: false,
+      allowTouchMove: false,
 
       navigation: {
         nextEl: '#advantages-slider-button-next',
