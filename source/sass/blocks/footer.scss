@@ -6,7 +6,6 @@
 
 .footer__contacts {
   @media (min-width: variables.$desktop-width) {
-    max-width: min(var(--width), 1440px);
     margin: 0 auto;
   }
 }

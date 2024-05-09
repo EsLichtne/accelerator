@@ -39,3 +39,15 @@
   max-width: 100%;
   padding-top: var(--top);
 }
+
+.page__limiter {
+  width: var(--width);
+}
+
+.page__limiter.page__limiter--small {
+  width: min(var(--width), 1440px);
+}
+
+.page__limiter.page__limiter--medium {
+  width: min(var(--width), 1980px);
+}
