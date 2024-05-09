@@ -82,8 +82,8 @@ const initToursSlider = () => {
       itemRoleDescriptionMessage: 'Слайд.',
       firstSlideMessage: 'Первый слайд.',
       lastSlideMessage: 'Последний слайд.',
-      prevSlideMessage: 'Предыдущий слайд.',
-      nextSlideMessage: 'Следующий слайд.',
+      prevSlideMessage: '',
+      nextSlideMessage: '',
     },
   });
 };
@@ -121,8 +121,8 @@ const initInstructorsSlider = () => {
       itemRoleDescriptionMessage: 'Слайд.',
       firstSlideMessage: 'Первый слайд.',
       lastSlideMessage: 'Последний слайд.',
-      prevSlideMessage: 'Предыдущий слайд.',
-      nextSlideMessage: 'Следующий слайд.',
+      prevSlideMessage: '',
+      nextSlideMessage: '',
     },
   });
 };
@@ -163,8 +163,8 @@ const initReviewsSlider = () => {
       itemRoleDescriptionMessage: 'Слайд.',
       firstSlideMessage: 'Первый слайд.',
       lastSlideMessage: 'Последний слайд.',
-      prevSlideMessage: 'Предыдущий слайд.',
-      nextSlideMessage: 'Следующий слайд.',
+      prevSlideMessage: '',
+      nextSlideMessage: '',
     },
   });
 };
@@ -193,8 +193,8 @@ const initAdvantagesSlider = (cards) => {
         itemRoleDescriptionMessage: 'Слайд.',
         firstSlideMessage: 'Первый слайд.',
         lastSlideMessage: 'Последний слайд.',
-        prevSlideMessage: 'Предыдущий слайд.',
-        nextSlideMessage: 'Следующий слайд.',
+        prevSlideMessage: '',
+        nextSlideMessage: '',
       },
 
       on: {
@@ -245,8 +245,8 @@ const initGallerySlider = () => {
         itemRoleDescriptionMessage: 'Слайд.',
         firstSlideMessage: 'Первый слайд.',
         lastSlideMessage: 'Последний слайд.',
-        prevSlideMessage: 'Предыдущий слайд.',
-        nextSlideMessage: 'Следующий слайд.',
+        prevSlideMessage: '',
+        nextSlideMessage: '',
       },
     });
   }
