@@ -40,4 +40,10 @@ header.addEventListener('click', (event) => {
   }
 });
 
+document.addEventListener('click', (event) => {
+  if (header.classList.contains('header--with-menu') && !header.contains(event.target)) {
+    closeMenu();
+  }
+});
+
 export { setContentIndent };
