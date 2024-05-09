@@ -1,5 +1,6 @@
 import './navigation/navigation';
 import { setContentIndent } from './navigation/navigation';
+import { setContentWidth } from './utilities';
 import {
   initHeroSlider,
   initToursSlider,
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('resize', () => {
   setContentIndent();
+  setContentWidth();
 
   if (window.innerWidth >= DESKTOP_WIDTH) {
     initAdvantagesSlider(advantagesCards);
