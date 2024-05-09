@@ -13,7 +13,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(144rem, 1440px);
+    width: var(--width);
   }
 }
 

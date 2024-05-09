@@ -4,6 +4,7 @@
 .reviews-slider {
   @media (min-width: variables.$desktop-width) {
     padding: min(1rem, 10px);
+    padding-right: 0;
   }
 }
 
@@ -15,7 +16,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(142rem, 1420px);
+    width: 100%;
   }
 }
 

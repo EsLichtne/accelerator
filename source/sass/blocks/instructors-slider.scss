@@ -6,7 +6,7 @@
 }
 
 .instructors-slider__wrapper {
-  width: 29rem;
+  width: 100%;
   max-width: 100%;
 
   @media (min-width: variables.$tablet-width) {
@@ -29,6 +29,7 @@
   width: min(29rem, 435px);
   height: auto;
   visibility: hidden;
+  transition: visibility 0.3s linear;
 
   @media (min-width: variables.$tablet-width) {}
 

@@ -12,7 +12,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(144rem, 1440px);
+    width: min(100%, 1440px);
     margin: 0 auto;
   }
 }
