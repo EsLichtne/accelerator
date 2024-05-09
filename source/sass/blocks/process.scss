@@ -23,10 +23,9 @@
   display: grid;
   column-gap: min(1.5rem, 22px);
   row-gap: min(2.5rem, 37px);
-  padding-left: min(2.9rem, 43px);
   padding-left: min(2.9rem);
 
-  @media (min-width: variables.$tablet-width) and (width <=1023px) {
+  @media (min-width: variables.$tablet-width) and (width <= 1023px) {
     grid-template-columns: 23.1rem 27.2rem;
     column-gap: 17.5rem;
     row-gap: 10.4rem;
@@ -48,12 +47,12 @@
     height: calc(100% - 36px);
     background-color: variables.$color-accent;
 
-    @media (width <=639px) {
+    @media (width <= 639px) {
       top: 18px;
       left: min(0.7rem, 10px);
     }
 
-    @media (min-width: variables.$tablet-width) and (width <=1023px) {
+    @media (min-width: variables.$tablet-width) and (width <= 1023px) {
       display: none;
     }
 
@@ -72,7 +71,7 @@
   gap: min(0.9rem, 13px);
   align-items: start;
 
-  @media (min-width: variables.$tablet-width) and (width <=1023px) {
+  @media (min-width: variables.$tablet-width) and (width <= 1023px) {
     gap: 1rem;
 
     &:nth-child(3n + 1) {
@@ -115,12 +114,12 @@
     background-color: variables.$color-accent;
     border-radius: 50%;
 
-    @media (width <=639px) {
+    @media (width <= 639px) {
       top: 50%;
       transform: translateY(-50%);
     }
 
-    @media (min-width: variables.$tablet-width) and (width <=1023px) {
+    @media (min-width: variables.$tablet-width) and (width <= 1023px) {
       display: none;
     }
 
