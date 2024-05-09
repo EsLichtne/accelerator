@@ -109,7 +109,7 @@
   padding-bottom: min(1.7rem, 25px);
 
   &::before {
-    content: attr(aria-label);
+    content: attr(data-shadow);
     position: absolute;
     top: 0;
     left: 0;
