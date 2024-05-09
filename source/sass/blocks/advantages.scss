@@ -37,7 +37,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 100%;
+    width: min(100%, 1980px);
     margin-bottom: min(5rem, 50px);
   }
 }
