@@ -25,6 +25,7 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: auto 1fr auto;
+    align-items: start;
   }
 }
 

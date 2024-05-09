@@ -79,6 +79,8 @@
     order: 2;
     display: flex;
     gap: min(1rem, 10px);
+    flex-wrap: wrap;
+    max-width: 60%;
     margin: 0;
   }
 }
