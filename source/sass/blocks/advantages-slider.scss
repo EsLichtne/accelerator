@@ -37,7 +37,9 @@
 }
 
 .advantages-slider__list .advantages-slider__item {
+  display: grid;
   width: fit-content;
+  height: auto;
 }
 
 .advantages-slider__item {

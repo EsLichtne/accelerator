@@ -31,7 +31,8 @@
 }
 
 .proposal h2 + p {
-  margin: 0;
+  max-width: 80%;
+  margin: 0 auto;
   margin-bottom: min(2rem, 30px);
   font-size: min(2.2rem, 33px);
   line-height: 100%;
@@ -82,6 +83,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    align-items: start;
     width: min(96rem, 960px);
   }
 }

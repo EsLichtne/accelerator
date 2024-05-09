@@ -24,6 +24,11 @@
   display: flex;
 }
 
+.hero-slider__list .hero-slider__item {
+  display: grid;
+  height: auto;
+}
+
 .hero-slider__list .hero-slider__item.hero-slider__item--current {
   pointer-events: all;
 }

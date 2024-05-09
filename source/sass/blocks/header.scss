@@ -94,6 +94,10 @@
     grid-column: 3 / 4;
     margin: 0;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    max-width: min(15.8rem, 158px);
+  }
 }
 
 .header__navigation-wrapper {

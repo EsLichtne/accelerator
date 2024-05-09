@@ -71,8 +71,9 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    align-self: center;
+    align-self: start;
     justify-self: end;
+    padding-top: min(2.1rem, 21px);
   }
 }
 

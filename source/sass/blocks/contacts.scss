@@ -71,6 +71,7 @@
 
   @media (min-width: variables.$tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 4rem;
     row-gap: 3rem;
     margin-bottom: 4rem;
@@ -135,6 +136,12 @@
 
   &--address::before {
     mask-image: url("/__spritemap#sprite-pin-stroke-view");
+  }
+}
+
+.contacts__item--address {
+  @media (min-width: variables.$tablet-width) and (width <= 1023px) {
+    margin-right: -2px;
   }
 }
 

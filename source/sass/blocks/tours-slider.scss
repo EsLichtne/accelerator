@@ -25,7 +25,9 @@
 }
 
 .tours-slider__list .tours-slider__item {
+  display: grid;
   width: fit-content;
+  height: auto;
 }
 
 .tours-slider__slide {
