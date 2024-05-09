@@ -1,4 +1,5 @@
 const header = document.querySelector('.header');
+const navigation = header.querySelector('.header__navigation ');
 const button = header.querySelector('.header__button');
 const clue = button.querySelector('.header__clue');
 const content = document.querySelector('.page__content');
@@ -24,7 +25,12 @@ const toggleMenu = () => {
 };
 
 const setContentIndent = () => {
-  const headerHeight = header.offsetHeight;
+  let headerHeight;
+  if (header.classList.contains('header--with-menu')) {
+    headerHeight = header.offsetHeight - navigation.offsetHeight;
+  } else {
+    headerHeight = header.offsetHeight;
+  }
   content.style.setProperty('--top', `${headerHeight}px`);
 };
 
