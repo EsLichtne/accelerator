@@ -3,32 +3,32 @@
 .background-wrapper {
   background-color: variables.$background-primary-light;
   background-image:
-    image-set(url("../../img/backgrounds/clouds-1@2x.webp") type("image/webp") 2x,
-    url("../../img/backgrounds/clouds-1.webp") type("image/webp") 1x,
-    url("../../img/backgrounds/clouds-1@2x.png") type("image/png") 2x,
-    url("../../img/backgrounds/clouds-1.png") type("image/png") 1x);
+    image-set(url("../img/backgrounds/clouds-1@2x.webp") type("image/webp") 2x,
+    url("../img/backgrounds/clouds-1.webp") type("image/webp") 1x,
+    url("../img/backgrounds/clouds-1@2x.png") type("image/png") 2x,
+    url("../img/backgrounds/clouds-1.png") type("image/png") 1x);
   background-repeat: no-repeat;
   background-size: 117.6rem 78.6rem;
   background-position: 17.9rem 67.8rem;
 
   @media (min-width: variables.$tablet-width) {
     background-image:
-      image-set(url("../../img/backgrounds/clouds-2@2x.webp") type("image/webp") 2x,
-      url("../../img/backgrounds/clouds-2.webp") type("image/webp") 1x,
-      url("../../img/backgrounds/clouds-2@2x.png") type("image/png") 2x,
-      url("../../img/backgrounds/clouds-2.png") type("image/png") 1x),
-      image-set(url("../../img/backgrounds/clouds-1@2x.webp") type("image/webp") 2x,
-      url("../../img/backgrounds/clouds-1.webp") type("image/webp") 1x,
-      url("../../img/backgrounds/clouds-1@2x.png") type("image/png") 2x,
-      url("../../img/backgrounds/clouds-1.png") type("image/png") 1x),
-      image-set(url("../../img/backgrounds/clouds-2@2x.webp") type("image/webp") 2x,
-      url("../../img/backgrounds/clouds-2.webp") type("image/webp") 1x,
-      url("../../img/backgrounds/clouds-2@2x.png") type("image/png") 2x,
-      url("../../img/backgrounds/clouds-2.png") type("image/png") 1x),
-      image-set(url("../../img/backgrounds/clouds-2@2x.webp") type("image/webp") 2x,
-      url("../../img/backgrounds/clouds-2.webp") type("image/webp") 1x,
-      url("../../img/backgrounds/clouds-2@2x.png") type("image/png") 2x,
-      url("../../img/backgrounds/clouds-2.png") type("image/png") 1x);
+      image-set(url("../img/backgrounds/clouds-2@2x.webp") type("image/webp") 2x,
+      url("../img/backgrounds/clouds-2.webp") type("image/webp") 1x,
+      url("../img/backgrounds/clouds-2@2x.png") type("image/png") 2x,
+      url("../img/backgrounds/clouds-2.png") type("image/png") 1x),
+      image-set(url("../img/backgrounds/clouds-1@2x.webp") type("image/webp") 2x,
+      url("../img/backgrounds/clouds-1.webp") type("image/webp") 1x,
+      url("../img/backgrounds/clouds-1@2x.png") type("image/png") 2x,
+      url("../img/backgrounds/clouds-1.png") type("image/png") 1x),
+      image-set(url("../img/backgrounds/clouds-2@2x.webp") type("image/webp") 2x,
+      url("../img/backgrounds/clouds-2.webp") type("image/webp") 1x,
+      url("../img/backgrounds/clouds-2@2x.png") type("image/png") 2x,
+      url("../img/backgrounds/clouds-2.png") type("image/png") 1x),
+      image-set(url("../img/backgrounds/clouds-2@2x.webp") type("image/webp") 2x,
+      url("../img/backgrounds/clouds-2.webp") type("image/webp") 1x,
+      url("../img/backgrounds/clouds-2@2x.png") type("image/png") 2x,
+      url("../img/backgrounds/clouds-2.png") type("image/png") 1x);
 
     background-size: min(84rem, 840px) min(28rem, 280px), min(204.6rem, 2046px) min(163rem, 1630px), min(120rem, 1200px) min(40.1rem, 401px), min(78.8rem, 788px) min(26.3rem, 263px);
     background-position: 30.3rem 236.5rem, 34.3rem 102.4rem, -45.1rem 424.8rem, 21.3rem 474.7rem;
