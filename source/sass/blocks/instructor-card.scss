@@ -45,8 +45,8 @@
   order: -1;
   grid-column: 1 / -1;
   justify-self: center;
-  width: min(26rem, 390px);
-  height: min(20rem, 300px);
+  width: min(26rem);
+  height: min(20rem);
 
   @media (min-width: variables.$tablet-width) {
     width: 18.2rem;

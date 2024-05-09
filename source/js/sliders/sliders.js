@@ -99,6 +99,7 @@ const initInstructorsSlider = () => {
 
     breakpoints: {
       320: {
+        slidesPerView: 1,
         initialSlide: 2,
       },
       640: {
