@@ -31,8 +31,6 @@
   visibility: hidden;
   transition: visibility 0.3s linear;
 
-  @media (min-width: variables.$tablet-width) {}
-
   @media (min-width: variables.$desktop-width) {
     width: min(28.5rem, 285px);
   }
