@@ -181,8 +181,18 @@
 }
 
 .contacts__map {
+  width: 32rem;
+  height: 34.3rem;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 76.8rem;
+    height: 34rem;
+  }
+
   @media (min-width: variables.$desktop-width) {
     grid-column: 2 / 3;
     align-self: center;
+    width: min(60rem, 600px);
+    height: min(32.4rem, 324px);
   }
 }
