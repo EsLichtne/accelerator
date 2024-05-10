@@ -64,9 +64,8 @@ const initToursSlider = () => {
         spaceBetween: 18,
       },
       1024: {
-        slidesPerView: 'auto',
+        slidesPerView: 3,
         spaceBetween: 30,
-        loopAddBlankSlides: false,
         allowTouchMove: false,
       }
     },
@@ -92,7 +91,6 @@ const initInstructorsSlider = () => {
   new Swiper('#instructors-slider', {
     modules: [Navigation, A11y],
     speed: 500,
-    slidesPerView: 'auto',
     spaceBetween: 20,
     watchSlidesProgress: true,
     slideVisibleClass: 'instructors-slider__item--visible',
@@ -106,6 +104,7 @@ const initInstructorsSlider = () => {
         slidesPerView: 3,
       },
       1024: {
+        slidesPerView: 4,
         allowTouchMove: false,
       }
     },

@@ -39,3 +39,9 @@
 .instructors-slider__item.instructors-slider__item--visible {
   visibility: visible;
 }
+
+.instructors-slider__slide {
+  @media (min-width: variables.$desktop-width) {
+    width: 100%;
+  }
+}
