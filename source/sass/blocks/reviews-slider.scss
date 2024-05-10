@@ -33,6 +33,10 @@
 
 .reviews-slider__list > .reviews-slider__item {
   width: fit-content;
+
+  @media (min-width: variables.$desktop-width) {
+    width: min(70rem, 700px);
+  }
 }
 
 .reviews-slider__slide {
@@ -45,7 +49,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: min(70rem, 700px);
+    width: 100%;
     height: min(29.3rem, 293px);
   }
 }

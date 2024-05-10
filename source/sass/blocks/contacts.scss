@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(2, min(60rem, 600px));
     justify-content: center;
-    padding: min(10rem, 100px) min(12rem, 120px) min(9.5rem, 95px);
+    padding: min(10rem, 100px) 0 min(9.5rem, 95px);
   }
 }
 
