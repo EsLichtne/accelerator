@@ -5,9 +5,9 @@
   padding-top: 40rem;
   background-image:
     image-set(url("../img/backgrounds/about-mobile@2x.webp") type("image/webp") 2x,
-      url("../img/backgrounds/about-mobile.webp") type("image/webp") 1x,
-      url("../img/backgrounds/about-mobile@2x.jpg") type("image/jpeg") 2x,
-      url("../img/backgrounds/about-mobile.jpg") type("image/jpeg") 1x);
+    url("../img/backgrounds/about-mobile.webp") type("image/webp") 1x,
+    url("../img/backgrounds/about-mobile@2x.jpg") type("image/jpeg") 2x,
+    url("../img/backgrounds/about-mobile.jpg") type("image/jpeg") 1x);
   background-repeat: no-repeat;
   background-size: 32rem 40rem;
   background-position: top center;
@@ -17,9 +17,9 @@
     padding-left: 45rem;
     background-image:
       image-set(url("../img/backgrounds/about-desktop@2x.webp") type("image/webp") 2x,
-        url("../img/backgrounds/about-desktop.webp") type("image/webp") 1x,
-        url("../img/backgrounds/about-desktop@2x.jpg") type("image/jpeg") 2x,
-        url("../img/backgrounds/about-desktop.jpg") type("image/jpeg") 1x);
+      url("../img/backgrounds/about-desktop.webp") type("image/webp") 1x,
+      url("../img/backgrounds/about-desktop@2x.jpg") type("image/jpeg") 2x,
+      url("../img/backgrounds/about-desktop.jpg") type("image/jpeg") 1x);
     background-size: 45rem 35rem;
     background-position: 0 134px;
   }
@@ -115,7 +115,7 @@
 }
 
 .about__text-wrapper br {
-  @media (width <=1023px) {
+  @media (width <= 1023px) {
     display: none;
   }
 }
