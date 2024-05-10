@@ -3,6 +3,7 @@
 .map {
   position: relative;
   max-width: 100%;
+  background-color: variables.$background-map;
 
   &::before {
     content: "";
