@@ -10,6 +10,12 @@ const renderEmptyState = (field) => {
   }
 };
 
+const clearFields = () => {
+  fields.forEach((field) => {
+    field.value = '';
+  });
+};
+
 button.addEventListener('click', () => {
   fields.forEach((field) => {
     renderEmptyState(field);
@@ -20,4 +26,8 @@ fields.forEach((field) => {
   field.addEventListener('input', (event) => {
     renderEmptyState(event.target);
   });
+});
+
+form.addEventListener('submit', () => {
+  clearFields();
 });
