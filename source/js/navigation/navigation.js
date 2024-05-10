@@ -3,6 +3,7 @@ const navigation = header.querySelector('.header__navigation ');
 const button = header.querySelector('.header__button');
 const clue = button.querySelector('.header__clue');
 const content = document.querySelector('.page__content');
+const DESKTOP_WIDTH = 1023;
 
 const onHeaderClick = (event) => {
   if (event.target.classList.contains('navigation__link')) {
@@ -42,7 +43,7 @@ const toggleMenu = () => {
 
 const setContentIndent = () => {
   let headerHeight;
-  if (header.classList.contains('header--with-menu')) {
+  if (header.classList.contains('header--with-menu') || window.innerWidth <= DESKTOP_WIDTH) {
     headerHeight = header.offsetHeight - navigation.offsetHeight;
   } else {
     headerHeight = header.offsetHeight;
