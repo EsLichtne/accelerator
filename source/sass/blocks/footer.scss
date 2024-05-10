@@ -4,12 +4,6 @@
   background-color: variables.$background-primary-light;
 }
 
-.footer__contacts {
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 auto;
-  }
-}
-
 .footer__container {
   padding: min(2.2rem, 33px) 0 min(2rem, 30px);
   border-top: 1px solid variables.$color-border-transparent;
