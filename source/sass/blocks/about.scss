@@ -46,7 +46,7 @@
 
   @media (min-width: variables.$desktop-width) {
     width: min(66rem, 660px);
-    padding-right: min(12rem, 120px);
+    padding-right: 0;
   }
 }
 
