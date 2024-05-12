@@ -5,7 +5,7 @@
   grid-template-columns: 1fr auto;
   grid-template-rows: repeat(2, auto) 1fr;
   gap: min(1.5rem, 22px);
-  padding: min(1.4rem, 21px);
+  padding: min(1.4rem, 21px) 1.4rem;
   background-color: variables.$background-primary-light;
   border: 1px solid variables.$color-border;
 
@@ -45,8 +45,7 @@
   order: -1;
   grid-column: 1 / -1;
   justify-self: center;
-  width: min(26rem);
-  height: min(20rem);
+  width: 100%;
 
   @media (min-width: variables.$tablet-width) {
     width: 18.2rem;

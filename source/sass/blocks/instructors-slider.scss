@@ -10,10 +10,6 @@
   max-width: 100%;
 
   @media (min-width: variables.$tablet-width) {
-    width: 67.8rem;
-  }
-
-  @media (min-width: variables.$desktop-width) {
     width: 100%;
   }
 }
@@ -41,7 +37,7 @@
 }
 
 .instructors-slider__slide {
-  @media (min-width: variables.$desktop-width) {
+  @media (min-width: variables.$tablet-width) {
     width: 100%;
   }
 }

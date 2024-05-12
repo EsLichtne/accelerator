@@ -10,7 +10,7 @@
   max-width: 100%;
 
   @media (min-width: variables.$tablet-width) {
-    width: 67.8rem;
+    width: 100%;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -34,10 +34,6 @@
   width: 29rem;
 
   @media (min-width: variables.$tablet-width) {
-    width: 33rem;
-  }
-
-  @media (min-width: variables.$desktop-width) {
     width: 100%;
   }
 }
