@@ -103,39 +103,38 @@
   }
 }
 
-.title--shadow {
+.title--with-shadow {
   position: relative;
   padding-top: min(1.6rem, 24px);
   padding-bottom: min(1.7rem, 25px);
 
-  &::before {
-    content: attr(data-shadow);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    font-size: min(2.6rem, 39px);
-    line-height: 100%;
-    font-weight: 800;
-    text-align: inherit;
-    opacity: 0.03;
-  }
-
   @media (min-width: variables.$tablet-width) {
     padding-top: 2rem;
     padding-bottom: 1rem;
-
-    &::before {
-      font-size: 4rem;
-    }
   }
 
   @media (min-width: variables.$desktop-width) {
     padding-top: min(1.9rem, 19px);
     padding-bottom: min(0.1rem, 1px);
+  }
+}
 
-    &::before {
-      font-size: min(5.5rem, 55px);
-    }
+.title__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: min(2.6rem, 39px);
+  line-height: 100%;
+  font-weight: 800;
+  text-align: inherit;
+  opacity: 0.03;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 4rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: min(5.5rem, 55px);
   }
 }
