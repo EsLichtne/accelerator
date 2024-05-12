@@ -45,11 +45,10 @@
 
   @media (min-width: variables.$tablet-width) {
     width: 56.5rem;
-    height: 27.7rem;
+    height: auto;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 100%;
-    height: min(29.3rem, 293px);
   }
 }
