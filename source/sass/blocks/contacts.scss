@@ -183,10 +183,12 @@
 .contacts__map {
   width: 32rem;
   height: 34.3rem;
+  margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;
     height: 34rem;
+    margin: 0;
   }
 
   @media (min-width: variables.$desktop-width) {

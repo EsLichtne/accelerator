@@ -6,7 +6,7 @@
 }
 
 .gallery-slider__wrapper {
-  width: 32rem;
+  width: max(320px, 32rem);
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;
@@ -40,8 +40,8 @@
 }
 
 .gallery-slider__slide--large {
-  width: 15.8rem;
-  height: 26.6rem;
+  width: max(15.8rem, 158px);
+  height: max(26.6rem, 266px);
 
   @media (min-width: variables.$tablet-width) {
     width: 25.3rem;
@@ -55,8 +55,8 @@
 }
 
 .gallery-slider__slide--medium {
-  width: 15.7rem;
-  height: 13.5;
+  width: max(15.7rem, 157px);
+  height: max(13.5rem, 135px);
 
   @media (min-width: variables.$tablet-width) {
     width: 25.2rem;
@@ -70,8 +70,8 @@
 }
 
 .gallery-slider__slide--small {
-  width: 15.7rem;
-  height: 12.5rem;
+  width: max(15.7rem, 157px);
+  height: max(12.5rem, 125px);
 
   @media (min-width: variables.$tablet-width) {
     width: 25.2rem;

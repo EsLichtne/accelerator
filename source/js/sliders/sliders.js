@@ -53,6 +53,7 @@ const initToursSlider = () => {
   new Swiper('#tours-slider', {
     modules: [Navigation, A11y],
     speed: 500,
+    spaceBetween: 18,
 
     breakpoints: {
       320: {
@@ -131,6 +132,7 @@ const initReviewsSlider = () => {
     modules: [Navigation, A11y],
     speed: 500,
     slidesPerView: 'auto',
+    spaceBetween: 20,
     loopAddBlankSlides: false,
 
     breakpoints: {
@@ -222,6 +224,7 @@ const initGallerySlider = () => {
       modules: [Navigation, A11y],
       loop: true,
       speed: 500,
+      slidesPerView: 2,
       spaceBetween: 5,
 
       breakpoints: {

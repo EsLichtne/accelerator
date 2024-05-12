@@ -6,7 +6,7 @@
 }
 
 .tours-slider__wrapper {
-  width: 29rem;
+  width: max(290px, 29rem);
   max-width: 100%;
 
   @media (min-width: variables.$tablet-width) {
@@ -31,7 +31,7 @@
 }
 
 .tours-slider__slide {
-  width: 29rem;
+  width: max(290px, 29rem);
 
   @media (min-width: variables.$tablet-width) {
     width: 100%;

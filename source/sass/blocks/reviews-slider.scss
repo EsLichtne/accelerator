@@ -9,7 +9,7 @@
 }
 
 .reviews-slider__wrapper {
-  width: 32rem;
+  width: max(320px, 32rem);
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;
@@ -40,8 +40,8 @@
 }
 
 .reviews-slider__slide {
-  width: min(29rem, 435px);
-  height: min(48.4rem, 726px);
+  width: clamp(290px, 29rem, 435px);
+  height: clamp(484px, 48.4rem, 726px);
 
   @media (min-width: variables.$tablet-width) {
     width: 56.5rem;

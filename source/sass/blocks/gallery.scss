@@ -67,7 +67,7 @@
 }
 
 .gallery__slider {
-  width: 32rem;
+  width: max(320px, 32rem);
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;

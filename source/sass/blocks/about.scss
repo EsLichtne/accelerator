@@ -9,7 +9,7 @@
     url("../img/backgrounds/about-mobile@2x.jpg") type("image/jpeg") 2x,
     url("../img/backgrounds/about-mobile.jpg") type("image/jpeg") 1x);
   background-repeat: no-repeat;
-  background-size: 32rem 40rem;
+  background-size: max(320px, 32rem) 40rem;
   background-position: top 14px center;
 
   @media (min-width: variables.$tablet-width) {

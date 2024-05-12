@@ -59,7 +59,7 @@
 }
 
 .reviews__slider {
-  width: 32rem;
+  width: max(320px, 32rem);
   margin: -25px 0 -25px -15px;
 
   @media (min-width: variables.$tablet-width) {

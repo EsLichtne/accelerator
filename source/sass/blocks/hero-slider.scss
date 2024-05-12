@@ -7,7 +7,7 @@
 }
 
 .hero-slider__wrapper {
-  width: min(32rem);
+  width: min(max(320px, 32rem));
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;
@@ -42,7 +42,7 @@
 }
 
 .hero-slider__slide {
-  width: min(32rem);
+  width: min(max(320px, 32rem));
 
   @media (min-width: variables.$tablet-width) {
     width: 76.8rem;

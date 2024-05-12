@@ -37,8 +37,8 @@
 
 .reviews-card__image-wrapper {
   order: -2;
-  width: min(25rem, 375px);
-  height: min(16.9rem, 253px);
+  width: clamp(250px, 25rem, 375px);
+  height: clamp(169px, 16.9rem, 253px);
   margin-bottom: min(2rem, 30px);
 
   @media (min-width: variables.$tablet-width) {
