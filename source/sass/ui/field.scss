@@ -81,6 +81,7 @@
 .field__input:focus + .field__label,
 .field__input:placeholder-shown + .field__label,
 .field__input:user-valid + .field__label,
+.field__input:valid + .field__label,
 .field__input:user-invalid + .field__label {
   opacity: 0;
 }
