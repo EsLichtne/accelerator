@@ -157,6 +157,7 @@
   z-index: 2;
   display: flex;
   gap: 14px;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -211,8 +212,20 @@
 .tours-card__footer {
   z-index: 2;
   display: flex;
-  justify-content: space-between;
+  gap: min(0.8rem, 12px);
+  // justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    column-gap: 2.7rem;
+    row-gap: 0.8rem;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    column-gap: min(5.2rem, 52px);
+    row-gap: min(1rem, 10px);
+  }
 }
 
 .tours-card__capture {

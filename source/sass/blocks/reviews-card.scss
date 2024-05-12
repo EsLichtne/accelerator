@@ -43,6 +43,7 @@
 
   @media (min-width: variables.$tablet-width) {
     grid-row: span 3;
+    align-self: center;
     width: 18.6rem;
     height: 23.7rem;
     margin: 0;

@@ -34,6 +34,11 @@
 .reviews-slider__list > .reviews-slider__item {
   width: fit-content;
 
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    height: auto;
+  }
+
   @media (min-width: variables.$desktop-width) {
     width: min(70rem, 700px);
   }
