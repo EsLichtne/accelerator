@@ -1,0 +1,25 @@
+@use "../global/variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$font-primary;
+  font-size: 14px;
+  line-height: 20px;
+  color: variables.$text-primary-dark;
+  background-color: variables.$background-primary-light;
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 16px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
