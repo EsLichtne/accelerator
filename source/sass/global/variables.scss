@@ -1,0 +1,36 @@
+/* VIEWPORTS-WIDTH */
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+/* FONTS */
+$font-primary: "Manrope", "Arial", sans-serif;
+
+/* TEXT-COLORS */
+$text-primary-dark: #484848;
+$text-primary-light: #ffffff;
+$text-secondary-light: #f0efe9;
+$text-accent: #316dc2;
+
+/* BASIC-COLORS */
+$color-accent: #316dc2;
+$color-light: #ffffff;
+
+/* BACKGROUND-COLORS */
+$background-primary-light: #f0efe9;
+$background-secondary-light: #ffffff;
+$background-accent: #316dc2;
+
+/* OVERLAY-COLORS */
+$overlay-light: rgba(49, 109, 194, 0.2);
+$overlay-dark: rgba(13, 29, 51, 0.4);
+
+/* ACTION-COLORS */
+$color-active: #275699;
+$color-disabled: #a9afb7;
+
+/* FORM-COLORS */
+$form-light: #ffffff;
+$form-dark: #484848;
+$form-error: #ff5e66;
+$form-disabled: #a9afb7;
