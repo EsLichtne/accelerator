@@ -1,0 +1,20 @@
+@use "../global/variables";
+
+.header {
+  padding-top: 20px;
+  background-color: transparent;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 30px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.header__navigation {
+  margin-left: auto;
+}
