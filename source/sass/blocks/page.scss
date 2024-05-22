@@ -1,0 +1,17 @@
+@use "../global/variables";
+
+.page {
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.page__header {
+  position: absolute;
+}
