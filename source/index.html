@@ -9,7 +9,67 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header header"></header>
+  <header class="page__header header">
+    <div class="header__wrapper container">
+      <img class="header__logo logo-image" src="#" alt="Логотип проекта.">
+      <nav class="header__navigation navigation">
+        <button class="navigation__button" type="button" aria-expanded="false" aria-controls="menu">Меню</button>
+        <ul class="navigation__menu menu" id="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">О проекте</a>
+          </li>
+          <li class="menu__item">
+            <button class="menu__link menu__link--expanded" type="button" aria-expanded="false"
+              aria-controls="programs">
+              Программы
+            </button>
+            <ul class="menu__submenu submenu" id="programs">
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Стажировки</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Волонтёрство</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Учёба</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Религия</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Как поехать</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <button class="menu__link menu__link--expanded" type="button" aria-expanded="false" aria-controls="news">
+              Новости
+            </button>
+            <ul class="menu__submenu submenu" id="news">
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Стажировки</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Волонтёрство</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Учёба</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Религия</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main class="page__content"></main>
   <footer class="page__footer"></footer>
   <script type="module" src="js/main.js"></script>
