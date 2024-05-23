@@ -1,0 +1,31 @@
+@use "../global/variables";
+
+.angle {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-image: url("/__spritemap#sprite-angle-view");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.angle--top-right {
+  &::after {
+    top: 0;
+    right: -10px;
+    transform: rotate(90deg);
+  }
+}
+
+.angle--bottom-right {
+  &::after {
+    bottom: 0;
+    right: -10px;
+  }
+}
