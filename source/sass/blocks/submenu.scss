@@ -1,0 +1,35 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.submenu {
+  @include mixins.list-reset;
+
+  padding-left: 16px;
+}
+
+.submenu__link {
+  display: grid;
+  padding: 6px 0;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  color: variables.$color-light-opacity;
+  transition: color 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: variables.$text-primary-light;
+  }
+
+  &:focus-visible {
+    outline-offset: -1px;
+  }
+}
+
+.submenu__item:first-child .submenu__link {
+  padding-top: 4px;
+}
+
+.submenu__item:last-child .submenu__link {
+  padding-bottom: 12px;
+}
