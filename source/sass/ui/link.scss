@@ -1,0 +1,183 @@
+@use "../global/variables";
+
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  padding: 4px;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 30px;
+  transition:
+    background-color 0.3s linear,
+    border-color 0.3s linear;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition:
+      transform 0.3s linear,
+      background-color 0.3s linear;
+  }
+
+  &::after {
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    transition: background-color 0.3s linear;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}
+
+.link--primary {
+  color: variables.$text-accent;
+  background-color: transparent;
+  border-color: variables.$color-accent;
+
+  &::before {
+    background-color: variables.$color-light;
+  }
+
+  &::after {
+    background-color: variables.$color-accent;
+  }
+
+  &:hover {
+    color: variables.$text-primary-light;
+    background-color: variables.$color-accent;
+    border-color: variables.$color-accent;
+
+    &::before {
+      background-color: variables.$color-accent;
+    }
+
+    &::after {
+      background-color: variables.$color-light;
+    }
+  }
+
+  &:focus {
+    color: variables.$text-accent;
+    background-color: transparent;
+    border-color: variables.$color-accent;
+
+    &::before {
+      background-color: variables.$color-light;
+    }
+
+    &::after {
+      background-color: variables.$color-accent;
+    }
+  }
+
+  &:active {
+    color: variables.$color-light-opacity;
+    background-color: variables.$color-accent;
+    border-color: variables.$color-accent;
+
+    &::before {
+      background-color: variables.$color-accent-opacity;
+    }
+
+    &::after {
+      background-color: variables.$color-light;
+    }
+  }
+}
+
+.link--secondary {
+  color: variables.$text-primary-light;
+  background-color: transparent;
+  border-color: variables.$color-light;
+
+  &::before {
+    background-color: variables.$color-accent;
+  }
+
+  &::after {
+    background-color: variables.$color-light;
+  }
+
+  &:hover {
+    color: variables.$text-accent;
+    background-color: variables.$color-light;
+    border-color: variables.$color-light;
+
+    &::before {
+      background-color: variables.$color-light;
+    }
+
+    &::after {
+      background-color: variables.$color-accent;
+    }
+  }
+
+  &:focus {
+    color: variables.$text-primary-light;
+    background-color: transparent;
+    border-color: variables.$color-light;
+
+    &::before {
+      background-color: variables.$color-accent;
+    }
+
+    &::after {
+      background-color: variables.$color-light;
+    }
+  }
+
+  &:active {
+    color: variables.$color-accent-opacity;
+    background-color: variables.$color-light;
+    border-color: variables.$color-light;
+
+    &::before {
+      background-color: variables.$color-accent-opacity;
+    }
+
+    &::after {
+      background-color: variables.$color-accent;
+    }
+  }
+}
+
+.link.link--disabled,
+.link:disabled {
+  color: variables.$color-disabled;
+  background-color: transparent;
+  border-color: variables.$color-disabled;
+  cursor: not-allowed;
+
+  &::before {
+    background-color: variables.$color-light-opacity;
+    transform: translateY(-50%) rotate(0);
+  }
+
+  &::after {
+    background-color: variables.$color-disabled;
+  }
+}
