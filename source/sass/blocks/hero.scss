@@ -1,0 +1,9 @@
+@use "../global/variables";
+
+.hero {
+  background-color: variables.$overlay-light;
+}
+
+.hero__slider {
+  width: 100%;
+}
