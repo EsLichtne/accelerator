@@ -10,9 +10,26 @@
   grid-template-rows: 1fr auto;
   min-width: 320px;
   min-height: 100vh;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s linear;
+  }
+}
+
+.page__body:has(.page__navigation-button[aria-expanded="true"]) {
+  position: relative;
+
+  &::after {
+    background-color: variables.$overlay-dark;
+  }
 }
 
 .page__header {
   position: absolute;
+  z-index: 1;
   width: 100%;
 }
