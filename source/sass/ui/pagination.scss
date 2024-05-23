@@ -1,0 +1,67 @@
+@use "../global/variables";
+
+.pagination {
+  padding: 4px 10px;
+}
+
+.pagination__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination__bullet {
+  flex-shrink: 0;
+  display: grid;
+  place-content: center;
+  padding: 6px;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: variables.$color-light;
+    box-shadow: inset 0 0 0 2px variables.$color-accent;
+    transition:
+      background-color 0.3s linear,
+      box-shadow 0.3s linear;
+  }
+}
+
+.pagination__bullet--selected {
+  &::before {
+    background-color: variables.$color-active;
+  }
+}
+
+.pagination__bullet:hover {
+  &::before {
+    background-color: variables.$color-accent-opacity;
+    box-shadow: inset 0 0 0 2px variables.$color-light;
+  }
+}
+
+.pagination__bullet:focus {
+  &::before {
+    background-color: variables.$color-accent;
+    box-shadow: inset 0 0 0 2px variables.$color-accent;
+  }
+}
+
+.pagination__bullet:active {
+  &::before {
+    background-color: variables.$color-active;
+    box-shadow: inset 0 0 0 2px variables.$color-active;
+  }
+}
+
+.pagination__bullet:disabled {
+  &::before {
+    background-color: variables.$color-disabled;
+    box-shadow: inset 0 0 0 2px variables.$color-disabled;
+    cursor: not-allowed;
+  }
+}
