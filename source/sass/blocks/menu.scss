@@ -23,38 +23,38 @@
   color: variables.$color-light-opacity;
   transition: color 0.3s linear;
 
-  &--expanded {
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    &::after {
-      content: "";
-      width: 12px;
-      height: 12px;
-      background-color: variables.$color-light-opacity;
-      mask-image: url("/__spritemap#sprite-arrow-view");
-      mask-repeat: no-repeat;
-      mask-size: contain;
-      mask-position: center;
-      transform: rotate(180deg);
-      transition:
-        transform 0.3s linear,
-        background-color 0.3s linear;
-    }
-  }
-
   &:hover,
   &:focus {
     color: variables.$text-primary-light;
   }
 }
 
-.menu__link--expanded[aria-expanded="true"] {
-  color: variables.$text-primary-light;
+.menu__link--expanded {
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: variables.$color-light-opacity;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transform: rotate(180deg);
+    transition:
+      transform 0.3s linear,
+      background-color 0.3s linear;
+  }
+
+  &[aria-expanded="true"] {
+    color: variables.$text-primary-light;
+  }
 }
 
 .menu__link--expanded[aria-expanded="true"]::after {
