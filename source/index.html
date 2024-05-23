@@ -13,60 +13,66 @@
     <div class="header__wrapper container">
       <img class="header__logo logo" src="img/logo.svg" width="52" height="52" alt="Логотип проекта.">
       <nav class="header__navigation navigation">
-        <button class="navigation__button" type="button" aria-expanded="false" aria-controls="menu">Меню</button>
-        <ul class="navigation__menu menu" id="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="#">О проекте</a>
-          </li>
-          <li class="menu__item">
-            <button class="menu__link menu__link--expanded" type="button" aria-expanded="false"
-              aria-controls="programs">
-              Программы
-            </button>
-            <ul class="menu__submenu submenu" id="programs">
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Стажировки</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Волонтёрство</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Учёба</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Религия</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Как поехать</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Отзывы</a>
-          </li>
-          <li class="menu__item">
-            <button class="menu__link menu__link--expanded" type="button" aria-expanded="false" aria-controls="news">
-              Новости
-            </button>
-            <ul class="menu__submenu submenu" id="news">
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Стажировки</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Волонтёрство</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Учёба</a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#">Религия</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
-          </li>
-        </ul>
+        <button class="page__navigation-button navigation__button" type="button" aria-expanded="false" aria-controls="menu">Меню</button>
+        <div class="navigation__content">
+          <ul class="navigation__menu menu" id="menu">
+            <li class="navigation__item menu__item">
+              <a class="menu__link" href="#">О проекте</a>
+            </li>
+            <li class="navigation__item menu__item">
+              <button class="menu__link menu__link--expanded" type="button" aria-expanded="false"
+                aria-controls="programs">
+                Программы
+              </button>
+              <div class="menu__submenu-wrapper">
+                <ul class="menu__submenu submenu" id="programs">
+                  <li class="menu__item submenu__item">
+                    <a class="submenu__link" href="#">Стажировки</a>
+                  </li>
+                  <li class="menu__item submenu__item">
+                    <a class="submenu__link" href="#">Волонтёрство</a>
+                  </li>
+                  <li class="menu__item submenu__item">
+                    <a class="submenu__link" href="#">Учёба</a>
+                  </li>
+                  <li class="menu__item submenu__item">
+                    <a class="submenu__link" href="#">Религия</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__item menu__item">
+              <a class="menu__link" href="#">Как поехать</a>
+            </li>
+            <li class="navigation__item menu__item">
+              <a class="menu__link" href="#">Отзывы</a>
+            </li>
+            <li class="navigation__item menu__item">
+              <button class="menu__link menu__link--expanded" type="button" aria-expanded="false" aria-controls="news">
+                Новости
+              </button>
+              <div class="menu__submenu-wrapper">
+                <ul class="menu__submenu submenu" id="news">
+                  <li class="menu__item submenu__item">
+                    <a class="submenu__link" href="#">Стажировки</a>
+                  </li>
+                  <li class="menu__item submenu__item">
+                    <a class="submenu__link" href="#">Волонтёрство</a>
+                  </li>
+                  <li class="menu__item submenu__item">
+                    <a class="submenu__link" href="#">Учёба</a>
+                  </li>
+                  <li class="menu__item submenu__item">
+                    <a class="submenu__link" href="#">Религия</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__item menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
