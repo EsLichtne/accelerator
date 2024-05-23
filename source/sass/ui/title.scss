@@ -1,0 +1,9 @@
+@use "../global/variables";
+
+.title {
+  &--first {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+}
