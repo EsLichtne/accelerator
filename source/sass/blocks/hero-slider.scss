@@ -38,6 +38,7 @@
   grid-column: 1 / 2;
   grid-row: 1 / -1;
   margin-left: -28px;
+  background-color: variables.$background-contrast;
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
