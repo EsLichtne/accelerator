@@ -19,6 +19,10 @@
     background-color 0.3s linear,
     border-color 0.3s linear;
 
+  @media (min-width: variables.$tablet-width) {
+    gap: 30px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -34,6 +38,12 @@
     transition:
       transform 0.3s linear,
       background-color 0.3s linear;
+
+    @media (min-width: variables.$tablet-width) {
+      right: 22px;
+      width: 10px;
+      height: 10px;
+    }
   }
 
   &::after {
@@ -42,6 +52,11 @@
     height: 34px;
     border-radius: 50%;
     transition: background-color 0.3s linear;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 46px;
+      height: 46px;
+    }
   }
 
   &:hover,

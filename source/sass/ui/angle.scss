@@ -12,6 +12,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 26px;
+      height: 26px;
+    }
   }
 }
 
@@ -20,6 +25,10 @@
     top: 0;
     right: -10px;
     transform: rotate(90deg);
+
+    @media (min-width: variables.$tablet-width) {
+      right: -26px;
+    }
   }
 }
 
@@ -27,5 +36,9 @@
   &::after {
     bottom: 0;
     right: -10px;
+
+    @media (min-width: variables.$tablet-width) {
+      right: -26px;
+    }
   }
 }
