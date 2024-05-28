@@ -1,0 +1,7 @@
+@use "../global/variables";
+
+.overlay {
+  &--light {
+    border-image: fill 0 linear-gradient(variables.$overlay-light, variables.$overlay-light);
+  }
+}
