@@ -12,8 +12,7 @@
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 20px;
-  padding: 3px;
-  padding-left: 20px;
+  padding: 3px 4px 3px 20px;
   font-family: variables.$font-primary;
   font-size: 14px;
   line-height: 100%;
@@ -29,6 +28,11 @@
   transition:
     color 0.3s linear,
     background-color 0.3s linear;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 4px;
+    padding-left: 20px;
+  }
 
   &::after {
     content: "";

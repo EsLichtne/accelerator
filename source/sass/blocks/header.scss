@@ -22,6 +22,11 @@
   grid-row: 1 / 2;
   width: 52px;
   height: 52px;
+  margin-top: 1px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 2px;
+  }
 }
 
 .header__navigation {

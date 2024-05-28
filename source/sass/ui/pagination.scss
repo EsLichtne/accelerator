@@ -1,7 +1,7 @@
 @use "../global/variables";
 
 .pagination {
-  padding: 4px 10px;
+  padding: 2px 10px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 6px 14px;
