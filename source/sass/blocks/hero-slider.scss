@@ -2,6 +2,7 @@
 @use "../global/mixins";
 
 .hero-slider {
+  --top: 197px;
   position: relative;
 }
 
@@ -20,7 +21,7 @@
 
 .hero-slider__pagination {
   position: absolute;
-  top: 201px;
+  top: var(--top);
   left: 15px;
   z-index: 1;
   max-width: 280px;
