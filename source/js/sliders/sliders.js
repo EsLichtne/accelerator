@@ -44,7 +44,7 @@ const initHeroSlider = () => {
 
     a11y: {
       enabled: true,
-      containerMessage: 'Слайдер с популярными турами.',
+      containerMessage: 'Слайдер с направлениями программ.',
       itemRoleDescriptionMessage: 'Слайд.',
       firstSlideMessage: 'Первый слайд.',
       lastSlideMessage: 'Последний слайд.',
