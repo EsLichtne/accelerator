@@ -5,8 +5,6 @@
   display: grid;
   align-items: end;
   padding-top: 229px;
-  padding-bottom: 20px;
-  background-color: variables.$overlay-light;
 }
 
 .hero-card__image {
@@ -23,6 +21,7 @@
 .hero-card__wrapper {
   width: 290px;
   margin-left: 15px;
+  padding-bottom: 20px;
 }
 
 .hero-card__title {
