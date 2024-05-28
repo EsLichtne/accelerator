@@ -18,7 +18,7 @@
   align-items: end;
   width: calc(100% - 15px);
   margin-left: 15px;
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 20px;
 
   @media (min-width: variables.$tablet-width) {
@@ -34,6 +34,8 @@
 }
 
 .hero-slider__image-wrapper {
+  display: grid;
+  align-items: center;
   z-index: -1;
   grid-column: 1 / 2;
   grid-row: 1 / -1;
