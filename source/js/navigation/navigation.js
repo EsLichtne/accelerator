@@ -15,6 +15,10 @@ navigation.addEventListener('click', (event) => {
   if (event.target.classList.contains('navigation__button') || event.target.classList.contains('menu__link--expanded')) {
     toggleExpanded(event.target);
   }
+
+  if (event.target.classList.contains('navigation__link')) {
+    closeNavigation();
+  }
 });
 
 document.addEventListener('click', (event) => {
