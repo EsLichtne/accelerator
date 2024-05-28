@@ -71,6 +71,15 @@
   @include mixins.list-reset;
 }
 
+.hero-slider__link {
+  visibility: hidden;
+  transition: visibility 0.3s linear;
+}
+
+.hero-slider__item--current .hero-slider__link {
+  visibility: visible;
+}
+
 .hero-slider__pagination {
   width: fit-content;
   max-width: 200px;

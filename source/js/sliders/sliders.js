@@ -27,6 +27,7 @@ const initHeroSlider = () => {
       crossFade: true,
     },
     autoHeight: true,
+    slideActiveClass: 'hero-slider__item--current',
 
     breakpoints: {
       1440: {
