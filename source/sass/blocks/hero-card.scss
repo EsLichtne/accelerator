@@ -1,7 +1,18 @@
 @use "../global/variables";
 
 .hero-card__wrapper {
+  display: grid;
   width: 290px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: 325px auto;
+    width: 659px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 496px auto;
+    width: 968px;
+  }
 }
 
 .hero-card__title {
@@ -10,6 +21,15 @@
   color: variables.$text-accent;
   background-color: variables.$background-secondary-light;
   border-radius: 0 16px 16px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / -1;
+    padding: 30px 40px 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 40px 50px 30px;
+  }
 }
 
 .hero-card p {
@@ -20,7 +40,19 @@
   font-size: 14px;
   line-height: 20px;
   background-color: variables.$background-secondary-light;
-  border-radius: 0 0 14px;
+  border-radius: 0 0 14px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    width: auto;
+    padding: 0 15px 35px 40px;
+    font-size: 16px;
+    border-radius: 0 0 0 14px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 15px 35px 50px;
+    line-height: 26px;
+  }
 
   &::after {
     content: "";
@@ -34,6 +66,10 @@
     background-size: contain;
     background-position: center;
     transform: rotate(90deg);
+
+    @media (min-width: variables.$tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -42,4 +78,13 @@
   padding: 10px 15px;
   background-color: variables.$background-secondary-light;
   border-radius: 0 0 14px 14px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 40px 0 15px;
+    border-radius: 0 0 14px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 10px 40px 10px 15px;
+  }
 }
