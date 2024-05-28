@@ -6,23 +6,27 @@ import {
 } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import { heroImages } from '../mocks/hero-images';
 
 const initHeroSlider = () => {
-  const setTopIndent = (slider, wrapper) => {
-    const pagination = slider.querySelector('.pagination');
-
-    slider.style.setProperty('--top', `${slider.offsetHeight - wrapper.offsetHeight - pagination.offsetHeight}px`);
+  const changeImage = (index) => {
+    const image = document.querySelector('.hero-slider__image');
+    const { src, srcset, source, alt } = heroImages[index];
+    image.src = src;
+    image.srcset = srcset;
+    image.parentElement.querySelector('source').srcset = source;
+    image.alt = alt;
   };
 
   new Swiper('#hero-slider', {
     modules: [Pagination, A11y, EffectFade],
     loop: true,
-    speed: 700,
     slidesPerView: 1,
     effect: 'fade',
     fadeEffect: {
       crossFade: true,
     },
+    autoHeight: true,
 
     pagination: {
       el: '.pagination__wrapper',
@@ -33,13 +37,8 @@ const initHeroSlider = () => {
     },
 
     on: {
-      afterInit: (slider) => {
-        const wrapper = slider.visibleSlides[0].querySelector('.hero-card__wrapper');
-        setTopIndent(slider.el.parentElement, wrapper);
-      },
-      transitionStart: (slider) => {
-        const wrapper = slider.visibleSlides[0].querySelector('.hero-card__wrapper');
-        setTopIndent(slider.el.parentElement, wrapper);
+      activeIndexChange: (slider) => {
+        changeImage(slider.realIndex);
       },
     },
 
