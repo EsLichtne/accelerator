@@ -24,6 +24,7 @@
 
 .page__body:has(.page__navigation-button[aria-expanded="true"]) {
   position: relative;
+  overflow: hidden;
 
   &::after {
     background-color: variables.$overlay-dark;
