@@ -16,4 +16,19 @@
       line-height: 62px;
     }
   }
+
+  &--second {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 34px;
+      line-height: 50px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 50px;
+    }
+  }
 }
