@@ -15,6 +15,7 @@
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: 712px 498px;
     grid-auto-flow: dense;
+    justify-content: center;
     column-gap: 30px;
   }
 }
