@@ -1,0 +1,101 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.advantages {
+  color: variables.$text-secondary-light;
+  background-color: variables.$background-accent;
+  border-radius: 20px;
+}
+
+.advantages__list {
+  @include mixins.list-reset;
+
+  display: grid;
+  padding: 42px 20px 40px;
+  gap: 22px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 52px;
+    row-gap: 54px;
+    padding: 72px 50px 50px 70px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 72px 100px 50px 120px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: grid;
+  gap: 15px;
+  padding: 15px 20px;
+  border: 1px solid variables.$text-secondary-light;
+  border-radius: 16px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-rows: auto 1fr;
+    gap: 14px;
+    padding: 16px 20px 15px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 30px 40px;
+    padding-right: 41px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -21px;
+    top: -23px;
+    width: 42px;
+    height: 42px;
+    background-color: variables.$background-accent;
+    background-image: url("/__spritemap#sprite-star-view");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+  }
+}
+
+.advantages__item h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: variables.$text-primary-light;
+
+  @media (min-width: variables.$tablet-width) {
+    max-width: 165px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+.advantages__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    justify-self: end;
+    max-width: 200px;
+  }
+}
