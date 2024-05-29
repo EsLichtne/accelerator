@@ -11,6 +11,7 @@ $text-primary-dark: #484848;
 $text-primary-light: #ffffff;
 $text-secondary-light: #f0efe9;
 $text-accent: #316dc2;
+$text-primary-opacity: rgba(72, 72, 72, 0.8);
 
 /* BASIC-COLORS */
 $color-accent: #316dc2;
@@ -34,6 +35,12 @@ $color-accent-opacity: rgba(49, 109, 194, 0.7);
 
 /* FORM-COLORS */
 $form-light: #ffffff;
+$form-light-opacity: rgba(255, 255, 255, 0.6);
 $form-dark: #484848;
+$form-accent: #316dc2;
+$form-dark-opacity: rgba(72, 72, 72, 0.3);
 $form-error: #ff5e66;
+$form-error-opacity: rgba(255, 94, 102, 0.2);
 $form-disabled: #a9afb7;
+$form-disabled-light: rgba(169, 175, 183, 0.2);
+$form-disabled-opacity: rgba(169, 175, 183, 0.5);
