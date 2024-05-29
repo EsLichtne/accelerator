@@ -182,6 +182,37 @@
   </main>
   <footer class="page__footer"></footer>
   <script type="module" src="js/main.js"></script>
+  <dialog class="page__modal modal" id="modalForm" aria-labelledby="modal-title">
+    <div class="modal__wrapper">
+      <button class="modal__close-button" type="button">
+        <span class="visually-hidden">Закрыть окно.</span>
+      </button>
+      <h2 class="modal__title title title--third" id="modal-title">Напишите нам</h2>
+      <p class="modal__description text text--third">Оставьте ваши контакты, если&nbsp;у вас остались вопросы&nbsp;–<br> мы на них
+        ответим!</p>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="form__label" for="name">Имя</label>
+        <input class="form__field field" type="text" name="name" id="name" required>
+        <label class="form__label" for="phone">Телефон</label>
+        <input class="form__field field" type="tel" name="phone" id="phone" value="+7" required>
+        <label class="form__label" for="city">Выберите город</label>
+        <div class="form__select select">
+          <input class="select__field field" role="combobox" aria-expanded="false" aria-controls="city-name" type="text"
+            id="city" readonly required>
+          <ul class="select__options" id="city-name" aria-haspopup="listbox" aria-owns="city-name">
+            <li class="select__option" tabindex="0" aria-selected="false">Санкт-Петербург</li>
+            <li class="select__option" tabindex="0" aria-selected="false">Санкт-Петербург</li>
+            <li class="select__option" tabindex="0" aria-selected="false">Санкт-Петербург</li>
+            <li class="select__option" tabindex="0" aria-selected="false">Санкт-Петербург</li>
+          </ul>
+        </div>
+        <label class="form__checkbox checkbox" for="permission">Я согласен на обработку моих персональных данных
+          <input class="checkbox__field" type="checkbox" name="permission" id="permission" required>
+        </label>
+        <button class="modal__send-button form__button link link--primary" type="submit">Отправить</button>
+      </form>
+    </div>
+  </dialog>
 </body>
 
 </html>
