@@ -31,6 +31,10 @@
   }
 }
 
+.page__body:has(.modal[open]) {
+  overflow: hidden;
+}
+
 .page__header {
   position: absolute;
   z-index: 2;
