@@ -1,0 +1,58 @@
+@use "../global/variables";
+
+.modal {
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+  overflow: visible;
+
+  &:not([open]) {
+    display: none;
+  }
+
+  &::backdrop {
+    background-color: variables.$overlay-dark;
+    cursor: pointer;
+  }
+}
+
+.modal__wrapper {
+  position: relative;
+  display: grid;
+  padding: 40px 15px;
+  text-align: center;
+  background-color: variables.$background-secondary-light;
+  border-radius: 16px;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  padding: 28px;
+  border-color: transparent;
+  border-radius: 16px;
+  background-color: transparent;
+  background-image: url("/__spritemap#sprite-cross-view");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline-offset: -4px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 18px;
+  color: variables.$text-accent;
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 25px;
+  text-wrap: balance;
+}

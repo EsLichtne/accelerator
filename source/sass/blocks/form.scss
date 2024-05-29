@@ -1,0 +1,25 @@
+@use "../global/variables";
+
+.form {
+  display: grid;
+  text-align: left;
+}
+
+.form__label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 100%;
+  color: variables.$text-primary-opacity;
+}
+
+.form__field {
+  margin-bottom: 15px;
+}
+
+.form__checkbox {
+  margin-bottom: 25px;
+}
+
+.form__button {
+  width: 100%;
+}

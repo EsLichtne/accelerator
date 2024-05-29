@@ -1,0 +1,26 @@
+@use "../global/variables";
+
+.field {
+  padding: 12px 19px 11px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 100%;
+  color: variables.$text-primary-dark;
+  border: 1px solid variables.$form-dark-opacity;
+  border-radius: 8px;
+  transition:
+    background-color 0.3s linear,
+    border-color 0.3s linear;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: variables.$form-dark;
+  }
+
+  &:disabled {
+    background-color: variables.$form-disabled-light;
+    border-color: variables.$form-disabled-opacity;
+    cursor: not-allowed;
+  }
+}

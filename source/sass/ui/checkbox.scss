@@ -1,0 +1,84 @@
+@use "../global/variables";
+
+.checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox:has(.checkbox__field:disabled) {
+  cursor: not-allowed;
+}
+
+.checkbox__field {
+  order: -1;
+  flex-shrink: 0;
+  appearance: none;
+  display: grid;
+  place-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: variables.$form-accent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s linear,
+    border-color 0.3s linear;
+
+  &:checked {
+    background-color: variables.$form-accent;
+    border-color: transparent;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: variables.$form-light;
+      mask-image: url("/__spritemap#sprite-check-view");
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      mask-position: center;
+      transition: background-color 0.3s linear;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: variables.$form-light;
+      border-color: variables.$form-accent;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: variables.$form-accent;
+    }
+
+    &:disabled {
+      background-color: variables.$form-disabled;
+      border-color: transparent;
+      cursor: not-allowed;
+    }
+
+    &:disabled::before {
+      background-color: variables.$form-light-opacity;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: variables.$form-light;
+    border-color: variables.$form-accent;
+  }
+
+  &:disabled {
+    background-color: variables.$form-light-opacity;
+    border-color: variables.$form-disabled;
+    cursor: not-allowed;
+  }
+
+  &:user-invalid {
+    background-color: variables.$form-error-opacity;
+    border-color: variables.$form-error;
+  }
+}

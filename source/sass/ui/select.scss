@@ -1,0 +1,58 @@
+@use "../global/variables";
+@use "../global/mixins";
+
+.select {
+  position: relative;
+  margin-bottom: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    background-color: variables.$text-primary-dark;
+    mask-image: url("/__spritemap#sprite-tick-view");
+    mask-repeat: no-repeat;
+    mask-size: 14px 14px;
+    mask-position: center;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.select:has([aria-expanded="false"]) .select__options {
+  display: none;
+}
+
+.select:has([aria-expanded="true"]) .select__field {
+  border-color: variables.$form-dark;
+}
+
+.select__field {
+  width: 100%;
+  cursor: pointer;
+}
+
+.select__options {
+  @include mixins.list-reset;
+
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4px;
+  background-color: variables.$background-secondary-light;
+  border: 1px solid variables.$form-dark;
+  border-radius: 8px;
+}
+
+.select__option {
+  padding: 15px 19px;
+  font-size: 14px;
+  line-height: 100%;
+  cursor: pointer;
+}
