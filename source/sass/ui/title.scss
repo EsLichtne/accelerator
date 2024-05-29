@@ -31,4 +31,20 @@
       font-size: 50px;
     }
   }
+
+  &--third {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+
+    @media (min-width: variables.$tablet-width) {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
 }
